@@ -116,7 +116,7 @@
                         </label>
                         <label class="auth-field">
                             <span>Password</span>
-                            <input type="password" id="signupPassword" placeholder="Min 6 characters" minlength="6" required>
+                            <input type="password" id="signupPassword" placeholder="Min 8 characters" minlength="8" required>
                         </label>
                         <button class="btn btn-primary auth-submit" type="submit">Create account</button>
                     </form>
@@ -133,12 +133,6 @@
                         <button class="btn btn-primary auth-submit" type="submit">Sign in</button>
                         <button class="auth-forgot" id="forgotPassword" type="button">Forgot password?</button>
                     </form>
-
-                    <div class="auth-oauth-row">
-                        <button class="btn auth-oauth" data-provider="apple" type="button">Continue with Apple</button>
-                        <button class="btn auth-oauth" data-provider="google" type="button">Continue with Google</button>
-                        <button class="btn auth-oauth" data-provider="github" type="button">Continue with GitHub</button>
-                    </div>
 
                     <div class="auth-feedback" id="authFeedback" aria-live="polite"></div>
                 </div>
@@ -236,7 +230,7 @@
         <rect width="100%" height="100%" filter="url(#noiseFilter)"/>
     </svg>
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="/js/spark-client.js?v=20261011"></script>
     <script src="/js/lingo-app.js?v=20261004b"></script>
     <script src="/js/games.js?v=20261004b"></script>
     <script src="/js/webmcp.js?v=20261004b" defer></script>

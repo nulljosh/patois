@@ -95,15 +95,25 @@ function clearAuthCookie() {
     document.cookie = 'lingo_authed=; path=/; max-age=0';
 }
 
-const SUPABASE_URL = 'https://tjsxsqlxjmanwvmywwvw.supabase.co';
-const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqc3hzcWx4am1hbnd2bXl3d3Z3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA0OTc0MDEsImV4cCI6MjA4NjA3MzQwMX0.LphLfho3wdQC20MhtcnBpzQUNuBoTOobrugQbNGxc68';
-// The Supabase SDK comes from a CDN, which a content blocker or an outage can stop from
-// loading. This used to be a bare `window.supabase.createClient(...)` at module scope, so a
-// missing SDK threw here and killed every line after it -- the catalog never rendered and the
-// app was a blank page with no error. Degrade instead: `sb` is null and auth is unavailable.
-const sb = window.supabase
-    ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON)
-    : null;
+// The client loads from our own /js/spark-client.js, but keep the degrade path: if it is missing,
+// `sb` is null and auth is unavailable instead of the whole app dying at module scope.
+const sb = window.spark ? window.spark.createClient('https://api.heyitsmejosh.com') : null;
+
+// A reset link lands here with ?recovery_token=...; the client announces it and we ask for the new password.
+function showRecoveryForm() {
+    const o = document.createElement('div');
+    o.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;z-index:9999';
+    o.innerHTML = '<form style="background:var(--card,#fff);color:inherit;padding:1.5rem;border-radius:12px;display:grid;gap:.75rem;min-width:280px"><strong>Choose a new password</strong><input type="password" minlength="8" required placeholder="New password (8+ characters)" autocomplete="new-password"><button class="btn" type="submit">Save password</button><span class="auth-feedback"></span></form>';
+    o.querySelector('form').addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+        const { error } = await sb.auth.updateUser({ password: ev.target.querySelector('input').value });
+        if (error) { ev.target.querySelector('.auth-feedback').textContent = error.message; return; }
+        o.remove();
+        location.reload();
+    });
+    document.body.appendChild(o);
+}
+if (sb) sb.auth.onAuthStateChange((event) => { if (event === 'PASSWORD_RECOVERY') showRecoveryForm(); });
 
 let currentUser = null;
 let userIsPro = false;
@@ -118,7 +128,7 @@ const DEFAULT_PROGRESS = {
     lessons_completed: {},
     trophy_ids: [],
     last_played: '',
-    // Local-only fields (not synced to Supabase, see saveProgress's whitelist).
+    // Local-only fields (not synced to the server, see saveProgress's whitelist).
     streak_freezes: 0,
     weekly_xp: 0,
     week_start: ''
@@ -393,7 +403,7 @@ function saveSrsData(srs) {
 // to start over, but does NOT reset easiness -- the 1.3 floor and the formula
 // below are SM-2's own constants, not tuned here. This card shape (`easiness`,
 // `interval`, `repetitions`, `nextReview`) is shared with the iOS/macOS app
-// via the `srs` Supabase column, so it must not change independently there.
+// via the `srs` column, so it must not change independently there.
 function updateSrs(questionId, quality) {
     const srs = getSrsData();
     const card = srs[questionId] || { easiness: 2.5, interval: 1, repetitions: 0, nextReview: new Date().toISOString() };
@@ -938,12 +948,6 @@ function setupEventListeners() {
         renderSubjects(gameState.selectedCategory);
     });
 
-    // OAuth: data-provider is passed straight through; add a button to add a provider.
-    document.querySelectorAll('.auth-oauth').forEach(btn => btn.addEventListener('click', async () => {
-        const feedback = document.getElementById('authFeedback');
-        const { error } = await sb.auth.signInWithOAuth({ provider: btn.dataset.provider, options: { redirectTo: window.location.origin } });
-        if (error) { feedback.textContent = error.message; feedback.className = 'auth-feedback error'; }
-    }));
 
     document.getElementById('forgotPassword').addEventListener('click', async () => {
         const feedback = document.getElementById('authFeedback');
@@ -1226,7 +1230,7 @@ function setupTouchGestures() {
     });
 }
 
-// Shown in place of the course grid when signed out, or when the Supabase SDK failed to
+// Shown in place of the course grid when signed out, or when the sign-in client failed to
 // load and signing in is impossible.
 function renderAuthGate() {
     document.getElementById('categoryTitle').textContent = sb ? 'Sign in to continue' : 'Sign-in unavailable';

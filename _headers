@@ -9,7 +9,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://heyitsmejosh.com https://cdnjs.cloudflare.com; font-src 'self' data: https://cdnjs.cloudflare.com; img-src 'self' data: blob: https:; connect-src 'self' https://*.supabase.co; frame-ancestors 'self' https://heyitsmejosh.com; object-src 'none'; base-uri 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://heyitsmejosh.com https://cdnjs.cloudflare.com; font-src 'self' data: https://cdnjs.cloudflare.com; img-src 'self' data: blob: https:; connect-src 'self' https://api.heyitsmejosh.com; frame-ancestors 'self' https://heyitsmejosh.com; object-src 'none'; base-uri 'self'
 
 # ponytail: short TTL on assets instead of edge purges — CLOUDFLARE_DNS_TOKEN
 # lacks Cache Purge scope, so a stale icon otherwise needs a ?v= bump by hand.
