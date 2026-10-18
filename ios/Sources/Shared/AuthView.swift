@@ -109,8 +109,9 @@ struct AuthView: View {
                     // A dismissed sheet is not an error. A device with no Apple ID signed in (typical of a
                     // review device) used to surface Apple's raw error text; point at the other options.
                     catch let error as ASAuthorizationError where error.code == .canceled { }
-                    catch is ASAuthorizationError {
-                        errorMessage = "Sign in with Apple isn't available on this device right now. Use email or Google instead."
+                    catch let error as ASAuthorizationError {
+                        // The code (1000 unknown, 1001 canceled, 1002 invalid response, 1003 not handled, 1004 failed) says why.
+                        errorMessage = "Sign in with Apple isn't available on this device right now (code \((error as NSError).code)). Use email or Google instead."
                     }
                     catch { errorMessage = error.localizedDescription }
 
