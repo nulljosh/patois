@@ -1,7 +1,7 @@
 /* Patois brand tokens. The accent is the only colour this app owns; spacing, radii and type come from the shared system. */
 :root {
-  --accent: #d4325e;
-  --accent-light: #ff7fa0;
-  --accent-deep: #d4325e;
-  --accent-ring: color-mix(in srgb, #d4325e 30%, transparent);
+  --accent: #2E6FC2;
+  --accent-light: #6FB0F0;
+  --accent-deep: #2E6FC2;
+  --accent-ring: color-mix(in srgb, #2E6FC2 30%, transparent);
 }
