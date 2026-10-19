@@ -1,4 +1,4 @@
-# Patois loop handoff (2026-10-18, evening)
+# Patois loop handoff (2026-10-19, morning)
 
 ## What the loop is
 
@@ -6,7 +6,7 @@ Self-paced loop building Patois alongside Cruise. Each round: 1) Cruise health (
 
 ## Where things stand
 
-Patois 1.1.6 for iOS and Mac was submitted on 2026-10-18 and is waiting for App Review. The store name flips from Lexly to Patois when Apple approves it. Build 202610181930 carries the Pat the macaw icon, lesson animations (progress bar, shake on a miss, combo, confetti, XP on the summary), a full-window lesson layout and a landing page with the live app on it. The teach-first lessons (intro, worked examples with audio, practice, recap) are live for Spanish units 1 to 5. The Sign in with Apple failure message now carries the error code. The failure does not reproduce on my side, so it needs a real phone.
+Patois 1.1.6 for iOS and Mac was submitted on 2026-10-18 and is waiting for App Review. Checked in App Store Connect on 2026-10-19 morning: iOS 1.1.6 is still WAITING_FOR_REVIEW. The store name flips from Lexly to Patois when Apple approves it. Build 202610181930 carries the Pat the macaw icon, lesson animations (progress bar, shake on a miss, combo, confetti, XP on the summary), a full-window lesson layout and a landing page with the live app on it. The teach-first lessons (intro, worked examples with audio, practice, recap) are live for Spanish units 1 to 5. The Sign in with Apple failure message now carries the error code. The failure does not reproduce on my side, so it needs a real phone.
 
 Cruise was at 602,884 XP with a 193-day streak and the runner alive. Balance mode had been picking the least-complete course; every pick now has to pass a live XP-rate check. Still open on Joshua: `sudo pmset -a autorestart 1`.
 
