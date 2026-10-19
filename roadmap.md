@@ -2,7 +2,6 @@
 
 > Priority tier 1 (2026-10-17): live blocker, work first. Order: live blockers, ship pushes, active features, portfolio, exploratory. See ~/Documents/Code/LOOP-HANDOFF.md.
 
-
 ## Rehaul (Joshua 2026-10-17, do first)
 - [ ] UI rehaul: the web landing and the app are ugly. Rebuild on the shared tokens (8 point grid, one radius set, 48 point capsules, SF Pro / Helvetica), the way Airwell was done. No tilted device mockups or frames on the landing, the app itself goes on the page. Then fresh README screenshots.
 - [ ] Name: Joshua says Tonchi sucks. Patois is locked on the iOS listing (2026-10-17). Confirm it sticks before moving the subdomain (tonchi.jaybulb.com stays live as the alias).
