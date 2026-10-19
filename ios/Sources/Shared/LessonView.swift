@@ -39,6 +39,9 @@ struct LessonView: View {
     @State private var queue: [Exercise] = []
     @State private var retried: Set<String> = []
     @State private var learning = false
+    /// Duolingo-style feedback: a miss shakes the card, a run of right answers builds a combo.
+    @State private var shakes: CGFloat = 0
+    @State private var combo = 0
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
@@ -49,7 +52,11 @@ struct LessonView: View {
                 } else if index < queue.count {
                     let exercise = queue[index]
                     VStack(alignment: .leading, spacing: 16) {
-                        HeartsRow(hearts: store.progress.hearts)
+                        HStack(spacing: 12) {
+                            ProgressTrack(fraction: Double(index) / Double(max(queue.count, 1)))
+                            if combo >= 2 { ComboBadge(count: combo) }
+                            HeartsRow(hearts: store.progress.hearts)
+                        }
                         Text(prompt(for: exercise)).font(.title3.bold())
                         if let fen = exercise.fen { ChessBoard(fen: fen) }
 
@@ -122,6 +129,7 @@ struct LessonView: View {
                         .buttonStyle(.borderedProminent)
                         .disabled(feedback == nil && given(for: exercise).isEmpty)
                     }
+                    .modifier(Shake(travel: shakes))
                     .id(exerciseKey)
                     .transition(.asymmetric(
                         insertion: .move(edge: .trailing).combined(with: .opacity),
@@ -200,6 +208,12 @@ struct LessonView: View {
                 : normalize(given(for: exercise)) == normalize(exercise.answer)
         // A recovered miss counts, but never past the lesson's real length.
         if correct { correctCount = min(correctCount + 1, lesson.exercises.count) }
+        if correct {
+            withAnimation(.spring(response: 0.3, dampingFraction: 0.5)) { combo += 1 }
+        } else {
+            combo = 0
+            withAnimation(.linear(duration: 0.4)) { shakes += 1 }
+        }
         if !correct, !retried.contains(exercise.id) {
             retried.insert(exercise.id)
             queue.append(exercise)
@@ -430,6 +444,7 @@ private struct HeartsRow: View {
             ForEach(0..<5, id: \.self) { index in
                 Image(systemName: index < hearts ? "heart.fill" : "heart")
                     .foregroundStyle(index < hearts ? Color(hex: "c44040") : Color.secondary.opacity(0.4))
+                    .symbolEffect(.bounce, value: hearts)
             }
         }
         .font(.footnote)
@@ -442,17 +457,95 @@ private struct LessonSummary: View {
     let correct: Int
     let total: Int
     let done: () -> Void
+    @State private var shown = false
 
     var body: some View {
-        VStack(spacing: 12) {
-            Image(systemName: passed ? "checkmark.circle.fill" : "arrow.counterclockwise.circle.fill")
-                .font(.system(size: 64))
-                .foregroundStyle(Color(hex: passed ? "5B9BD5" : "c44040"))
-            Text(passed ? "Lesson complete!" : "Try again").font(.title.bold())
-            Text("\(correct) of \(total) correct").foregroundStyle(.secondary)
-            Button("Done", action: done).buttonStyle(.borderedProminent)
+        ZStack {
+            if passed { Confetti() }
+            VStack(spacing: 12) {
+                Image(systemName: passed ? "checkmark.circle.fill" : "arrow.counterclockwise.circle.fill")
+                    .font(.system(size: 64))
+                    .foregroundStyle(Color(hex: passed ? "5B9BD5" : "c44040"))
+                    .scaleEffect(shown ? 1 : 0.2)
+                    .symbolEffect(.bounce, value: shown)
+                Text(passed ? "Lesson complete!" : "Try again").font(.title.bold())
+                Text("\(correct) of \(total) correct").foregroundStyle(.secondary)
+                if passed {
+                    Label("+\(correct * 10) XP", systemImage: "bolt.fill")
+                        .font(.headline).foregroundStyle(Color(hex: "5B9BD5"))
+                }
+                Button("Done", action: done).buttonStyle(.borderedProminent)
+            }
+            .frame(maxWidth: .infinity)
         }
-        .frame(maxWidth: .infinity)
+        .onAppear { withAnimation(.spring(response: 0.5, dampingFraction: 0.45)) { shown = true } }
+    }
+}
+
+/// The bar across the top of a lesson: fills as you go.
+private struct ProgressTrack: View {
+    let fraction: Double
+    var body: some View {
+        GeometryReader { geo in
+            ZStack(alignment: .leading) {
+                Capsule().fill(Color.secondary.opacity(0.18))
+                Capsule().fill(Color(hex: "5B9BD5"))
+                    .frame(width: max(geo.size.height, geo.size.width * fraction))
+            }
+        }
+        .frame(height: 12)
+        .animation(.spring(response: 0.5, dampingFraction: 0.8), value: fraction)
+        .accessibilityLabel("Lesson progress")
+        .accessibilityValue("\(Int(fraction * 100)) percent")
+    }
+}
+
+private struct ComboBadge: View {
+    let count: Int
+    var body: some View {
+        HStack(spacing: 2) {
+            Image(systemName: "flame.fill").symbolEffect(.bounce, value: count)
+            Text("\(count)").contentTransition(.numericText())
+        }
+        .font(.footnote.bold())
+        .foregroundStyle(Color(hex: "5B9BD5"))
+        .accessibilityLabel("\(count) correct in a row")
+    }
+}
+
+/// Sideways wobble driven by an ever-growing counter, so each miss shakes once.
+private struct Shake: GeometryEffect {
+    var travel: CGFloat
+    var animatableData: CGFloat {
+        get { travel }
+        set { travel = newValue }
+    }
+    func effectValue(size: CGSize) -> ProjectionTransform {
+        ProjectionTransform(CGAffineTransform(translationX: 10 * sin(travel * .pi * 4), y: 0))
+    }
+}
+
+/// A short burst of blue and green pieces behind the lesson-complete card.
+private struct Confetti: View {
+    @State private var fired = false
+    private let pieces: [(x: CGFloat, y: CGFloat, size: CGFloat, hex: String)] = (0..<28).map { i in
+        let a = Double(i) / 28 * 2 * .pi
+        let r = CGFloat(90 + (i * 37) % 90)
+        return (cos(a) * r, sin(a) * r, CGFloat(6 + i % 5 * 2), ["5B9BD5", "2e86de", "8FC1E8", "4CAF7A"][i % 4])
+    }
+
+    var body: some View {
+        ZStack {
+            ForEach(pieces.indices, id: \.self) { i in
+                let p = pieces[i]
+                Circle().fill(Color(hex: p.hex))
+                    .frame(width: p.size, height: p.size)
+                    .offset(x: fired ? p.x : 0, y: fired ? p.y : 0)
+                    .opacity(fired ? 0 : 1)
+            }
+        }
+        .allowsHitTesting(false)
+        .onAppear { withAnimation(.easeOut(duration: 1.1)) { fired = true } }
     }
 }
 
