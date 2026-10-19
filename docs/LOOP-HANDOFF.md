@@ -1,10 +1,12 @@
-# Patois loop handoff (2026-10-19, morning)
+# Patois loop handoff (2026-10-19, afternoon)
 
 ## What the loop is
 
 Self-paced loop building Patois alongside Cruise. Each round: 1) Cruise health (runner alive, XP rising, streak extended, disk above 3GB, new milestone.jsonl lines); fix real breakage first. 2) Pick next Patois roadmap item using open sources only (Tatoeba, Lichess CC0, original), never Duolingo's captured sentences/structure. Examples: fact-check held Greek/Polish packs so they can go catalog; Android chess board UI; step-by-step chess lines; ATTRIBUTION.md accuracy; Cruise gift/chest selectors once Duolingo shows one. 3) Run every Patois check (validate-catalog, streak-freeze, lesson-completion-scoping, lesson-gate, chess --check, macOS build on Swift changes), then commit, push, confirm CI green, sync README/roadmap/landing. 4) Reply 1-2 line TLDR. No App Store submissions, no deletes of existing content, at most one Haiku subagent per round.
 
 ## Where things stand
+
+patois.jaybulb.com serves 200 now, a Cloudflare Pages custom domain on the lexly-heyitsmejosh project (the project name stays). The store name still flips from Lexly on approval.
 
 Patois 1.1.6 for iOS and Mac was submitted on 2026-10-18 and is waiting for App Review. Checked in App Store Connect on 2026-10-19 morning: iOS 1.1.6 is still WAITING_FOR_REVIEW. The store name flips from Lexly to Patois when Apple approves it. Build 202610181930 carries the Pat the macaw icon, lesson animations (progress bar, shake on a miss, combo, confetti, XP on the summary), a full-window lesson layout and a landing page with the live app on it. The teach-first lessons (intro, worked examples with audio, practice, recap) are live for Spanish units 1 to 5. The Sign in with Apple failure message now carries the error code. The failure does not reproduce on my side, so it needs a real phone.
 
