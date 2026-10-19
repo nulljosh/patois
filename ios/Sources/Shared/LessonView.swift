@@ -127,6 +127,8 @@ struct LessonView: View {
                             feedback == nil ? check(exercise) : advance()
                         }
                         .buttonStyle(.borderedProminent)
+                        .controlSize(.large)
+                        .frame(maxWidth: .infinity)
                         .disabled(feedback == nil && given(for: exercise).isEmpty)
                     }
                     .modifier(Shake(travel: shakes))
@@ -155,9 +157,14 @@ struct LessonView: View {
                 Spacer()
             }
             .padding()
+            // A lesson reads as one centered column however wide the window gets.
+            .frame(maxWidth: 640)
+            .frame(maxWidth: .infinity)
 
             if let fb = feedback {
                 FeedbackBanner(state: fb)
+                    .frame(maxWidth: 640)
+                    .padding(.horizontal)
                     .transition(.move(edge: .bottom).combined(with: .opacity))
             }
         }
