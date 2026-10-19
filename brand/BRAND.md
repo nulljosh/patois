@@ -3,11 +3,11 @@
 a pair of quotation marks: what people actually say
 
 ## The mark
-One bold flat white glyph on an accent gradient tile. No text, no outline, no emblem.
+Pat, flat and facing right, on the blue gradient tile. No text, no outline. `mascot.svg` is the character alone for the app, the lesson-complete screen and the landing.
 
 - `../Patois.icon` is the source of truth (Icon Composer). Light and dark fills are set in it.
 - `../icon.svg` is the flat copy for READMEs (shown at 80 px). `icon-1024.png` is the App Store icon, no alpha.
-- `mark.svg` is the glyph alone in `currentColor` for your own background.
+- Pat's colours: scarlet `#F2493E` head, gold `#FFC53D` chest, blue `#2A74D6` wing, cream `#FFE29A` bill. They belong to the mascot only; the app UI stays blue.
 - Clear space equal to the width of the glyph's thickest stroke. Smallest size 16 px.
 
 ## Colour

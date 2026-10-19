@@ -22,7 +22,7 @@
     {
       "layers": [
         {
-          "glass": true,
+          "glass": false,
           "image-name": "glyph.png",
           "name": "Patois"
         }

@@ -475,11 +475,11 @@ private struct LessonSummary: View {
         ZStack {
             if passed { Confetti() }
             VStack(spacing: 12) {
-                Image(systemName: passed ? "checkmark.circle.fill" : "arrow.counterclockwise.circle.fill")
-                    .font(.system(size: 64))
-                    .foregroundStyle(Color(hex: passed ? "5B9BD5" : "c44040"))
+                Image("Mascot")
+                    .resizable().scaledToFit().frame(width: 140, height: 140)
+                    .saturation(passed ? 1 : 0.3)
                     .scaleEffect(shown ? 1 : 0.2)
-                    .symbolEffect(.bounce, value: shown)
+                    .rotationEffect(.degrees(shown ? 0 : -20))
                 Text(passed ? "Lesson complete!" : "Try again").font(.title.bold())
                 Text("\(correct) of \(total) correct").foregroundStyle(.secondary)
                 if passed {

@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 1024 1024"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6FB0F0"/><stop offset="1" stop-color="#2E6FC2"/></linearGradient></defs><rect width="1024" height="1024" rx="224" fill="url(#g)"/><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><g fill="#fff"><circle cx="338" cy="420" r="100"/><circle cx="678" cy="420" r="100"/></g><g fill="none" stroke="#fff" stroke-width="72" stroke-linecap="round" stroke-linejoin="round"><path d="M438 420C438 580 360 680 250 730"/><path d="M778 420C778 580 700 680 590 730"/></g></svg></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><g transform="translate(512 520) scale(0.8) translate(-540 -525)">
+  <!-- tail -->
+  <path d="M250 820 C 200 900 190 960 200 1010 C 260 980 320 920 340 840 Z" fill="#F2493E"/>
+  <!-- body -->
+  <path d="M250 520 C 190 640 210 800 340 880 C 460 940 600 900 660 780 C 700 700 680 600 640 540 Z" fill="#FFC53D"/>
+  <!-- wing -->
+  <path d="M330 640 C 280 720 320 830 420 860 C 520 880 590 820 600 740 C 520 760 400 740 330 640 Z" fill="#2A74D6"/>
+  <path d="M390 800 C 440 830 520 840 580 790" fill="none" stroke="#7FC0FF" stroke-width="18" stroke-linecap="round"/>
+  <!-- head -->
+  <circle cx="470" cy="400" r="260" fill="#F2493E"/>
+  <!-- crest -->
+  <path d="M300 250 C 250 160 290 90 340 80 C 360 150 350 210 300 250 Z" fill="#D63329"/>
+  <path d="M370 200 C 350 110 400 60 450 50 C 470 120 450 190 370 200 Z" fill="#D63329"/>
+  <!-- face patch -->
+  <circle cx="570" cy="410" r="112" fill="#FFFFFF"/>
+  <!-- eye -->
+  <circle cx="586" cy="408" r="48" fill="#14305E"/>
+  <circle cx="602" cy="392" r="16" fill="#fff"/>
+  <!-- hooked bill -->
+  <path d="M650 300 C 800 280 900 380 880 510 C 868 590 820 640 770 670 C 772 610 752 570 700 548 C 706 460 690 370 650 300 Z" fill="#FFE29A"/>
+  <path d="M700 548 C 752 570 772 610 770 670 C 730 640 690 600 680 560 Z" fill="#2B2B33"/>
+  <path d="M780 470 C 800 470 812 456 812 440" fill="none" stroke="#E5B85A" stroke-width="10" stroke-linecap="round"/>
+</g></svg>
