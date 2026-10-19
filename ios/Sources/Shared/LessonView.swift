@@ -57,7 +57,7 @@ struct LessonView: View {
                             if combo >= 2 { ComboBadge(count: combo) }
                             HeartsRow(hearts: store.progress.hearts)
                         }
-                        Text(prompt(for: exercise)).font(.title3.bold())
+                        Text(prompt(for: exercise)).font(.largeTitle.bold()).padding(.vertical, 8)
                         if let fen = exercise.fen { ChessBoard(fen: fen) }
 
                         switch exercise.type {
@@ -123,14 +123,19 @@ struct LessonView: View {
                             }
                         }
 
-                        Button(feedback == nil ? "Check" : "Continue") {
+                        Spacer(minLength: 24)
+                        Button {
                             feedback == nil ? check(exercise) : advance()
+                        } label: {
+                            Text(feedback == nil ? "Check" : "Continue").font(.title3.bold()).frame(maxWidth: .infinity)
                         }
                         .buttonStyle(.borderedProminent)
-                        .controlSize(.large)
+                        .controlSize(.extraLarge)
                         .frame(maxWidth: .infinity)
                         .disabled(feedback == nil && given(for: exercise).isEmpty)
                     }
+                    .frame(maxHeight: .infinity)
+                    .padding(.bottom, feedback == nil ? 0 : 110)
                     .modifier(Shake(travel: shakes))
                     .id(exerciseKey)
                     .transition(.asymmetric(
@@ -158,12 +163,12 @@ struct LessonView: View {
             }
             .padding()
             // A lesson reads as one centered column however wide the window gets.
-            .frame(maxWidth: 640)
+            .frame(maxWidth: 880)
             .frame(maxWidth: .infinity)
 
             if let fb = feedback {
                 FeedbackBanner(state: fb)
-                    .frame(maxWidth: 640)
+                    .frame(maxWidth: 880)
                     .padding(.horizontal)
                     .transition(.move(edge: .bottom).combined(with: .opacity))
             }
@@ -364,7 +369,7 @@ private struct MatchGrid: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding()
                         .background(background(for: cell))
-                        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                 }
                 .buttonStyle(.plain)
                 .disabled(matched.contains(key))
@@ -408,7 +413,7 @@ private struct Chip: View {
             Text(text)
                 .padding(.horizontal, 14).padding(.vertical, 8)
                 .background(Color.secondary.opacity(0.12))
-                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         }
         .buttonStyle(.plain)
     }
@@ -564,12 +569,12 @@ private struct ChoiceButton: View {
 
     var body: some View {
         Button(action: action) {
-            HStack { Text(choice); Spacer() }
-                .padding()
+            HStack { Text(choice).font(.title2); Spacer() }
+                .padding(.vertical, 20).padding(.horizontal)
                 .background(isSelected ? Color(hex: "5B9BD5").opacity(0.15) : Color.secondary.opacity(0.12))
-                .overlay(RoundedRectangle(cornerRadius: 10, style: .continuous)
+                .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous)
                     .stroke(isSelected ? Color(hex: "5B9BD5") : .clear, lineWidth: 2))
-                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         }
         .buttonStyle(.plain)
         .scaleEffect(isPressed ? 0.96 : 1.0)
@@ -604,14 +609,15 @@ private struct LearnCard: View {
                             .accessibilityLabel("Hear \(row.term)")
                         }
                         VStack(alignment: .leading, spacing: 2) {
-                            Text(row.term).font(.body.weight(.semibold))
+                            Text(row.term).font(.title3.weight(.semibold))
                             if !row.meaning.isEmpty {
-                                Text(row.meaning).font(.subheadline).foregroundStyle(.secondary)
+                                Text(row.meaning).font(.body).foregroundStyle(.secondary)
                             }
                         }
                     }
                 }
-                Button("Start the quiz", action: start).buttonStyle(.borderedProminent)
+                Button(action: start) { Text("Start the quiz").frame(maxWidth: .infinity) }
+                    .buttonStyle(.borderedProminent).controlSize(.extraLarge).padding(.top, 8)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
