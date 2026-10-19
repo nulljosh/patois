@@ -1,4 +1,4 @@
-# Patois loop handoff (2026-10-05, 18:00)
+# Patois loop handoff (2026-10-18, evening)
 
 ## What the loop is
 
@@ -6,17 +6,21 @@ Self-paced loop building Patois alongside Cruise. Each round: 1) Cruise health (
 
 ## Where things stand
 
-Cruise at 470k XP (goal 500k by end of day then 1M), watchdog restart 5s, streak guard plays language after 6pm zero-XP, switched to Polish default (1,307 XP/hr vs chess 522), disk cleaned to 6.9GB. Patois expanded to 165+ courses with Tatoeba CC-BY sentences ordered by Cruise vocabulary: Greek/Polish 120 units each, Hindi 55, Japanese 49, Korean 43, French 36. Chess puzzles added (195 Lichess CC0 puzzles, FEN board on iOS/macOS), 13 units, every one replayed with python-chess. ATTRIBUTION.md outdated: restored Hindi/Japanese/Korean/French/Arabic drill units contradict the "no third-party app content" claim. Greek/Polish packs held off catalog pending fact-check. Duolingo-captured drills were removed earlier; pre-existing drill units restored per Josh's request.
+Patois 1.1.6 for iOS and Mac was submitted on 2026-10-18 and is waiting for App Review. The store name flips from Lexly to Patois when Apple approves it. Build 202610181930 carries the Pat the macaw icon, lesson animations (progress bar, shake on a miss, combo, confetti, XP on the summary), a full-window lesson layout and a landing page with the live app on it. The teach-first lessons (intro, worked examples with audio, practice, recap) are live for Spanish units 1 to 5. The Sign in with Apple failure message now carries the error code. The failure does not reproduce on my side, so it needs a real phone.
+
+Cruise was at 602,884 XP with a 193-day streak and the runner alive. Balance mode had been picking the least-complete course; every pick now has to pass a live XP-rate check. Still open on Joshua: `sudo pmset -a autorestart 1`.
 
 ## Next, in order
 
-1. Step-by-step chess lines: a combination is one question about its first move today; an exercise where the board answers back would teach the follow-up
-2. ATTRIBUTION.md still says no third-party app content is used; the restored Hindi/Japanese/Korean/French/Arabic drill units contradict that
-3. Cruise gift/chest selectors once Duolingo shows one (gift-sent and chest-open log entries)
-4. Russian (speaking exercises) and Arabic (characterMatch pair-select) earn no XP; investigate if worth fixing
-5. Chess course stub units (6 hand-written multiple-choice units) could use more original content
+1. Teach-first lessons for the other courses and the layout rehaul (only Spanish units 1 to 5 teach first today)
+2. Sign in with Apple checked on a real phone
+3. Step-by-step chess lines: a combination is one question about its first move today; an exercise where the board answers back would teach the follow-up
+4. ATTRIBUTION.md still says no third-party app content is used; the restored Hindi/Japanese/Korean/French/Arabic drill units contradict that
+5. Cruise gift/chest selectors once Duolingo shows one (gift-sent and chest-open log entries)
+6. Russian (speaking exercises) and Arabic (characterMatch pair-select) earn no XP; investigate if worth fixing
+7. Chess course stub units (6 hand-written multiple-choice units) could use more original content
 
-Done since the handoff was written: Polish, Greek, Turkish and Swedish fact-checked and in the catalog (2026-10-05); Android draws the chess board (compiles with JDK 17 at /opt/homebrew/opt/openjdk@17).
+Done since the 2026-10-05 handoff: Polish, Greek, Turkish and Swedish fact-checked and in the catalog; Android draws the chess board (compiles with JDK 17 at /opt/homebrew/opt/openjdk@17); renamed to Patois (2026-10-17); teach-first lessons and build 202610181930 (2026-10-18).
 
 ## Restart prompt
 

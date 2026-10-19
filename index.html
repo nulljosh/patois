@@ -1,607 +1,244 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<script>document.documentElement.classList.add('js')</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
-<title>Patois — Learn anything</title>
-<meta name="description" content="9,500 exercises across 122 courses — 14 languages plus code, computer science, engineering, math, science and more. Spaced repetition, streaks and speech recognition, free on web, iOS and macOS.">
-<link rel="canonical" href="https://tonchi.jaybulb.com">
-<meta name="apple-itunes-app" content="app-id=6783501611">
-<link rel="icon" href="/assets/icon.svg?v=2">
-<link rel="apple-touch-icon" href="/assets/icon.svg?v=2">
-<link rel="stylesheet" href="https://jaybulb.com/tokens.css">
-<link rel="stylesheet" href="/css/neutral.css?v=20261004b">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Patois">
-<meta property="og:url" content="https://tonchi.jaybulb.com">
-<meta property="og:title" content="Patois — Learn anything">
-<meta property="og:description" content="9,500 exercises across 122 courses: languages, code, computer science, engineering, math and science. Spaced repetition, streaks and speech recognition. Free on web, iOS and macOS.">
-<meta property="og:image" content="https://tonchi.jaybulb.com/assets/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:locale" content="en_CA">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Patois — Learn anything">
-<meta name="twitter:description" content="9,500 exercises across 122 courses: languages, code, computer science, engineering, math and science. Free on web, iOS and macOS.">
-<meta name="twitter:image" content="https://tonchi.jaybulb.com/assets/og-image.jpg">
-<style>
-  :root {
-    --bg-primary: var(--bg);
-    --bg-secondary: var(--bg2);
-    --text-primary: var(--text);
-    --text-secondary: var(--text2);
-    --text-muted: var(--text3);
-    --accent: var(--clay);
-    --link: var(--clay-deep);
-    --border: var(--border);
-    --success: #5c6f1f;
-    --card-bg: var(--bg);
-    --btn-fg: #ffffff;
-    --header-bg: rgba(255,255,255,0.85);
-    --pill-bg: var(--bg);
-    color-scheme: light;
-    --font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --radius-pill: 999px;
-    --ease: cubic-bezier(0.4, 0, 0.2, 1);
-    --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg-primary: var(--bg);
-      --bg-secondary: var(--bg2);
-      --text-primary: var(--text);
-      --text-secondary: var(--text2);
-      --text-muted: var(--text3);
-      --accent: var(--clay);
-      --link: var(--clay);
-      --border: var(--border);
-      --success: #9bb04f;
-      --card-bg: var(--bg2);
-      --btn-fg: #111;
-      --header-bg: rgba(17,17,17,0.85);
-      --pill-bg: var(--bg2);
-      color-scheme: dark;
-    }
-  }
-  .skip-link { position: absolute; left: -9999px; top: 0; z-index: 200; background: var(--text-primary); color: var(--btn-fg); padding: 0.75rem 1.25rem; border-radius: 0 0 8px 0; text-decoration: none; }
-  .skip-link:focus { left: 0; }
-  picture { display: contents; }
-  /* width/height attributes give the browser an aspect ratio (good, kills CLS), but a
-     CSS width with no height:auto then leaves the attribute height in force -- which
-     rendered the 1120x2000 hero shots at full height and pushed the copy off-screen. */
-  img { max-width: 100%; height: auto; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg-primary); color: var(--text-primary); font-family: var(--font); overflow-x: hidden; }
-  a { color: var(--link, var(--accent)); }
-  img { max-width: 100%; display: block; }
 
-  @keyframes lxFadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
-
-  .eyebrow { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-bottom: 0.75rem; }
-  h1, h2 { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.01em; margin: 0; }
-  .btn { text-decoration: none; font-size: 0.9375rem; font-weight: 500; padding: 0.875rem 1.75rem; border-radius: var(--radius-pill); display: inline-block; transition: transform 0.2s var(--spring), opacity 0.2s var(--ease); }
-  .btn-primary { background: var(--text-primary); color: var(--btn-fg); }
-  .btn-primary:hover { transform: translateY(-2px); }
-  .btn-secondary { color: var(--text-primary); border: 1px solid var(--border); }
-  .btn-secondary:hover { opacity: 0.7; }
-  .btn-appstore { display: inline-flex; align-items: center; gap: 0.55rem; background: var(--text-primary); color: var(--btn-fg); text-decoration: none; padding: 0.7rem 1.4rem; border-radius: var(--radius-pill); transition: transform 0.2s var(--spring); }
-  .btn-appstore:hover { transform: translateY(-2px); }
-  .btn-appstore svg { width: 20px; height: 20px; flex-shrink: 0; }
-  .btn-appstore .as-label { display: flex; flex-direction: column; line-height: 1.15; text-align: left; }
-  .btn-appstore .as-small { font-size: 0.625rem; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.75; }
-  .btn-appstore .as-big { font-size: 0.9375rem; font-weight: 600; letter-spacing: -0.01em; }
-
-  header { position: sticky; top: 0; z-index: 100; background: var(--header-bg); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border-bottom: 1px solid var(--border); }
-  .header-inner { max-width: 1080px; margin: 0 auto; padding: 0.9rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
-  .logo { display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; }
-  .logo img { border-radius: 6px; }
-  nav.main-nav { display: flex; align-items: center; gap: 2rem; }
-  nav.main-nav a { text-decoration: none; color: var(--text-secondary); font-size: 0.875rem; font-weight: 500; }
-  nav.main-nav a:hover { color: var(--text-primary); }
-  .header-cta { background: var(--text-primary); color: var(--btn-fg); font-size: 0.875rem; font-weight: 500; padding: 0.55rem 1.25rem; border-radius: var(--radius-pill); text-decoration: none; transition: opacity 0.2s var(--ease); }
-  .header-cta:hover { opacity: 0.85; }
-
-  .hero { max-width: 1080px; margin: 0 auto; padding: 5rem 1.5rem 4rem; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: center; }
-  .hero-copy { animation: lxFadeUp 0.8s var(--ease) both; }
-
-  /* The headline says "learn anything" in a new language every few seconds -- the
-     same promise, demonstrated rather than described. Falls back to plain text if
-     the script never runs. */
-  .lx-cycle { display: inline-grid; vertical-align: bottom; }
-  .lx-cycle .lx-word {
-    grid-area: 1 / 1; color: var(--link, var(--accent));
-    animation: lxWordIn 0.5s var(--ease) both;
-  }
-  @keyframes lxWordIn {
-    from { opacity: 0; transform: translateY(0.35em); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .lx-cycle .lx-word { animation: none; }
-  }
-  .hero h1 { font-size: clamp(2.75rem, 5.5vw, 4.25rem); line-height: 1.05; margin-bottom: 1.25rem; }
-  .hero p { font-size: 1.125rem; line-height: 1.6; color: var(--text-secondary); max-width: 460px; margin: 0 0 2rem; }
-  .hero-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.75rem; }
-
-  .hero-art { position: relative; display: flex; justify-content: center; animation: lxFadeUp 0.9s var(--ease) 0.1s both; }
-  .hero-art .glow { position: absolute; width: 340px; height: 340px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 18%, transparent) 0%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%,-50%); }
-  .hero-art img { position: relative; width: 240px; height: auto; border-radius: 28px; box-shadow: 0 30px 60px rgba(0,0,0,0.18); border: 1px solid var(--border); }
-  .hero-art img.shot-1 { transform: rotate(-3deg); }
-  .hero-art img.shot-2 { transform: rotate(4deg) translate(-70px, 40px); }
-
-  section { max-width: 1080px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
-  .section-head { max-width: 480px; margin: 0 auto 3rem; text-align: center; }
-  .section-head h2 { font-size: 2rem; }
-
-  .icon-tile { width: 44px; height: 44px; border-radius: 12px; background: rgba(91,155,213,0.12); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; color: var(--link, var(--accent)); }
-  .icon-tile svg { width: 22px; height: 22px; }
-
-  .features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
-  .card { padding: 1.5rem; background: var(--bg-primary); border: 1px solid var(--border); border-radius: 14px; }
-  .card-title { font-weight: 600; font-size: 1.0625rem; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
-  .card-desc { font-size: 0.875rem; line-height: 1.55; color: var(--text-secondary); }
-
-  #courses { background: var(--bg-secondary); padding: 5rem 0; max-width: none; }
-  .courses-inner { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-  .courses-inner h2 { font-size: 2rem; margin-bottom: 1rem; }
-  .courses-inner p { font-size: 1rem; line-height: 1.6; color: var(--text-secondary); max-width: 420px; margin: 0 0 1.75rem; }
-  .category-pills { display: flex; flex-wrap: wrap; gap: 0.6rem; }
-  .category-pill { padding: 0.5rem 1rem; background: var(--pill-bg); border: 1px solid var(--border); border-radius: var(--radius-pill); font-size: 0.8125rem; font-weight: 500; color: var(--text-secondary); }
-  .courses-shot { display: flex; justify-content: center; }
-  .courses-shot img { width: 220px; border-radius: 24px; box-shadow: 0 24px 48px rgba(0,0,0,0.15); border: 1px solid var(--border); }
-
-  .platforms-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-  .platform-name { font-weight: 600; font-size: 1.0625rem; letter-spacing: -0.01em; }
-  .platform-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
-  .badge { padding: 0.15rem 0.5rem; border-radius: var(--radius-pill); font-size: 0.6875rem; font-weight: 700; }
-  .badge-live { background: rgba(92,111,31,0.1); color: var(--success); }
-  .badge-pending { background: rgba(26,26,26,0.06); color: var(--text-muted); }
-  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; max-width: 1100px; margin: 0 auto; padding: 0 2rem 5rem; }
-  .stat { text-align: center; }
-  .stat-num { font-family: var(--font-display); font-size: 2.25rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; }
-  .stat-label { font-size: 0.8125rem; color: var(--text-secondary); margin-top: 0.35rem; }
-  .hero-note { font-size: 0.8125rem; color: var(--text-muted); margin-top: 0.85rem; }
-  .practice-cta { text-align: center; margin: 0 auto 2rem; }
-  .practice-shot { max-width: 760px; margin: 0 auto 3rem; }
-  .practice-shot picture { display: block; }
-  .practice-shot img { width: 100%; height: auto; display: block; border: 1px solid var(--border); border-radius: 14px; }
-  .types-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; }
-  .type-row { display: grid; grid-template-columns: 180px 1fr; gap: 1.5rem; padding: 1.25rem 0; border-top: 1px solid var(--border); }
-  .type-row:last-child { border-bottom: 1px solid var(--border); }
-  .type-name { font-weight: 600; font-size: 0.9375rem; margin: 0; }
-  .type-desc { color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.6; }
-  .prose { max-width: 640px; margin: 0 auto; color: var(--text-secondary); font-size: 1rem; line-height: 1.7; text-align: center; }
-  .prose a { color: var(--link, var(--accent)); }
-  .faq-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
-  .faq-q { font-weight: 600; font-size: 0.9375rem; margin: 0 0 0.5rem; }
-  .faq-a { color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.6; }
-  @media (max-width: 720px) {
-    .stats { grid-template-columns: repeat(2, 1fr); }
-    .type-row { grid-template-columns: 1fr; gap: 0.35rem; }
-    .faq-grid { grid-template-columns: 1fr; }
-  }
-  .platform-detail { font-size: 0.8125rem; color: var(--text-muted); }
-
-  /* Footer directory: tagline rule, four columns, two-by-two on phones. */
-  footer { padding: 0 0 3rem; text-align: center; font-size: .8125rem; color: var(--text-muted); }
-  footer .foot-rule { display: flex; align-items: center; gap: 16px; max-width: 880px; margin: 0 auto; padding: 8px 1.5rem 24px; color: var(--text-primary); font-size: .6875rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 500; }
-  footer .foot-rule::before { content: ""; order: 1; flex: 1; height: 1px; background: color-mix(in srgb, var(--text-muted) 35%, transparent); }
-  footer .foot-rule > :first-child { order: 0; }
-  footer .foot-rule > :last-child { order: 2; }
-  .foot-dir { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px 24px; max-width: 880px; margin: 0 auto; padding: 0 1.5rem 28px; text-align: left; }
-  .foot-col h3 { margin: 0 0 8px; font-size: .75rem; font-weight: 600; color: var(--text-primary); letter-spacing: .02em; }
-  .foot-col ul { list-style: none; margin: 0; padding: 0; }
-  .foot-col a { position: relative; display: inline-block; padding: 5px 0; color: var(--text-muted); text-decoration: none; font-size: .8125rem; line-height: 1.35; }
-  .foot-col a::after { content: ""; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 100%; height: 44px; min-width: 44px; }
-  .foot-col a:hover { color: var(--text-primary); text-decoration: underline; }
-  .foot-bar { max-width: 880px; margin: 0 auto; padding: 18px 1.5rem 0; border-top: 1px solid color-mix(in srgb, var(--text-muted) 35%, transparent); }
-  .foot-meta { margin: 0; color: var(--text-muted); font-size: .78rem; line-height: 1.9; }
-  .foot-meta a { color: var(--text-muted); }
-  @media (max-width: 700px) { .foot-dir { grid-template-columns: repeat(2, 1fr); } footer .foot-rule { font-size: .5625rem; letter-spacing: .14em; gap: 10px; } }
-
-  @media (max-width: 1000px) {
-    nav.main-nav { display: none; }
-    .hero { grid-template-columns: 1fr; padding-top: 3rem; }
-    .hero-art { margin-top: 2rem; }
-    .features-grid { grid-template-columns: repeat(2, 1fr); }
-    .courses-inner { grid-template-columns: 1fr; }
-    .courses-shot { order: -1; }
-    .platforms-grid { grid-template-columns: 1fr; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
-  }
-</style>
-<script>
-// ponytail: UA sniff, good enough for a mockup. iphone is the default. ?embed = app only, for the landing demo frame.
-(function(u,d){d=/Android/.test(u)?'android':/iPhone|iPad/.test(u)?'iphone':/Windows/.test(u)?'windows':/Mac/.test(u)?'mac':'iphone';document.documentElement.dataset.device=d;if(/[?&]embed\b/.test(location.search))document.documentElement.classList.add('embed')})(navigator.userAgent);
-</script>
-<style>
-.embed footer,.embed nav{display:none!important}
-@media (prefers-reduced-motion: no-preference) {
-  html.js .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease-out, transform .6s ease-out; }
-  html.js .reveal.in-view { opacity: 1; transform: translateY(0); }
-}
-</style>
-</head>
 <body>
-
 <a href="#main" class="skip-link">Skip to content</a>
+
 <header>
-  <div class="header-inner">
-    <div class="logo">
-      <img src="/assets/icon.svg?v=2" alt="" width="24" height="24">
+  <div class="wrap bar">
+    <a class="logo" href="/" aria-label="Patois home">
+      <img src="/assets/pat.svg" alt="" width="32" height="32">
       Patois
-    </div>
-    <nav class="main-nav">
+    </a>
+
+    <nav aria-label="Main navigation">
       <a href="#features">Features</a>
       <a href="#courses">Courses</a>
-      <a href="#practice">Practice</a>
+      <a href="#try">Practice</a>
       <a href="#faq">FAQ</a>
       <a href="#platforms">Platforms</a>
     </nav>
-    <a href="/app/" class="header-cta">Get started</a>
+
+    <a class="btn primary" href="/app/">Get started</a>
   </div>
 </header>
 
-<section class="hero" id="main" tabindex="-1">
-  <div class="hero-copy">
-    <div class="eyebrow">Gamified learning</div>
-    <h1>Learn <span class="lx-cycle" id="lxCycle"><span class="lx-word">anything</span></span>.</h1>
-    <p class="hero-sub">9,500 exercises across 122 courses - 14 languages plus code, computer science, engineering, math, science and more. Spaced repetition, streaks and speech recognition make it stick.</p>
-
-    <div class="hero-actions">
-      <a href="/app/" class="btn btn-primary">Sign up free &rarr;</a>
-      <a href="/app/" class="btn btn-secondary">Sign in</a>
-    </div>
-  </div>
-  <div class="hero-art">
-    <div class="glow"></div>
-    <picture><source srcset="/assets/marketing/catalog.webp" type="image/webp"><img class="shot-1" src="/assets/marketing/catalog.png" alt="Patois course catalog screen" width="1120" height="2000" fetchpriority="high"></picture>
-    <picture><source srcset="/assets/marketing/course.webp" type="image/webp"><img class="shot-2" src="/assets/marketing/course.png" alt="Patois course screen" width="1120" height="2000" fetchpriority="high"></picture>
-  </div>
-</section>
-
-<section class="stats" aria-label="Patois by the numbers">
-  <div class="stat"><div class="stat-num">9,500</div><div class="stat-label">exercises</div></div>
-  <div class="stat"><div class="stat-num">14</div><div class="stat-label">languages</div></div>
-  <div class="stat"><div class="stat-num">128</div><div class="stat-label">courses</div></div>
-  <div class="stat"><div class="stat-num">1,704</div><div class="stat-label">lessons</div></div>
-</section>
-
-<section id="features">
-  <div class="section-head">
-    <div class="eyebrow">Why it sticks</div>
-    <h2>Built to make progress feel good</h2>
-  </div>
-  <div class="features-grid">
-    <div class="card">
-      <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
-      <div class="card-title">Spaced repetition</div>
-      <div class="card-desc">Review queues resurface exactly what you're about to forget, right before you forget it.</div>
-    </div>
-    <div class="card">
-      <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></div>
-      <div class="card-title">Speech recognition</div>
-      <div class="card-desc">Language courses listen back — practice pronunciation out loud, not just multiple choice.</div>
-    </div>
-    <div class="card">
-      <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s6 5.5 6 11a6 6 0 0 1-12 0c0-1.5.5-2.5 1.5-3.8 1 .8 1.5 0 1.3-1C8.4 6.8 9.8 4 12 2z"/></svg></div>
-      <div class="card-title">Streaks &amp; XP</div>
-      <div class="card-desc">Hearts, streaks, and achievements keep a daily habit fun instead of a chore.</div>
-    </div>
-    <div class="card">
-      <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9c-.16 0-.32.01-.47.03A6 6 0 0 0 6 12.5a4.5 4.5 0 0 0 .5 9h11z"/></svg></div>
-      <div class="card-title">Synced everywhere</div>
-      <div class="card-desc">Email/password auth syncs progress across web, iOS, and macOS in real time.</div>
-    </div>
-  </div>
-</section>
-
-<section id="courses">
-  <div class="courses-inner">
+<main class="wrap">
+  <section class="hero" id="main" tabindex="-1">
     <div>
-      <div class="eyebrow">One catalog, every subject</div>
-      <h2>40+ courses, one streak.</h2>
-      <p>Switch between a new language and a BC curriculum masterclass without losing your XP or your streak.</p>
-      <div class="category-pills">
-        <div class="category-pill">Languages</div>
-        <div class="category-pill">Programming</div>
-        <div class="category-pill">Math</div>
-        <div class="category-pill">Science</div>
-        <div class="category-pill">School</div>
-        <div class="category-pill">Skills</div>
+      <p class="eyebrow">Learn a little every day</p>
+      <h1>Learn the way people really talk.</h1>
+      <p class="lead">
+        9,500 exercises across 128 courses: 18 languages and
+        110 other courses covering code, computer science,
+        engineering, math, science and more.
+        Hear it, say it, and keep your streak.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="/app/">Sign up free &rarr;</a>
+        <a class="btn ghost" href="#try">Try a lesson</a>
       </div>
     </div>
-    <div class="courses-shot">
-      <picture><source srcset="/assets/marketing/catalog.webp" type="image/webp"><img src="/assets/marketing/catalog.png" alt="Patois subjects and course list" width="1120" height="2000" loading="lazy" decoding="async"></picture>
-    </div>
-  </div>
-</section>
 
-<section id="practice">
-  <div class="section-head">
-    <div class="eyebrow">More than multiple choice</div>
-    <h2>Five ways to practise</h2>
-  </div>
-  <div class="practice-cta">
-    <a href="/app/" class="btn btn-primary">Sign up and play &rarr;</a>
-  </div>
-  <div class="practice-shot">
-    <picture><source srcset="/assets/marketing/lesson.webp" type="image/webp"><img src="/assets/marketing/lesson.png" alt="A Patois matching-pairs exercise in a Spanish lesson" width="1240" height="994" loading="lazy" decoding="async"></picture>
-  </div>
-  <div class="types-list">
-    <div class="type-row">
-      <h3 class="type-name">Translate</h3>
-      <div class="type-desc">Pick the right translation, or say it out loud - language courses accept your voice as the answer.</div>
-    </div>
-    <div class="type-row">
-      <h3 class="type-name">Word bank</h3>
-      <div class="type-desc">Build the sentence from scattered words, with decoys mixed in so word order actually has to be right.</div>
-    </div>
-    <div class="type-row">
-      <h3 class="type-name">Fill in the blank</h3>
-      <div class="type-desc">One word removed from a real sentence. Tests the word in context instead of on a flashcard.</div>
-    </div>
-    <div class="type-row">
-      <h3 class="type-name">Matching pairs</h3>
-      <div class="type-desc">Tap four sentences to their translations. Fast, and it catches the ones you only half know.</div>
-    </div>
-    <div class="type-row">
-      <h3 class="type-name">Listening</h3>
-      <div class="type-desc">Type what you hear, spoken in the course's own language. Replay it as many times as you need.</div>
-    </div>
-  </div>
-</section>
+    <img
+      class="pat"
+      src="/assets/pat.svg"
+      alt="Pat, the Patois macaw"
+      width="400"
+      height="400"
+      fetchpriority="high"
+    >
+  </section>
 
-<section id="sentences">
-  <div class="section-head">
-    <div class="eyebrow">Where the sentences come from</div>
-    <h2>Written by people, not generated</h2>
-  </div>
-  <p class="prose">
-    Language exercises are built from the <a href="https://tatoeba.org" target="_blank" rel="noopener">Tatoeba Project</a>,
-    an open collection of sentences written and translated by volunteers since 2006. Lessons are ordered by how common the
-    vocabulary actually is, so the first unit teaches words you will genuinely hear. Tatoeba is licensed CC-BY 2.0 FR and
-    is <a href="https://github.com/nulljosh/tonchi/blob/main/ATTRIBUTION.md" target="_blank" rel="noopener">credited in full</a>.
-  </p>
-</section>
+  <section class="stats" aria-label="Patois by the numbers">
+    <div class="stat">
+      <div class="stat-num">9,500</div>
+      <div class="stat-label">Exercises</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">18</div>
+      <div class="stat-label">Languages</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">128</div>
+      <div class="stat-label">Courses</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">1,704</div>
+      <div class="stat-label">Lessons</div>
+    </div>
+  </section>
 
-<section id="faq">
-  <div class="section-head">
-    <div class="eyebrow">Before you start</div>
-    <h2>Questions</h2>
-  </div>
-  <div class="faq-grid">
-    <div class="card">
-      <h3 class="faq-q">Is it free?</h3>
-      <div class="faq-a">Yes. Every course and every exercise is free, on all three platforms.</div>
-    </div>
-    <div class="card">
-      <h3 class="faq-q">Do I need an account?</h3>
-      <div class="faq-a">Yes, and it is free. An account keeps your streak, XP and review queue in sync across your devices.</div>
-    </div>
-    <div class="card">
-      <h3 class="faq-q">How does review work?</h3>
-      <div class="faq-a">A real SM-2 spaced-repetition schedule. Each exercise gets its own interval that stretches as you keep getting it right, and resets when you don't.</div>
-    </div>
-    <div class="card">
-      <h3 class="faq-q">Is the source available?</h3>
-      <div class="faq-a">All of it. Patois is MIT licensed and the full repository, including the course generator, is on GitHub.</div>
-    </div>
-  </div>
-</section>
+  <section id="features">
+    <h2>Built to make progress feel good.</h2>
+    <p class="lead">
+      Short, practical lessons designed to help you learn
+      and remember what matters.
+    </p>
 
-<section id="platforms">
-  <div class="section-head">
-    <div class="eyebrow">Everywhere you learn</div>
-    <h2>One account, every device</h2>
-  </div>
-  <div class="platforms-grid">
-    <div class="card">
-      <div class="platform-row">
-        <div class="platform-name">Web</div>
-        <div class="badge badge-live">Live</div>
-      </div>
-      <div class="platform-detail">tonchi.jaybulb.com</div>
-    </div>
-    <div class="card">
-      <div class="platform-row">
-        <div class="platform-name">iOS</div>
-        <div class="badge badge-live">Live</div>
-      </div>
-      <div class="platform-detail">iPhone &amp; iPad &middot; App Store</div>
-    </div>
-    <div class="card">
-      <div class="platform-row">
-        <div class="platform-name">macOS</div>
-        <div class="badge badge-live">Live</div>
-      </div>
-      <div class="platform-detail">Mac &middot; App Store</div>
-    </div>
-  </div>
-</section>
+    <div class="grid">
+      <article class="card">
+        <h3>Spaced repetition</h3>
+        <p>
+          Review words and concepts again to reinforce what
+          you've learned and improve long-term recall.
+        </p>
+      </article>
 
+      <article class="card">
+        <h3>Hear it and say it</h3>
+        <p>
+          Listen to phrases, practise pronunciation, and
+          build confidence beyond multiple-choice questions.
+        </p>
+      </article>
 
-<style>
-#install-anywhere{padding:5rem 0;border-top:1px solid color-mix(in srgb, currentColor 14%, transparent);}
-#install-anywhere .xp-wrap{max-width:960px;margin:0 auto;padding:0 1.5rem;}
-#install-anywhere h2{font-size:clamp(1.6rem,3.4vw,2.4rem);margin:0 0 .6rem;letter-spacing:-.02em;}
-#install-anywhere .xp-lead{max-width:46ch;margin:0 0 2.5rem;opacity:.7;line-height:1.55;}
-#install-anywhere .xp-grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
-#install-anywhere .xp-card{background:color-mix(in srgb, currentColor 4%, transparent);border:1px solid color-mix(in srgb, currentColor 14%, transparent);border-radius:12px;padding:1.25rem;display:flex;flex-direction:column;gap:.5rem;}
-#install-anywhere .xp-card h3{margin:0;font-size:1rem;letter-spacing:-.01em;}
-#install-anywhere .xp-card p{margin:0;font-size:.9rem;line-height:1.5;opacity:.7;flex:1;}
-#install-anywhere .xp-card a{margin-top:.5rem;font-size:.875rem;font-weight:500;color:var(--accent,currentColor);text-decoration:none;}
-#install-anywhere .xp-card a:hover{text-decoration:underline;}
-</style>
+      <article class="card">
+        <h3>Streaks and XP</h3>
+        <p>
+          Earn experience, maintain a daily streak, and
+          make learning a habit.
+        </p>
+      </article>
 
-<section id="install-anywhere">
-  <div class="xp-wrap">
-    <h2>Install it anywhere.</h2>
-    <p class="xp-lead">Patois runs on every platform. On Windows, Linux and Android it installs straight from the browser - no store, no download, no runtime. It gets a real window, its own icon, and keeps working offline.</p>
-    <div class="xp-grid">
-    <div class="xp-card">
-      <h3>iPhone &amp; iPad</h3>
-      <p>A native app, not a wrapped web page.</p>
-      <a href="https://apps.apple.com/app/id6783501611">App Store &rarr;</a>
+      <article class="card">
+        <h3>Learn across devices</h3>
+        <p>
+          Use Patois on supported Apple devices and the web.
+          Sign in where supported to sync your progress.
+        </p>
+      </article>
     </div>
-    <div class="xp-card">
-      <h3>Mac</h3>
-      <p>Native, universal binary. Runs on Apple silicon and Intel.</p>
-      <a href="https://apps.apple.com/app/id6783501611">App Store &rarr;</a>
+  </section>
+
+  <section id="try">
+    <h2>Try a lesson right here.</h2>
+    <p class="lead">Explore the app, not just a screenshot.</p>
+
+    <div class="app">
+      <iframe
+        src="/app/?embed"
+        title="Interactive Patois app demo"
+        loading="lazy"
+      ></iframe>
     </div>
-    <div class="xp-card">
-      <h3>Windows</h3>
-      <p>Open the web app in Edge or Chrome, then <strong>Install Patois</strong> from the address bar. It lands in the Start Menu like any other app.</p>
-      <a href="https://tonchi.jaybulb.com">Open &amp; install &rarr;</a>
+  </section>
+
+  <section id="courses">
+    <h2>128 courses. More to explore.</h2>
+    <p class="lead">
+      From everyday conversations to coding, mathematics
+      and science, find something worth learning.
+    </p>
+
+    <div class="tags">
+      <span>Spanish</span>
+      <span>French</span>
+      <span>German</span>
+      <span>Italian</span>
+      <span>Portuguese</span>
+      <span>Japanese</span>
+      <span>Chinese</span>
+      <span>Korean</span>
+      <span>Russian</span>
+      <span>Arabic</span>
+      <span>Hindi</span>
+      <span>Dutch</span>
+      <span>Python</span>
+      <span>Swift</span>
+      <span>Computer science</span>
+      <span>Engineering</span>
+      <span>Calculus</span>
+      <span>Physics</span>
+      <span>Chess</span>
     </div>
-    <div class="xp-card">
-      <h3>Android</h3>
-      <p>Open the web app in Chrome, then <strong>Add to Home screen</strong>. Full screen, no browser chrome, works offline.</p>
-      <a href="https://tonchi.jaybulb.com">Open &amp; install &rarr;</a>
+
+    <p style="margin-top: 24px">
+      <a class="btn primary" href="/app/">Explore all courses &rarr;</a>
+    </p>
+  </section>
+
+  <section id="platforms">
+    <h2>Learn wherever you are.</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>iPhone</h3>
+        <p>Practise on the go with the Patois iOS app.</p>
+        <p style="margin-top: 12px">
+          <a href="https://apps.apple.com/app/id6783501611">
+            Get the iPhone app &rarr;
+          </a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Mac</h3>
+        <p>Keep learning on your Mac with the Patois app.</p>
+        <p style="margin-top: 12px">
+          <a href="https://apps.apple.com/app/id6783501611">
+            Find Patois on the App Store &rarr;
+          </a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Web</h3>
+        <p>Start learning in your browser.</p>
+        <p style="margin-top: 12px">
+          <a href="/app/">Open Patois on the web &rarr;</a>
+        </p>
+      </article>
     </div>
-    <div class="xp-card">
-      <h3>Linux</h3>
-      <p>Same as Windows &mdash; install the web app from Chrome or Chromium and it runs in its own window.</p>
-      <a href="https://tonchi.jaybulb.com">Open &amp; install &rarr;</a>
-    </div>
-    <div class="xp-card">
-      <h3>Web</h3>
-      <p>Nothing to install. The same app, in any modern browser.</p>
-      <a href="https://tonchi.jaybulb.com">Open the web app &rarr;</a>
-    </div>
-    </div>
-  </div>
-</section>
+  </section>
+
+  <section id="faq">
+    <h2>Questions.</h2>
+
+    <details>
+      <summary>Is Patois free?</summary>
+      <p>
+        Patois is presented as free to use. Check the app
+        for current account and feature requirements.
+      </p>
+    </details>
+
+    <details>
+      <summary>Do I need an account?</summary>
+      <p>
+        Account requirements can differ between the web and
+        native apps. Open your preferred version to get started.
+      </p>
+    </details>
+
+    <details>
+      <summary>What can I learn?</summary>
+      <p>
+        Patois offers language learning alongside courses
+        in areas such as programming, computer science,
+        engineering, mathematics and science.
+      </p>
+    </details>
+
+    <details>
+      <summary>Who is Pat?</summary>
+      <p>
+        Pat is the Patois macaw, the friendly mascot that
+        accompanies your learning journey.
+      </p>
+    </details>
+  </section>
+</main>
 
 <footer>
-  <div class="foot-rule" aria-hidden="true"><span>Patois</span><span>Learn anything.</span></div>
-  <nav class="foot-dir" aria-label="Footer">
-    <div class="foot-col">
-      <h3>Patois</h3>
-      <ul>
-        <li><a href="/app/">Open the web app</a></li>
-        <li><a href="https://apps.apple.com/app/id6783501611" target="_blank" rel="noopener">App Store</a></li>
-        <li><a href="#features">Features</a></li>
-      </ul>
-    </div>
-    <div class="foot-col">
-      <h3>Explore</h3>
-      <ul>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#practice">Practice</a></li>
-        <li><a href="#sentences">Sentences</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#platforms">Platforms</a></li>
-      </ul>
-    </div>
-    <div class="foot-col">
-      <h3>Developers</h3>
-      <ul>
-        <li><a href="https://github.com/nulljosh/tonchi" target="_blank" rel="noopener">Source</a></li>
-        <li><a href="https://github.com/nulljosh/tonchi/blob/main/docs/API.md" target="_blank" rel="noopener">API</a></li>
-        <li><a href="https://github.com/nulljosh/tonchi/blob/main/docs/ARCHITECTURE.md" target="_blank" rel="noopener">Architecture</a></li>
-        <li><a href="https://github.com/nulljosh/tonchi/blob/main/ATTRIBUTION.md" target="_blank" rel="noopener">Sentence credits</a></li>
-        <li><a href="https://github.com/nulljosh/tonchi/issues" target="_blank" rel="noopener">Report a bug</a></li>
-        <li><a href="https://jaybulb.com/docs.html#lexly">Docs</a></li>
-      </ul>
-    </div>
-    <div class="foot-col">
-      <h3>Project</h3>
-      <ul>
-        <li><a href="/privacy.html">Privacy</a></li>
-        <li><a href="/support.html">Support</a></li>
-        <li><a href="https://github.com/nulljosh/tonchi/blob/main/LICENSE" target="_blank" rel="noopener">License (MIT)</a></li>
-        <li><a href="https://jaybulb.com">Portfolio</a></li>
-        <li><a href="#main">Back to top</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="foot-bar">
-    <p class="foot-meta">Patois &middot; MIT License &middot; &copy; 2026 Joshua Trommel &middot; Made with <span class="heart">&hearts;</span> in Vancouver, BC</p>
+  <div class="wrap">
+    <a href="/privacy.html">Privacy</a>
+    <a href="/support.html">Support</a>
+    <a href="https://apps.apple.com/app/id6783501611">App Store</a>
+
+    <p>
+      Patois, by Joshua Trommel. Sentences from Tatoeba
+      (CC BY 2.0 FR). Chess puzzles from Lichess (CC0).
+    </p>
   </div>
 </footer>
-
-<script>
-// Cycle the headline word through the languages Patois teaches. Pure decoration:
-// if this never runs the headline still reads "Learn anything."
-(function () {
-  var host = document.getElementById('lxCycle');
-  if (!host || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var WORDS = [
-    'anything', 'cualquier cosa', 'n\u2019importe quoi', 'irgendetwas', 'qualsiasi cosa',
-    'qualquer coisa', '\u4f55\u3067\u3082', '\uc544\ubb34\uac83\uc774\ub098', '\u4efb\u4f55\u4e8b',
-    '\u0447\u0442\u043e \u0443\u0433\u043e\u0434\u043d\u043e', '\u0623\u064a \u0634\u064a\u0621', 'vad som helst'
-  ];
-  var i = 0;
-  setInterval(function () {
-    i = (i + 1) % WORDS.length;
-    var next = document.createElement('span');
-    next.className = 'lx-word';
-    next.textContent = WORDS[i];
-    host.replaceChildren(next);
-  }, 2600);
-})();
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "SoftwareApplication",
-      "name": "Patois",
-      "applicationCategory": "EducationalApplication",
-      "operatingSystem": "Web, iOS, macOS",
-      "url": "https://tonchi.jaybulb.com",
-      "downloadUrl": "https://apps.apple.com/app/id6783501611",
-      "description": "Gamified learning: 9,500 exercises across 122 courses: languages, code, computer science, engineering, math and science, with spaced repetition, streaks and speech recognition.",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "contentRating": "4+",
-      "author": { "@type": "Person", "name": "Joshua Trommel" },
-      "license": "https://opensource.org/licenses/MIT"
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Is it free?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every course and every exercise is free, on all three platforms." } },
-        { "@type": "Question", "name": "Do I need an account?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it is free. An account keeps your streak, XP and review queue in sync across your devices." } },
-        { "@type": "Question", "name": "How does review work?",
-          "acceptedAnswer": { "@type": "Answer", "text": "A real SM-2 spaced-repetition schedule. Each exercise gets its own interval that stretches as you keep getting it right, and resets when you don't." } },
-        { "@type": "Question", "name": "Is the source available?",
-          "acceptedAnswer": { "@type": "Answer", "text": "All of it. Patois is MIT licensed and the full repository, including the course generator, is on GitHub." } }
-      ]
-    }
-  ]
-}
-</script>
-<script>
-(function(){
-  if (!('IntersectionObserver' in window)) return;
-  document.querySelectorAll('.stats, #features, #courses, #practice, #sentences, #faq, #platforms, #install-anywhere').forEach(function(el){ el.classList.add('reveal'); });
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); } });
-  }, { threshold: 0.15 });
-  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
-
-  var glow = document.querySelector('.hero-art .glow');
-  if (glow && matchMedia('(prefers-reduced-motion: no-preference)').matches) {
-    var ticking = false;
-    addEventListener('scroll', function(){
-      if (!ticking) {
-        requestAnimationFrame(function(){ glow.style.transform = 'translate(-50%,-50%) translateY(' + (scrollY * 0.1) + 'px)'; ticking = false; });
-        ticking = true;
-      }
-    }, { passive: true });
-  }
-})();
-</script>
 </body>
 </html>

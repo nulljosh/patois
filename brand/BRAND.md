@@ -1,20 +1,20 @@
 # Patois brand kit and design system
 
-Patois teaches languages. The mark is a pair of quotation marks.
+a pair of quotation marks: what people actually say
 
 ## The mark
-One bold flat white glyph on an accent gradient tile. No text, no outline, no emblem.
+Pat, flat and facing right, on the blue gradient tile. No text, no outline. `mascot.svg` is the character alone for the app, the lesson-complete screen and the landing.
 
 - `../Patois.icon` is the source of truth (Icon Composer). Light and dark fills are set in it.
 - `../icon.svg` is the flat copy for READMEs (shown at 80 px). `icon-1024.png` is the App Store icon, no alpha.
-- `mark.svg` is the glyph alone in `currentColor` for your own background.
+- Pat's colours: scarlet `#F2493E` head, gold `#FFC53D` chest, blue `#2A74D6` wing, cream `#FFE29A` bill. They belong to the mascot only; the app UI stays blue.
 - Clear space equal to the width of the glyph's thickest stroke. Smallest size 16 px.
 
 ## Colour
 | Role | Value |
 |---|---|
-| Accent | `#d4325e` |
-| Gradient top | `#ff7fa0` |
+| Accent | `#2E6FC2` |
+| Gradient top | `#6FB0F0` |
 | Text | `#1d1d1f` light, `#f5f5f7` dark |
 | Background | `#ffffff` light, `#000000` dark |
 | Surface | `#f5f5f7` light, `#1c1c1e` dark |
