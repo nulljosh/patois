@@ -1,10 +1,10 @@
-# Contributing to lexly
+# Contributing to Patois
 
 ## Setup
 
 ```
-git clone https://github.com/nulljosh/tonchi.git
-cd lexly
+git clone https://github.com/nulljosh/patois.git
+cd patois
 ```
 
 ## Test

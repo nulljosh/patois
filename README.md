@@ -6,7 +6,7 @@
 
 Learn a language, or anything else, five minutes at a time. Streaks, hearts, XP. Web, iOS, macOS and Apple Watch.
 
-Live at [tonchi.jaybulb.com](https://tonchi.jaybulb.com) · [App Store](https://apps.apple.com/app/id6783501611)
+Live at [patois.jaybulb.com](https://patois.jaybulb.com) · [App Store](https://apps.apple.com/app/id6783501611)
 
 <p>
   <img src="screenshots/catalog.png" width="260" alt="Course catalog">

@@ -174,7 +174,7 @@ A gamified language and skills learning app featuring 12 languages plus math, sc
 
 **OpenSubtitles + Tatoeba**: language course generation, CC-BY 2.0 FR license (attribution in landing, iOS settings).
 
-**Web API**: KMP fetches the live catalog from `tonchi.heyitsmejosh.com/content/catalog.json`.
+**Web API**: KMP fetches the live catalog from `patois.jaybulb.com/content/catalog.json`.
 
 ## Gotchas
 

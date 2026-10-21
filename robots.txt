@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://tonchi.jaybulb.com/sitemap.xml
+Sitemap: https://patois.jaybulb.com/sitemap.xml

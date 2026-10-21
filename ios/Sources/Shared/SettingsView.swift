@@ -66,7 +66,7 @@ struct SettingsView: View {
             }
             #endif
             Section {
-                Link("Sentence credits", destination: URL(string: "https://github.com/nulljosh/tonchi/blob/main/ATTRIBUTION.md")!)
+                Link("Sentence credits", destination: URL(string: "https://github.com/nulljosh/patois/blob/main/ATTRIBUTION.md")!)
             } footer: {
                 Text("Language sentences come from the Tatoeba Project, licensed CC-BY 2.0 FR.")
             }

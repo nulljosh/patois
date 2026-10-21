@@ -10,7 +10,7 @@ languages. 40+ courses across languages, programming, math, science, school
 (Pre-Calculus 12, AP Biology 12) and general skills, all on one content schema,
 because the spaced-repetition and gamification mechanics that make lessons stick
 don't care what the subject is. Live at
-[tonchi.heyitsmejosh.com](https://tonchi.heyitsmejosh.com), with native iOS and
+[patois.jaybulb.com](https://patois.jaybulb.com), with native iOS and
 macOS apps sharing progress across platforms so a lesson started on one device
 picks up where it left off on another.
 
