@@ -3,7 +3,7 @@
 > Priority tier 1 (2026-10-17): live blocker, work first. Order: live blockers, ship pushes, active features, portfolio, exploratory. See ~/Documents/Code/LOOP-HANDOFF.md.
 
 ## Rehaul (Joshua 2026-10-17, do first)
-- [ ] UI rehaul: the web landing and the app are ugly. Rebuild on the shared tokens (8 point grid, one radius set, 48 point capsules, SF Pro / Helvetica), the way Airwell was done. No tilted device mockups or frames on the landing, the app itself goes on the page. Then fresh README screenshots.
+- [ ] UI rehaul: the web landing and the app are ugly. Rebuild on the shared tokens (8 point grid, one radius set, 48 point capsules, SF Pro / Helvetica), the way Airwell was done. No tilted device mockups or frames on the landing, the app itself goes on the page. Then fresh README screenshots. (2026-10-21: README shots in screenshots/ still match the live app, which still shows the old blue chat-bubble logo instead of Pat the macaw; retaking before the rehaul changes nothing.)
 - [x] Name: Joshua says Tonchi sucks. Patois is locked on the iOS listing (2026-10-17). Confirm it sticks before moving the subdomain (tonchi.jaybulb.com stays live as the alias). Done 2026-10-21: site, README and store URLs now on patois.jaybulb.com; the pending 1.1.6 app info says Patois and goes live on approval.
 - [x] Stale numbers on the landing: it says 122 courses, the docs say 165. Measure from content/ and fix. Done 2026-10-21: catalog has 125 lesson courses (128 tiles, Biology listed twice, two notes-only masterclasses); landing, README and WHITEPAPER say 125.
 
@@ -99,11 +99,11 @@ closes the "iOS never actually run" gap.
   chemistry, biology, and the rest of the 1-unit packs). Tatoeba does not cover them, so they need
   a different generator or hand authoring.
 - [ ] Deliberately skipped, revisit when there are users: leagues/leaderboards (needs a new table +
-- [ ] **Hero screenshots are stale (show pre-auth-gate catalog).** The landing page marketing
+- [x] (obsolete 2026-10-21: the landing has no screenshots now, it runs the live app in an iframe at /app/?embed) **Hero screenshots are stale (show pre-auth-gate catalog).** The landing page marketing
   images display the course list that authenticated users now see, but a logged-out visitor cannot
   reach this screen (auth gate on renderSubjects). Screenshots need to show what a visitor actually
   encounters (sign-in screen or a sample lesson) or be honest about the login requirement.
-- [ ] **No screenshot of an actual lesson.** Landing page describes five exercise types (multiple-choice,
+- [x] (obsolete 2026-10-21: visitors can open a real lesson in the embedded app) **No screenshot of an actual lesson.** Landing page describes five exercise types (multiple-choice,
   match, cloze, word-bank, listening) but has zero visual proof. One lesson-in-progress screenshot
   would give visitors real sense of what they are learning.
 - [ ] **No social proof.** No testimonials, review scores, user count, or credibility markers.
@@ -467,7 +467,7 @@ and the mock must cover every network refresh path, not just `init`, see talli 7
 - [ ] iOS: login works but no success message / no visual feedback on button tap
 - [ ] iOS: Settings is bare, login provides no actual information or data afterward
 - [ ] iOS: add padding to app icon (or scale the glyph down)
-- [ ] Web landing page: screenshots are basic and mildly stale, refresh them
+- [x] Web landing page: screenshots are basic and mildly stale, refresh them (obsolete 2026-10-21: landing embeds the live app, no screenshots left)
 
 > Resume note, RESOLVED 2026-08-13: the `wip: partial work from /work notes ingest` commit
 > (`9513311`) has now been reviewed and build-verified on both platforms. Its auth changes are
