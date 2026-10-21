@@ -555,7 +555,7 @@ cannot ship under that name regardless of the auth fix.
   macOS 1.1.3 WAITING_FOR_REVIEW. The dashboard rejection badge people keep noticing is this dead
   duplicate, not the real app. App-record deletion is dashboard-only, blocked on an Apple web
   session (`asc web` SRP signin returned HTTP 503 all through 2026-08-19, before the 2FA step).
-- [ ] **`scripts/deploy.sh` verify loop can't catch a stale image.** It md5-checks only
+- [x] **`scripts/deploy.sh` verify loop can't catch a stale image.** Done (verified 2026-10-21: the canary list now checks `assets/marketing/catalog.png`, `course.png` and `assets/og-image.jpg`, all present locally; live catalog.png md5 matches local). It md5-checked only
   `content/catalog.json`, `css/lingo.css`, `js/lingo-app.js`, so the marketing PNGs deployed
   above passed verification while the edge still served the old bytes for ~2 min. Add one image
   to the canary list (the script's own comment already warns that a content-only canary is the
