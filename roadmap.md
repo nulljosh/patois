@@ -627,3 +627,4 @@ The earlier gaps have been addressed:
 - [ ] Very neglected app. Stale name and screenshots on the App Store: live listing is still Lexly 1.1.3 with old screenshots. (screenshots: notes/attachments/2026-10-16/lexly-1.png, notes/attachments/2026-10-16/tonchi-2.png)
 
 ## Ingested 2026-10-21
+- [ ] Still super stale on the App Store (it's Patois now, store still says Lexly). Already tracked above as the stale name and screenshots item; ship the rename and fresh screenshots.
