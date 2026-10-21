@@ -1,4 +1,4 @@
-# Patois loop handoff (2026-10-19, afternoon)
+# Patois loop handoff (2026-10-21, morning)
 
 ## What the loop is
 
@@ -6,6 +6,7 @@ Self-paced loop building Patois alongside Cruise. Each round: 1) Cruise health (
 
 ## Where things stand
 
+- The Patois name is used everywhere users see it: domain, repo links, sitemap and store URLs. Store builds still follow their own review lines.
 patois.jaybulb.com serves 200 now, a Cloudflare Pages custom domain on the lexly-heyitsmejosh project (the project name stays). The store name still flips from Lexly on approval.
 
 Patois 1.1.6 for iOS and Mac was submitted on 2026-10-18 and is waiting for App Review. Checked in App Store Connect on 2026-10-19 morning: iOS 1.1.6 is still WAITING_FOR_REVIEW. The store name flips from Lexly to Patois when Apple approves it. Build 202610181930 carries the Pat the macaw icon, lesson animations (progress bar, shake on a miss, combo, confetti, XP on the summary), a full-window lesson layout and a landing page with the live app on it. The teach-first lessons (intro, worked examples with audio, practice, recap) are live for Spanish units 1 to 5. The Sign in with Apple failure message now carries the error code. The failure does not reproduce on my side, so it needs a real phone.
