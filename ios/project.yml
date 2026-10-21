@@ -14,8 +14,8 @@ options:
 settings:
   base:
     SWIFT_VERSION: "5.9"
-    MARKETING_VERSION: "1.1.5"
-    CURRENT_PROJECT_VERSION: "202608271410"
+    MARKETING_VERSION: "1.1.6"
+    CURRENT_PROJECT_VERSION: "202610210745"
     DEVELOPMENT_TEAM: QMM486NPYC
 
 schemes:
@@ -40,6 +40,8 @@ targets:
       - path: Sources/Shared
       - path: Sources/iOS
       - path: Sources/Resources
+        excludes:
+          - "content/teach/**"  # web-only lessons; their file names clash with content/courses
     dependencies:
       - package: Supabase
         product: Supabase
@@ -69,6 +71,8 @@ targets:
       - path: Sources/Shared
       - path: Sources/macOS
       - path: Sources/Resources
+        excludes:
+          - "content/teach/**"  # web-only lessons; their file names clash with content/courses
     dependencies:
       - package: Supabase
         product: Supabase

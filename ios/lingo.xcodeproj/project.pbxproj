@@ -7,33 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00C347C8C626650FFACC5DD3 /* digital_logic.json in Resources */ = {isa = PBXBuildFile; fileRef = A8B1C0645593DF8A5A5FC9F2 /* digital_logic.json */; };
 		01789627621AF263B1E6C6B2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F214D0F0810B9E696D99BDC /* Models.swift */; };
+		025773120096A07C25705CF2 /* dsp.json in Resources */ = {isa = PBXBuildFile; fileRef = F8E6441EA9FB8D5D7E3043F7 /* dsp.json */; };
+		031C70C7228F995D030EC5E5 /* norwegian.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DC070E5BFD6EEC089B706E6 /* norwegian.json */; };
 		032AEBC42C7E6F3DA3A91693 /* precalc11.json in Resources */ = {isa = PBXBuildFile; fileRef = 879E14E2752370F51B709C91 /* precalc11.json */; };
+		0333B6B0DFE1C1D1E570BF39 /* fortran.json in Resources */ = {isa = PBXBuildFile; fileRef = 5252996124888CAA823768AC /* fortran.json */; };
+		03E2B9FFF0E1107DD7A73C30 /* networking_hardware.json in Resources */ = {isa = PBXBuildFile; fileRef = C2C3C3F51757D1033FD2BBE1 /* networking_hardware.json */; };
+		043518DB37BB15400CD1A0D6 /* vietnamese.json in Resources */ = {isa = PBXBuildFile; fileRef = 340770AC5617610F1867033B /* vietnamese.json */; };
 		045907B630F7999ACB5E5B8C /* korean.json in Resources */ = {isa = PBXBuildFile; fileRef = C1328B3C2F4DE1C280B2CFA8 /* korean.json */; };
+		04AA6F612156E37036CB895F /* databases.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C213E8703F9B0CB69E8BC7E /* databases.json */; };
 		059EC4FE2CDEBD15768E9037 /* LingoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6D04D79CB55B936DBED23841 /* LingoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		05DFAC68F20B38ECBC983CFC /* philosophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 34136C3515C4AA0EE11F7E2F /* philosophy.json */; };
+		05EB852888C962FB3476F19F /* cobol.json in Resources */ = {isa = PBXBuildFile; fileRef = 176FE48268E90D59FD6D3E27 /* cobol.json */; };
+		060A58AAB9C777EAEF197A64 /* zig.json in Resources */ = {isa = PBXBuildFile; fileRef = C20C93230525CAC72B305BCB /* zig.json */; };
 		06DDEAC9DBEEF0109B73C87D /* chess.json in Resources */ = {isa = PBXBuildFile; fileRef = 82D1548A44AF9461019E577B /* chess.json */; };
+		076492F3AA87828A84F23907 /* pcb_design.json in Resources */ = {isa = PBXBuildFile; fileRef = D9E0DB9F450AC5754A415F60 /* pcb_design.json */; };
+		078DB3DCAFFBA0F491E7E71B /* slovenian.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CA95DBF03D4DF91A2F571B3 /* slovenian.json */; };
+		07926F4084A38DFDA0F4EA03 /* csharp.json in Resources */ = {isa = PBXBuildFile; fileRef = 035DA7D9EAECE00879DB5042 /* csharp.json */; };
+		08A1E43C93E95145AF1CD5EF /* mobile_hardware.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A3A342298A88EDA663AEFD /* mobile_hardware.json */; };
 		09C2CE2E8598F9F8B6F8E9A4 /* discrete_math.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FAB9F94C3E58CDFD8E70B33 /* discrete_math.json */; };
 		0A5D3970081ED2480A4AA13D /* precalc11.json in Resources */ = {isa = PBXBuildFile; fileRef = 879E14E2752370F51B709C91 /* precalc11.json */; };
+		0ABBF527F9582A127A57492E /* dsa.json in Resources */ = {isa = PBXBuildFile; fileRef = 480793409DC0ED91A3DC9972 /* dsa.json */; };
+		0AC57782417379201959E6F3 /* communications.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B426EA1F7E83D0051F7763A /* communications.json */; };
+		0B01DC8B07212A77F7717A7E /* galician.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2FC2183371B5A9D6669E9E /* galician.json */; };
+		0B240B4811575A114105639C /* julia.json in Resources */ = {isa = PBXBuildFile; fileRef = 85F873CED83FF2D4E0C64918 /* julia.json */; };
 		0BB7B0CD6F4A3CC8281854C9 /* arabic.json in Resources */ = {isa = PBXBuildFile; fileRef = CF8B7548CA86AA6AD76DEEDB /* arabic.json */; };
 		0C5D53AFA6E0B1E0D717D4B7 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983068D2FA587BBD5F4FA81 /* AuthView.swift */; };
+		0D025C2626E7791410DEDCAA /* indonesian.json in Resources */ = {isa = PBXBuildFile; fileRef = DEAD5660CE0CF9D6D0E12665 /* indonesian.json */; };
 		0D16EF7668CE60A75D0595A6 /* logic.json in Resources */ = {isa = PBXBuildFile; fileRef = BBBADCF9593A6188D62C99B7 /* logic.json */; };
+		0E1603804ADD8758EB91910E /* ocaml.json in Resources */ = {isa = PBXBuildFile; fileRef = 338D5F568534C0DD7FBABD1C /* ocaml.json */; };
+		10D823C14FCF6C57FA545C85 /* georgian.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DD3C3B0B9296C512373DBBE /* georgian.json */; };
+		11F0B4969E2F5CAB19F7B73C /* chip_design.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FA4E89C6B8285B978C29293 /* chip_design.json */; };
+		12AD3247C2E82938B672D017 /* danish.json in Resources */ = {isa = PBXBuildFile; fileRef = 13DBD9CA00FD67F2ACC5067D /* danish.json */; };
 		131DC6F7C4D9FD99E8C84795 /* python.json in Resources */ = {isa = PBXBuildFile; fileRef = 2558463843F88D615C200354 /* python.json */; };
+		1332B4B4396C258CCCC22509 /* electromagnetism.json in Resources */ = {isa = PBXBuildFile; fileRef = C9E8CE6B73271792D6355AAD /* electromagnetism.json */; };
+		13A59BCAF283CE28AF37D8EE /* machine_learning.json in Resources */ = {isa = PBXBuildFile; fileRef = B7C31970F48CE50CD11A344B /* machine_learning.json */; };
 		13BE5B84EB37A9EDBBE94227 /* statistics.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A17B17BA470F4F8C7AD0B3 /* statistics.json */; };
 		13DBA14E7DBBD40A04EA7AFE /* cpp.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BE666DF95E425B711E90081 /* cpp.json */; };
+		144ECDE6B0B3E01B6511E4BB /* circuits.json in Resources */ = {isa = PBXBuildFile; fileRef = 303BD909290616E716B1BB81 /* circuits.json */; };
+		16B74492B79E3EADE9A6B7A2 /* danish.json in Resources */ = {isa = PBXBuildFile; fileRef = 13DBD9CA00FD67F2ACC5067D /* danish.json */; };
+		18215C2815635F63BB532AE6 /* compilers.json in Resources */ = {isa = PBXBuildFile; fileRef = 53E050E9BA329512D8FBA196 /* compilers.json */; };
 		1891E219C6A89705EE258AB2 /* python.json in Resources */ = {isa = PBXBuildFile; fileRef = 2558463843F88D615C200354 /* python.json */; };
+		191CFBEFB079D0A42FF5980B /* clojure.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C019662A8E8712CDD3465A6 /* clojure.json */; };
 		1A1CDA93B9DB5E88A822D412 /* klingon.json in Resources */ = {isa = PBXBuildFile; fileRef = E00D65A9F7727B717D951D1C /* klingon.json */; };
+		1B859FC3C9D2D1BF2BCC78E1 /* haskell.json in Resources */ = {isa = PBXBuildFile; fileRef = 96EAA7DCEA8FE42D2FD92FDF /* haskell.json */; };
+		1B920F75CDA9BA04DDF37642 /* c_lang.json in Resources */ = {isa = PBXBuildFile; fileRef = 284EDC62FAC1D49FA5CB20FF /* c_lang.json */; };
+		1B988C71C2A47FBB94F0049A /* r_lang.json in Resources */ = {isa = PBXBuildFile; fileRef = 059C593B876DC99CB179988E /* r_lang.json */; };
+		1BE345A55DA5C48B58F02BED /* kotlin.json in Resources */ = {isa = PBXBuildFile; fileRef = E148889304A6D9C93273AB7C /* kotlin.json */; };
+		1DABAE407AA7DB450CAD15F7 /* hungarian.json in Resources */ = {isa = PBXBuildFile; fileRef = AF94BBEC7D7988A3C5ACA59B /* hungarian.json */; };
+		1E50029F8F7C76F1BFDF97AC /* semiconductors.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FC04051401FFA7FD1C6F7A0 /* semiconductors.json */; };
+		1FF54211714D53B2D40ED991 /* theory_of_computation.json in Resources */ = {isa = PBXBuildFile; fileRef = A4212810B69ABFDEF85EBD48 /* theory_of_computation.json */; };
+		22D0CBE972D3566D4DA2C351 /* psychology.json in Resources */ = {isa = PBXBuildFile; fileRef = 758A02BDA52B76C042EAB821 /* psychology.json */; };
+		240AA4FCBC4B3C47286C1FF0 /* power_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = 84953DF9BB1674DD3714A99A /* power_systems.json */; };
 		247FA54CF79E95F1B6554112 /* logic.json in Resources */ = {isa = PBXBuildFile; fileRef = BBBADCF9593A6188D62C99B7 /* logic.json */; };
+		2564A69B7E9935960573CE50 /* polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 34D23F00D9F445675CDBCC45 /* polish.json */; };
 		25AE68830FA308BB7068A16E /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FCEEF6AC9EB8AA785F6719 /* Color+Hex.swift */; };
+		25BE0C19D45DE239085FF96C /* ai.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A1660785D81E199DF8D0B97 /* ai.json */; };
 		25D90218F50C49242402AF5E /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ED52EC4C599FB4C93990AF /* LessonView.swift */; };
 		28972A2E39E0A81A6848D546 /* LingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48042F3BA345F64023502DB5 /* LingoApp.swift */; };
+		29CB6A433700976F7BEE91B3 /* cobol.json in Resources */ = {isa = PBXBuildFile; fileRef = 176FE48268E90D59FD6D3E27 /* cobol.json */; };
 		29D0DBED28E100527457F052 /* hindi.json in Resources */ = {isa = PBXBuildFile; fileRef = BF9D238688612B66E23AD263 /* hindi.json */; };
 		2A412D23BA17043E177035EC /* go.json in Resources */ = {isa = PBXBuildFile; fileRef = EDDC45AA716BBD04CF700F92 /* go.json */; };
+		2A5FA76A62DC4CA6497F3AC2 /* haskell.json in Resources */ = {isa = PBXBuildFile; fileRef = 96EAA7DCEA8FE42D2FD92FDF /* haskell.json */; };
 		2A6BF7D993648F90F7AD9079 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F3BB2EF274144F209BC78 /* NotesView.swift */; };
+		2A774FF4C11B11634E823DB6 /* ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B9E8EAE281D7009DCF61F6D /* ukrainian.json */; };
+		2AE3890976B28F3D1A73A364 /* typescript.json in Resources */ = {isa = PBXBuildFile; fileRef = 16AF4012656F1B19ED913F7C /* typescript.json */; };
 		2B65281A89034D25A150879B /* geography.json in Resources */ = {isa = PBXBuildFile; fileRef = 36BADF1122486F4DB65F1F78 /* geography.json */; };
+		2E31FF476C7B5F60BDC55179 /* theory_of_computation.json in Resources */ = {isa = PBXBuildFile; fileRef = A4212810B69ABFDEF85EBD48 /* theory_of_computation.json */; };
+		2E951B3242B25D971B78A8ED /* greek.json in Resources */ = {isa = PBXBuildFile; fileRef = DC31FB3B700BC4C08FCD6F69 /* greek.json */; };
 		2ED5FFDAFDD001F321FCEF29 /* physics.json in Resources */ = {isa = PBXBuildFile; fileRef = E9261B0C87E6F1D387DBF0A7 /* physics.json */; };
 		3081F31BFDC7492F939C1C15 /* rust.json in Resources */ = {isa = PBXBuildFile; fileRef = B47A509557BCADC7E56991E1 /* rust.json */; };
 		3089398528823534E2C259E7 /* linear_algebra.json in Resources */ = {isa = PBXBuildFile; fileRef = 0331E3C0FAC6DD186E906475 /* linear_algebra.json */; };
+		318D50B478829722AD2BE149 /* concurrency.json in Resources */ = {isa = PBXBuildFile; fileRef = D9B6D14C324FDB91FB6197C9 /* concurrency.json */; };
+		31DE76B59BB2706F8AC1BCF4 /* finnish.json in Resources */ = {isa = PBXBuildFile; fileRef = B7397162E36FB85C334A5B9C /* finnish.json */; };
 		32436A999EF81FAE739E12E4 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F3BB2EF274144F209BC78 /* NotesView.swift */; };
+		33262A2788DC2CC7A445969F /* lithuanian.json in Resources */ = {isa = PBXBuildFile; fileRef = 137616308D7C7DB936DE959F /* lithuanian.json */; };
 		343C6A1222A64C3C1222C193 /* DailyReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA16B709D68772840BF2887 /* DailyReminderTests.swift */; };
 		3454AC99E5FA7EF46C943C46 /* fieldbook.json in Resources */ = {isa = PBXBuildFile; fileRef = D9742CB386A264EB10F5B863 /* fieldbook.json */; };
 		3494E03A6BC345057FA030D0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6879A4E2162C7E8DB0595B67 /* SettingsView.swift */; };
@@ -43,120 +92,277 @@
 		366722AFB2EE4D334077114B /* statistics.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A17B17BA470F4F8C7AD0B3 /* statistics.json */; };
 		36782B3C342C30B3D64092CE /* calculus.json in Resources */ = {isa = PBXBuildFile; fileRef = 53442AF129549F934E4477A6 /* calculus.json */; };
 		367E4A3280CF18A826449055 /* sql.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EF34A271C6CF10F334D884F /* sql.json */; };
+		3740C6E6663686941AA15EF7 /* hungarian.json in Resources */ = {isa = PBXBuildFile; fileRef = AF94BBEC7D7988A3C5ACA59B /* hungarian.json */; };
+		378411B6A373789F32C8596A /* objective_c.json in Resources */ = {isa = PBXBuildFile; fileRef = 98D8C928577D4B0CB112DFE8 /* objective_c.json */; };
 		387E27121537E21010F2647A /* music_theory.json in Resources */ = {isa = PBXBuildFile; fileRef = 4349CA379EE52052DE5210F6 /* music_theory.json */; };
 		387ED2785C32613B246E6381 /* precalc12.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E08CADD3672CCCBFFB75423 /* precalc12.json */; };
+		3B0DD6573650669BE98D1AD5 /* clojure.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C019662A8E8712CDD3465A6 /* clojure.json */; };
 		3BB09C4102B4DDCE0D57CB50 /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E13461BDB5DDAFF671A5AC4 /* catalog.json */; };
+		3BD51FF6C566B216174D2AEA /* fpga_verilog.json in Resources */ = {isa = PBXBuildFile; fileRef = C7234021639CFEC592D10090 /* fpga_verilog.json */; };
+		3BE7547C6DD87C28A6ECE311 /* distributed_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B5C43917C944D183273FD4 /* distributed_systems.json */; };
 		3C44065BB1D19FF398F4AD83 /* reverse_engineering.json in Resources */ = {isa = PBXBuildFile; fileRef = D1DCA2A90FD575638F1D0800 /* reverse_engineering.json */; };
+		3C69287363F9E7BFB2B65C0E /* lua.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AE80FA336874CD28684167F /* lua.json */; };
+		3D06BC871E39FD4974FC8749 /* cryptography.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C35C400B917D6AC94E446A3 /* cryptography.json */; };
 		4169FB4E1C7A828D60FBCB43 /* chess.json in Resources */ = {isa = PBXBuildFile; fileRef = 82D1548A44AF9461019E577B /* chess.json */; };
 		42065E2A1395BEDE6AAAAFFE /* arithmetic.json in Resources */ = {isa = PBXBuildFile; fileRef = 31395F36291D691B8F443E99 /* arithmetic.json */; };
+		421C20290C0F8B35FA225771 /* php.json in Resources */ = {isa = PBXBuildFile; fileRef = CDF4299044528991AD4A452A /* php.json */; };
+		432CFA6BA6868E6999D704DC /* turkish.json in Resources */ = {isa = PBXBuildFile; fileRef = DCFBF1385303DBF60BCAD3DE /* turkish.json */; };
 		442E3036CB5907E72230A7B6 /* astrophysics.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C5DA3EB85AF4C36FC0C74C4 /* astrophysics.json */; };
+		45B56A70572DA9B87741C121 /* elixir.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F049EF9F3E2B115ABD7A09 /* elixir.json */; };
+		45F5B2896963EC38EDA0E55E /* storage_devices.json in Resources */ = {isa = PBXBuildFile; fileRef = 1290392C746197D0936B28E2 /* storage_devices.json */; };
+		460607E6F2AFD05FB0EF973C /* csharp.json in Resources */ = {isa = PBXBuildFile; fileRef = 035DA7D9EAECE00879DB5042 /* csharp.json */; };
 		4620BC563D704BE3940FB89F /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25822866A9082B6D52D10D2B /* KeychainHelper.swift */; };
 		473B6338A35520B6E920D779 /* arabic.json in Resources */ = {isa = PBXBuildFile; fileRef = CF8B7548CA86AA6AD76DEEDB /* arabic.json */; };
+		48BFDD547B856B9C60472E29 /* databases.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C213E8703F9B0CB69E8BC7E /* databases.json */; };
+		48F9827F24BE680C6906C1B2 /* poker.json in Resources */ = {isa = PBXBuildFile; fileRef = 2681EB1B35F0D07232D193B2 /* poker.json */; };
+		49721C1261D55E617E145966 /* bash.json in Resources */ = {isa = PBXBuildFile; fileRef = A07FB7B99A605DF37A0E23D1 /* bash.json */; };
 		4A412200E23DD8B1A9779AE6 /* korean.json in Resources */ = {isa = PBXBuildFile; fileRef = C1328B3C2F4DE1C280B2CFA8 /* korean.json */; };
 		4AAD0B539B93E7C562774D34 /* music_history.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E497242C06CB2BE09147F1E /* music_history.json */; };
 		4B50B9D2AA4771954B626383 /* portuguese.json in Resources */ = {isa = PBXBuildFile; fileRef = 85262F07D23361702C21C7DA /* portuguese.json */; };
+		4D572E90FC5AD342FE3A9981 /* servers.json in Resources */ = {isa = PBXBuildFile; fileRef = C09BAA3B5E9D9C69729AB7D0 /* servers.json */; };
 		4EC73EE099FB9880E11646D2 /* italian.json in Resources */ = {isa = PBXBuildFile; fileRef = E96829EFE58B59935649CEA6 /* italian.json */; };
 		4ECF489A147474F5AC270527 /* german.json in Resources */ = {isa = PBXBuildFile; fileRef = 3701094CFDB3AAD051661459 /* german.json */; };
 		4F49103CB511C5FEE8B6672A /* arithmetic.json in Resources */ = {isa = PBXBuildFile; fileRef = 31395F36291D691B8F443E99 /* arithmetic.json */; };
 		50A073AFAEE88E9E2EAC1BEB /* spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 721FEFF6757512300B8F10FB /* spanish.json */; };
+		50DAC9ABE249CEF3C4CF2CAD /* electromagnetism.json in Resources */ = {isa = PBXBuildFile; fileRef = C9E8CE6B73271792D6355AAD /* electromagnetism.json */; };
 		5228ED56641373D9692328C8 /* WhatsNewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3AF06A855689B1A2B0129 /* WhatsNewSheet.swift */; };
+		524E1F1C52D0CE265AAECDC9 /* perl.json in Resources */ = {isa = PBXBuildFile; fileRef = CFE4BB77BB544B39584050C1 /* perl.json */; };
 		52A0A711CBBBFE3BBF73F254 /* fieldbook.json in Resources */ = {isa = PBXBuildFile; fileRef = D9742CB386A264EB10F5B863 /* fieldbook.json */; };
 		533DE048D1F574A4C8CEA9B4 /* geography.json in Resources */ = {isa = PBXBuildFile; fileRef = 36BADF1122486F4DB65F1F78 /* geography.json */; };
 		5397FFF3434BAAEB33A9F3E8 /* yiddish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E2F19819571ACB08F08FEC5 /* yiddish.json */; };
 		53A1D6C9199FB8804F8758E6 /* sql.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EF34A271C6CF10F334D884F /* sql.json */; };
+		54B02E0A5C3B0B0798CDF61E /* basque.json in Resources */ = {isa = PBXBuildFile; fileRef = 9122CCD569CA2492CE92D9CC /* basque.json */; };
 		54DADEEC30AD359637F1B2AA /* DailyReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85747ECA85D0763928C12F4E /* DailyReminder.swift */; };
 		551561690DB355F67B368DD2 /* chemistry.json in Resources */ = {isa = PBXBuildFile; fileRef = B5B4FAB3C10777FC492A17C8 /* chemistry.json */; };
+		551680E29E9C19CA6FC8A185 /* objective_c.json in Resources */ = {isa = PBXBuildFile; fileRef = 98D8C928577D4B0CB112DFE8 /* objective_c.json */; };
+		56B587D1762F0F22767D63CB /* czech.json in Resources */ = {isa = PBXBuildFile; fileRef = 74DB09DDA290CD2847C15269 /* czech.json */; };
 		57437A5D05AC13732DAB8A5B /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145F99C74BD922728A9B3871 /* AuthStore.swift */; };
 		589CC8BC575513C116A030D3 /* biology_masterclass.json in Resources */ = {isa = PBXBuildFile; fileRef = 86734E41E13DAF102D136EE9 /* biology_masterclass.json */; };
 		597CA4E3D0C3A5A35B6726C4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F214D0F0810B9E696D99BDC /* Models.swift */; };
+		5A0ECA0BCAE9BBC256D749E5 /* git_terminal.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F0B5C5210027037193CE91 /* git_terminal.json */; };
+		5A8597ECB2F68E23F4AF70CD /* ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B9E8EAE281D7009DCF61F6D /* ukrainian.json */; };
+		5B72E174D2E4DEF9F2E57268 /* icelandic.json in Resources */ = {isa = PBXBuildFile; fileRef = F28FAFFF719B67C4205F4E8D /* icelandic.json */; };
 		5BB811F0CDD93C76B79191C5 /* AvatarPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4625048209FADCC92D7CC9A /* AvatarPickerView.swift */; };
 		5CEC9CE21397145119FCCE01 /* astronomy.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DC67454921AA331D2D3EC7C /* astronomy.json */; };
+		5D1F3DFA8F947D43B651CA2C /* swedish.json in Resources */ = {isa = PBXBuildFile; fileRef = 103156910926C35897342FD7 /* swedish.json */; };
+		5D65FB304240881500060824 /* control_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = AB7AAC5036125F3FE67769DE /* control_systems.json */; };
+		5E4F3387BBF98F0224D0DD27 /* cryptography.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C35C400B917D6AC94E446A3 /* cryptography.json */; };
 		5E55058CB8B6390B0B6B2F51 /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E13461BDB5DDAFF671A5AC4 /* catalog.json */; };
+		5EE001FF5E895700A6BF991B /* swedish.json in Resources */ = {isa = PBXBuildFile; fileRef = 103156910926C35897342FD7 /* swedish.json */; };
+		5FA9F718AFDDC5D3E9188C3C /* lithuanian.json in Resources */ = {isa = PBXBuildFile; fileRef = 137616308D7C7DB936DE959F /* lithuanian.json */; };
 		5FAEA01F64B9E1170750064C /* javascript.json in Resources */ = {isa = PBXBuildFile; fileRef = 4462801DB409CFD3D81F2E5B /* javascript.json */; };
+		607B1E480EF4703B5C34ED68 /* assembly.json in Resources */ = {isa = PBXBuildFile; fileRef = B11D4965B11D1EC66D614E46 /* assembly.json */; };
+		608FAB3A64EB1B8DB57684B2 /* czech.json in Resources */ = {isa = PBXBuildFile; fileRef = 74DB09DDA290CD2847C15269 /* czech.json */; };
 		62DFDE9E87DEBA260541EF77 /* computers.json in Resources */ = {isa = PBXBuildFile; fileRef = B6179B0E028A5343849EF466 /* computers.json */; };
 		62E2578B502D6E92112DBBE3 /* anatomy.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E17FC4FF12CBF14500B94A1 /* anatomy.json */; };
+		6442582836B79D66A8D3E7F7 /* software_engineering.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D7DFA3FA02BB74EFBCEB7BE /* software_engineering.json */; };
 		65FE01B3E495B031D58BD547 /* japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = 957B0D682A78332B3AF55252 /* japanese.json */; };
+		662AFC1283EFB3DDE5A622F8 /* signals_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = C0BDCD7A2B87B0B6B4B2EFD7 /* signals_systems.json */; };
+		662C35C811B7E949E436424D /* ruby.json in Resources */ = {isa = PBXBuildFile; fileRef = 5220B241F527F86626199599 /* ruby.json */; };
 		66AE67918261360F6C0269E6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6879A4E2162C7E8DB0595B67 /* SettingsView.swift */; };
+		679C8A1A81FF7E67DAE014A3 /* slovak.json in Resources */ = {isa = PBXBuildFile; fileRef = E5CCAE533DD36E48ACCAEC52 /* slovak.json */; };
 		68839C409A4A3F8AAB4F49DC /* portuguese.json in Resources */ = {isa = PBXBuildFile; fileRef = 85262F07D23361702C21C7DA /* portuguese.json */; };
+		68BC4C06F0B51578D234FD88 /* machine_learning.json in Resources */ = {isa = PBXBuildFile; fileRef = B7C31970F48CE50CD11A344B /* machine_learning.json */; };
+		68C632DFD51281C6157CBEAA /* croatian.json in Resources */ = {isa = PBXBuildFile; fileRef = F8B763E49F490D29AF4EFF9E /* croatian.json */; };
+		6A7B8EB297617777389F60E8 /* digital_logic.json in Resources */ = {isa = PBXBuildFile; fileRef = A8B1C0645593DF8A5A5FC9F2 /* digital_logic.json */; };
 		6AC16FC4E789B39721C80293 /* precalc12_masterclass.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DEE9DE26C2FBEC0546F384 /* precalc12_masterclass.json */; };
+		6B9B072777ABD9B495478F85 /* swift.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A5EE076C0B7E52EB51D2B64 /* swift.json */; };
+		6C0756A78A8FD9373AEF8268 /* r_lang.json in Resources */ = {isa = PBXBuildFile; fileRef = 059C593B876DC99CB179988E /* r_lang.json */; };
 		6CDF0E7D244D43765DF0B1A1 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99103E67EEEBFAD239C1DFB7 /* CatalogView.swift */; };
 		6E5C05E5064707F08881D627 /* ContentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81D8C00013D3CA01B1ECA /* ContentStore.swift */; };
 		6EB73B9995297F591B5F0B7D /* chemistry.json in Resources */ = {isa = PBXBuildFile; fileRef = B5B4FAB3C10777FC492A17C8 /* chemistry.json */; };
 		6F3218447DEE9A342C07EAF9 /* precalc12_masterclass.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DEE9DE26C2FBEC0546F384 /* precalc12_masterclass.json */; };
+		715303AEF29D317103B4B14D /* hebrew.json in Resources */ = {isa = PBXBuildFile; fileRef = 91E389D943D2440C5E5C7EC6 /* hebrew.json */; };
+		71A7A25C244E0296B0DC3527 /* html_css.json in Resources */ = {isa = PBXBuildFile; fileRef = F3532385783609B1A4326811 /* html_css.json */; };
 		72E19D1FDDE16D54F3318F07 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 48B8AB9DC041EF61EF11842B /* Supabase */; };
+		730F6B4D3D5BBE6157DD439C /* dart.json in Resources */ = {isa = PBXBuildFile; fileRef = E3B877AC4BFB1A2C93F44D35 /* dart.json */; };
+		7418DC008D9A68325C002829 /* vietnamese.json in Resources */ = {isa = PBXBuildFile; fileRef = 340770AC5617610F1867033B /* vietnamese.json */; };
+		7627BE39E0FA0C9C5876A7A0 /* basque.json in Resources */ = {isa = PBXBuildFile; fileRef = 9122CCD569CA2492CE92D9CC /* basque.json */; };
+		7788700159D7E13798E18887 /* slovenian.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CA95DBF03D4DF91A2F571B3 /* slovenian.json */; };
 		7800E9486850AA0E14375760 /* AvatarPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4625048209FADCC92D7CC9A /* AvatarPickerView.swift */; };
 		78189777534DD3DA86B3D82D /* ios_internals.json in Resources */ = {isa = PBXBuildFile; fileRef = 738804B26679E303E7AE98CE /* ios_internals.json */; };
 		7A007768E4B740AA524405D3 /* music_history.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E497242C06CB2BE09147F1E /* music_history.json */; };
 		7B0650BB4C81FFF35689E8E6 /* cpp.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BE666DF95E425B711E90081 /* cpp.json */; };
+		7B8B76650377FAD0FD7C3922 /* power_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = 84953DF9BB1674DD3714A99A /* power_systems.json */; };
+		7CC2ECDCD08CF3FADB3474FE /* software_engineering.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D7DFA3FA02BB74EFBCEB7BE /* software_engineering.json */; };
+		7CE38E65A3447FEE9F7091C3 /* macedonian.json in Resources */ = {isa = PBXBuildFile; fileRef = AE38E4AB797D74CDF1DC43C5 /* macedonian.json */; };
+		7D2F8127D29EA249E8EC3EF6 /* zig.json in Resources */ = {isa = PBXBuildFile; fileRef = C20C93230525CAC72B305BCB /* zig.json */; };
 		7DB404B693AEA4EADFA4BCDC /* rust.json in Resources */ = {isa = PBXBuildFile; fileRef = B47A509557BCADC7E56991E1 /* rust.json */; };
+		7EE075E7FC7E0D111F98EEFC /* php.json in Resources */ = {isa = PBXBuildFile; fileRef = CDF4299044528991AD4A452A /* php.json */; };
 		7F1A4707EE0FF1560B35B6EB /* physics.json in Resources */ = {isa = PBXBuildFile; fileRef = E9261B0C87E6F1D387DBF0A7 /* physics.json */; };
+		7FB8BFC41EFA9A15D5F6A1D5 /* dsp.json in Resources */ = {isa = PBXBuildFile; fileRef = F8E6441EA9FB8D5D7E3043F7 /* dsp.json */; };
 		7FCD7930E86A050BE652801F /* french.json in Resources */ = {isa = PBXBuildFile; fileRef = 817171023F298347664538D7 /* french.json */; };
+		8160497FEB93F6027D1C673E /* malay.json in Resources */ = {isa = PBXBuildFile; fileRef = 94AE62C5D9460E11196841B2 /* malay.json */; };
 		8247E9154BF512FC785F4ACD /* algebra.json in Resources */ = {isa = PBXBuildFile; fileRef = 698847033238209C4252DDE8 /* algebra.json */; };
+		8300C6ADA2507E18E7446D8A /* chip_design.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FA4E89C6B8285B978C29293 /* chip_design.json */; };
+		833AC658B02FEC71083F9E55 /* real_time_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = 59178EFB2E6BDA8C7D75B6BD /* real_time_systems.json */; };
+		8354C0B7039A6C8BDAE2FFA0 /* albanian.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A2BF59D68315A7CAFFCA163 /* albanian.json */; };
 		83D3B93DE2F0C86834070045 /* java.json in Resources */ = {isa = PBXBuildFile; fileRef = 8907AAEC9D9D95B8AB2BC0C3 /* java.json */; };
 		83FE4BEB3BC285041939681B /* anatomy12.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BEF57FDC8F27D5751826EF2 /* anatomy12.json */; };
 		84A131E331C2CCFB4E50D916 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79594DE88C2126253A5FD79D /* SwiftUI.framework */; };
 		850AEDA3FADFAE12328B8A81 /* physiology.json in Resources */ = {isa = PBXBuildFile; fileRef = 20ED08DD321451E3CC5F88BE /* physiology.json */; };
+		86A7BA3C409C17A918CEEDBF /* sensors.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D573A642D9733AC0394B03 /* sensors.json */; };
 		86CADF3E196A0732996BC51D /* dutch.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DC5E8D574577465E5EC8F51 /* dutch.json */; };
+		872BFAF067187CF2BCEF5B41 /* finnish.json in Resources */ = {isa = PBXBuildFile; fileRef = B7397162E36FB85C334A5B9C /* finnish.json */; };
+		885A89EEFCF56EDC49333F85 /* lua.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AE80FA336874CD28684167F /* lua.json */; };
+		8965A862BB93BE4310ADDDC0 /* scala.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D4206AB5F367F68C98C8F6A /* scala.json */; };
+		89F23CB4D5F365349971181B /* control_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = AB7AAC5036125F3FE67769DE /* control_systems.json */; };
+		8AF5F655AE7E55472B98C499 /* microcontrollers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A9E1FDBBD26A084A649C971 /* microcontrollers.json */; };
+		8BE2F4F35328C59370552397 /* investing.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EAE2C188E70DC3FFFE7AB36 /* investing.json */; };
 		8C091EA94AA06C815E76ABD4 /* SessionKeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D63DD534912A773D403690 /* SessionKeychainStorage.swift */; };
+		8C34F6C9B7DD25572A98017A /* real_time_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = 59178EFB2E6BDA8C7D75B6BD /* real_time_systems.json */; };
 		8D654BB4EFAC10A5E793E1CA /* ios_internals.json in Resources */ = {isa = PBXBuildFile; fileRef = 738804B26679E303E7AE98CE /* ios_internals.json */; };
+		8D7C3B9B8871ABCA2D73004B /* communications.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B426EA1F7E83D0051F7763A /* communications.json */; };
+		8DF3FBF15E5184907573F33B /* computer_graphics.json in Resources */ = {isa = PBXBuildFile; fileRef = C6595D636766706C5DBBB1A8 /* computer_graphics.json */; };
+		8E2F53B5A37C84A5035C9E93 /* typescript.json in Resources */ = {isa = PBXBuildFile; fileRef = 16AF4012656F1B19ED913F7C /* typescript.json */; };
 		8E5DD4BC66B1EB2699D70ABF /* anthropology.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B78A24860D0E059A1BE0820 /* anthropology.json */; };
 		8ECA11B8D1BBFB4144DE6AA2 /* SessionKeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D63DD534912A773D403690 /* SessionKeychainStorage.swift */; };
 		8F3318D38EC726266500BE15 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C5E8FC11D9AD2C7BF476B /* WidgetKit.framework */; };
 		913AD7EDC1697999EF83BC9D /* italian.json in Resources */ = {isa = PBXBuildFile; fileRef = E96829EFE58B59935649CEA6 /* italian.json */; };
 		91AE638CFC27656B0F8084B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2EEE50C44A4A8A16F01FDA /* Assets.xcassets */; };
+		91E786EF06F4925DB046CDE7 /* dsa.json in Resources */ = {isa = PBXBuildFile; fileRef = 480793409DC0ED91A3DC9972 /* dsa.json */; };
+		926AD34883D3D4DB7451AA01 /* thai.json in Resources */ = {isa = PBXBuildFile; fileRef = 925EE2748344A4E31EC1FD86 /* thai.json */; };
+		928D7102EABD111541E0AD3A /* greek.json in Resources */ = {isa = PBXBuildFile; fileRef = DC31FB3B700BC4C08FCD6F69 /* greek.json */; };
 		933933F9E8F0F12B7845D7DD /* DailyReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85747ECA85D0763928C12F4E /* DailyReminder.swift */; };
+		93CDA9BF94C9CFD487F2F68C /* elixir.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F049EF9F3E2B115ABD7A09 /* elixir.json */; };
+		93F0BE92334D2B6DB0368EFB /* html_css.json in Resources */ = {isa = PBXBuildFile; fileRef = F3532385783609B1A4326811 /* html_css.json */; };
+		949DF791221AA7E2103C1499 /* estonian.json in Resources */ = {isa = PBXBuildFile; fileRef = 207886674CB54492C1FAC9A0 /* estonian.json */; };
+		95375485756A74A35ACA4E2A /* networking_hardware.json in Resources */ = {isa = PBXBuildFile; fileRef = C2C3C3F51757D1033FD2BBE1 /* networking_hardware.json */; };
 		95E06A59222F1148E3EDCE4E /* biology.json in Resources */ = {isa = PBXBuildFile; fileRef = 82E2BFEDCA965D066CA39E04 /* biology.json */; };
+		981FAE43F7FAEFB5F486D209 /* hardware.json in Resources */ = {isa = PBXBuildFile; fileRef = 9116A30533FC651DDA5F6FAB /* hardware.json */; };
 		9A7E4ECAAFE389739FFB84D2 /* russian.json in Resources */ = {isa = PBXBuildFile; fileRef = E28878C7B0B1D588D2471F69 /* russian.json */; };
+		9AD78BC06EF30C14B8E9CF32 /* turkish.json in Resources */ = {isa = PBXBuildFile; fileRef = DCFBF1385303DBF60BCAD3DE /* turkish.json */; };
+		9BCFEF3B369B11B677050CF2 /* c_lang.json in Resources */ = {isa = PBXBuildFile; fileRef = 284EDC62FAC1D49FA5CB20FF /* c_lang.json */; };
+		9C4AF6466486E97B74736BBE /* mobile_hardware.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A3A342298A88EDA663AEFD /* mobile_hardware.json */; };
+		9F58741358E356940260DAA6 /* philosophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 34136C3515C4AA0EE11F7E2F /* philosophy.json */; };
+		A1306EA9CAD4D258284F04FA /* pcb_design.json in Resources */ = {isa = PBXBuildFile; fileRef = D9E0DB9F450AC5754A415F60 /* pcb_design.json */; };
+		A1808675EE8219DE138D8899 /* persian.json in Resources */ = {isa = PBXBuildFile; fileRef = 522F69C305939B176FC6B6EB /* persian.json */; };
+		A1CD5E4A5C83FA27AFF9C4CC /* norwegian.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DC070E5BFD6EEC089B706E6 /* norwegian.json */; };
 		A24464F550AA5BC63FC42FD3 /* precalc12.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E08CADD3672CCCBFFB75423 /* precalc12.json */; };
+		A384DD6A6F1D7AA04A4D8252 /* microcontrollers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A9E1FDBBD26A084A649C971 /* microcontrollers.json */; };
+		A5946E1F58C9327DC87B7C92 /* bulgarian.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DDB73638A7C5C41F880B198 /* bulgarian.json */; };
 		A599109D07BEAB24A0F2F985 /* anthropology.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B78A24860D0E059A1BE0820 /* anthropology.json */; };
+		A6ABDCCF9A360E86341F6B9F /* compilers.json in Resources */ = {isa = PBXBuildFile; fileRef = 53E050E9BA329512D8FBA196 /* compilers.json */; };
+		A72848CFCA857C4C2AA39433 /* computer_networks.json in Resources */ = {isa = PBXBuildFile; fileRef = 74CA373CF5C088667533EA43 /* computer_networks.json */; };
+		A802BD316D6D809AA5368B0A /* computer_architecture.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D2FDE123699C150462F9725 /* computer_architecture.json */; };
+		A87603F28051E7DDB8A2F1D0 /* estonian.json in Resources */ = {isa = PBXBuildFile; fileRef = 207886674CB54492C1FAC9A0 /* estonian.json */; };
+		A9D0C15D447FD9D979749BA4 /* perl.json in Resources */ = {isa = PBXBuildFile; fileRef = CFE4BB77BB544B39584050C1 /* perl.json */; };
 		AA3FAE656651E14FCBFEABDD /* astrophysics.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C5DA3EB85AF4C36FC0C74C4 /* astrophysics.json */; };
 		AAFBB48EFC5214384FC52358 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D994478AA66BD3E1A014902 /* SplashView.swift */; };
 		ABE438B456D4BB02E4C851E2 /* ContentStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844651E960161655EE200363 /* ContentStoreTests.swift */; };
+		AD21A7DCFC1DB239BBC36143 /* romanian.json in Resources */ = {isa = PBXBuildFile; fileRef = 80B17BEA9830945054F714E9 /* romanian.json */; };
+		ADC6E492E34796449C5B0764 /* serbian.json in Resources */ = {isa = PBXBuildFile; fileRef = F8CDBB1D8D181A513DBFFAF5 /* serbian.json */; };
+		AE714C024738CE3095044731 /* plank.json in Resources */ = {isa = PBXBuildFile; fileRef = 592294D44A5D73E21A9F6469 /* plank.json */; };
 		AF7F7EE841811BB66825ABFC /* astronomy.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DC67454921AA331D2D3EC7C /* astronomy.json */; };
+		B08633A1B9B3355717D41F72 /* catalan.json in Resources */ = {isa = PBXBuildFile; fileRef = E8F395A07F4DF19E76A7F491 /* catalan.json */; };
+		B272B0ADBB6D2A7BB32EA7D6 /* investing.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EAE2C188E70DC3FFFE7AB36 /* investing.json */; };
+		B2AAC12F2D4A85028988331E /* displays_peripherals.json in Resources */ = {isa = PBXBuildFile; fileRef = 895A85F2C9056DB26FCB579F /* displays_peripherals.json */; };
+		B33D967C7D3C7DAF51C02632 /* julia.json in Resources */ = {isa = PBXBuildFile; fileRef = 85F873CED83FF2D4E0C64918 /* julia.json */; };
 		B3C07777E88197ACDAA5DEAA /* computers.json in Resources */ = {isa = PBXBuildFile; fileRef = B6179B0E028A5343849EF466 /* computers.json */; };
 		B3FD61DB8BA782A823DA70AF /* anatomy12.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BEF57FDC8F27D5751826EF2 /* anatomy12.json */; };
 		B46BE8ED1A3AF5A2BF43C78F /* discrete_math.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FAB9F94C3E58CDFD8E70B33 /* discrete_math.json */; };
+		B5851C3F0DFF2763F3413313 /* plank.json in Resources */ = {isa = PBXBuildFile; fileRef = 592294D44A5D73E21A9F6469 /* plank.json */; };
+		B6763D4816F5BD6E00705E79 /* cybersecurity.json in Resources */ = {isa = PBXBuildFile; fileRef = D12BA4C1A926FB0BF843A5B6 /* cybersecurity.json */; };
+		B817C0B7E2F657DC2BB942C6 /* fortran.json in Resources */ = {isa = PBXBuildFile; fileRef = 5252996124888CAA823768AC /* fortran.json */; };
+		B9AC06550B6637BEC7AB7339 /* operating_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E01746834C58E422B1AA3D0 /* operating_systems.json */; };
 		BA988804704D37E0EB7A31BA /* spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 721FEFF6757512300B8F10FB /* spanish.json */; };
+		BB8B2F53E57C9B2A3BB6DCE8 /* git_terminal.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F0B5C5210027037193CE91 /* git_terminal.json */; };
 		BC8E6A3AEE9C4A242AE2BE28 /* linear_algebra.json in Resources */ = {isa = PBXBuildFile; fileRef = 0331E3C0FAC6DD186E906475 /* linear_algebra.json */; };
+		BDE18B23349A8CEDB8D8658E /* georgian.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DD3C3B0B9296C512373DBBE /* georgian.json */; };
+		BF488289CF5FE8AACA54A3C9 /* serbian.json in Resources */ = {isa = PBXBuildFile; fileRef = F8CDBB1D8D181A513DBFFAF5 /* serbian.json */; };
+		C05C25000A001432AB73AF70 /* hardware.json in Resources */ = {isa = PBXBuildFile; fileRef = 9116A30533FC651DDA5F6FAB /* hardware.json */; };
+		C2C263A7481D796320D57E66 /* assembly.json in Resources */ = {isa = PBXBuildFile; fileRef = B11D4965B11D1EC66D614E46 /* assembly.json */; };
 		C2C53C7A67BEF1B097372697 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8554AEA87307E9D90E1008A7 /* PrivacyInfo.xcprivacy */; };
+		C3AA139F2B61E5D20A56991F /* embedded_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = 2918A1FB986BAA545ECDA99A /* embedded_systems.json */; };
 		C3C95CB6958E6976793E6F29 /* reverse_engineering.json in Resources */ = {isa = PBXBuildFile; fileRef = D1DCA2A90FD575638F1D0800 /* reverse_engineering.json */; };
+		C55CF1E7E5399DA990BA4E3A /* personal_finance.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3FCAE1113684B4C73B302 /* personal_finance.json */; };
 		C593B921FC983DC917DC9F3C /* biology_masterclass.json in Resources */ = {isa = PBXBuildFile; fileRef = 86734E41E13DAF102D136EE9 /* biology_masterclass.json */; };
+		C63A6F76C41475683785A53B /* hebrew.json in Resources */ = {isa = PBXBuildFile; fileRef = 91E389D943D2440C5E5C7EC6 /* hebrew.json */; };
 		C698CEAD1740F0E1B60BAF1D /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25822866A9082B6D52D10D2B /* KeychainHelper.swift */; };
+		C7C4FE2167B41B11EACC7CE9 /* kotlin.json in Resources */ = {isa = PBXBuildFile; fileRef = E148889304A6D9C93273AB7C /* kotlin.json */; };
+		C8510198C9BD5853C147B73D /* economics.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E458A815E3354EE73662BDF /* economics.json */; };
+		C90E3BFF5A8B95920643E92F /* croatian.json in Resources */ = {isa = PBXBuildFile; fileRef = F8B763E49F490D29AF4EFF9E /* croatian.json */; };
 		CA1E2FBF2C6E4563EB4D9A3C /* UnitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E953B6B90C849ECB1D806FF /* UnitsView.swift */; };
+		CA6B5790B20796AC3103425E /* gpus.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9474549ECE55158A650425 /* gpus.json */; };
+		CB17A48ECDCA8923C9D35439 /* scala.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D4206AB5F367F68C98C8F6A /* scala.json */; };
+		CCA8323677572FDFE1AD9C49 /* operating_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E01746834C58E422B1AA3D0 /* operating_systems.json */; };
 		CF33E5ECE6D9F4FC66472380 /* hindi.json in Resources */ = {isa = PBXBuildFile; fileRef = BF9D238688612B66E23AD263 /* hindi.json */; };
 		CFA1E9A9A582807DBDCEFA7B /* anatomy.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E17FC4FF12CBF14500B94A1 /* anatomy.json */; };
+		CFFC914FD37C38C633F071B9 /* storage_devices.json in Resources */ = {isa = PBXBuildFile; fileRef = 1290392C746197D0936B28E2 /* storage_devices.json */; };
+		D08EF783B5DD0E0C14EEDA6F /* catalan.json in Resources */ = {isa = PBXBuildFile; fileRef = E8F395A07F4DF19E76A7F491 /* catalan.json */; };
+		D11475FBC98DB09BB409C5B9 /* poker.json in Resources */ = {isa = PBXBuildFile; fileRef = 2681EB1B35F0D07232D193B2 /* poker.json */; };
 		D1704234CB203107E2EAF036 /* trigonometry.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F8517A7ABB25B93AC01E7 /* trigonometry.json */; };
 		D1EC2E50D136B763AE2A322B /* physiology.json in Resources */ = {isa = PBXBuildFile; fileRef = 20ED08DD321451E3CC5F88BE /* physiology.json */; };
+		D287DD10FBF6FEB07B692AA6 /* thai.json in Resources */ = {isa = PBXBuildFile; fileRef = 925EE2748344A4E31EC1FD86 /* thai.json */; };
+		D2D5301EA452472ABCA762DE /* computer_networks.json in Resources */ = {isa = PBXBuildFile; fileRef = 74CA373CF5C088667533EA43 /* computer_networks.json */; };
 		D3461DD54E4BB706279CD3B8 /* chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = 1298E370FBBBFAA5DE8131CB /* chinese.json */; };
 		D6090057FCD71A991D157BBD /* LingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41722A7250A176A189B216F /* LingoApp.swift */; };
+		D7F3AD4AEC4138DEE86E0DDD /* romanian.json in Resources */ = {isa = PBXBuildFile; fileRef = 80B17BEA9830945054F714E9 /* romanian.json */; };
+		D88AB7237E3987B23F441107 /* ocaml.json in Resources */ = {isa = PBXBuildFile; fileRef = 338D5F568534C0DD7FBABD1C /* ocaml.json */; };
 		DAA555E8C1D5E9339DACD2E6 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FCEEF6AC9EB8AA785F6719 /* Color+Hex.swift */; };
 		DAAED67B144713AEF10BE165 /* geometry.json in Resources */ = {isa = PBXBuildFile; fileRef = 78329C083F6292E361208131 /* geometry.json */; };
 		DB141D5C6EA14049987CEEDD /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145F99C74BD922728A9B3871 /* AuthStore.swift */; };
+		DB5FC3E0DC78B59DD540A5FA /* bengali.json in Resources */ = {isa = PBXBuildFile; fileRef = 545424A7D1350E034DDF353E /* bengali.json */; };
 		DB7126F261D8C19189202E93 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 782342964314D86AB9DC7ECC /* Supabase */; };
+		DB7AA675DA00BF99FE1DDADE /* fpga_verilog.json in Resources */ = {isa = PBXBuildFile; fileRef = C7234021639CFEC592D10090 /* fpga_verilog.json */; };
 		DBF52E22BE2DCA6FBCD8C923 /* japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = 957B0D682A78332B3AF55252 /* japanese.json */; };
 		DC39534230732711541B4746 /* algebra.json in Resources */ = {isa = PBXBuildFile; fileRef = 698847033238209C4252DDE8 /* algebra.json */; };
 		DE5A16AE1BA9681A8933322B /* javascript.json in Resources */ = {isa = PBXBuildFile; fileRef = 4462801DB409CFD3D81F2E5B /* javascript.json */; };
+		DECB9683E8E1F8C3F2FB9251 /* swift.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A5EE076C0B7E52EB51D2B64 /* swift.json */; };
+		DFC2AEF01A09E4519A26F064 /* dart.json in Resources */ = {isa = PBXBuildFile; fileRef = E3B877AC4BFB1A2C93F44D35 /* dart.json */; };
 		E0BF49FF4C5ACDC5A2F62C83 /* ContentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81D8C00013D3CA01B1ECA /* ContentStore.swift */; };
 		E18DB0B08179BBAF256A51DB /* klingon.json in Resources */ = {isa = PBXBuildFile; fileRef = E00D65A9F7727B717D951D1C /* klingon.json */; };
 		E1B39DEEE9E231FEBC5F2645 /* biology.json in Resources */ = {isa = PBXBuildFile; fileRef = 82E2BFEDCA965D066CA39E04 /* biology.json */; };
 		E1E420F02C4ABC6502AE60EB /* chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = 1298E370FBBBFAA5DE8131CB /* chinese.json */; };
+		E255710F16B33DF91184B075 /* ai.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A1660785D81E199DF8D0B97 /* ai.json */; };
 		E28C27863E18EF25455A0C80 /* java.json in Resources */ = {isa = PBXBuildFile; fileRef = 8907AAEC9D9D95B8AB2BC0C3 /* java.json */; };
+		E2E86FD10C67A7435C3A7DB0 /* cybersecurity.json in Resources */ = {isa = PBXBuildFile; fileRef = D12BA4C1A926FB0BF843A5B6 /* cybersecurity.json */; };
+		E3278E6DF8BF9F7A2CAA4043 /* polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 34D23F00D9F445675CDBCC45 /* polish.json */; };
 		E3D69BA40AB7D56C296B68CA /* UnitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E953B6B90C849ECB1D806FF /* UnitsView.swift */; };
 		E432FEA928A995B57233427B /* dutch.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DC5E8D574577465E5EC8F51 /* dutch.json */; };
+		E51ED38E27FDB25D59F1B5D4 /* embedded_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = 2918A1FB986BAA545ECDA99A /* embedded_systems.json */; };
+		E5D4D97EF0653E38A6A7E445 /* computer_graphics.json in Resources */ = {isa = PBXBuildFile; fileRef = C6595D636766706C5DBBB1A8 /* computer_graphics.json */; };
 		E66FD6006E409476DB8E09D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8278ED8B373C8BD318F2AA57 /* Assets.xcassets */; };
 		E723A76D805E8D23CF4E958A /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ED52EC4C599FB4C93990AF /* LessonView.swift */; };
 		E86751650E1B22336CB30032 /* yiddish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E2F19819571ACB08F08FEC5 /* yiddish.json */; };
 		E86CA720801E933134FF7E23 /* world_history.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E83CD684AE62F94F9439943 /* world_history.json */; };
 		E8D3FD83E83E3B650BEE8812 /* world_history.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E83CD684AE62F94F9439943 /* world_history.json */; };
 		E8DEFF56521D901F1FAF31BC /* russian.json in Resources */ = {isa = PBXBuildFile; fileRef = E28878C7B0B1D588D2471F69 /* russian.json */; };
+		EA58A4D8E023369BEF800D8D /* gpus.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9474549ECE55158A650425 /* gpus.json */; };
+		EB72D604405A4148B4227135 /* malay.json in Resources */ = {isa = PBXBuildFile; fileRef = 94AE62C5D9460E11196841B2 /* malay.json */; };
+		EB759F8B44A152740DB3DFD6 /* semiconductors.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FC04051401FFA7FD1C6F7A0 /* semiconductors.json */; };
+		EC1EC2A3A18067C3BB21DAA5 /* servers.json in Resources */ = {isa = PBXBuildFile; fileRef = C09BAA3B5E9D9C69729AB7D0 /* servers.json */; };
+		ECA8A78E438EB86B5AA1B927 /* circuits.json in Resources */ = {isa = PBXBuildFile; fileRef = 303BD909290616E716B1BB81 /* circuits.json */; };
+		EDA7DF9FB390946646A61347 /* distributed_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B5C43917C944D183273FD4 /* distributed_systems.json */; };
+		EDFCF1BB7E9C56C27FCF7B7D /* ruby.json in Resources */ = {isa = PBXBuildFile; fileRef = 5220B241F527F86626199599 /* ruby.json */; };
+		EE9A4EAB4711066449E0A833 /* signals_systems.json in Resources */ = {isa = PBXBuildFile; fileRef = C0BDCD7A2B87B0B6B4B2EFD7 /* signals_systems.json */; };
+		EF30E515FA984CA0D70817D4 /* bash.json in Resources */ = {isa = PBXBuildFile; fileRef = A07FB7B99A605DF37A0E23D1 /* bash.json */; };
 		EF35A36622B744B3EF034DFD /* LingoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAC69DD4E4BFD277E01680 /* LingoWidget.swift */; };
 		EFC32035248DAA79D1EC8AC5 /* go.json in Resources */ = {isa = PBXBuildFile; fileRef = EDDC45AA716BBD04CF700F92 /* go.json */; };
 		F18C0A6C1377A37894775E6C /* LingoWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C559633FA5556CD67381ADE /* LingoWidgetBundle.swift */; };
+		F29F009B1F246ECF8F7ED832 /* macedonian.json in Resources */ = {isa = PBXBuildFile; fileRef = AE38E4AB797D74CDF1DC43C5 /* macedonian.json */; };
+		F3754169229E32B34655373B /* indonesian.json in Resources */ = {isa = PBXBuildFile; fileRef = DEAD5660CE0CF9D6D0E12665 /* indonesian.json */; };
+		F46C2E9B0A1D5011CA3BF325 /* albanian.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A2BF59D68315A7CAFFCA163 /* albanian.json */; };
+		F5D1E7553DBED3F75422BB0A /* bengali.json in Resources */ = {isa = PBXBuildFile; fileRef = 545424A7D1350E034DDF353E /* bengali.json */; };
+		F5EF8B5DBF9526D8AE5D1405 /* icelandic.json in Resources */ = {isa = PBXBuildFile; fileRef = F28FAFFF719B67C4205F4E8D /* icelandic.json */; };
+		F5FC81701CCC6F903F53C059 /* concurrency.json in Resources */ = {isa = PBXBuildFile; fileRef = D9B6D14C324FDB91FB6197C9 /* concurrency.json */; };
+		F6803A4399BDABE00E1E590A /* economics.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E458A815E3354EE73662BDF /* economics.json */; };
 		F6897E8DA0302CF2FEF002D3 /* german.json in Resources */ = {isa = PBXBuildFile; fileRef = 3701094CFDB3AAD051661459 /* german.json */; };
 		F760457EFB5523B12867ECCF /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99103E67EEEBFAD239C1DFB7 /* CatalogView.swift */; };
+		F7A80F5704AFA68AC334E903 /* electronics.json in Resources */ = {isa = PBXBuildFile; fileRef = A88A7244EF444C5EE279FD24 /* electronics.json */; };
 		F8D0B809D0D3B9954DB3BF74 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D994478AA66BD3E1A014902 /* SplashView.swift */; };
+		F93057477C3D656655197461 /* displays_peripherals.json in Resources */ = {isa = PBXBuildFile; fileRef = 895A85F2C9056DB26FCB579F /* displays_peripherals.json */; };
+		F99BC1E8D4F413AF9EAF7944 /* electronics.json in Resources */ = {isa = PBXBuildFile; fileRef = A88A7244EF444C5EE279FD24 /* electronics.json */; };
 		FA146A59BECD4740462C3479 /* calculus.json in Resources */ = {isa = PBXBuildFile; fileRef = 53442AF129549F934E4477A6 /* calculus.json */; };
+		FAEE09BF3893E5D4471D7BE3 /* psychology.json in Resources */ = {isa = PBXBuildFile; fileRef = 758A02BDA52B76C042EAB821 /* psychology.json */; };
 		FB293EB1161E4B4AC2ED01F2 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983068D2FA587BBD5F4FA81 /* AuthView.swift */; };
+		FB5C5DE4DDAEA47323CDE8CE /* persian.json in Resources */ = {isa = PBXBuildFile; fileRef = 522F69C305939B176FC6B6EB /* persian.json */; };
+		FBBEF5D6193DDBA0154109D2 /* sensors.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D573A642D9733AC0394B03 /* sensors.json */; };
+		FCA315EC89530253578A8199 /* computer_architecture.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D2FDE123699C150462F9725 /* computer_architecture.json */; };
+		FCDD42D29D29E575AAB6B16C /* bulgarian.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DDB73638A7C5C41F880B198 /* bulgarian.json */; };
+		FDC6ADF3E140E56C6BE9D00C /* personal_finance.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3FCAE1113684B4C73B302 /* personal_finance.json */; };
+		FF8606078E2BAA70F872D9FA /* galician.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2FC2183371B5A9D6669E9E /* galician.json */; };
+		FFD045A04760D1B9D9C6C39C /* slovak.json in Resources */ = {isa = PBXBuildFile; fileRef = E5CCAE533DD36E48ACCAEC52 /* slovak.json */; };
 		FFE490F230A0AD75750AABCB /* geometry.json in Resources */ = {isa = PBXBuildFile; fileRef = 78329C083F6292E361208131 /* geometry.json */; };
 /* End PBXBuildFile section */
 
@@ -193,15 +399,40 @@
 
 /* Begin PBXFileReference section */
 		0331E3C0FAC6DD186E906475 /* linear_algebra.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = linear_algebra.json; sourceTree = "<group>"; };
+		035DA7D9EAECE00879DB5042 /* csharp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = csharp.json; sourceTree = "<group>"; };
+		059C593B876DC99CB179988E /* r_lang.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = r_lang.json; sourceTree = "<group>"; };
 		06EAC69DD4E4BFD277E01680 /* LingoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoWidget.swift; sourceTree = "<group>"; };
+		07F049EF9F3E2B115ABD7A09 /* elixir.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = elixir.json; sourceTree = "<group>"; };
+		0DDB73638A7C5C41F880B198 /* bulgarian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bulgarian.json; sourceTree = "<group>"; };
 		0E17FC4FF12CBF14500B94A1 /* anatomy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = anatomy.json; sourceTree = "<group>"; };
+		0EAE2C188E70DC3FFFE7AB36 /* investing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = investing.json; sourceTree = "<group>"; };
+		0FA4E89C6B8285B978C29293 /* chip_design.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chip_design.json; sourceTree = "<group>"; };
+		103156910926C35897342FD7 /* swedish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = swedish.json; sourceTree = "<group>"; };
+		1290392C746197D0936B28E2 /* storage_devices.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = storage_devices.json; sourceTree = "<group>"; };
 		1298E370FBBBFAA5DE8131CB /* chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chinese.json; sourceTree = "<group>"; };
+		137616308D7C7DB936DE959F /* lithuanian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lithuanian.json; sourceTree = "<group>"; };
+		13DBD9CA00FD67F2ACC5067D /* danish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = danish.json; sourceTree = "<group>"; };
 		145F99C74BD922728A9B3871 /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
+		16AF4012656F1B19ED913F7C /* typescript.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = typescript.json; sourceTree = "<group>"; };
+		176FE48268E90D59FD6D3E27 /* cobol.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cobol.json; sourceTree = "<group>"; };
 		18E4CF21151DC55C1582F3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A1660785D81E199DF8D0B97 /* ai.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ai.json; sourceTree = "<group>"; };
+		1B9E8EAE281D7009DCF61F6D /* ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ukrainian.json; sourceTree = "<group>"; };
+		1CA95DBF03D4DF91A2F571B3 /* slovenian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slovenian.json; sourceTree = "<group>"; };
+		207886674CB54492C1FAC9A0 /* estonian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = estonian.json; sourceTree = "<group>"; };
 		20ED08DD321451E3CC5F88BE /* physiology.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = physiology.json; sourceTree = "<group>"; };
 		2558463843F88D615C200354 /* python.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = python.json; sourceTree = "<group>"; };
 		25822866A9082B6D52D10D2B /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		2681EB1B35F0D07232D193B2 /* poker.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = poker.json; sourceTree = "<group>"; };
+		284EDC62FAC1D49FA5CB20FF /* c_lang.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = c_lang.json; sourceTree = "<group>"; };
+		2918A1FB986BAA545ECDA99A /* embedded_systems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = embedded_systems.json; sourceTree = "<group>"; };
+		2DD3C3B0B9296C512373DBBE /* georgian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = georgian.json; sourceTree = "<group>"; };
+		303BD909290616E716B1BB81 /* circuits.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = circuits.json; sourceTree = "<group>"; };
 		31395F36291D691B8F443E99 /* arithmetic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = arithmetic.json; sourceTree = "<group>"; };
+		338D5F568534C0DD7FBABD1C /* ocaml.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ocaml.json; sourceTree = "<group>"; };
+		340770AC5617610F1867033B /* vietnamese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vietnamese.json; sourceTree = "<group>"; };
+		34136C3515C4AA0EE11F7E2F /* philosophy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = philosophy.json; sourceTree = "<group>"; };
+		34D23F00D9F445675CDBCC45 /* polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = polish.json; sourceTree = "<group>"; };
 		36BADF1122486F4DB65F1F78 /* geography.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = geography.json; sourceTree = "<group>"; };
 		3701094CFDB3AAD051661459 /* german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = german.json; sourceTree = "<group>"; };
 		38ED52EC4C599FB4C93990AF /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
@@ -209,79 +440,157 @@
 		3C559633FA5556CD67381ADE /* LingoWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoWidgetBundle.swift; sourceTree = "<group>"; };
 		3E08CADD3672CCCBFFB75423 /* precalc12.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = precalc12.json; sourceTree = "<group>"; };
 		3F214D0F0810B9E696D99BDC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3FC04051401FFA7FD1C6F7A0 /* semiconductors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = semiconductors.json; sourceTree = "<group>"; };
 		4349CA379EE52052DE5210F6 /* music_theory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = music_theory.json; sourceTree = "<group>"; };
 		4462801DB409CFD3D81F2E5B /* javascript.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = javascript.json; sourceTree = "<group>"; };
 		48042F3BA345F64023502DB5 /* LingoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoApp.swift; sourceTree = "<group>"; };
+		480793409DC0ED91A3DC9972 /* dsa.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dsa.json; sourceTree = "<group>"; };
+		4A5EE076C0B7E52EB51D2B64 /* swift.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = swift.json; sourceTree = "<group>"; };
+		4AE80FA336874CD28684167F /* lua.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lua.json; sourceTree = "<group>"; };
+		4C213E8703F9B0CB69E8BC7E /* databases.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = databases.json; sourceTree = "<group>"; };
 		4DC67454921AA331D2D3EC7C /* astronomy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = astronomy.json; sourceTree = "<group>"; };
 		4FA73EEEDA6CB0678990FF20 /* Lingo-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Lingo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5220B241F527F86626199599 /* ruby.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ruby.json; sourceTree = "<group>"; };
+		522F69C305939B176FC6B6EB /* persian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = persian.json; sourceTree = "<group>"; };
+		5252996124888CAA823768AC /* fortran.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fortran.json; sourceTree = "<group>"; };
 		53442AF129549F934E4477A6 /* calculus.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = calculus.json; sourceTree = "<group>"; };
+		53E050E9BA329512D8FBA196 /* compilers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = compilers.json; sourceTree = "<group>"; };
+		545424A7D1350E034DDF353E /* bengali.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bengali.json; sourceTree = "<group>"; };
 		56A17B17BA470F4F8C7AD0B3 /* statistics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = statistics.json; sourceTree = "<group>"; };
 		57D63DD534912A773D403690 /* SessionKeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionKeychainStorage.swift; sourceTree = "<group>"; };
 		5879FA1B9F4064EFBFBE7F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		59178EFB2E6BDA8C7D75B6BD /* real_time_systems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = real_time_systems.json; sourceTree = "<group>"; };
+		592294D44A5D73E21A9F6469 /* plank.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = plank.json; sourceTree = "<group>"; };
 		5B78A24860D0E059A1BE0820 /* anthropology.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = anthropology.json; sourceTree = "<group>"; };
+		5D2FDE123699C150462F9725 /* computer_architecture.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = computer_architecture.json; sourceTree = "<group>"; };
+		5DC070E5BFD6EEC089B706E6 /* norwegian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = norwegian.json; sourceTree = "<group>"; };
+		5E01746834C58E422B1AA3D0 /* operating_systems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = operating_systems.json; sourceTree = "<group>"; };
 		5E497242C06CB2BE09147F1E /* music_history.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = music_history.json; sourceTree = "<group>"; };
 		62C884EB677AEBB4563179BA /* LingoWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LingoWidget.entitlements; sourceTree = "<group>"; };
 		6879A4E2162C7E8DB0595B67 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		698847033238209C4252DDE8 /* algebra.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = algebra.json; sourceTree = "<group>"; };
+		6A2BF59D68315A7CAFFCA163 /* albanian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = albanian.json; sourceTree = "<group>"; };
+		6B426EA1F7E83D0051F7763A /* communications.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = communications.json; sourceTree = "<group>"; };
 		6C5DA3EB85AF4C36FC0C74C4 /* astrophysics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = astrophysics.json; sourceTree = "<group>"; };
 		6D04D79CB55B936DBED23841 /* LingoWidgetExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = LingoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC5E8D574577465E5EC8F51 /* dutch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dutch.json; sourceTree = "<group>"; };
 		6E953B6B90C849ECB1D806FF /* UnitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsView.swift; sourceTree = "<group>"; };
+		6EC3FCAE1113684B4C73B302 /* personal_finance.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = personal_finance.json; sourceTree = "<group>"; };
 		6F61B1297D4B4683A6A42DB9 /* Lingo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lingo.entitlements; sourceTree = "<group>"; };
 		721FEFF6757512300B8F10FB /* spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = spanish.json; sourceTree = "<group>"; };
 		72FCEEF6AC9EB8AA785F6719 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		738804B26679E303E7AE98CE /* ios_internals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ios_internals.json; sourceTree = "<group>"; };
+		74CA373CF5C088667533EA43 /* computer_networks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = computer_networks.json; sourceTree = "<group>"; };
+		74DB09DDA290CD2847C15269 /* czech.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = czech.json; sourceTree = "<group>"; };
+		758A02BDA52B76C042EAB821 /* psychology.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = psychology.json; sourceTree = "<group>"; };
 		78329C083F6292E361208131 /* geometry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = geometry.json; sourceTree = "<group>"; };
 		79594DE88C2126253A5FD79D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7A9E1FDBBD26A084A649C971 /* microcontrollers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = microcontrollers.json; sourceTree = "<group>"; };
+		7D7DFA3FA02BB74EFBCEB7BE /* software_engineering.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = software_engineering.json; sourceTree = "<group>"; };
 		7D994478AA66BD3E1A014902 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		80B17BEA9830945054F714E9 /* romanian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = romanian.json; sourceTree = "<group>"; };
 		817171023F298347664538D7 /* french.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = french.json; sourceTree = "<group>"; };
 		8278ED8B373C8BD318F2AA57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82D1548A44AF9461019E577B /* chess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chess.json; sourceTree = "<group>"; };
 		82E2BFEDCA965D066CA39E04 /* biology.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = biology.json; sourceTree = "<group>"; };
 		835C5E8FC11D9AD2C7BF476B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		844651E960161655EE200363 /* ContentStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStoreTests.swift; sourceTree = "<group>"; };
+		84953DF9BB1674DD3714A99A /* power_systems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = power_systems.json; sourceTree = "<group>"; };
 		85262F07D23361702C21C7DA /* portuguese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portuguese.json; sourceTree = "<group>"; };
 		8554AEA87307E9D90E1008A7 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		85747ECA85D0763928C12F4E /* DailyReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReminder.swift; sourceTree = "<group>"; };
+		85F873CED83FF2D4E0C64918 /* julia.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = julia.json; sourceTree = "<group>"; };
 		86734E41E13DAF102D136EE9 /* biology_masterclass.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = biology_masterclass.json; sourceTree = "<group>"; };
 		879E14E2752370F51B709C91 /* precalc11.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = precalc11.json; sourceTree = "<group>"; };
 		8907AAEC9D9D95B8AB2BC0C3 /* java.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = java.json; sourceTree = "<group>"; };
+		895A85F2C9056DB26FCB579F /* displays_peripherals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = displays_peripherals.json; sourceTree = "<group>"; };
+		8C019662A8E8712CDD3465A6 /* clojure.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = clojure.json; sourceTree = "<group>"; };
 		8E0F8517A7ABB25B93AC01E7 /* trigonometry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trigonometry.json; sourceTree = "<group>"; };
 		8E13461BDB5DDAFF671A5AC4 /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catalog.json; sourceTree = "<group>"; };
 		8EF34A271C6CF10F334D884F /* sql.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sql.json; sourceTree = "<group>"; };
+		9116A30533FC651DDA5F6FAB /* hardware.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hardware.json; sourceTree = "<group>"; };
+		9122CCD569CA2492CE92D9CC /* basque.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = basque.json; sourceTree = "<group>"; };
+		91E389D943D2440C5E5C7EC6 /* hebrew.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hebrew.json; sourceTree = "<group>"; };
+		925EE2748344A4E31EC1FD86 /* thai.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = thai.json; sourceTree = "<group>"; };
+		94AE62C5D9460E11196841B2 /* malay.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = malay.json; sourceTree = "<group>"; };
 		957B0D682A78332B3AF55252 /* japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = japanese.json; sourceTree = "<group>"; };
+		96EAA7DCEA8FE42D2FD92FDF /* haskell.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = haskell.json; sourceTree = "<group>"; };
+		98D8C928577D4B0CB112DFE8 /* objective_c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = objective_c.json; sourceTree = "<group>"; };
 		99103E67EEEBFAD239C1DFB7 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
 		9A92B0B1583E5DBADA0DFB08 /* Lingo-macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lingo-macOS.entitlements"; sourceTree = "<group>"; };
 		9BE666DF95E425B711E90081 /* cpp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cpp.json; sourceTree = "<group>"; };
+		9C35C400B917D6AC94E446A3 /* cryptography.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cryptography.json; sourceTree = "<group>"; };
+		9D4206AB5F367F68C98C8F6A /* scala.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scala.json; sourceTree = "<group>"; };
 		9E2F19819571ACB08F08FEC5 /* yiddish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = yiddish.json; sourceTree = "<group>"; };
+		9E458A815E3354EE73662BDF /* economics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = economics.json; sourceTree = "<group>"; };
 		9E6C02310119C639A0B9A691 /* Lingo-iOSTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "Lingo-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E83CD684AE62F94F9439943 /* world_history.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = world_history.json; sourceTree = "<group>"; };
 		9FAB9F94C3E58CDFD8E70B33 /* discrete_math.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = discrete_math.json; sourceTree = "<group>"; };
+		A07FB7B99A605DF37A0E23D1 /* bash.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bash.json; sourceTree = "<group>"; };
+		A4212810B69ABFDEF85EBD48 /* theory_of_computation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = theory_of_computation.json; sourceTree = "<group>"; };
 		A4625048209FADCC92D7CC9A /* AvatarPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerView.swift; sourceTree = "<group>"; };
+		A4A3A342298A88EDA663AEFD /* mobile_hardware.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mobile_hardware.json; sourceTree = "<group>"; };
+		A5D573A642D9733AC0394B03 /* sensors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sensors.json; sourceTree = "<group>"; };
+		A88A7244EF444C5EE279FD24 /* electronics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = electronics.json; sourceTree = "<group>"; };
+		A8B1C0645593DF8A5A5FC9F2 /* digital_logic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = digital_logic.json; sourceTree = "<group>"; };
 		AB2EEE50C44A4A8A16F01FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB7AAC5036125F3FE67769DE /* control_systems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = control_systems.json; sourceTree = "<group>"; };
+		AE38E4AB797D74CDF1DC43C5 /* macedonian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = macedonian.json; sourceTree = "<group>"; };
+		AF94BBEC7D7988A3C5ACA59B /* hungarian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hungarian.json; sourceTree = "<group>"; };
+		B11D4965B11D1EC66D614E46 /* assembly.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = assembly.json; sourceTree = "<group>"; };
+		B3B5C43917C944D183273FD4 /* distributed_systems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = distributed_systems.json; sourceTree = "<group>"; };
 		B47A509557BCADC7E56991E1 /* rust.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rust.json; sourceTree = "<group>"; };
+		B4F0B5C5210027037193CE91 /* git_terminal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = git_terminal.json; sourceTree = "<group>"; };
 		B5B4FAB3C10777FC492A17C8 /* chemistry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chemistry.json; sourceTree = "<group>"; };
 		B6179B0E028A5343849EF466 /* computers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = computers.json; sourceTree = "<group>"; };
+		B7397162E36FB85C334A5B9C /* finnish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = finnish.json; sourceTree = "<group>"; };
+		B7C31970F48CE50CD11A344B /* machine_learning.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = machine_learning.json; sourceTree = "<group>"; };
 		BBBADCF9593A6188D62C99B7 /* logic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = logic.json; sourceTree = "<group>"; };
 		BF9D238688612B66E23AD263 /* hindi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hindi.json; sourceTree = "<group>"; };
 		BFF81D8C00013D3CA01B1ECA /* ContentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStore.swift; sourceTree = "<group>"; };
+		C09BAA3B5E9D9C69729AB7D0 /* servers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = servers.json; sourceTree = "<group>"; };
+		C0BDCD7A2B87B0B6B4B2EFD7 /* signals_systems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = signals_systems.json; sourceTree = "<group>"; };
 		C1328B3C2F4DE1C280B2CFA8 /* korean.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = korean.json; sourceTree = "<group>"; };
 		C1DEE9DE26C2FBEC0546F384 /* precalc12_masterclass.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = precalc12_masterclass.json; sourceTree = "<group>"; };
+		C20C93230525CAC72B305BCB /* zig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = zig.json; sourceTree = "<group>"; };
+		C2C3C3F51757D1033FD2BBE1 /* networking_hardware.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = networking_hardware.json; sourceTree = "<group>"; };
+		C6595D636766706C5DBBB1A8 /* computer_graphics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = computer_graphics.json; sourceTree = "<group>"; };
+		C7234021639CFEC592D10090 /* fpga_verilog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fpga_verilog.json; sourceTree = "<group>"; };
+		C9E8CE6B73271792D6355AAD /* electromagnetism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = electromagnetism.json; sourceTree = "<group>"; };
 		CAA16B709D68772840BF2887 /* DailyReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReminderTests.swift; sourceTree = "<group>"; };
 		CBC3AF06A855689B1A2B0129 /* WhatsNewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewSheet.swift; sourceTree = "<group>"; };
+		CDF4299044528991AD4A452A /* php.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = php.json; sourceTree = "<group>"; };
+		CE9474549ECE55158A650425 /* gpus.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gpus.json; sourceTree = "<group>"; };
 		CF8B7548CA86AA6AD76DEEDB /* arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = arabic.json; sourceTree = "<group>"; };
+		CFE4BB77BB544B39584050C1 /* perl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = perl.json; sourceTree = "<group>"; };
+		D12BA4C1A926FB0BF843A5B6 /* cybersecurity.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cybersecurity.json; sourceTree = "<group>"; };
 		D1DCA2A90FD575638F1D0800 /* reverse_engineering.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reverse_engineering.json; sourceTree = "<group>"; };
 		D41722A7250A176A189B216F /* LingoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoApp.swift; sourceTree = "<group>"; };
 		D9742CB386A264EB10F5B863 /* fieldbook.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fieldbook.json; sourceTree = "<group>"; };
 		D983068D2FA587BBD5F4FA81 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		D9B6D14C324FDB91FB6197C9 /* concurrency.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = concurrency.json; sourceTree = "<group>"; };
+		D9E0DB9F450AC5754A415F60 /* pcb_design.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pcb_design.json; sourceTree = "<group>"; };
+		DC31FB3B700BC4C08FCD6F69 /* greek.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = greek.json; sourceTree = "<group>"; };
+		DCFBF1385303DBF60BCAD3DE /* turkish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = turkish.json; sourceTree = "<group>"; };
+		DEAD5660CE0CF9D6D0E12665 /* indonesian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = indonesian.json; sourceTree = "<group>"; };
 		E00D65A9F7727B717D951D1C /* klingon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = klingon.json; sourceTree = "<group>"; };
+		E148889304A6D9C93273AB7C /* kotlin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = kotlin.json; sourceTree = "<group>"; };
 		E28878C7B0B1D588D2471F69 /* russian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = russian.json; sourceTree = "<group>"; };
+		E3B877AC4BFB1A2C93F44D35 /* dart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dart.json; sourceTree = "<group>"; };
+		E5CCAE533DD36E48ACCAEC52 /* slovak.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slovak.json; sourceTree = "<group>"; };
+		E8F395A07F4DF19E76A7F491 /* catalan.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catalan.json; sourceTree = "<group>"; };
 		E9261B0C87E6F1D387DBF0A7 /* physics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = physics.json; sourceTree = "<group>"; };
 		E96829EFE58B59935649CEA6 /* italian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = italian.json; sourceTree = "<group>"; };
 		EAC571CBB172A60AD70C334B /* Lingo-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lingo-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2FC2183371B5A9D6669E9E /* galician.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = galician.json; sourceTree = "<group>"; };
 		ECE2200B9A4385F8C0628B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EDDC45AA716BBD04CF700F92 /* go.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = go.json; sourceTree = "<group>"; };
+		F28FAFFF719B67C4205F4E8D /* icelandic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = icelandic.json; sourceTree = "<group>"; };
+		F3532385783609B1A4326811 /* html_css.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = html_css.json; sourceTree = "<group>"; };
 		F53F3BB2EF274144F209BC78 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		F8B763E49F490D29AF4EFF9E /* croatian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = croatian.json; sourceTree = "<group>"; };
+		F8CDBB1D8D181A513DBFFAF5 /* serbian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = serbian.json; sourceTree = "<group>"; };
+		F8E6441EA9FB8D5D7E3043F7 /* dsp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dsp.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -448,56 +757,159 @@
 		E3BE56DB18B123B89E3681D2 /* courses */ = {
 			isa = PBXGroup;
 			children = (
+				1A1660785D81E199DF8D0B97 /* ai.json */,
+				6A2BF59D68315A7CAFFCA163 /* albanian.json */,
 				698847033238209C4252DDE8 /* algebra.json */,
 				0E17FC4FF12CBF14500B94A1 /* anatomy.json */,
 				3BEF57FDC8F27D5751826EF2 /* anatomy12.json */,
 				5B78A24860D0E059A1BE0820 /* anthropology.json */,
 				CF8B7548CA86AA6AD76DEEDB /* arabic.json */,
 				31395F36291D691B8F443E99 /* arithmetic.json */,
+				B11D4965B11D1EC66D614E46 /* assembly.json */,
 				4DC67454921AA331D2D3EC7C /* astronomy.json */,
 				6C5DA3EB85AF4C36FC0C74C4 /* astrophysics.json */,
+				A07FB7B99A605DF37A0E23D1 /* bash.json */,
+				9122CCD569CA2492CE92D9CC /* basque.json */,
+				545424A7D1350E034DDF353E /* bengali.json */,
 				82E2BFEDCA965D066CA39E04 /* biology.json */,
+				0DDB73638A7C5C41F880B198 /* bulgarian.json */,
+				284EDC62FAC1D49FA5CB20FF /* c_lang.json */,
 				53442AF129549F934E4477A6 /* calculus.json */,
+				E8F395A07F4DF19E76A7F491 /* catalan.json */,
 				B5B4FAB3C10777FC492A17C8 /* chemistry.json */,
 				82D1548A44AF9461019E577B /* chess.json */,
 				1298E370FBBBFAA5DE8131CB /* chinese.json */,
+				0FA4E89C6B8285B978C29293 /* chip_design.json */,
+				303BD909290616E716B1BB81 /* circuits.json */,
+				8C019662A8E8712CDD3465A6 /* clojure.json */,
+				176FE48268E90D59FD6D3E27 /* cobol.json */,
+				6B426EA1F7E83D0051F7763A /* communications.json */,
+				53E050E9BA329512D8FBA196 /* compilers.json */,
+				5D2FDE123699C150462F9725 /* computer_architecture.json */,
+				C6595D636766706C5DBBB1A8 /* computer_graphics.json */,
+				74CA373CF5C088667533EA43 /* computer_networks.json */,
 				B6179B0E028A5343849EF466 /* computers.json */,
+				D9B6D14C324FDB91FB6197C9 /* concurrency.json */,
+				AB7AAC5036125F3FE67769DE /* control_systems.json */,
 				9BE666DF95E425B711E90081 /* cpp.json */,
+				F8B763E49F490D29AF4EFF9E /* croatian.json */,
+				9C35C400B917D6AC94E446A3 /* cryptography.json */,
+				035DA7D9EAECE00879DB5042 /* csharp.json */,
+				D12BA4C1A926FB0BF843A5B6 /* cybersecurity.json */,
+				74DB09DDA290CD2847C15269 /* czech.json */,
+				13DBD9CA00FD67F2ACC5067D /* danish.json */,
+				E3B877AC4BFB1A2C93F44D35 /* dart.json */,
+				4C213E8703F9B0CB69E8BC7E /* databases.json */,
+				A8B1C0645593DF8A5A5FC9F2 /* digital_logic.json */,
 				9FAB9F94C3E58CDFD8E70B33 /* discrete_math.json */,
+				895A85F2C9056DB26FCB579F /* displays_peripherals.json */,
+				B3B5C43917C944D183273FD4 /* distributed_systems.json */,
+				480793409DC0ED91A3DC9972 /* dsa.json */,
+				F8E6441EA9FB8D5D7E3043F7 /* dsp.json */,
 				6DC5E8D574577465E5EC8F51 /* dutch.json */,
+				9E458A815E3354EE73662BDF /* economics.json */,
+				C9E8CE6B73271792D6355AAD /* electromagnetism.json */,
+				A88A7244EF444C5EE279FD24 /* electronics.json */,
+				07F049EF9F3E2B115ABD7A09 /* elixir.json */,
+				2918A1FB986BAA545ECDA99A /* embedded_systems.json */,
+				207886674CB54492C1FAC9A0 /* estonian.json */,
 				D9742CB386A264EB10F5B863 /* fieldbook.json */,
+				B7397162E36FB85C334A5B9C /* finnish.json */,
+				5252996124888CAA823768AC /* fortran.json */,
+				C7234021639CFEC592D10090 /* fpga_verilog.json */,
 				817171023F298347664538D7 /* french.json */,
+				EB2FC2183371B5A9D6669E9E /* galician.json */,
 				36BADF1122486F4DB65F1F78 /* geography.json */,
 				78329C083F6292E361208131 /* geometry.json */,
+				2DD3C3B0B9296C512373DBBE /* georgian.json */,
 				3701094CFDB3AAD051661459 /* german.json */,
+				B4F0B5C5210027037193CE91 /* git_terminal.json */,
 				EDDC45AA716BBD04CF700F92 /* go.json */,
+				CE9474549ECE55158A650425 /* gpus.json */,
+				DC31FB3B700BC4C08FCD6F69 /* greek.json */,
+				9116A30533FC651DDA5F6FAB /* hardware.json */,
+				96EAA7DCEA8FE42D2FD92FDF /* haskell.json */,
+				91E389D943D2440C5E5C7EC6 /* hebrew.json */,
 				BF9D238688612B66E23AD263 /* hindi.json */,
+				F3532385783609B1A4326811 /* html_css.json */,
+				AF94BBEC7D7988A3C5ACA59B /* hungarian.json */,
+				F28FAFFF719B67C4205F4E8D /* icelandic.json */,
+				DEAD5660CE0CF9D6D0E12665 /* indonesian.json */,
+				0EAE2C188E70DC3FFFE7AB36 /* investing.json */,
 				738804B26679E303E7AE98CE /* ios_internals.json */,
 				E96829EFE58B59935649CEA6 /* italian.json */,
 				957B0D682A78332B3AF55252 /* japanese.json */,
 				8907AAEC9D9D95B8AB2BC0C3 /* java.json */,
 				4462801DB409CFD3D81F2E5B /* javascript.json */,
+				85F873CED83FF2D4E0C64918 /* julia.json */,
 				E00D65A9F7727B717D951D1C /* klingon.json */,
 				C1328B3C2F4DE1C280B2CFA8 /* korean.json */,
+				E148889304A6D9C93273AB7C /* kotlin.json */,
 				0331E3C0FAC6DD186E906475 /* linear_algebra.json */,
+				137616308D7C7DB936DE959F /* lithuanian.json */,
 				BBBADCF9593A6188D62C99B7 /* logic.json */,
+				4AE80FA336874CD28684167F /* lua.json */,
+				AE38E4AB797D74CDF1DC43C5 /* macedonian.json */,
+				B7C31970F48CE50CD11A344B /* machine_learning.json */,
+				94AE62C5D9460E11196841B2 /* malay.json */,
+				7A9E1FDBBD26A084A649C971 /* microcontrollers.json */,
+				A4A3A342298A88EDA663AEFD /* mobile_hardware.json */,
 				5E497242C06CB2BE09147F1E /* music_history.json */,
 				4349CA379EE52052DE5210F6 /* music_theory.json */,
+				C2C3C3F51757D1033FD2BBE1 /* networking_hardware.json */,
+				5DC070E5BFD6EEC089B706E6 /* norwegian.json */,
+				98D8C928577D4B0CB112DFE8 /* objective_c.json */,
+				338D5F568534C0DD7FBABD1C /* ocaml.json */,
+				5E01746834C58E422B1AA3D0 /* operating_systems.json */,
+				D9E0DB9F450AC5754A415F60 /* pcb_design.json */,
+				CFE4BB77BB544B39584050C1 /* perl.json */,
+				522F69C305939B176FC6B6EB /* persian.json */,
+				6EC3FCAE1113684B4C73B302 /* personal_finance.json */,
+				34136C3515C4AA0EE11F7E2F /* philosophy.json */,
+				CDF4299044528991AD4A452A /* php.json */,
 				E9261B0C87E6F1D387DBF0A7 /* physics.json */,
 				20ED08DD321451E3CC5F88BE /* physiology.json */,
+				592294D44A5D73E21A9F6469 /* plank.json */,
+				2681EB1B35F0D07232D193B2 /* poker.json */,
+				34D23F00D9F445675CDBCC45 /* polish.json */,
 				85262F07D23361702C21C7DA /* portuguese.json */,
+				84953DF9BB1674DD3714A99A /* power_systems.json */,
 				879E14E2752370F51B709C91 /* precalc11.json */,
 				3E08CADD3672CCCBFFB75423 /* precalc12.json */,
+				758A02BDA52B76C042EAB821 /* psychology.json */,
 				2558463843F88D615C200354 /* python.json */,
+				059C593B876DC99CB179988E /* r_lang.json */,
+				59178EFB2E6BDA8C7D75B6BD /* real_time_systems.json */,
 				D1DCA2A90FD575638F1D0800 /* reverse_engineering.json */,
+				80B17BEA9830945054F714E9 /* romanian.json */,
+				5220B241F527F86626199599 /* ruby.json */,
 				E28878C7B0B1D588D2471F69 /* russian.json */,
 				B47A509557BCADC7E56991E1 /* rust.json */,
+				9D4206AB5F367F68C98C8F6A /* scala.json */,
+				3FC04051401FFA7FD1C6F7A0 /* semiconductors.json */,
+				A5D573A642D9733AC0394B03 /* sensors.json */,
+				F8CDBB1D8D181A513DBFFAF5 /* serbian.json */,
+				C09BAA3B5E9D9C69729AB7D0 /* servers.json */,
+				C0BDCD7A2B87B0B6B4B2EFD7 /* signals_systems.json */,
+				E5CCAE533DD36E48ACCAEC52 /* slovak.json */,
+				1CA95DBF03D4DF91A2F571B3 /* slovenian.json */,
+				7D7DFA3FA02BB74EFBCEB7BE /* software_engineering.json */,
 				721FEFF6757512300B8F10FB /* spanish.json */,
 				8EF34A271C6CF10F334D884F /* sql.json */,
 				56A17B17BA470F4F8C7AD0B3 /* statistics.json */,
+				1290392C746197D0936B28E2 /* storage_devices.json */,
+				103156910926C35897342FD7 /* swedish.json */,
+				4A5EE076C0B7E52EB51D2B64 /* swift.json */,
+				925EE2748344A4E31EC1FD86 /* thai.json */,
+				A4212810B69ABFDEF85EBD48 /* theory_of_computation.json */,
 				8E0F8517A7ABB25B93AC01E7 /* trigonometry.json */,
+				DCFBF1385303DBF60BCAD3DE /* turkish.json */,
+				16AF4012656F1B19ED913F7C /* typescript.json */,
+				1B9E8EAE281D7009DCF61F6D /* ukrainian.json */,
+				340770AC5617610F1867033B /* vietnamese.json */,
 				9E83CD684AE62F94F9439943 /* world_history.json */,
 				9E2F19819571ACB08F08FEC5 /* yiddish.json */,
+				C20C93230525CAC72B305BCB /* zig.json */,
 			);
 			path = courses;
 			sourceTree = "<group>";
@@ -637,59 +1049,162 @@
 			buildActionMask = 2147483647;
 			files = (
 				91AE638CFC27656B0F8084B3 /* Assets.xcassets in Resources */,
+				25BE0C19D45DE239085FF96C /* ai.json in Resources */,
+				8354C0B7039A6C8BDAE2FFA0 /* albanian.json in Resources */,
 				DC39534230732711541B4746 /* algebra.json in Resources */,
 				62E2578B502D6E92112DBBE3 /* anatomy.json in Resources */,
 				83FE4BEB3BC285041939681B /* anatomy12.json in Resources */,
 				8E5DD4BC66B1EB2699D70ABF /* anthropology.json in Resources */,
 				473B6338A35520B6E920D779 /* arabic.json in Resources */,
 				42065E2A1395BEDE6AAAAFFE /* arithmetic.json in Resources */,
+				607B1E480EF4703B5C34ED68 /* assembly.json in Resources */,
 				5CEC9CE21397145119FCCE01 /* astronomy.json in Resources */,
 				AA3FAE656651E14FCBFEABDD /* astrophysics.json in Resources */,
+				49721C1261D55E617E145966 /* bash.json in Resources */,
+				7627BE39E0FA0C9C5876A7A0 /* basque.json in Resources */,
+				F5D1E7553DBED3F75422BB0A /* bengali.json in Resources */,
 				95E06A59222F1148E3EDCE4E /* biology.json in Resources */,
 				C593B921FC983DC917DC9F3C /* biology_masterclass.json in Resources */,
+				FCDD42D29D29E575AAB6B16C /* bulgarian.json in Resources */,
+				1B920F75CDA9BA04DDF37642 /* c_lang.json in Resources */,
 				FA146A59BECD4740462C3479 /* calculus.json in Resources */,
+				B08633A1B9B3355717D41F72 /* catalan.json in Resources */,
 				5E55058CB8B6390B0B6B2F51 /* catalog.json in Resources */,
 				6EB73B9995297F591B5F0B7D /* chemistry.json in Resources */,
 				06DDEAC9DBEEF0109B73C87D /* chess.json in Resources */,
 				D3461DD54E4BB706279CD3B8 /* chinese.json in Resources */,
+				11F0B4969E2F5CAB19F7B73C /* chip_design.json in Resources */,
+				ECA8A78E438EB86B5AA1B927 /* circuits.json in Resources */,
+				3B0DD6573650669BE98D1AD5 /* clojure.json in Resources */,
+				05EB852888C962FB3476F19F /* cobol.json in Resources */,
+				0AC57782417379201959E6F3 /* communications.json in Resources */,
+				A6ABDCCF9A360E86341F6B9F /* compilers.json in Resources */,
+				A802BD316D6D809AA5368B0A /* computer_architecture.json in Resources */,
+				8DF3FBF15E5184907573F33B /* computer_graphics.json in Resources */,
+				A72848CFCA857C4C2AA39433 /* computer_networks.json in Resources */,
 				B3C07777E88197ACDAA5DEAA /* computers.json in Resources */,
+				318D50B478829722AD2BE149 /* concurrency.json in Resources */,
+				5D65FB304240881500060824 /* control_systems.json in Resources */,
 				7B0650BB4C81FFF35689E8E6 /* cpp.json in Resources */,
+				68C632DFD51281C6157CBEAA /* croatian.json in Resources */,
+				3D06BC871E39FD4974FC8749 /* cryptography.json in Resources */,
+				460607E6F2AFD05FB0EF973C /* csharp.json in Resources */,
+				E2E86FD10C67A7435C3A7DB0 /* cybersecurity.json in Resources */,
+				608FAB3A64EB1B8DB57684B2 /* czech.json in Resources */,
+				16B74492B79E3EADE9A6B7A2 /* danish.json in Resources */,
+				DFC2AEF01A09E4519A26F064 /* dart.json in Resources */,
+				04AA6F612156E37036CB895F /* databases.json in Resources */,
+				6A7B8EB297617777389F60E8 /* digital_logic.json in Resources */,
 				B46BE8ED1A3AF5A2BF43C78F /* discrete_math.json in Resources */,
+				B2AAC12F2D4A85028988331E /* displays_peripherals.json in Resources */,
+				EDA7DF9FB390946646A61347 /* distributed_systems.json in Resources */,
+				0ABBF527F9582A127A57492E /* dsa.json in Resources */,
+				025773120096A07C25705CF2 /* dsp.json in Resources */,
 				86CADF3E196A0732996BC51D /* dutch.json in Resources */,
+				C8510198C9BD5853C147B73D /* economics.json in Resources */,
+				50DAC9ABE249CEF3C4CF2CAD /* electromagnetism.json in Resources */,
+				F99BC1E8D4F413AF9EAF7944 /* electronics.json in Resources */,
+				93CDA9BF94C9CFD487F2F68C /* elixir.json in Resources */,
+				E51ED38E27FDB25D59F1B5D4 /* embedded_systems.json in Resources */,
+				949DF791221AA7E2103C1499 /* estonian.json in Resources */,
 				52A0A711CBBBFE3BBF73F254 /* fieldbook.json in Resources */,
+				872BFAF067187CF2BCEF5B41 /* finnish.json in Resources */,
+				0333B6B0DFE1C1D1E570BF39 /* fortran.json in Resources */,
+				DB7AA675DA00BF99FE1DDADE /* fpga_verilog.json in Resources */,
 				7FCD7930E86A050BE652801F /* french.json in Resources */,
+				FF8606078E2BAA70F872D9FA /* galician.json in Resources */,
 				533DE048D1F574A4C8CEA9B4 /* geography.json in Resources */,
 				DAAED67B144713AEF10BE165 /* geometry.json in Resources */,
+				BDE18B23349A8CEDB8D8658E /* georgian.json in Resources */,
 				F6897E8DA0302CF2FEF002D3 /* german.json in Resources */,
+				5A0ECA0BCAE9BBC256D749E5 /* git_terminal.json in Resources */,
 				2A412D23BA17043E177035EC /* go.json in Resources */,
+				CA6B5790B20796AC3103425E /* gpus.json in Resources */,
+				2E951B3242B25D971B78A8ED /* greek.json in Resources */,
+				C05C25000A001432AB73AF70 /* hardware.json in Resources */,
+				1B859FC3C9D2D1BF2BCC78E1 /* haskell.json in Resources */,
+				715303AEF29D317103B4B14D /* hebrew.json in Resources */,
 				29D0DBED28E100527457F052 /* hindi.json in Resources */,
+				71A7A25C244E0296B0DC3527 /* html_css.json in Resources */,
+				1DABAE407AA7DB450CAD15F7 /* hungarian.json in Resources */,
+				F5EF8B5DBF9526D8AE5D1405 /* icelandic.json in Resources */,
+				F3754169229E32B34655373B /* indonesian.json in Resources */,
+				8BE2F4F35328C59370552397 /* investing.json in Resources */,
 				78189777534DD3DA86B3D82D /* ios_internals.json in Resources */,
 				4EC73EE099FB9880E11646D2 /* italian.json in Resources */,
 				65FE01B3E495B031D58BD547 /* japanese.json in Resources */,
 				83D3B93DE2F0C86834070045 /* java.json in Resources */,
 				5FAEA01F64B9E1170750064C /* javascript.json in Resources */,
+				B33D967C7D3C7DAF51C02632 /* julia.json in Resources */,
 				1A1CDA93B9DB5E88A822D412 /* klingon.json in Resources */,
 				4A412200E23DD8B1A9779AE6 /* korean.json in Resources */,
+				1BE345A55DA5C48B58F02BED /* kotlin.json in Resources */,
 				3089398528823534E2C259E7 /* linear_algebra.json in Resources */,
+				5FA9F718AFDDC5D3E9188C3C /* lithuanian.json in Resources */,
 				247FA54CF79E95F1B6554112 /* logic.json in Resources */,
+				885A89EEFCF56EDC49333F85 /* lua.json in Resources */,
+				F29F009B1F246ECF8F7ED832 /* macedonian.json in Resources */,
+				13A59BCAF283CE28AF37D8EE /* machine_learning.json in Resources */,
+				8160497FEB93F6027D1C673E /* malay.json in Resources */,
+				A384DD6A6F1D7AA04A4D8252 /* microcontrollers.json in Resources */,
+				9C4AF6466486E97B74736BBE /* mobile_hardware.json in Resources */,
 				4AAD0B539B93E7C562774D34 /* music_history.json in Resources */,
 				387E27121537E21010F2647A /* music_theory.json in Resources */,
+				03E2B9FFF0E1107DD7A73C30 /* networking_hardware.json in Resources */,
+				A1CD5E4A5C83FA27AFF9C4CC /* norwegian.json in Resources */,
+				551680E29E9C19CA6FC8A185 /* objective_c.json in Resources */,
+				D88AB7237E3987B23F441107 /* ocaml.json in Resources */,
+				CCA8323677572FDFE1AD9C49 /* operating_systems.json in Resources */,
+				A1306EA9CAD4D258284F04FA /* pcb_design.json in Resources */,
+				A9D0C15D447FD9D979749BA4 /* perl.json in Resources */,
+				FB5C5DE4DDAEA47323CDE8CE /* persian.json in Resources */,
+				FDC6ADF3E140E56C6BE9D00C /* personal_finance.json in Resources */,
+				05DFAC68F20B38ECBC983CFC /* philosophy.json in Resources */,
+				421C20290C0F8B35FA225771 /* php.json in Resources */,
 				7F1A4707EE0FF1560B35B6EB /* physics.json in Resources */,
 				D1EC2E50D136B763AE2A322B /* physiology.json in Resources */,
+				AE714C024738CE3095044731 /* plank.json in Resources */,
+				48F9827F24BE680C6906C1B2 /* poker.json in Resources */,
+				E3278E6DF8BF9F7A2CAA4043 /* polish.json in Resources */,
 				4B50B9D2AA4771954B626383 /* portuguese.json in Resources */,
+				240AA4FCBC4B3C47286C1FF0 /* power_systems.json in Resources */,
 				0A5D3970081ED2480A4AA13D /* precalc11.json in Resources */,
 				387ED2785C32613B246E6381 /* precalc12.json in Resources */,
 				6F3218447DEE9A342C07EAF9 /* precalc12_masterclass.json in Resources */,
+				FAEE09BF3893E5D4471D7BE3 /* psychology.json in Resources */,
 				1891E219C6A89705EE258AB2 /* python.json in Resources */,
+				1B988C71C2A47FBB94F0049A /* r_lang.json in Resources */,
+				833AC658B02FEC71083F9E55 /* real_time_systems.json in Resources */,
 				3C44065BB1D19FF398F4AD83 /* reverse_engineering.json in Resources */,
+				AD21A7DCFC1DB239BBC36143 /* romanian.json in Resources */,
+				662C35C811B7E949E436424D /* ruby.json in Resources */,
 				E8DEFF56521D901F1FAF31BC /* russian.json in Resources */,
 				3081F31BFDC7492F939C1C15 /* rust.json in Resources */,
+				CB17A48ECDCA8923C9D35439 /* scala.json in Resources */,
+				1E50029F8F7C76F1BFDF97AC /* semiconductors.json in Resources */,
+				86A7BA3C409C17A918CEEDBF /* sensors.json in Resources */,
+				BF488289CF5FE8AACA54A3C9 /* serbian.json in Resources */,
+				EC1EC2A3A18067C3BB21DAA5 /* servers.json in Resources */,
+				662AFC1283EFB3DDE5A622F8 /* signals_systems.json in Resources */,
+				FFD045A04760D1B9D9C6C39C /* slovak.json in Resources */,
+				078DB3DCAFFBA0F491E7E71B /* slovenian.json in Resources */,
+				7CC2ECDCD08CF3FADB3474FE /* software_engineering.json in Resources */,
 				BA988804704D37E0EB7A31BA /* spanish.json in Resources */,
 				367E4A3280CF18A826449055 /* sql.json in Resources */,
 				13BE5B84EB37A9EDBBE94227 /* statistics.json in Resources */,
+				45F5B2896963EC38EDA0E55E /* storage_devices.json in Resources */,
+				5D1F3DFA8F947D43B651CA2C /* swedish.json in Resources */,
+				6B9B072777ABD9B495478F85 /* swift.json in Resources */,
+				926AD34883D3D4DB7451AA01 /* thai.json in Resources */,
+				1FF54211714D53B2D40ED991 /* theory_of_computation.json in Resources */,
 				D1704234CB203107E2EAF036 /* trigonometry.json in Resources */,
+				432CFA6BA6868E6999D704DC /* turkish.json in Resources */,
+				2AE3890976B28F3D1A73A364 /* typescript.json in Resources */,
+				5A8597ECB2F68E23F4AF70CD /* ukrainian.json in Resources */,
+				043518DB37BB15400CD1A0D6 /* vietnamese.json in Resources */,
 				E8D3FD83E83E3B650BEE8812 /* world_history.json in Resources */,
 				5397FFF3434BAAEB33A9F3E8 /* yiddish.json in Resources */,
+				7D2F8127D29EA249E8EC3EF6 /* zig.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,59 +1214,162 @@
 			files = (
 				E66FD6006E409476DB8E09D0 /* Assets.xcassets in Resources */,
 				C2C53C7A67BEF1B097372697 /* PrivacyInfo.xcprivacy in Resources */,
+				E255710F16B33DF91184B075 /* ai.json in Resources */,
+				F46C2E9B0A1D5011CA3BF325 /* albanian.json in Resources */,
 				8247E9154BF512FC785F4ACD /* algebra.json in Resources */,
 				CFA1E9A9A582807DBDCEFA7B /* anatomy.json in Resources */,
 				B3FD61DB8BA782A823DA70AF /* anatomy12.json in Resources */,
 				A599109D07BEAB24A0F2F985 /* anthropology.json in Resources */,
 				0BB7B0CD6F4A3CC8281854C9 /* arabic.json in Resources */,
 				4F49103CB511C5FEE8B6672A /* arithmetic.json in Resources */,
+				C2C263A7481D796320D57E66 /* assembly.json in Resources */,
 				AF7F7EE841811BB66825ABFC /* astronomy.json in Resources */,
 				442E3036CB5907E72230A7B6 /* astrophysics.json in Resources */,
+				EF30E515FA984CA0D70817D4 /* bash.json in Resources */,
+				54B02E0A5C3B0B0798CDF61E /* basque.json in Resources */,
+				DB5FC3E0DC78B59DD540A5FA /* bengali.json in Resources */,
 				E1B39DEEE9E231FEBC5F2645 /* biology.json in Resources */,
 				589CC8BC575513C116A030D3 /* biology_masterclass.json in Resources */,
+				A5946E1F58C9327DC87B7C92 /* bulgarian.json in Resources */,
+				9BCFEF3B369B11B677050CF2 /* c_lang.json in Resources */,
 				36782B3C342C30B3D64092CE /* calculus.json in Resources */,
+				D08EF783B5DD0E0C14EEDA6F /* catalan.json in Resources */,
 				3BB09C4102B4DDCE0D57CB50 /* catalog.json in Resources */,
 				551561690DB355F67B368DD2 /* chemistry.json in Resources */,
 				4169FB4E1C7A828D60FBCB43 /* chess.json in Resources */,
 				E1E420F02C4ABC6502AE60EB /* chinese.json in Resources */,
+				8300C6ADA2507E18E7446D8A /* chip_design.json in Resources */,
+				144ECDE6B0B3E01B6511E4BB /* circuits.json in Resources */,
+				191CFBEFB079D0A42FF5980B /* clojure.json in Resources */,
+				29CB6A433700976F7BEE91B3 /* cobol.json in Resources */,
+				8D7C3B9B8871ABCA2D73004B /* communications.json in Resources */,
+				18215C2815635F63BB532AE6 /* compilers.json in Resources */,
+				FCA315EC89530253578A8199 /* computer_architecture.json in Resources */,
+				E5D4D97EF0653E38A6A7E445 /* computer_graphics.json in Resources */,
+				D2D5301EA452472ABCA762DE /* computer_networks.json in Resources */,
 				62DFDE9E87DEBA260541EF77 /* computers.json in Resources */,
+				F5FC81701CCC6F903F53C059 /* concurrency.json in Resources */,
+				89F23CB4D5F365349971181B /* control_systems.json in Resources */,
 				13DBA14E7DBBD40A04EA7AFE /* cpp.json in Resources */,
+				C90E3BFF5A8B95920643E92F /* croatian.json in Resources */,
+				5E4F3387BBF98F0224D0DD27 /* cryptography.json in Resources */,
+				07926F4084A38DFDA0F4EA03 /* csharp.json in Resources */,
+				B6763D4816F5BD6E00705E79 /* cybersecurity.json in Resources */,
+				56B587D1762F0F22767D63CB /* czech.json in Resources */,
+				12AD3247C2E82938B672D017 /* danish.json in Resources */,
+				730F6B4D3D5BBE6157DD439C /* dart.json in Resources */,
+				48BFDD547B856B9C60472E29 /* databases.json in Resources */,
+				00C347C8C626650FFACC5DD3 /* digital_logic.json in Resources */,
 				09C2CE2E8598F9F8B6F8E9A4 /* discrete_math.json in Resources */,
+				F93057477C3D656655197461 /* displays_peripherals.json in Resources */,
+				3BE7547C6DD87C28A6ECE311 /* distributed_systems.json in Resources */,
+				91E786EF06F4925DB046CDE7 /* dsa.json in Resources */,
+				7FB8BFC41EFA9A15D5F6A1D5 /* dsp.json in Resources */,
 				E432FEA928A995B57233427B /* dutch.json in Resources */,
+				F6803A4399BDABE00E1E590A /* economics.json in Resources */,
+				1332B4B4396C258CCCC22509 /* electromagnetism.json in Resources */,
+				F7A80F5704AFA68AC334E903 /* electronics.json in Resources */,
+				45B56A70572DA9B87741C121 /* elixir.json in Resources */,
+				C3AA139F2B61E5D20A56991F /* embedded_systems.json in Resources */,
+				A87603F28051E7DDB8A2F1D0 /* estonian.json in Resources */,
 				3454AC99E5FA7EF46C943C46 /* fieldbook.json in Resources */,
+				31DE76B59BB2706F8AC1BCF4 /* finnish.json in Resources */,
+				B817C0B7E2F657DC2BB942C6 /* fortran.json in Resources */,
+				3BD51FF6C566B216174D2AEA /* fpga_verilog.json in Resources */,
 				3611CFACF566DFF8AF545AEB /* french.json in Resources */,
+				0B01DC8B07212A77F7717A7E /* galician.json in Resources */,
 				2B65281A89034D25A150879B /* geography.json in Resources */,
 				FFE490F230A0AD75750AABCB /* geometry.json in Resources */,
+				10D823C14FCF6C57FA545C85 /* georgian.json in Resources */,
 				4ECF489A147474F5AC270527 /* german.json in Resources */,
+				BB8B2F53E57C9B2A3BB6DCE8 /* git_terminal.json in Resources */,
 				EFC32035248DAA79D1EC8AC5 /* go.json in Resources */,
+				EA58A4D8E023369BEF800D8D /* gpus.json in Resources */,
+				928D7102EABD111541E0AD3A /* greek.json in Resources */,
+				981FAE43F7FAEFB5F486D209 /* hardware.json in Resources */,
+				2A5FA76A62DC4CA6497F3AC2 /* haskell.json in Resources */,
+				C63A6F76C41475683785A53B /* hebrew.json in Resources */,
 				CF33E5ECE6D9F4FC66472380 /* hindi.json in Resources */,
+				93F0BE92334D2B6DB0368EFB /* html_css.json in Resources */,
+				3740C6E6663686941AA15EF7 /* hungarian.json in Resources */,
+				5B72E174D2E4DEF9F2E57268 /* icelandic.json in Resources */,
+				0D025C2626E7791410DEDCAA /* indonesian.json in Resources */,
+				B272B0ADBB6D2A7BB32EA7D6 /* investing.json in Resources */,
 				8D654BB4EFAC10A5E793E1CA /* ios_internals.json in Resources */,
 				913AD7EDC1697999EF83BC9D /* italian.json in Resources */,
 				DBF52E22BE2DCA6FBCD8C923 /* japanese.json in Resources */,
 				E28C27863E18EF25455A0C80 /* java.json in Resources */,
 				DE5A16AE1BA9681A8933322B /* javascript.json in Resources */,
+				0B240B4811575A114105639C /* julia.json in Resources */,
 				E18DB0B08179BBAF256A51DB /* klingon.json in Resources */,
 				045907B630F7999ACB5E5B8C /* korean.json in Resources */,
+				C7C4FE2167B41B11EACC7CE9 /* kotlin.json in Resources */,
 				BC8E6A3AEE9C4A242AE2BE28 /* linear_algebra.json in Resources */,
+				33262A2788DC2CC7A445969F /* lithuanian.json in Resources */,
 				0D16EF7668CE60A75D0595A6 /* logic.json in Resources */,
+				3C69287363F9E7BFB2B65C0E /* lua.json in Resources */,
+				7CE38E65A3447FEE9F7091C3 /* macedonian.json in Resources */,
+				68BC4C06F0B51578D234FD88 /* machine_learning.json in Resources */,
+				EB72D604405A4148B4227135 /* malay.json in Resources */,
+				8AF5F655AE7E55472B98C499 /* microcontrollers.json in Resources */,
+				08A1E43C93E95145AF1CD5EF /* mobile_hardware.json in Resources */,
 				7A007768E4B740AA524405D3 /* music_history.json in Resources */,
 				35DA9B6CAB3A26D1AB6EBB87 /* music_theory.json in Resources */,
+				95375485756A74A35ACA4E2A /* networking_hardware.json in Resources */,
+				031C70C7228F995D030EC5E5 /* norwegian.json in Resources */,
+				378411B6A373789F32C8596A /* objective_c.json in Resources */,
+				0E1603804ADD8758EB91910E /* ocaml.json in Resources */,
+				B9AC06550B6637BEC7AB7339 /* operating_systems.json in Resources */,
+				076492F3AA87828A84F23907 /* pcb_design.json in Resources */,
+				524E1F1C52D0CE265AAECDC9 /* perl.json in Resources */,
+				A1808675EE8219DE138D8899 /* persian.json in Resources */,
+				C55CF1E7E5399DA990BA4E3A /* personal_finance.json in Resources */,
+				9F58741358E356940260DAA6 /* philosophy.json in Resources */,
+				7EE075E7FC7E0D111F98EEFC /* php.json in Resources */,
 				2ED5FFDAFDD001F321FCEF29 /* physics.json in Resources */,
 				850AEDA3FADFAE12328B8A81 /* physiology.json in Resources */,
+				B5851C3F0DFF2763F3413313 /* plank.json in Resources */,
+				D11475FBC98DB09BB409C5B9 /* poker.json in Resources */,
+				2564A69B7E9935960573CE50 /* polish.json in Resources */,
 				68839C409A4A3F8AAB4F49DC /* portuguese.json in Resources */,
+				7B8B76650377FAD0FD7C3922 /* power_systems.json in Resources */,
 				032AEBC42C7E6F3DA3A91693 /* precalc11.json in Resources */,
 				A24464F550AA5BC63FC42FD3 /* precalc12.json in Resources */,
 				6AC16FC4E789B39721C80293 /* precalc12_masterclass.json in Resources */,
+				22D0CBE972D3566D4DA2C351 /* psychology.json in Resources */,
 				131DC6F7C4D9FD99E8C84795 /* python.json in Resources */,
+				6C0756A78A8FD9373AEF8268 /* r_lang.json in Resources */,
+				8C34F6C9B7DD25572A98017A /* real_time_systems.json in Resources */,
 				C3C95CB6958E6976793E6F29 /* reverse_engineering.json in Resources */,
+				D7F3AD4AEC4138DEE86E0DDD /* romanian.json in Resources */,
+				EDFCF1BB7E9C56C27FCF7B7D /* ruby.json in Resources */,
 				9A7E4ECAAFE389739FFB84D2 /* russian.json in Resources */,
 				7DB404B693AEA4EADFA4BCDC /* rust.json in Resources */,
+				8965A862BB93BE4310ADDDC0 /* scala.json in Resources */,
+				EB759F8B44A152740DB3DFD6 /* semiconductors.json in Resources */,
+				FBBEF5D6193DDBA0154109D2 /* sensors.json in Resources */,
+				ADC6E492E34796449C5B0764 /* serbian.json in Resources */,
+				4D572E90FC5AD342FE3A9981 /* servers.json in Resources */,
+				EE9A4EAB4711066449E0A833 /* signals_systems.json in Resources */,
+				679C8A1A81FF7E67DAE014A3 /* slovak.json in Resources */,
+				7788700159D7E13798E18887 /* slovenian.json in Resources */,
+				6442582836B79D66A8D3E7F7 /* software_engineering.json in Resources */,
 				50A073AFAEE88E9E2EAC1BEB /* spanish.json in Resources */,
 				53A1D6C9199FB8804F8758E6 /* sql.json in Resources */,
 				366722AFB2EE4D334077114B /* statistics.json in Resources */,
+				CFFC914FD37C38C633F071B9 /* storage_devices.json in Resources */,
+				5EE001FF5E895700A6BF991B /* swedish.json in Resources */,
+				DECB9683E8E1F8C3F2FB9251 /* swift.json in Resources */,
+				D287DD10FBF6FEB07B692AA6 /* thai.json in Resources */,
+				2E31FF476C7B5F60BDC55179 /* theory_of_computation.json in Resources */,
 				363024C112FBA06FC30C0C88 /* trigonometry.json in Resources */,
+				9AD78BC06EF30C14B8E9CF32 /* turkish.json in Resources */,
+				8E2F53B5A37C84A5035C9E93 /* typescript.json in Resources */,
+				2A774FF4C11B11634E823DB6 /* ukrainian.json in Resources */,
+				7418DC008D9A68325C002829 /* vietnamese.json in Resources */,
 				E86CA720801E933134FF7E23 /* world_history.json in Resources */,
 				E86751650E1B22336CB30032 /* yiddish.json in Resources */,
+				060A58AAB9C777EAEF197A64 /* zig.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,128 +1477,128 @@
 			name = Debug;
 		};
 		3F67D24C74E8DC041BC905AF /* Release */ = {
-	buildSettings = {
-		"ALWAYS_SEARCH_USER_PATHS" = NO;
-		"CLANG_ANALYZER_NONNULL" = YES;
-		"CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION" = "YES_AGGRESSIVE";
-		"CLANG_CXX_LANGUAGE_STANDARD" = "gnu++14";
-		"CLANG_CXX_LIBRARY" = "libc++";
-		"CLANG_ENABLE_MODULES" = YES;
-		"CLANG_ENABLE_OBJC_ARC" = YES;
-		"CLANG_ENABLE_OBJC_WEAK" = YES;
-		"CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING" = YES;
-		"CLANG_WARN_BOOL_CONVERSION" = YES;
-		"CLANG_WARN_COMMA" = YES;
-		"CLANG_WARN_CONSTANT_CONVERSION" = YES;
-		"CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS" = YES;
-		"CLANG_WARN_DIRECT_OBJC_ISA_USAGE" = "YES_ERROR";
-		"CLANG_WARN_DOCUMENTATION_COMMENTS" = YES;
-		"CLANG_WARN_EMPTY_BODY" = YES;
-		"CLANG_WARN_ENUM_CONVERSION" = YES;
-		"CLANG_WARN_INFINITE_RECURSION" = YES;
-		"CLANG_WARN_INT_CONVERSION" = YES;
-		"CLANG_WARN_NON_LITERAL_NULL_CONVERSION" = YES;
-		"CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF" = YES;
-		"CLANG_WARN_OBJC_LITERAL_CONVERSION" = YES;
-		"CLANG_WARN_OBJC_ROOT_CLASS" = "YES_ERROR";
-		"CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER" = YES;
-		"CLANG_WARN_RANGE_LOOP_ANALYSIS" = YES;
-		"CLANG_WARN_STRICT_PROTOTYPES" = YES;
-		"CLANG_WARN_SUSPICIOUS_MOVE" = YES;
-		"CLANG_WARN_UNGUARDED_AVAILABILITY" = "YES_AGGRESSIVE";
-		"CLANG_WARN_UNREACHABLE_CODE" = YES;
-		"CLANG_WARN__DUPLICATE_METHOD_MATCH" = YES;
-		"COPY_PHASE_STRIP" = NO;
-		"CURRENT_PROJECT_VERSION" = 202610181930;
-		"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
-		"DEVELOPMENT_TEAM" = QMM486NPYC;
-		"ENABLE_NS_ASSERTIONS" = NO;
-		"ENABLE_STRICT_OBJC_MSGSEND" = YES;
-		"GCC_C_LANGUAGE_STANDARD" = gnu11;
-		"GCC_NO_COMMON_BLOCKS" = YES;
-		"GCC_WARN_64_TO_32_BIT_CONVERSION" = YES;
-		"GCC_WARN_ABOUT_RETURN_TYPE" = "YES_ERROR";
-		"GCC_WARN_UNDECLARED_SELECTOR" = YES;
-		"GCC_WARN_UNINITIALIZED_AUTOS" = "YES_AGGRESSIVE";
-		"GCC_WARN_UNUSED_FUNCTION" = YES;
-		"GCC_WARN_UNUSED_VARIABLE" = YES;
-		"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
-		"MARKETING_VERSION" = "1.1.6";
-		"MTL_ENABLE_DEBUG_INFO" = NO;
-		"MTL_FAST_MATH" = YES;
-		"PRODUCT_NAME" = "$(TARGET_NAME)";
-		"SWIFT_COMPILATION_MODE" = wholemodule;
-		"SWIFT_OPTIMIZATION_LEVEL" = "-O";
-		"SWIFT_VERSION" = "5.9";
-	};
-	isa = XCBuildConfiguration;
-	name = Release;
-};
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 202610210745;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QMM486NPYC;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.1.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
 		A05F742DD366B7CB5772205D /* Debug */ = {
-	buildSettings = {
-		"ALWAYS_SEARCH_USER_PATHS" = NO;
-		"CLANG_ANALYZER_NONNULL" = YES;
-		"CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION" = "YES_AGGRESSIVE";
-		"CLANG_CXX_LANGUAGE_STANDARD" = "gnu++14";
-		"CLANG_CXX_LIBRARY" = "libc++";
-		"CLANG_ENABLE_MODULES" = YES;
-		"CLANG_ENABLE_OBJC_ARC" = YES;
-		"CLANG_ENABLE_OBJC_WEAK" = YES;
-		"CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING" = YES;
-		"CLANG_WARN_BOOL_CONVERSION" = YES;
-		"CLANG_WARN_COMMA" = YES;
-		"CLANG_WARN_CONSTANT_CONVERSION" = YES;
-		"CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS" = YES;
-		"CLANG_WARN_DIRECT_OBJC_ISA_USAGE" = "YES_ERROR";
-		"CLANG_WARN_DOCUMENTATION_COMMENTS" = YES;
-		"CLANG_WARN_EMPTY_BODY" = YES;
-		"CLANG_WARN_ENUM_CONVERSION" = YES;
-		"CLANG_WARN_INFINITE_RECURSION" = YES;
-		"CLANG_WARN_INT_CONVERSION" = YES;
-		"CLANG_WARN_NON_LITERAL_NULL_CONVERSION" = YES;
-		"CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF" = YES;
-		"CLANG_WARN_OBJC_LITERAL_CONVERSION" = YES;
-		"CLANG_WARN_OBJC_ROOT_CLASS" = "YES_ERROR";
-		"CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER" = YES;
-		"CLANG_WARN_RANGE_LOOP_ANALYSIS" = YES;
-		"CLANG_WARN_STRICT_PROTOTYPES" = YES;
-		"CLANG_WARN_SUSPICIOUS_MOVE" = YES;
-		"CLANG_WARN_UNGUARDED_AVAILABILITY" = "YES_AGGRESSIVE";
-		"CLANG_WARN_UNREACHABLE_CODE" = YES;
-		"CLANG_WARN__DUPLICATE_METHOD_MATCH" = YES;
-		"COPY_PHASE_STRIP" = NO;
-		"CURRENT_PROJECT_VERSION" = 202610181930;
-		"DEBUG_INFORMATION_FORMAT" = dwarf;
-		"DEVELOPMENT_TEAM" = QMM486NPYC;
-		"ENABLE_STRICT_OBJC_MSGSEND" = YES;
-		"ENABLE_TESTABILITY" = YES;
-		"GCC_C_LANGUAGE_STANDARD" = gnu11;
-		"GCC_DYNAMIC_NO_PIC" = NO;
-		"GCC_NO_COMMON_BLOCKS" = YES;
-		"GCC_OPTIMIZATION_LEVEL" = 0;
-		"GCC_PREPROCESSOR_DEFINITIONS" = (
-			"$(inherited)",
-			"DEBUG=1",
-		);
-		"GCC_WARN_64_TO_32_BIT_CONVERSION" = YES;
-		"GCC_WARN_ABOUT_RETURN_TYPE" = "YES_ERROR";
-		"GCC_WARN_UNDECLARED_SELECTOR" = YES;
-		"GCC_WARN_UNINITIALIZED_AUTOS" = "YES_AGGRESSIVE";
-		"GCC_WARN_UNUSED_FUNCTION" = YES;
-		"GCC_WARN_UNUSED_VARIABLE" = YES;
-		"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
-		"MARKETING_VERSION" = "1.1.6";
-		"MTL_ENABLE_DEBUG_INFO" = "INCLUDE_SOURCE";
-		"MTL_FAST_MATH" = YES;
-		"ONLY_ACTIVE_ARCH" = YES;
-		"PRODUCT_NAME" = "$(TARGET_NAME)";
-		"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = DEBUG;
-		"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
-		"SWIFT_VERSION" = "5.9";
-	};
-	isa = XCBuildConfiguration;
-	name = Debug;
-};
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 202610210745;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QMM486NPYC;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.1.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
 		A71FAF8C615BC8AF9B2A4006 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -994,7 +1612,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nulljosh.lingo.widget;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1100,7 +1718,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nulljosh.lingo.widget;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};

@@ -134,30 +134,47 @@ final class AuthStore {
             .execute()
     }
 
-    private var currentNonce: String?
+    /// Every raw nonce handed to Apple since the last sign-in. The iPad sheet can fire the request
+    /// twice, so the token that comes back may belong to an earlier one: match it by hash.
+    private var issuedNonces: [String] = []
 
     /// Apple hashes the nonce into the identity token; Supabase compares it against the
     /// raw value we send back.
     func prepareAppleRequest(_ request: ASAuthorizationAppleIDRequest) {
         let nonce = Self.randomNonce()
-        currentNonce = nonce
+        issuedNonces = Array((issuedNonces + [nonce]).suffix(5))
         request.requestedScopes = [.fullName, .email]
-        request.nonce = SHA256.hash(data: Data(nonce.utf8))
-            .map { String(format: "%02x", $0) }
-            .joined()
+        request.nonce = Self.hashed(nonce)
+    }
+
+    static func hashed(_ nonce: String) -> String {
+        SHA256.hash(data: Data(nonce.utf8)).map { String(format: "%02x", $0) }.joined()
+    }
+
+    /// The raw nonce whose hash Apple signed into this identity token, or nil if none of ours match.
+    static func rawNonce(for idToken: String, among issued: [String]) -> String? {
+        let parts = idToken.split(separator: ".")
+        guard parts.count == 3 else { return nil }
+        var b64 = parts[1].replacingOccurrences(of: "-", with: "+").replacingOccurrences(of: "_", with: "/")
+        b64 += String(repeating: "=", count: (4 - b64.count % 4) % 4)
+        guard let data = Data(base64Encoded: b64),
+              let claims = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let signed = claims["nonce"] as? String else { return nil }
+        return issued.first { hashed($0) == signed }
     }
 
     func signInWithApple(result: Result<ASAuthorization, Error>) async throws {
         let auth = try result.get()
         guard let cred = auth.credential as? ASAuthorizationAppleIDCredential,
               let tokenData = cred.identityToken,
-              let token = String(data: tokenData, encoding: .utf8) else {
+              let token = String(data: tokenData, encoding: .utf8),
+              let nonce = Self.rawNonce(for: token, among: issuedNonces) else {
             throw URLError(.badServerResponse)
         }
         session = try await supabase.auth.signInWithIdToken(
-            credentials: .init(provider: .apple, idToken: token, nonce: currentNonce)
+            credentials: .init(provider: .apple, idToken: token, nonce: nonce)
         )
-        currentNonce = nil
+        issuedNonces = []
     }
 
     /// Google has no native ID-token path, so this is the OAuth browser flow. `lexly://`
