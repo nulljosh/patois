@@ -1531,7 +1531,7 @@ function renderTeach(card, teach, spoken, unitTip) {
 // Recap on the results screen: the lesson's points again, so the last thing you see is what you learned.
 function renderRecap() {
     const old = document.getElementById('lessonRecap');
-    if (old) old.remove();
+    old?.parentNode?.removeChild(old);
     const pack = PACK_CACHE[gameState.selectedSubject];
     let teach = null;
     (pack?.units || []).forEach((u) => (u.lessons || []).forEach((l) => { if (l.id === gameState.selectedLesson) teach = l.teach; }));
