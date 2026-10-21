@@ -1,6 +1,6 @@
 # Product Hunt
 
-Name: Lexly
+Name: Patois
 
 Tagline (47): Twelve languages and Grade 12 in one skill tree
 
@@ -11,14 +11,14 @@ Topics: Education, Languages, Productivity
 Pricing: Free.
 
 Links
-Web: https://lexly.jaybulb.com
+Web: https://patois.jaybulb.com
 App Store: https://apps.apple.com/app/id6783501611
-GitHub: https://github.com/nulljosh/tonchi
+GitHub: https://github.com/nulljosh/patois
 
 ## First comment
 
-Hi, I'm Josh, I built Lexly.
+Hi, I'm Josh, I built Patois.
 
-I was studying Spanish and Pre-Calc 12 at the same time and using two apps that both wanted a subscription and a daily guilt trip. Lexly is one skill tree for both. Short drills, spaced repetition, and a reader for long-form notes. Twelve languages plus the BC Grade 12 curriculum, and it stays free.
+I was studying Spanish and Pre-Calc 12 at the same time and using two apps that both wanted a subscription and a daily guilt trip. Patois is one skill tree for both. Short drills, spaced repetition, and a reader for long-form notes. Twelve languages plus the BC Grade 12 curriculum, and it stays free.
 
 Free. Happy to answer anything.

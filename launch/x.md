@@ -1,4 +1,4 @@
-1/ Patois is live. Twelve languages and Grade 12 in one skill tree. https://tonchi.jaybulb.com
+1/ Patois is live. Twelve languages and Grade 12 in one skill tree. https://patois.jaybulb.com
 
 2/ Short daily drills for twelve languages and a BC Grade 12 course library, in one skill tree you work through at your own pace. No streak guilt, no ads. Free.
 
