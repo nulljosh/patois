@@ -4,8 +4,6 @@
 
 ## Rehaul (Joshua 2026-10-17, do first)
 - [ ] UI rehaul: the web landing and the app are ugly. Rebuild on the shared tokens (8 point grid, one radius set, 48 point capsules, SF Pro / Helvetica), the way Airwell was done. No tilted device mockups or frames on the landing, the app itself goes on the page. Then fresh README screenshots. (2026-10-21: README shots in screenshots/ still match the live app, which still shows the old blue chat-bubble logo instead of Pat the macaw; retaking before the rehaul changes nothing.)
-- [x] Name: Joshua says Tonchi sucks. Patois is locked on the iOS listing (2026-10-17). Confirm it sticks before moving the subdomain (tonchi.jaybulb.com stays live as the alias). Done 2026-10-21: site, README and store URLs now on patois.jaybulb.com; the pending 1.1.6 app info says Patois and goes live on approval.
-- [x] Stale numbers on the landing: it says 122 courses, the docs say 165. Measure from content/ and fix. Done 2026-10-21: catalog has 125 lesson courses (128 tiles, Biology listed twice, two notes-only masterclasses); landing, README and WHITEPAPER say 125.
 
 ## Shipped 2026-09-10, iPad support dropped, Sign In with Apple fixed, manual code signing
 
@@ -41,7 +39,6 @@ Verified on an iPhone 17 Pro simulator: the Food & Drink unit shows its tip and 
 food phrases, and the sentences in it are actually about eating.
 
 ## Open, next on the curriculum
-- [x] App Store marketing URL: currently generic portfolio root (heyitsmejosh.com), should be https://lexly.heyitsmejosh.com. Frozen until 1.1.6+ ship due to current version READY_FOR_SALE status. Done 2026-10-21: iOS and Mac 1.1.6 (in review) have marketing https://patois.jaybulb.com and support /support, confirmed with asc.
 
 - [ ] **Word-strength model (lexeme-lite).** The keystone: it unlocks a placement test,
   weak-word review, and a vocabulary stat all at once. Design: `lingo.words` =
@@ -99,11 +96,9 @@ closes the "iOS never actually run" gap.
   chemistry, biology, and the rest of the 1-unit packs). Tatoeba does not cover them, so they need
   a different generator or hand authoring.
 - [ ] Deliberately skipped, revisit when there are users: leagues/leaderboards (needs a new table +
-- [x] (obsolete 2026-10-21: the landing has no screenshots now, it runs the live app in an iframe at /app/?embed) **Hero screenshots are stale (show pre-auth-gate catalog).** The landing page marketing
   images display the course list that authenticated users now see, but a logged-out visitor cannot
   reach this screen (auth gate on renderSubjects). Screenshots need to show what a visitor actually
   encounters (sign-in screen or a sample lesson) or be honest about the login requirement.
-- [x] (obsolete 2026-10-21: visitors can open a real lesson in the embedded app) **No screenshot of an actual lesson.** Landing page describes five exercise types (multiple-choice,
   match, cloze, word-bank, listening) but has zero visual proof. One lesson-in-progress screenshot
   would give visitors real sense of what they are learning.
 - [ ] **No social proof.** No testimonials, review scores, user count, or credibility markers.
@@ -467,7 +462,6 @@ and the mock must cover every network refresh path, not just `init`, see talli 7
 - [ ] iOS: login works but no success message / no visual feedback on button tap
 - [ ] iOS: Settings is bare, login provides no actual information or data afterward
 - [ ] iOS: add padding to app icon (or scale the glyph down)
-- [x] Web landing page: screenshots are basic and mildly stale, refresh them (obsolete 2026-10-21: landing embeds the live app, no screenshots left)
 
 > Resume note, RESOLVED 2026-08-13: the `wip: partial work from /work notes ingest` commit
 > (`9513311`) has now been reviewed and build-verified on both platforms. Its auth changes are
@@ -547,7 +541,6 @@ cannot ship under that name regardless of the auth fix.
   sequence above is the reproduction.
 
 ## Ingested 2026-08-18
-- [x] Landing page: add dark mode support. Done 2026-10-21: index.html has a dark token block under prefers-color-scheme, and the only hard-coded colour left is the white label on the accent button.
 
 ## Found while working 2026-08-19
 - [ ] **Delete the stray "Lexly Mac" ASC record 6783501927** (its only version is macOS 1.1.1
@@ -555,7 +548,6 @@ cannot ship under that name regardless of the auth fix.
   macOS 1.1.3 WAITING_FOR_REVIEW. The dashboard rejection badge people keep noticing is this dead
   duplicate, not the real app. App-record deletion is dashboard-only, blocked on an Apple web
   session (`asc web` SRP signin returned HTTP 503 all through 2026-08-19, before the 2FA step).
-- [x] **`scripts/deploy.sh` verify loop can't catch a stale image.** Done (verified 2026-10-21: the canary list now checks `assets/marketing/catalog.png`, `course.png` and `assets/og-image.jpg`, all present locally; live catalog.png md5 matches local). It md5-checked only
   `content/catalog.json`, `css/lingo.css`, `js/lingo-app.js`, so the marketing PNGs deployed
   above passed verification while the edge still served the old bytes for ~2 min. Add one image
   to the canary list (the script's own comment already warns that a content-only canary is the
@@ -633,7 +625,5 @@ The earlier gaps have been addressed:
 
 ## Ingested 2026-10-16
 - [ ] Very neglected app. Stale name and screenshots on the App Store: live listing is still Lexly 1.1.3 with old screenshots. (screenshots: notes/attachments/2026-10-16/lexly-1.png, notes/attachments/2026-10-16/tonchi-2.png)
-- [x] Needs iPad testing. iOS 1.1.6 was rejected 2.1.0 App Completeness; the reviewer's iPad screenshot shows the sign-in screen with "Nonces mismatch". (screenshots: notes/attachments/2026-10-16/tonchi-3.png, notes/attachments/2026-10-16/tonchi-4.png) Fixed 2026-10-21 in build 202610210745 (nonce matched by hash), resubmitted. Mac build still has the old code.
 
 ## Ingested 2026-10-21
-- [x] Stale names all over, repo and App Store are super stale (GitHub repo still says "Tonchi", latest release is "lexly v1.1.5", homepage tonchi.jaybulb.com). (screenshot: notes/attachments/2026-10-21/patois-1.png) Done 2026-10-21: GitHub description, homepage and release title, repo docs and store URLs now say Patois and patois.jaybulb.com; listing name Patois ships with 1.1.6.
