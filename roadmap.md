@@ -4,8 +4,8 @@
 
 ## Rehaul (Joshua 2026-10-17, do first)
 - [ ] UI rehaul: the web landing and the app are ugly. Rebuild on the shared tokens (8 point grid, one radius set, 48 point capsules, SF Pro / Helvetica), the way Airwell was done. No tilted device mockups or frames on the landing, the app itself goes on the page. Then fresh README screenshots.
-- [ ] Name: Joshua says Tonchi sucks. Patois is locked on the iOS listing (2026-10-17). Confirm it sticks before moving the subdomain (tonchi.jaybulb.com stays live as the alias).
-- [ ] Stale numbers on the landing: it says 122 courses, the docs say 165. Measure from content/ and fix.
+- [x] Name: Joshua says Tonchi sucks. Patois is locked on the iOS listing (2026-10-17). Confirm it sticks before moving the subdomain (tonchi.jaybulb.com stays live as the alias). Done 2026-10-21: site, README and store URLs now on patois.jaybulb.com; the pending 1.1.6 app info says Patois and goes live on approval.
+- [x] Stale numbers on the landing: it says 122 courses, the docs say 165. Measure from content/ and fix. Done 2026-10-21: catalog has 125 lesson courses (128 tiles, Biology listed twice, two notes-only masterclasses); landing, README and WHITEPAPER say 125.
 
 ## Shipped 2026-09-10, iPad support dropped, Sign In with Apple fixed, manual code signing
 
@@ -41,7 +41,7 @@ Verified on an iPhone 17 Pro simulator: the Food & Drink unit shows its tip and 
 food phrases, and the sentences in it are actually about eating.
 
 ## Open, next on the curriculum
-- [ ] App Store marketing URL: currently generic portfolio root (heyitsmejosh.com), should be https://lexly.heyitsmejosh.com. Frozen until 1.1.6+ ship due to current version READY_FOR_SALE status.
+- [x] App Store marketing URL: currently generic portfolio root (heyitsmejosh.com), should be https://lexly.heyitsmejosh.com. Frozen until 1.1.6+ ship due to current version READY_FOR_SALE status. Done 2026-10-21: iOS and Mac 1.1.6 (in review) have marketing https://patois.jaybulb.com and support /support, confirmed with asc.
 
 - [ ] **Word-strength model (lexeme-lite).** The keystone: it unlocks a placement test,
   weak-word review, and a vocabulary stat all at once. Design: `lingo.words` =

@@ -6,7 +6,7 @@ Learn anything, five minutes at a time.
 
 Most learning apps only teach one subject, so a new one has to be built for every
 different thing you want to learn. Patois is a gamified learning app. Not just
-languages. 40+ courses across languages, programming, math, science, school
+languages. 125 courses across languages, programming, math, science, school
 (Pre-Calculus 12, AP Biology 12) and general skills, all on one content schema,
 because the spaced-repetition and gamification mechanics that make lessons stick
 don't care what the subject is. Live at
