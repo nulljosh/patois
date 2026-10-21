@@ -634,3 +634,6 @@ The earlier gaps have been addressed:
 ## Ingested 2026-10-16
 - [ ] Very neglected app. Stale name and screenshots on the App Store: live listing is still Lexly 1.1.3 with old screenshots. (screenshots: notes/attachments/2026-10-16/lexly-1.png, notes/attachments/2026-10-16/tonchi-2.png)
 - [ ] Needs iPad testing. iOS 1.1.6 was rejected 2.1.0 App Completeness; the reviewer's iPad screenshot shows the sign-in screen with "Nonces mismatch". (screenshots: notes/attachments/2026-10-16/tonchi-3.png, notes/attachments/2026-10-16/tonchi-4.png)
+
+## Ingested 2026-10-21
+- [ ] Stale names all over, repo and App Store are super stale (GitHub repo still says "Tonchi", latest release is "lexly v1.1.5", homepage tonchi.jaybulb.com). (screenshot: notes/attachments/2026-10-21/patois-1.png)
