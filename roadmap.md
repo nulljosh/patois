@@ -547,7 +547,7 @@ cannot ship under that name regardless of the auth fix.
   sequence above is the reproduction.
 
 ## Ingested 2026-08-18
-- [ ] Landing page: add dark mode support.
+- [x] Landing page: add dark mode support. Done 2026-10-21: index.html has a dark token block under prefers-color-scheme, and the only hard-coded colour left is the white label on the accent button.
 
 ## Found while working 2026-08-19
 - [ ] **Delete the stray "Lexly Mac" ASC record 6783501927** (its only version is macOS 1.1.1
