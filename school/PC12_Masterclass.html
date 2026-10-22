@@ -395,6 +395,32 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 </ul>
 <span class="f">3^x = 10  →  x·log3 = log10  →  x = log10/log3 ≈ 2.096</span>
 
+<h3>Solving Logarithmic Equations (4.5)</h3>
+<ol>
+  <li>State the domain first: every log argument must be &gt; 0</li>
+  <li>Combine the logs so each side is one log (product, quotient, power rules)</li>
+  <li>If log_b(A) = log_b(B), then A = B. Otherwise convert to exponential form: log_b(A) = c → A = b^c</li>
+  <li>Solve the resulting equation</li>
+  <li>Reject any solution outside the domain — those are extraneous</li>
+</ol>
+
+<div class="ex">
+<div class="ex-title">Worked Example — Extraneous Solution</div>
+<div class="step">Q: log₃(x) + log₃(x−8) = 2</div>
+<div class="step">Domain: x &gt; 0 and x − 8 &gt; 0, so x &gt; 8</div>
+<div class="step">1. Combine: log₃(x(x−8)) = 2 → x(x−8) = 3² = 9</div>
+<div class="step">2. x² − 8x − 9 = 0 → (x−9)(x+1) = 0</div>
+<div class="step">3. x = 9 or x = −1. Reject −1 (not &gt; 8). Answer: x = 9</div>
+</div>
+
+<div class="ex">
+<div class="ex-title">Worked Example — Same Base Both Sides</div>
+<div class="step">Q: log₂(x) + log₂(x+3) = log₂(5x−1)</div>
+<div class="step">Domain: x &gt; 1/5</div>
+<div class="step">1. Combine: x(x+3) = 5x − 1 → x² − 2x + 1 = 0</div>
+<div class="step">2. (x−1)² = 0 → x = 1. In the domain, so it works.</div>
+</div>
+
 <h3>Growth &amp; Decay</h3>
 <span class="f">A = A₀ · b^(t/p)     [b = growth factor, p = period for one cycle]</span>
 <span class="f">A = A₀ · (1/2)^(t/h)  [half-life: h = half-life period]</span>
@@ -526,6 +552,36 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 <!-- U6 -->
 <section id="u6" class="section">
 <h2><span class="unit-tag">Unit 6</span>Sinusoidal Functions</h2>
+
+<h3>Radians, Unit Circle &amp; Reference Angles (6.1–6.2)</h3>
+<span class="f">Degrees ↔ radians: π rad = 180°. Degrees → radians: multiply by π/180. Radians → degrees: multiply by 180/π</span>
+<span class="f">Unit circle (radius 1): the point at angle θ is (cos θ, sin θ), so sin θ is the y-value and cos θ is the x-value</span>
+<table>
+<tr><th>θ (deg)</th><th>θ (rad)</th><th>sin θ</th><th>cos θ</th><th>tan θ</th></tr>
+<tr><td>0°</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>30°</td><td>π/6</td><td>1/2</td><td>√3/2</td><td>√3/3</td></tr>
+<tr><td>45°</td><td>π/4</td><td>√2/2</td><td>√2/2</td><td>1</td></tr>
+<tr><td>60°</td><td>π/3</td><td>√3/2</td><td>1/2</td><td>√3</td></tr>
+<tr><td>90°</td><td>π/2</td><td>1</td><td>0</td><td>undefined</td></tr>
+</table>
+<table>
+<tr><th>Quadrant</th><th>Positive ratios</th><th>Reference angle for θ</th></tr>
+<tr><td>I</td><td>All (A)</td><td>θ</td></tr>
+<tr><td>II</td><td>Sine (S)</td><td>π − θ</td></tr>
+<tr><td>III</td><td>Tangent (T)</td><td>θ − π</td></tr>
+<tr><td>IV</td><td>Cosine (C)</td><td>2π − θ</td></tr>
+</table>
+<div class="tip">
+<div class="tip-title">Reference angles and CAST</div>
+<p>The reference angle is the acute angle between the terminal arm and the x-axis. Find the ratio at the reference angle using the table, then use CAST to pick the sign.</p>
+</div>
+
+<div class="ex">
+<div class="ex-title">Worked Example — Exact Values</div>
+<div class="step">sin(5π/6): Quadrant II, reference angle π − 5π/6 = π/6, sine is positive in QII → 1/2</div>
+<div class="step">cos(7π/6): Quadrant III, reference angle 7π/6 − π = π/6, cosine is negative in QIII → −√3/2</div>
+</div>
+
 
 <h3>General Form</h3>
 <span class="f">y = a · sin( b(x − h) ) + k</span>
@@ -674,6 +730,8 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 <div class="fc"><div class="fc-q">Convert to exponential: log₂(32) = 5</div><div class="fc-a">2⁵ = 32</div></div>
 <div class="fc"><div class="fc-q">Simplify: log₃(x²y) − log₃(x)</div><div class="fc-a">log₃(x²y/x) = log₃(xy), retaining x &gt; 0 and y &gt; 0</div></div>
 <div class="fc"><div class="fc-q">Solve 4^x = 7 using change of base.</div><div class="fc-a">x = log7/log4 ≈ 1.404</div></div>
+<div class="fc"><div class="fc-q">Solve log₃(x) + log₃(x−8) = 2. Any extraneous solution?</div><div class="fc-a">x(x−8) = 9 → x = 9 or x = −1. Domain needs x &gt; 8, so reject −1. Answer x = 9.</div></div>
+<div class="fc"><div class="fc-q">Why must you check log equation answers?</div><div class="fc-a">Log arguments must be &gt; 0. Solving can produce values that break the domain: those are extraneous.</div></div>
 </div>
 
 <h3>Unit 5 — Rational Expressions &amp; Conics</h3>
@@ -692,6 +750,9 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 <div class="fc"><div class="fc-q">y = 4sin(2(x−π/3)) + 1. State amplitude, period, phase shift.</div><div class="fc-a">Amplitude=4; Period=2π/2=π; Phase shift=π/3 right; midline y=1</div></div>
 <div class="fc"><div class="fc-q">Graph has max=10, min=2. What are the amplitude and k?</div><div class="fc-a">|a| = (10−2)/2 = 4; k = (10+2)/2 = 6; the sign of a depends on the chosen phase</div></div>
 <div class="fc"><div class="fc-q">What does a negative 'a' do to a sinusoidal graph?</div><div class="fc-a">Reflects about the midline y=k. At x=h, cosine starts at a minimum when a&lt;0; sine still starts at the midline.</div></div>
+<div class="fc"><div class="fc-q">Convert 150° to radians.</div><div class="fc-a">150 × π/180 = 5π/6</div></div>
+<div class="fc"><div class="fc-q">Exact value of cos(7π/6)?</div><div class="fc-a">QIII, reference angle π/6, cosine negative in QIII → −√3/2</div></div>
+<div class="fc"><div class="fc-q">What does CAST tell you?</div><div class="fc-a">Which ratios are positive: QI all, QII sine, QIII tangent, QIV cosine.</div></div>
 </div>
 
 <h3>Unit 7 — Trig Identities</h3>

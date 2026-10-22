@@ -555,6 +555,42 @@
         },
         {
           "type": "heading",
+          "text": "Solving Logarithmic Equations (4.5)"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "State the domain first: every log argument must be > 0",
+            "Combine the logs so each side is one log (product, quotient, power rules)",
+            "If log_b(A) = log_b(B), then A = B. Otherwise convert to exponential form: log_b(A) = c \u2192 A = b^c",
+            "Solve the resulting equation",
+            "Reject any solution outside the domain \u2014 those are extraneous"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Worked Example \u2014 Extraneous Solution",
+          "steps": [
+            "Q: log\u2083(x) + log\u2083(x\u22128) = 2",
+            "Domain: x > 0 and x \u2212 8 > 0, so x > 8",
+            "1. Combine: log\u2083(x(x\u22128)) = 2 \u2192 x(x\u22128) = 3\u00b2 = 9",
+            "2. x\u00b2 \u2212 8x \u2212 9 = 0 \u2192 (x\u22129)(x+1) = 0",
+            "3. x = 9 or x = \u22121. Reject \u22121 (not > 8). Answer: x = 9"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Worked Example \u2014 Same Base Both Sides",
+          "steps": [
+            "Q: log\u2082(x) + log\u2082(x+3) = log\u2082(5x\u22121)",
+            "Domain: x > 1/5",
+            "1. Combine: x(x+3) = 5x \u2212 1 \u2192 x\u00b2 \u2212 2x + 1 = 0",
+            "2. (x\u22121)\u00b2 = 0 \u2192 x = 1. In the domain, so it works."
+          ]
+        },
+        {
+          "type": "heading",
           "text": "Growth & Decay"
         },
         {
@@ -821,6 +857,110 @@
       "title": "Sinusoidal Functions",
       "unitTag": "Unit 6",
       "blocks": [
+        {
+          "type": "heading",
+          "text": "Radians, Unit Circle & Reference Angles (6.1\u20136.2)"
+        },
+        {
+          "type": "formula",
+          "text": "Degrees \u2194 radians: \u03c0 rad = 180\u00b0. Degrees \u2192 radians: multiply by \u03c0/180. Radians \u2192 degrees: multiply by 180/\u03c0"
+        },
+        {
+          "type": "formula",
+          "text": "Unit circle (radius 1): the point at angle \u03b8 is (cos \u03b8, sin \u03b8), so sin \u03b8 is the y-value and cos \u03b8 is the x-value"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "\u03b8 (deg)",
+            "\u03b8 (rad)",
+            "sin \u03b8",
+            "cos \u03b8",
+            "tan \u03b8"
+          ],
+          "rows": [
+            [
+              "0\u00b0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "30\u00b0",
+              "\u03c0/6",
+              "1/2",
+              "\u221a3/2",
+              "\u221a3/3"
+            ],
+            [
+              "45\u00b0",
+              "\u03c0/4",
+              "\u221a2/2",
+              "\u221a2/2",
+              "1"
+            ],
+            [
+              "60\u00b0",
+              "\u03c0/3",
+              "\u221a3/2",
+              "1/2",
+              "\u221a3"
+            ],
+            [
+              "90\u00b0",
+              "\u03c0/2",
+              "1",
+              "0",
+              "undefined"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Quadrant",
+            "Positive ratios",
+            "Reference angle for \u03b8"
+          ],
+          "rows": [
+            [
+              "I",
+              "All (A)",
+              "\u03b8"
+            ],
+            [
+              "II",
+              "Sine (S)",
+              "\u03c0 \u2212 \u03b8"
+            ],
+            [
+              "III",
+              "Tangent (T)",
+              "\u03b8 \u2212 \u03c0"
+            ],
+            [
+              "IV",
+              "Cosine (C)",
+              "2\u03c0 \u2212 \u03b8"
+            ]
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Reference angles and CAST",
+          "items": [
+            "The reference angle is the acute angle between the terminal arm and the x-axis. Find the ratio at the reference angle using the table, then use CAST to pick the sign."
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Worked Example \u2014 Exact Values",
+          "steps": [
+            "sin(5\u03c0/6): Quadrant II, reference angle \u03c0 \u2212 5\u03c0/6 = \u03c0/6, sine is positive in QII \u2192 1/2",
+            "cos(7\u03c0/6): Quadrant III, reference angle 7\u03c0/6 \u2212 \u03c0 = \u03c0/6, cosine is negative in QIII \u2192 \u2212\u221a3/2"
+          ]
+        },
         {
           "type": "heading",
           "text": "General Form"
@@ -1381,6 +1521,14 @@
             {
               "q": "Solve 4^x = 7 using change of base.",
               "a": "x = log7/log4 \u2248 1.404"
+            },
+            {
+              "q": "Solve log\u2083(x) + log\u2083(x\u22128) = 2. Any extraneous solution?",
+              "a": "x(x\u22128) = 9 \u2192 x = 9 or x = \u22121. Domain needs x > 8, so reject \u22121. Answer x = 9."
+            },
+            {
+              "q": "Why must you check log equation answers?",
+              "a": "Log arguments must be > 0. Solving can produce values that break the domain: those are extraneous."
             }
           ]
         },
@@ -1439,6 +1587,18 @@
             {
               "q": "What does a negative 'a' do to a sinusoidal graph?",
               "a": "Reflects (flips) the graph vertically \u2014 starts at minimum instead of maximum"
+            },
+            {
+              "q": "Convert 150\u00b0 to radians.",
+              "a": "150 \u00d7 \u03c0/180 = 5\u03c0/6"
+            },
+            {
+              "q": "Exact value of cos(7\u03c0/6)?",
+              "a": "QIII, reference angle \u03c0/6, cosine negative in QIII \u2192 \u2212\u221a3/2"
+            },
+            {
+              "q": "What does CAST tell you?",
+              "a": "Which ratios are positive: QI all, QII sine, QIII tangent, QIV cosine."
             }
           ]
         },
