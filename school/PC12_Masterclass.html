@@ -101,6 +101,9 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
   <a href="#u5">U5 · Rational Expressions &amp; Conics</a>
   <a href="#u6">U6 · Sinusoidal Functions</a>
   <a href="#u7">U7 · Trig Identities</a>
+  <a href="#u8">U8 · Functions &amp; Radicals</a>
+  <a href="#u9">U9 · Trig Graphs &amp; Equations</a>
+  <a href="#u10">U10 · Exponentials, e &amp; Logs</a>
   <div class="grp">Review</div>
   <a href="#flashcards">All Flashcards</a>
 </nav>
@@ -695,6 +698,163 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 <div class="step">2. sinθ = −½ → θ = 7π/6, 11π/6</div>
 <div class="step">3. sinθ = 1 → <span>θ = π/2</span></div>
 <div class="step">Solutions: <span>θ = π/2, 7π/6, 11π/6</span></div>
+</div>
+</section>
+
+<hr>
+
+<!-- U8 -->
+<section id="u8" class="section">
+<h2><span class="unit-tag">Unit 8</span>Functions &amp; Radicals</h2>
+
+<h3>Master Move</h3>
+
+<span class="f">y = a·f( b(x − h) ) + k</span>
+
+<ul>
+  <li>a: vertical stretch, negative flips over the x-axis</li>
+  <li>b: horizontal stretch by 1/b, negative flips over the y-axis</li>
+  <li>h: slide right by h (inside is backwards)</li>
+  <li>k: slide up by k</li>
+  <li>Stretches and flips first, slides second. Factor b out of the bracket before reading it</li>
+</ul>
+
+<h3>Compositions</h3>
+
+<span class="f">f(g(x)): g runs first, its output goes into f</span>
+
+<div class="ex">
+<div class="ex-title">Worked Example</div>
+<div class="step">f(x) = x − 4, g(x) = x² + 4</div>
+<div class="step">f(g(x)) = (x² + 4) − 4 = x²</div>
+<div class="step">g(f(x)) = (x − 4)² + 4</div>
+<div class="step">f(g(2)) = f(8) = 4, g(f(3)) = g(−1) = 5</div>
+</div>
+
+<h3>Radical Functions</h3>
+
+<ul>
+  <li>Parent √x starts at (0, 0), domain x ≥ 0, range y ≥ 0</li>
+  <li>Start point: set the inside to 0, then read y</li>
+  <li>√(−x) heads left, −√x heads down. Inside flips left/right, outside flips up/down</li>
+  <li>√f(x): point (x, y) becomes (x, √y). y = 0 or 1 stay put, y &lt; 0 vanishes, 0 &lt; y &lt; 1 rises</li>
+</ul>
+
+<div class="warn">
+<div class="warn-title">Traps</div>
+<p>√ gives one positive root, never ±</p>
+<p>A minus outside the root flips vertically only</p>
+<p>Inverse of x² needs x ≥ 0 first, giving √x</p>
+</div>
+</section>
+
+<hr>
+
+<!-- U9 -->
+<section id="u9" class="section">
+<h2><span class="unit-tag">Unit 9</span>Trig Graphs &amp; Equations</h2>
+
+<h3>Sinusoidal Graphs</h3>
+
+<span class="f">y = a·sin(b(x − h)) + k</span>
+
+<ul>
+  <li>Amplitude |a|, period 2π/b, phase shift h, midline y = k</li>
+  <li>From a graph: amplitude = (max − min)/2, midline = (max + min)/2, b = 2π ÷ period</li>
+  <li>A bigger b speeds up the wave, so it compresses horizontally</li>
+</ul>
+
+<h3>Tangent</h3>
+
+<ul>
+  <li>tan x = sin x / cos x, the steepness of the terminal arm</li>
+  <li>Asymptotes where cos x = 0, period π, passes through (0, 0), no amplitude</li>
+  <li>tan 30° = 1/√3, tan 45° = 1, tan 60° = √3</li>
+</ul>
+
+<div class="ex">
+<div class="ex-title">Worked Example</div>
+<div class="step">Solve 2sin(2x) = −1 on [0, 2π)</div>
+<div class="step">sin(2x) = −1/2</div>
+<div class="step">2x runs 0 to 4π, so two laps: 2x = 7π/6, 11π/6, 19π/6, 23π/6</div>
+<div class="step">x = 7π/12, 11π/12, 19π/12, 23π/12</div>
+</div>
+
+<div class="warn">
+<div class="warn-title">Traps</div>
+<p>Do not divide the 2 inside sin(2x) by 2 before isolating the ratio</p>
+<p>tan²θ − 5tanθ + 4 = 0 factors like x² − 5x + 4</p>
+<p>Find the reference angle, use CAST for quadrants, then mirror: π − r, π + r, 2π − r</p>
+</div>
+</section>
+
+<hr>
+
+<!-- U10 -->
+<section id="u10" class="section">
+<h2><span class="unit-tag">Unit 10</span>Exponentials, e &amp; Logs</h2>
+
+<h3>Exponential Functions</h3>
+
+<ul>
+  <li>y = bˣ, b &gt; 0 and b ≠ 1, crosses at (0, 1), floor at y = 0</li>
+  <li>b &gt; 1 growth, 0 &lt; b &lt; 1 decay</li>
+  <li>Same a, b, h, k moves. The floor moves with k</li>
+  <li>Solve by matching bases: 8^(3x−2) = 16^(x+1) becomes 2^(9x−6) = 2^(4x+4), x = 2</li>
+</ul>
+
+<h3>Logs</h3>
+
+<ul>
+  <li>log_b(y) = x means bˣ = y, the inverse of bˣ</li>
+  <li>Graph passes through (1, 0), wall at x = 0, domain x &gt; 0</li>
+  <li>Factor before reading shifts: −log₂(2x + 6) = −log₂(2(x + 3)), wall at x = −3</li>
+</ul>
+
+<span class="f">log(ab) = log a + log b</span>
+
+<span class="f">log(a/b) = log a − log b</span>
+
+<span class="f">log(aᵇ) = b·log a</span>
+
+<div class="warn">
+<div class="warn-title">Log traps</div>
+<p>log(a + b) does not split</p>
+<p>log a · log b is not log(ab)</p>
+<p>Power law needs brackets: log(bᵈ) = d·log b only when the whole input is raised to d</p>
+</div>
+
+<h3>The Number e</h3>
+
+<span class="f">(1 + 1/x)ˣ → e ≈ 2.718 as x → ∞</span>
+
+<div class="ex">
+<div class="ex-title">Worked Example</div>
+<div class="step">$1000 at 5% growing continuously for 10 years</div>
+<div class="step">A = A₀e^(rt) = 1000e^(0.5)</div>
+<div class="step">≈ $1649</div>
+</div>
+
+<h3>Word Problems</h3>
+
+<span class="f">Half-life: A = A₀(1/2)^(t/h). Doubling: A = A₀·2^(t/d)</span>
+
+<span class="f">Compound: A = P(1 + r)^t. Continuous: A = Pe^(rt)</span>
+
+<div class="ex">
+<div class="ex-title">Worked Example</div>
+<div class="step">Half-life 5 days, 80 g, after 15 days</div>
+<div class="step">15 ÷ 5 = 3 half-lives</div>
+<div class="step">80 → 40 → 20 → 10, so 10 g</div>
+<div class="step">How long to double $1000 at 5%? 1000(1.05)^t = 2000</div>
+<div class="step">1.05^t = 2, t = log 2 / log 1.05 ≈ 14.21 years</div>
+</div>
+
+<div class="warn">
+<div class="warn-title">Word problem traps</div>
+<p>Match the time units: half-life in days means t in days</p>
+<p>Growth of 10% is a base of 1.1, not 0.1</p>
+<p>Isolate the power first (divide out the coefficient), then take the log</p>
 </div>
 </section>
 
