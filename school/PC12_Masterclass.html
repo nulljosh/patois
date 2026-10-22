@@ -98,7 +98,7 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
   <a href="#u2">U2 · Transformations</a>
   <a href="#u3">U3 · Polynomials</a>
   <a href="#u4">U4 · Exponents &amp; Logs</a>
-  <a href="#u5">U5 · Rational Expressions</a>
+  <a href="#u5">U5 · Rational Expressions &amp; Conics</a>
   <a href="#u6">U6 · Sinusoidal Functions</a>
   <a href="#u7">U7 · Trig Identities</a>
   <div class="grp">Review</div>
@@ -121,7 +121,7 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 <tr><td>U2</td><td>Transformations</td><td class="grade-b">78%</td><td>M1</td></tr>
 <tr><td>U3</td><td>Polynomials</td><td class="grade-pend">est. ~92%</td><td>M1</td></tr>
 <tr><td>U4</td><td>Exponents &amp; Logs</td><td class="grade-pend">est. ~90%</td><td>M2</td></tr>
-<tr><td>U5</td><td>Rational Expressions</td><td class="grade-pend">pending</td><td>M2</td></tr>
+<tr><td>U5</td><td>Rational Expressions &amp; Conics</td><td class="grade-pend">pending</td><td>M2</td></tr>
 <tr><td>U6</td><td>Sinusoidal Functions</td><td class="grade-pend">pending</td><td>M3</td></tr>
 <tr><td>U7</td><td>Trig Identities</td><td class="grade-pend">pending</td><td>M3</td></tr>
 <tr><td colspan="2"><strong>Quizzes (all units)</strong></td><td class="grade-a">97% avg</td><td>—</td></tr>
@@ -129,7 +129,7 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 
 <div class="mod-grid">
 <div class="mod"><div class="mod-title">Module 1</div><ul><li>U1 Sequences &amp; Series</li><li>U2 Transformations</li><li>U3 Polynomials</li></ul></div>
-<div class="mod"><div class="mod-title">Module 2</div><ul><li>U4 Exponents &amp; Logs</li><li>U5 Rational Expressions</li></ul></div>
+<div class="mod"><div class="mod-title">Module 2</div><ul><li>U4 Exponents &amp; Logs</li><li>U5 Rational Expressions &amp; Conics</li></ul></div>
 <div class="mod"><div class="mod-title">Module 3</div><ul><li>U6 Sinusoidal Functions</li><li>U7 Trig Identities</li></ul></div>
 </div>
 </section>
@@ -185,6 +185,48 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 <div class="step"><strong>Q:</strong> Arithmetic seq, a₁=3, d=4. Which term equals 87?</div>
 <div class="step">1. aₙ = 3 + (n−1)·4 = 87</div>
 <div class="step">2. (n−1)·4 = 84 → n−1 = 21 → <span>n = 22</span></div>
+</div>
+
+<div class="ex">
+<div class="ex-title">Worked Example — Two sums to find d</div>
+<div class="step"><strong>Q:</strong> The 4th + 8th terms = 24 and the 6th + 10th terms = 44. Find the first three terms.</div>
+<div class="step">1. (a₁+3d) + (a₁+7d) = 24 → 2a₁ + 10d = 24 → <span>a₁ + 5d = 12</span></div>
+<div class="step">2. (a₁+5d) + (a₁+9d) = 44 → 2a₁ + 14d = 44 → <span>a₁ + 7d = 22</span></div>
+<div class="step">3. Subtract (2) − (1): a₁ cancels, 2d = 10 → d = 5, a₁ = 12 − 25 = −13</div>
+<div class="step">4. Terms: −13, −8, −3</div>
+</div>
+
+<div class="ex">
+<div class="ex-title">Worked Example — Radical difference and quadratic n</div>
+<div class="step"><strong>Q1:</strong> √2 + √8 + √18 + … Sum of 13 terms.</div>
+<div class="step">1. Simplify first: √8 = 2√2, √18 = 3√2 → d = √2, a₁ = √2</div>
+<div class="step">2. S₁₃ = 13/2 (√2 + 13√2) = 13/2 · 14√2 = <span>91√2</span></div>
+<div class="step"><strong>Q2:</strong> How many terms of 2, 8, 14, … give a sum of 660?</div>
+<div class="step">3. 660 = n/2 (4 + 6(n−1)) = 3n² − n → 3n² − n − 660 = 0</div>
+<div class="step">4. n = (1 ± √(1 + 4·3·660))/6 = (1 ± √7921)/6 = (1 ± 89)/6 → n = 15 or −88/6</div>
+<div class="step">5. Reject the negative (n counts terms) → <span>n = 15</span></div>
+</div>
+
+<div class="ex">
+<div class="ex-title">Worked Example — Geometric: same r either way</div>
+<div class="step"><strong>Q:</strong> x, x+5, x+15 is geometric. Find x.</div>
+<div class="step">1. r is the same for any consecutive pair: (x+5)/x = (x+15)/(x+5)</div>
+<div class="step">2. Cross-multiply: (x+5)² = x(x+15)</div>
+<div class="step">3. x² + 10x + 25 = x² + 15x → 25 = 5x → <span>x = 5</span></div>
+</div>
+
+<div class="ex">
+<div class="ex-title">Worked Example — Two geometric sequences with equal nth term</div>
+<div class="step"><strong>Q:</strong> 162, 54, 18, … (r = 1/3) and 2/81, 2/27, 2/9, … (r = 3). Find n where they match.</div>
+<div class="step">1. 162(1/3)ⁿ⁻¹ = (2/81)(3)ⁿ⁻¹</div>
+<div class="step">2. (1/3)ⁿ⁻¹ = 3^−(n−1), so multiply both sides by 3ⁿ⁻¹: 162 = (2/81)·3^(2n−2)</div>
+<div class="step">3. 162 · 81/2 = 6561 = 3⁸ = 3^(2n−2) → 2n − 2 = 8 → <span>n = 5</span> (both terms = 2)</div>
+</div>
+
+<div class="warn">
+<div class="warn-title">Term or sum? Read what is asked</div>
+<p>"Doubles every minute, how many files after 18 minutes": 1, 2, 4, 8… After 4 minutes is 8, not 1+2+4+8. That is a single term: a₁₈ = 1·2¹⁷ = 131 072. Use Sₙ only when the question asks for a running total.</p>
+<p>Label sequences correctly: constant difference = arithmetic (d), constant ratio = geometric (r). An infinite series written out must end in "…".</p>
 </div>
 
 <div class="tip">
@@ -385,7 +427,7 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 
 <!-- U5 -->
 <section id="u5" class="section">
-<h2><span class="unit-tag">Unit 5</span>Rational Expressions</h2>
+<h2><span class="unit-tag">Unit 5</span>Rational Expressions &amp; Conics</h2>
 
 <h3>Fundamentals</h3>
 <p>A rational expression is <strong>polynomial / polynomial</strong>. The denominator cannot equal zero.</p>
@@ -430,6 +472,52 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 <div class="step">1. h=3, k=2. Form: y = a/(x−3) + 2</div>
 <div class="step">2. Sub (4,7): 7 = a/(4−3) + 2 = a + 2</div>
 <div class="step">3. <span>a = 5 → y = 5/(x−3) + 2</span></div>
+</div>
+<h3>Conic Sections (5.5)</h3>
+<p>A conic is what you get when a plane slices a double cone. The angle of the cut decides the shape.</p>
+<table>
+<tr><th>Conic</th><th>How the plane cuts</th><th>Standard form (centre/vertex at (h, k))</th></tr>
+<tr><td>Circle</td><td>Perpendicular to the cone's axis</td><td>(x−h)² + (y−k)² = r²</td></tr>
+<tr><td>Ellipse</td><td>Tilted, cuts through one cone only</td><td>(x−h)²/a² + (y−k)²/b² = 1</td></tr>
+<tr><td>Parabola</td><td>Parallel to the cone's side</td><td>y = a(x−h)² + k &nbsp;or&nbsp; x = a(y−k)² + h</td></tr>
+<tr><td>Hyperbola</td><td>Cuts both cones</td><td>(x−h)²/a² − (y−k)²/b² = 1 &nbsp;or&nbsp; (y−k)²/a² − (x−h)²/b² = 1</td></tr>
+</table>
+
+<h3>Spot the Conic from the Equation</h3>
+<table>
+<tr><th>Squared terms</th><th>Signs</th><th>Conic</th></tr>
+<tr><td>x² and y², same coefficient</td><td>same sign</td><td>Circle</td></tr>
+<tr><td>x² and y², different coefficients</td><td>same sign</td><td>Ellipse</td></tr>
+<tr><td>x² and y²</td><td>opposite signs</td><td>Hyperbola</td></tr>
+<tr><td>Only one of x² or y²</td><td>—</td><td>Parabola</td></tr>
+</table>
+<span class="f">Ellipse: bigger denominator sits under the long direction. Vertices at ±a along the major axis, co-vertices at ±b. Foci: c² = a² − b²</span>
+<span class="f">Hyperbola: the positive term tells you which way it opens. Asymptotes: y − k = ±(b/a)(x − h). Foci: c² = a² + b²</span>
+
+<div class="tip">
+<div class="tip-title">Complete the square to find the centre</div>
+<p>Group x terms and y terms, factor out any leading coefficient, add the same number to both sides, then rewrite as squares. The centre is (h, k).</p>
+</div>
+
+<div class="warn">
+<div class="warn-title">Degenerate conics</div>
+<p>If the right side comes out as 0, the "conic" collapses: a single point (circle/ellipse form) or two crossing lines (hyperbola form). If it comes out negative, there is no graph.</p>
+</div>
+
+<div class="ex">
+<div class="ex-title">Worked Example — Circle by Completing the Square</div>
+<div class="step"><strong>Q:</strong> x² + y² − 6x + 4y − 12 = 0. Find centre and radius.</div>
+<div class="step">1. Group: (x² − 6x) + (y² + 4y) = 12</div>
+<div class="step">2. Add 9 and 4 to both sides: (x−3)² + (y+2)² = 25</div>
+<div class="step">3. <span>Centre (3, −2), radius 5</span></div>
+</div>
+
+<div class="ex">
+<div class="ex-title">Worked Example — Ellipse and Hyperbola</div>
+<div class="step"><strong>Q1:</strong> 4x² + 9y² = 36. Divide by 36: x²/9 + y²/4 = 1</div>
+<div class="step">a = 3, b = 2. Vertices (±3, 0), co-vertices (0, ±2), c² = 5</div>
+<div class="step"><strong>Q2:</strong> x²/16 − y²/9 = 1. Opens left and right, vertices (±4, 0)</div>
+<div class="step">Asymptotes y = ±(3/4)x, c² = 25 so foci (±5, 0)</div>
 </div>
 </section>
 
@@ -588,11 +676,15 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 <div class="fc"><div class="fc-q">Solve 4^x = 7 using change of base.</div><div class="fc-a">x = log7/log4 ≈ 1.404</div></div>
 </div>
 
-<h3>Unit 5 — Rational Expressions</h3>
+<h3>Unit 5 — Rational Expressions &amp; Conics</h3>
 <div class="fc-grid">
 <div class="fc"><div class="fc-q">Non-permissible values of (x+2)/(x²−9)</div><div class="fc-a">x²−9=(x−3)(x+3). NPVs: x=3, x=−3</div></div>
 <div class="fc"><div class="fc-q">y = 3/(x+2) − 1. State asymptotes.</div><div class="fc-a">VA: x = −2 (denom=0). HA: y = −1 (k value)</div></div>
 <div class="fc"><div class="fc-q">Simplify (x²−4)/(x²+4x+4)</div><div class="fc-a">(x−2)(x+2)/(x+2)² = (x−2)/(x+2), x≠−2</div></div>
+<div class="fc"><div class="fc-q">x² + y² − 6x + 4y − 12 = 0. Centre and radius?</div><div class="fc-a">Complete the square: (x−3)² + (y+2)² = 25. Centre (3, −2), radius 5.</div></div>
+<div class="fc"><div class="fc-q">4x² + 9y² = 36. Which conic, and what are its vertices?</div><div class="fc-a">Ellipse. x²/9 + y²/4 = 1, so a=3, b=2. Vertices (±3, 0), co-vertices (0, ±2).</div></div>
+<div class="fc"><div class="fc-q">How do you tell a hyperbola from an ellipse in general form?</div><div class="fc-a">Hyperbola: x² and y² have OPPOSITE signs. Ellipse: same sign, different coefficients. Circle: same sign, same coefficient.</div></div>
+<div class="fc"><div class="fc-q">x²/16 − y²/9 = 1. Asymptotes?</div><div class="fc-a">y = ±(3/4)x. It opens left and right with vertices (±4, 0).</div></div>
 </div>
 
 <h3>Unit 6 — Sinusoidal Functions</h3>

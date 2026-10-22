@@ -602,7 +602,7 @@
     },
     {
       "id": "u5",
-      "title": "Rational Expressions",
+      "title": "Rational Expressions & Conics",
       "unitTag": "Unit 5",
       "blocks": [
         {
@@ -698,6 +698,120 @@
             "1. h=3, k=2. Form: y = a/(x\u22123) + 2",
             "2. Sub (4,7): 7 = a/(4\u22123) + 2 = a + 2",
             "3. a = 5 \u2192 y = 5/(x\u22123) + 2"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Conic Sections (5.5)"
+        },
+        {
+          "type": "p",
+          "text": "A conic is what you get when a plane slices a double cone. The angle of the cut decides the shape."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Conic",
+            "How the plane cuts",
+            "Standard form (centre/vertex at (h, k))"
+          ],
+          "rows": [
+            [
+              "Circle",
+              "Perpendicular to the cone's axis",
+              "(x\u2212h)\u00b2 + (y\u2212k)\u00b2 = r\u00b2"
+            ],
+            [
+              "Ellipse",
+              "Tilted, cuts through one cone only",
+              "(x\u2212h)\u00b2/a\u00b2 + (y\u2212k)\u00b2/b\u00b2 = 1"
+            ],
+            [
+              "Parabola",
+              "Parallel to the cone's side",
+              "y = a(x\u2212h)\u00b2 + k  or  x = a(y\u2212k)\u00b2 + h"
+            ],
+            [
+              "Hyperbola",
+              "Cuts both cones",
+              "(x\u2212h)\u00b2/a\u00b2 \u2212 (y\u2212k)\u00b2/b\u00b2 = 1  or  (y\u2212k)\u00b2/a\u00b2 \u2212 (x\u2212h)\u00b2/b\u00b2 = 1"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Spot the Conic from the Equation"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Squared terms",
+            "Signs",
+            "Conic"
+          ],
+          "rows": [
+            [
+              "x\u00b2 and y\u00b2, same coefficient",
+              "same sign",
+              "Circle"
+            ],
+            [
+              "x\u00b2 and y\u00b2, different coefficients",
+              "same sign",
+              "Ellipse"
+            ],
+            [
+              "x\u00b2 and y\u00b2",
+              "opposite signs",
+              "Hyperbola"
+            ],
+            [
+              "Only one of x\u00b2 or y\u00b2",
+              "\u2014",
+              "Parabola"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "text": "Ellipse: bigger denominator sits under the long direction. Vertices at \u00b1a along the major axis, co-vertices at \u00b1b. Foci: c\u00b2 = a\u00b2 \u2212 b\u00b2"
+        },
+        {
+          "type": "formula",
+          "text": "Hyperbola: the positive term tells you which way it opens. Asymptotes: y \u2212 k = \u00b1(b/a)(x \u2212 h). Foci: c\u00b2 = a\u00b2 + b\u00b2"
+        },
+        {
+          "type": "tip",
+          "title": "Complete the square to find the centre",
+          "items": [
+            "Group x terms and y terms, factor out any leading coefficient, add the same number to both sides, then rewrite as squares. The centre is (h, k)."
+          ]
+        },
+        {
+          "type": "warn",
+          "title": "Degenerate conics",
+          "items": [
+            "If the right side comes out as 0, the 'conic' collapses: a single point (circle/ellipse form) or two crossing lines (hyperbola form). If it comes out negative, there is no graph."
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Worked Example \u2014 Circle by Completing the Square",
+          "steps": [
+            "Q: x\u00b2 + y\u00b2 \u2212 6x + 4y \u2212 12 = 0. Find centre and radius.",
+            "1. Group: (x\u00b2 \u2212 6x) + (y\u00b2 + 4y) = 12",
+            "2. Add 9 and 4 to both sides: (x\u22123)\u00b2 + (y+2)\u00b2 = 25",
+            "3. Centre (3, \u22122), radius 5"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Worked Example \u2014 Ellipse and Hyperbola",
+          "steps": [
+            "Q1: 4x\u00b2 + 9y\u00b2 = 36. Divide by 36: x\u00b2/9 + y\u00b2/4 = 1",
+            "a = 3, b = 2. Vertices (\u00b13, 0), co-vertices (0, \u00b12), c\u00b2 = 5",
+            "Q2: x\u00b2/16 \u2212 y\u00b2/9 = 1. Opens left and right, vertices (\u00b14, 0)",
+            "Asymptotes y = \u00b1(3/4)x, c\u00b2 = 25 so foci (\u00b15, 0)"
           ]
         }
       ]
@@ -1272,7 +1386,7 @@
         },
         {
           "type": "heading",
-          "text": "Unit 5 \u2014 Rational Expressions"
+          "text": "Unit 5 \u2014 Rational Expressions & Conics"
         },
         {
           "type": "flashcards",
@@ -1288,6 +1402,22 @@
             {
               "q": "Simplify (x\u00b2\u22124)/(x\u00b2+4x+4)",
               "a": "(x\u22122)(x+2)/(x+2)\u00b2 = (x\u22122)/(x+2), x\u2260\u22122"
+            },
+            {
+              "q": "x\u00b2 + y\u00b2 \u2212 6x + 4y \u2212 12 = 0. Centre and radius?",
+              "a": "Complete the square: (x\u22123)\u00b2 + (y+2)\u00b2 = 25. Centre (3, \u22122), radius 5."
+            },
+            {
+              "q": "4x\u00b2 + 9y\u00b2 = 36. Which conic, and what are its vertices?",
+              "a": "Ellipse. x\u00b2/9 + y\u00b2/4 = 1, so a=3, b=2. Vertices (\u00b13, 0), co-vertices (0, \u00b12)."
+            },
+            {
+              "q": "How do you tell a hyperbola from an ellipse in general form?",
+              "a": "Hyperbola: x\u00b2 and y\u00b2 have OPPOSITE signs. Ellipse: same sign, different coefficients. Circle: same sign, same coefficient."
+            },
+            {
+              "q": "x\u00b2/16 \u2212 y\u00b2/9 = 1. Asymptotes?",
+              "a": "y = \u00b1(3/4)x. It opens left and right with vertices (\u00b14, 0)."
             }
           ]
         },
