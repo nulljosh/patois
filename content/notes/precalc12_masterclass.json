@@ -1292,7 +1292,7 @@
           "type": "list",
           "ordered": false,
           "items": [
-            "Amplitude |a|, period 2\u03c0/b, phase shift h, midline y = k",
+            "Amplitude |a|, period 2\u03c0/|b|, phase shift h, midline y = k",
             "From a graph: amplitude = (max \u2212 min)/2, midline = (max + min)/2, b = 2\u03c0 \u00f7 period",
             "A bigger b speeds up the wave, so it compresses horizontally"
           ]

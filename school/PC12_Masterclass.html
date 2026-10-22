@@ -68,6 +68,8 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 .section{padding-top:1rem;}
 /* PRINT: readable black-on-white study sheets */
 @media print{
+  h2,h3{break-after:avoid;break-inside:avoid;}
+  .ex,.tip,.warn,.fc,table{break-inside:avoid;}
   @page{size:letter;margin:0.65in;}
   :root{--bg:#fff;--s:#f7f7f7;--s2:#eee;--b:#bbb;--t:#111;--td:#222;--acc:#0645ad;--green:#146b2e;--orange:#8a4300;--red:#8b0000;--blue:#0645ad;--yellow:#6b4e00;}
   body{display:block;background:#fff;color:#111;line-height:1.4;}
@@ -111,7 +113,7 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 <main class="main">
 
 <h1>PC12 Masterclass</h1>
-<p class="meta">Pre-Calculus 12 · LEC 25–26 · Joshua Trommel · All 7 Units</p>
+<p class="meta">Pre-Calculus 12 · LEC 25–26 · Joshua Trommel · Units 1–10</p>
 
 <!-- OVERVIEW -->
 <section id="overview" class="section">
@@ -759,7 +761,7 @@ td{padding:.55rem .9rem;border:1px solid var(--b);color:var(--td);}
 <span class="f">y = a·sin(b(x − h)) + k</span>
 
 <ul>
-  <li>Amplitude |a|, period 2π/b, phase shift h, midline y = k</li>
+  <li>Amplitude |a|, period 2π/|b|, phase shift h, midline y = k</li>
   <li>From a graph: amplitude = (max − min)/2, midline = (max + min)/2, b = 2π ÷ period</li>
   <li>A bigger b speeds up the wave, so it compresses horizontally</li>
 </ul>
