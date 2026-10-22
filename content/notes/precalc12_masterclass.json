@@ -241,7 +241,7 @@
           "type": "warn",
           "title": "Term or sum? Read what is asked",
           "items": [
-            "Doubles every minute, files after 18 minutes: 1, 2, 4, 8\u2026 That is a single term, a\u2081\u2088 = 1\u00b72\u00b9\u2077 = 131 072, not S\u2081\u2088.",
+            "1 file doubling every minute, after 18 minutes: count from minute 0, so after n minutes there are 2\u207f. That is a single term, 2\u00b9\u2078 = 262 144 (a\u2081\u2089 if a\u2081 is minute 0), not a sum.",
             "Constant difference = arithmetic (d). Constant ratio = geometric (r). An infinite series written out must end in \u2026"
           ]
         },
