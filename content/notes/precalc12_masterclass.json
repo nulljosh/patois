@@ -8,59 +8,63 @@
       "unitTag": "Overview",
       "blocks": [
         {
+          "type": "p",
+          "text": "My own estimate as of October 22, 2026: every unit sits around 50\u201370%. These are not official course grades. The May 2026 figures (higher) are in the repo history."
+        },
+        {
           "type": "table",
           "headers": [
             "Unit",
             "Topic",
-            "Historical assessment",
+            "Current estimate",
             "Module"
           ],
           "rows": [
             [
               "U1",
               "Sequences & Series",
-              "88%",
+              "~50\u201370%",
               "M1"
             ],
             [
               "U2",
               "Transformations",
-              "78%",
+              "~50\u201370%",
               "M1"
             ],
             [
               "U3",
               "Polynomials",
-              "est. ~92%",
+              "~50\u201370%",
               "M1"
             ],
             [
               "U4",
               "Exponents & Logs",
-              "est. ~90%",
+              "~50\u201370%",
               "M2"
             ],
             [
               "U5",
-              "Rational Expressions",
-              "pending",
+              "Rational Expressions & Conics",
+              "~50\u201370%",
               "M2"
             ],
             [
               "U6",
               "Sinusoidal Functions",
-              "pending",
+              "~50\u201370%",
               "M3"
             ],
             [
               "U7",
               "Trig Identities",
-              "pending",
+              "~50\u201370%",
               "M3"
             ],
             [
               "Quizzes (all units)",
-              "97% avg",
+              "~50\u201370%",
               "\u2014"
             ]
           ]
@@ -80,7 +84,7 @@
               "title": "Module 2",
               "items": [
                 "U4 Exponents & Logs",
-                "U5 Rational Expressions"
+                "U5 Rational Expressions & Conics"
               ]
             },
             {
