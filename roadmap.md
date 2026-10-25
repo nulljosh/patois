@@ -628,3 +628,8 @@ The earlier gaps have been addressed:
 
 ## Ingested 2026-10-21
 - [ ] Still super stale on the App Store (it's Patois now, store still says Lexly). Already tracked above as the stale name and screenshots item; ship the rename and fresh screenshots.
+
+## Ingested 2026-10-25
+- [ ] App needs a redesign, more like Duolingo, with stale names removed. Just remove the header (home still shows the large Lexly title and a gear). Settings should be in the bottom nav, not top right. Screenshot: ~/Documents/Code/notes/attachments/2026-10-25/patois-1.png
+- [ ] App Store screenshots are horrible. Redo them.
+- [ ] App Store description is stale. Are the app update descriptions accurate (live 1.1.3 says "A clearer, more legible app icon and refreshed screenshots" and shows a v1.1.0 what's new)? Can we amend them later on? Screenshot: ~/Documents/Code/notes/attachments/2026-10-25/patois-2.png
