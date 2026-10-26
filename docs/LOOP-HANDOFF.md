@@ -16,7 +16,7 @@ Surf's runner was dead from Wednesday until a fix on 2026-10-22, after a disk cl
 
 ## Next, in order
 
-1. Teach-first lessons for the other courses and the layout rehaul (only Spanish units 1 to 5 teach first today)
+1. Teach-first lessons for the other courses (only Spanish units 1 to 5 teach first today). The look rehaul is live.
 2. Sign in with Apple checked on a real phone
 3. Step-by-step chess lines: a combination is one question about its first move today; an exercise where the board answers back would teach the follow-up
 4. ATTRIBUTION.md still says no third-party app content is used; the restored Hindi/Japanese/Korean/French/Arabic drill units contradict that
