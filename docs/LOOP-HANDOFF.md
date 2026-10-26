@@ -1,4 +1,4 @@
-# Patois loop handoff (2026-10-22, early morning)
+# Patois loop handoff (2026-10-26, early morning)
 
 ## What the loop is
 
@@ -6,6 +6,7 @@ Self-paced loop building Patois alongside ex-Cruise. Each round: 1) Surf health 
 
 ## Where things stand
 
+- Language packs now build their units from the vocabulary Surf has solved on Duolingo, with Tatoeba sentences only (2026-10-26): Turkish went from 11 to 120 units, French from 38 to 52, Russian from 11 to 14.
 - The Patois name is used everywhere users see it: domain, repo links, sitemap and store URLs. Store builds still follow their own review lines.
 patois.jaybulb.com serves 200 now, a Cloudflare Pages custom domain on the lexly-heyitsmejosh project (the project name stays). The store name still flips from Lexly on approval.
 
@@ -23,7 +24,7 @@ Surf's runner was dead from Wednesday until a fix on 2026-10-22, after a disk cl
 6. Russian (speaking exercises) and Arabic (characterMatch pair-select) earn no XP; investigate if worth fixing
 7. Chess course stub units (6 hand-written multiple-choice units) could use more original content
 
-Done since the 2026-10-05 handoff: Polish, Greek, Turkish and Swedish fact-checked and in the catalog; Android draws the chess board (compiles with JDK 17 at /opt/homebrew/opt/openjdk@17); renamed to Patois (2026-10-17); teach-first lessons and build 202610181930 (2026-10-18). Pre-Calc 12 masterclass covers units 1 to 10 with flashcards (2026-10-22).
+Done since the 2026-10-05 handoff: Polish, Greek, Turkish and Swedish fact-checked and in the catalog; Android draws the chess board (compiles with JDK 17 at /opt/homebrew/opt/openjdk@17); renamed to Patois (2026-10-17); teach-first lessons and build 202610181930 (2026-10-18). Pre-Calc 12 masterclass covers units 1 to 10 with flashcards (2026-10-22). Language packs copy Surf's solved vocabulary (2026-10-26).
 
 ## Restart prompt
 
