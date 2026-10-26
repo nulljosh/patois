@@ -3,7 +3,6 @@
 > Priority tier 1 (2026-10-17): live blocker, work first. Order: live blockers, ship pushes, active features, portfolio, exploratory. See ~/Documents/Code/LOOP-HANDOFF.md.
 
 ## Rehaul (Joshua 2026-10-17, do first)
-- [x] UI rehaul: landing on system font only (Patois Sans and dead Geist removed), live demo lesson embedded via /app/?demo, Pat logo in the app header, one radius set and 48 point capsule controls in the app, README shots retaken from the demo lesson and landing (2026-10-26).
 
 ## Shipped 2026-09-10, iPad support dropped, Sign In with Apple fixed, manual code signing
 
