@@ -3,7 +3,7 @@
 > Priority tier 1 (2026-10-17): live blocker, work first. Order: live blockers, ship pushes, active features, portfolio, exploratory. See ~/Documents/Code/LOOP-HANDOFF.md.
 
 ## Rehaul (Joshua 2026-10-17, do first)
-- [ ] UI rehaul: the web landing and the app are ugly. Rebuild on the shared tokens (8 point grid, one radius set, 48 point capsules, SF Pro / Helvetica), the way Airwell was done. No tilted device mockups or frames on the landing, the app itself goes on the page. Then fresh README screenshots. (2026-10-21: README shots in screenshots/ still match the live app, which still shows the old blue chat-bubble logo instead of Pat the macaw; retaking before the rehaul changes nothing.)
+- [x] UI rehaul: landing on system font only (Patois Sans and dead Geist removed), live demo lesson embedded via /app/?demo, Pat logo in the app header, one radius set and 48 point capsule controls in the app, README shots retaken from the demo lesson and landing (2026-10-26).
 
 ## Shipped 2026-09-10, iPad support dropped, Sign In with Apple fixed, manual code signing
 

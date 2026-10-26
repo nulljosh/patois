@@ -9,8 +9,8 @@ Learn a language, or anything else, five minutes at a time. Streaks, hearts, XP.
 Live at [patois.jaybulb.com](https://patois.jaybulb.com) · [App Store](https://apps.apple.com/app/id6783501611)
 
 <p>
-  <img src="screenshots/catalog.png" width="260" alt="Course catalog">
-  <img src="screenshots/course.png" width="260" alt="A course">
+  <img src="screenshots/landing.png" width="260" alt="The Patois web landing">
+  <img src="screenshots/lesson.png" width="260" alt="A lesson in the web app">
 </p>
 
 ## What is in it
