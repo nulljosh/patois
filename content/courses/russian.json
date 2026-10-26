@@ -4,7 +4,7 @@
   "category": "languages",
   "icon": "fa-solid fa-earth-europe",
   "level": "Beginner",
-  "version": 6,
+  "version": 7,
   "units": [
     {
       "id": "u1",
@@ -2706,6 +2706,738 @@
         [
           "I don't know if he's a doctor.",
           "Я не знаю, правда ли, что он доктор."
+        ]
+      ]
+    },
+    {
+      "id": "t11",
+      "title": "General Practice",
+      "lessons": [
+        {
+          "id": "t11l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Me neither.",
+              "answer": "И не я.",
+              "choices": [
+                "Я как ты.",
+                "И не я.",
+                "Это не я.",
+                "Я как он."
+              ],
+              "id": "russian_t11_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Ты ____ я.",
+              "answer": "не",
+              "choices": [
+                "ты",
+                "Вы",
+                "это",
+                "не"
+              ],
+              "id": "russian_t11_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I'm not the one who did that.",
+              "answer": "Это не я.",
+              "words": [
+                "не",
+                "Ты",
+                "Что",
+                "Это",
+                "я."
+              ],
+              "id": "russian_t11_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Ты — это не я.",
+              "audio": "Ты — это не я.",
+              "id": "russian_t11_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "It isn't him.",
+                  "Это не он."
+                ],
+                [
+                  "It's not us.",
+                  "Это не мы."
+                ],
+                [
+                  "You're not me.",
+                  "Вы не я."
+                ],
+                [
+                  "It's him, isn't it?",
+                  "Это он, да?"
+                ]
+              ],
+              "id": "russian_t11_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t11l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Oh, yeah?",
+              "answer": "Да ты что?",
+              "choices": [
+                "Ты не я.",
+                "Да ты что?",
+                "Я как вы.",
+                "Это не я."
+              ],
+              "id": "russian_t11_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Это ____ мне.",
+              "answer": "не",
+              "choices": [
+                "мне",
+                "не",
+                "он",
+                "что"
+              ],
+              "id": "russian_t11_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Did you say this to me?",
+              "answer": "Это ты мне?",
+              "words": [
+                "он,",
+                "Вы",
+                "ты",
+                "Это",
+                "мне?"
+              ],
+              "id": "russian_t11_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Я как ты.",
+              "audio": "Я как ты.",
+              "id": "russian_t11_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I am like him.",
+                  "Я как он."
+                ],
+                [
+                  "You're like him.",
+                  "Ты как он."
+                ],
+                [
+                  "No, it's not me. It's you!",
+                  "Нет, это не я. Это ты!"
+                ],
+                [
+                  "Yes and no.",
+                  "И да и нет."
+                ]
+              ],
+              "id": "russian_t11_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t11l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Neither do I!",
+              "answer": "И я нет!",
+              "choices": [
+                "Это не так.",
+                "Я как вы.",
+                "Нет, это не я! Это вы!",
+                "И я нет!"
+              ],
+              "id": "russian_t11_3_0"
+            },
+            {
+              "type": "translation",
+              "question": "No, it is not me! It is you!",
+              "answer": "Нет, это не я! Это вы!",
+              "choices": [
+                "Что у меня?",
+                "Нет, это не он.",
+                "Нет, это не я! Это вы!",
+                "Ты — это не я."
+              ],
+              "id": "russian_t11_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I'm like you.",
+              "answer": "Я как вы.",
+              "words": [
+                "вы.",
+                "не",
+                "как",
+                "Я",
+                "вы!"
+              ],
+              "id": "russian_t11_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Нет, это не он.",
+              "audio": "Нет, это не он.",
+              "id": "russian_t11_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "You're like me.",
+                  "Вы как я."
+                ],
+                [
+                  "What do I have?",
+                  "Что у меня?"
+                ],
+                [
+                  "It is not so.",
+                  "Это не так."
+                ],
+                [
+                  "What is wrong?",
+                  "Что не так?"
+                ]
+              ],
+              "id": "russian_t11_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "Me neither.",
+          "И не я."
+        ],
+        [
+          "You aren't me.",
+          "Ты не я."
+        ],
+        [
+          "I'm not the one who did that.",
+          "Это не я."
+        ]
+      ]
+    },
+    {
+      "id": "t12",
+      "title": "General Practice 2",
+      "lessons": [
+        {
+          "id": "t12l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "No, it's not like that.",
+              "answer": "Нет, это не так.",
+              "choices": [
+                "Это не ты, а я!",
+                "Нет, это не так.",
+                "У меня его нет.",
+                "Это не я, а ты!"
+              ],
+              "id": "russian_t12_1_0"
+            },
+            {
+              "type": "translation",
+              "question": "No I'm not; you are!",
+              "answer": "Нет, не я, а ты!",
+              "choices": [
+                "Это не она.",
+                "Это не ты, а я!",
+                "Это как они так?",
+                "Нет, не я, а ты!"
+              ],
+              "id": "russian_t12_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "It's not you, it's me!",
+              "answer": "Это не ты, а я!",
+              "words": [
+                "не",
+                "а",
+                "ты,",
+                "Это",
+                "это",
+                "я!",
+                "не"
+              ],
+              "id": "russian_t12_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Нет, не я, а вы!",
+              "audio": "Нет, не я, а вы!",
+              "id": "russian_t12_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "It's not me, it's you!",
+                  "Это не я, а ты!"
+                ],
+                [
+                  "Not me. And you?",
+                  "Я нет, а ты?"
+                ],
+                [
+                  "What's wrong?",
+                  "А что не так?"
+                ],
+                [
+                  "I am you and you are me.",
+                  "Я — это ты, а ты — это я."
+                ]
+              ],
+              "id": "russian_t12_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t12l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "This is not his.",
+              "answer": "Это не его.",
+              "choices": [
+                "Я нет, а ты?",
+                "Это не его.",
+                "Нет, не я, а ты!",
+                "А что не так?"
+              ],
+              "id": "russian_t12_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "У меня ____ нет.",
+              "answer": "его",
+              "choices": [
+                "Это",
+                "его",
+                "он",
+                "Он"
+              ],
+              "id": "russian_t12_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "No, I don't have it.",
+              "answer": "Нет, у меня его нет.",
+              "words": [
+                "у",
+                "она",
+                "его",
+                "Нет,",
+                "нет.",
+                "меня",
+                "его"
+              ],
+              "id": "russian_t12_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Это не она.",
+              "audio": "Это не она.",
+              "id": "russian_t12_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "He's him and she's her.",
+                  "Он — это он, а она — это она."
+                ],
+                [
+                  "No, that's not her.",
+                  "Нет, это не она."
+                ],
+                [
+                  "What is it that you got?",
+                  "Что это у тебя?"
+                ],
+                [
+                  "How come?",
+                  "Как это так?"
+                ]
+              ],
+              "id": "russian_t12_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t12l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "What have you got?",
+              "answer": "Что у тебя?",
+              "choices": [
+                "Нет, у меня его нет.",
+                "Нет, не я, а ты!",
+                "Это как они так?",
+                "Что у тебя?"
+              ],
+              "id": "russian_t12_3_0"
+            },
+            {
+              "type": "translation",
+              "question": "Do you have it?",
+              "answer": "Он у тебя?",
+              "choices": [
+                "А что не так?",
+                "Он у тебя?",
+                "Нет, не я, а ты!",
+                "Что это у тебя?"
+              ],
+              "id": "russian_t12_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I'm at your place.",
+              "answer": "Я у тебя.",
+              "words": [
+                "у",
+                "—",
+                "ты",
+                "Я",
+                "тебя."
+              ],
+              "id": "russian_t12_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "О нет, это он!",
+              "audio": "О нет, это он!",
+              "id": "russian_t12_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "No problem.",
+                  "Да не за что."
+                ],
+                [
+                  "I'm not like everybody else.",
+                  "Я — не все."
+                ],
+                [
+                  "How're they doing that?",
+                  "Это как они так?"
+                ],
+                [
+                  "It isn't them.",
+                  "Это не они."
+                ]
+              ],
+              "id": "russian_t12_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "No, it's not like that.",
+          "Нет, это не так."
+        ],
+        [
+          "No I'm not; you are!",
+          "Нет, не я, а ты!"
+        ],
+        [
+          "It's not you, it's me!",
+          "Это не ты, а я!"
+        ]
+      ]
+    },
+    {
+      "id": "t13",
+      "title": "General Practice 3",
+      "lessons": [
+        {
+          "id": "t13l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "You're like her.",
+              "answer": "Ты как она.",
+              "choices": [
+                "А мы как же?",
+                "Ты как она.",
+                "У меня все они есть.",
+                "А как же я?"
+              ],
+              "id": "russian_t13_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Он ____ она.",
+              "answer": "как",
+              "choices": [
+                "тебя",
+                "если",
+                "Не",
+                "как"
+              ],
+              "id": "russian_t13_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Are you like her?",
+              "answer": "Вы как она?",
+              "words": [
+                "Для",
+                "она?",
+                "Так",
+                "Вы",
+                "как"
+              ],
+              "id": "russian_t13_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "А мы как же?",
+              "audio": "А мы как же?",
+              "id": "russian_t13_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "What about me?",
+                  "А как же я?"
+                ],
+                [
+                  "It's him!",
+                  "Это же он!"
+                ],
+                [
+                  "That's true.",
+                  "Так и есть."
+                ],
+                [
+                  "Do you have one?",
+                  "У тебя есть?"
+                ]
+              ],
+              "id": "russian_t13_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t13l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I've got them all.",
+              "answer": "У меня все они есть.",
+              "choices": [
+                "Так и есть.",
+                "У меня все они есть.",
+                "Вы как она?",
+                "А если нет?"
+              ],
+              "id": "russian_t13_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Они у ____ есть?",
+              "answer": "тебя",
+              "choices": [
+                "Ну",
+                "же",
+                "тебя",
+                "мы"
+              ],
+              "id": "russian_t13_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "You've got me.",
+              "answer": "У тебя есть я.",
+              "words": [
+                "есть",
+                "я.",
+                "же",
+                "У",
+                "Так",
+                "тебя"
+              ],
+              "id": "russian_t13_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Да, так и есть.",
+              "audio": "Да, так и есть.",
+              "id": "russian_t13_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "It isn't that simple.",
+                  "Это не так просто."
+                ],
+                [
+                  "And if not?",
+                  "А если нет?"
+                ],
+                [
+                  "It was nothing.",
+                  "Не за что."
+                ],
+                [
+                  "This is for you!",
+                  "Это для тебя!"
+                ]
+              ],
+              "id": "russian_t13_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t13l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "This isn't for you.",
+              "answer": "Это не для тебя.",
+              "choices": [
+                "Ну и что?",
+                "Это не для меня.",
+                "Это же он!",
+                "Это не для тебя."
+              ],
+              "id": "russian_t13_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Это ____ меня.",
+              "answer": "для",
+              "choices": [
+                "же",
+                "для",
+                "бы",
+                "просто"
+              ],
+              "id": "russian_t13_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "This isn't for me.",
+              "answer": "Это не для меня.",
+              "words": [
+                "это",
+                "для",
+                "меня.",
+                "Это",
+                "не",
+                "А"
+              ],
+              "id": "russian_t13_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Для меня это не просто.",
+              "audio": "Для меня это не просто.",
+              "id": "russian_t13_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "They aren't for you.",
+                  "Они не для тебя."
+                ],
+                [
+                  "It's easy for me.",
+                  "Для меня это просто."
+                ],
+                [
+                  "My ass!",
+                  "Как бы не так!"
+                ],
+                [
+                  "So what?",
+                  "Ну и что?"
+                ]
+              ],
+              "id": "russian_t13_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "You're like her.",
+          "Ты как она."
+        ],
+        [
+          "He's like her.",
+          "Он как она."
+        ],
+        [
+          "Are you like her?",
+          "Вы как она?"
         ]
       ]
     }

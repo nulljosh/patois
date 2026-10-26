@@ -4,7 +4,7 @@
   "category": "languages",
   "icon": "fa-solid fa-earth-europe",
   "level": "Beginner to Advanced",
-  "version": 6,
+  "version": 7,
   "units": [
     {
       "id": "u1",
@@ -9410,6 +9410,3519 @@
         [
           "That I can't tell you.",
           "Je ne peux pas te le dire."
+        ]
+      ]
+    },
+    {
+      "id": "t37",
+      "title": "General Practice 27",
+      "lessons": [
+        {
+          "id": "t37l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Do I have to do that right now?",
+              "answer": "Est-ce que je dois faire ça maintenant ?",
+              "choices": [
+                "Je veux une vie à moi.",
+                "On va y aller, maintenant.",
+                "Est-ce que je dois faire ça maintenant ?",
+                "Je ne veux pas aller avec vous."
+              ],
+              "id": "french_t37_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Tout était ____ bon.",
+              "answer": "très",
+              "choices": [
+                "ne",
+                "maintenant",
+                "Bien",
+                "très"
+              ],
+              "id": "french_t37_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I want to have my own life.",
+              "answer": "Je veux une vie à moi.",
+              "words": [
+                "moi.",
+                "vie",
+                "veux",
+                "Oui.",
+                "Je",
+                "Bien,",
+                "à",
+                "une"
+              ],
+              "id": "french_t37_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je veux faire quelque chose de ma vie.",
+              "audio": "Je veux faire quelque chose de ma vie.",
+              "id": "french_t37_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "He may have said so.",
+                  "Il a peut-être dit ça."
+                ],
+                [
+                  "Yes. No. Maybe. I don't know.",
+                  "Oui. Non. Peut-être. Je ne sais pas."
+                ],
+                [
+                  "You might, but not me!",
+                  "Toi peut-être, mais pas moi !"
+                ],
+                [
+                  "He never said anything to us.",
+                  "Il ne nous a jamais rien dit."
+                ]
+              ],
+              "id": "french_t37_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t37l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Actually, I'd also like to go.",
+              "answer": "En fait, moi aussi je veux y aller.",
+              "choices": [
+                "Toi peut-être, mais pas moi !",
+                "En fait, moi aussi je veux y aller.",
+                "Bien, je dois y aller, maintenant.",
+                "Je ne veux pas aller avec vous."
+              ],
+              "id": "french_t37_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Comme ____ veux.",
+              "answer": "tu",
+              "choices": [
+                "dois",
+                "tu",
+                "bon",
+                "vous"
+              ],
+              "id": "french_t37_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Well, I have to go now.",
+              "answer": "Bien, je dois y aller, maintenant.",
+              "words": [
+                "je",
+                "maintenant.",
+                "y",
+                "Bien,",
+                "que",
+                "dois",
+                "aller,",
+                "dit"
+              ],
+              "id": "french_t37_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je ne peux pas y aller avec toi.",
+              "audio": "Je ne peux pas y aller avec toi.",
+              "id": "french_t37_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I'll go with you.",
+                  "Je vais y aller avec toi."
+                ],
+                [
+                  "I really have to go now.",
+                  "Il me faut vraiment y aller maintenant."
+                ],
+                [
+                  "I don't know where you have to go.",
+                  "Je ne sais pas où tu dois aller."
+                ],
+                [
+                  "You can't go now.",
+                  "Tu ne peux pas y aller maintenant."
+                ]
+              ],
+              "id": "french_t37_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t37l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "You'll be all right.",
+              "answer": "Ça va très bien aller pour toi.",
+              "choices": [
+                "Je veux une vie à moi.",
+                "Je veux faire quelque chose de ma vie.",
+                "Toi peut-être, mais pas moi !",
+                "Ça va très bien aller pour toi."
+              ],
+              "id": "french_t37_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Tu dois ____ avec moi.",
+              "answer": "aller",
+              "choices": [
+                "très",
+                "aller",
+                "que",
+                "fait"
+              ],
+              "id": "french_t37_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I don't know how to go there.",
+              "answer": "Je ne sais pas comment y aller.",
+              "words": [
+                "Si",
+                "aller.",
+                "sais",
+                "toi",
+                "pas",
+                "comment",
+                "y",
+                "Je",
+                "ne"
+              ],
+              "id": "french_t37_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Pourquoi on ne peut pas aller avec toi ?",
+              "audio": "Pourquoi on ne peut pas aller avec toi ?",
+              "id": "french_t37_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "We'll be on our way now.",
+                  "On va y aller, maintenant."
+                ],
+                [
+                  "I want you.",
+                  "Je te veux."
+                ],
+                [
+                  "If you want.",
+                  "Si tu veux."
+                ],
+                [
+                  "I don't want to go with you.",
+                  "Je ne veux pas aller avec vous."
+                ]
+              ],
+              "id": "french_t37_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "Do I have to do that right now?",
+          "Est-ce que je dois faire ça maintenant ?"
+        ],
+        [
+          "Everything was very good.",
+          "Tout était très bon."
+        ],
+        [
+          "I want to have my own life.",
+          "Je veux une vie à moi."
+        ]
+      ]
+    },
+    {
+      "id": "t38",
+      "title": "General Practice 28",
+      "lessons": [
+        {
+          "id": "t38l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I want them.",
+              "answer": "Je les veux.",
+              "choices": [
+                "Je peux le faire avec ou sans toi.",
+                "Je les veux.",
+                "Je ne peux pas faire ça sans toi.",
+                "Moi aussi, je veux y aller."
+              ],
+              "id": "french_t38_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Tu en ____ plus ?",
+              "answer": "veux",
+              "choices": [
+                "toi",
+                "été",
+                "On",
+                "veux"
+              ],
+              "id": "french_t38_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Do you want to go or not?",
+              "answer": "Tu veux y aller ou pas ?",
+              "words": [
+                "vais",
+                "pas",
+                "?",
+                "les",
+                "y",
+                "ou",
+                "aller",
+                "Tu",
+                "veux"
+              ],
+              "id": "french_t38_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je veux faire plus.",
+              "audio": "Je veux faire plus.",
+              "id": "french_t38_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I want to go, too.",
+                  "Moi aussi, je veux y aller."
+                ],
+                [
+                  "I don't want to go either.",
+                  "Je ne veux pas y aller non plus."
+                ],
+                [
+                  "Was this made here?",
+                  "Est-ce que ça a été fait ici ?"
+                ],
+                [
+                  "She can say that again!",
+                  "Ça, elle peut le dire une autre fois !"
+                ]
+              ],
+              "id": "french_t38_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t38l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I'm not going to say it twice.",
+              "answer": "Je ne vais pas le dire deux fois.",
+              "choices": [
+                "Je veux faire plus.",
+                "Je ne vais pas le dire deux fois.",
+                "Tu veux y aller ou pas ?",
+                "Tu en veux plus ?"
+              ],
+              "id": "french_t38_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je ne peux ____ vu avec toi.",
+              "answer": "être",
+              "choices": [
+                "Tu",
+                "être",
+                "les",
+                "été"
+              ],
+              "id": "french_t38_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I saw you with him.",
+              "answer": "Je vous ai vu avec lui.",
+              "words": [
+                "vous",
+                "lui.",
+                "les",
+                "avec",
+                "Je",
+                "ai",
+                "vu",
+                "avec"
+              ],
+              "id": "french_t38_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Elle a tout vu.",
+              "audio": "Elle a tout vu.",
+              "id": "french_t38_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "He saw everything.",
+                  "Il a tout vu."
+                ],
+                [
+                  "I don't know what to do here.",
+                  "Je ne sais que faire ici."
+                ],
+                [
+                  "Was that all you saw?",
+                  "Est-ce tout ce que tu as vu ?"
+                ],
+                [
+                  "I want to be here.",
+                  "Je veux être ici."
+                ]
+              ],
+              "id": "french_t38_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t38l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "We're being conned.",
+              "answer": "On se fait avoir.",
+              "choices": [
+                "Est-ce tout ce que tu as vu ?",
+                "Je ne peux pas faire ça sans toi.",
+                "Je peux le faire avec ou sans toi.",
+                "On se fait avoir."
+              ],
+              "id": "french_t38_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je ne veux ____ les avoir ici.",
+              "answer": "pas",
+              "choices": [
+                "Ça",
+                "les",
+                "pas",
+                "été"
+              ],
+              "id": "french_t38_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Without you I am nothing.",
+              "answer": "Sans toi je ne suis rien.",
+              "words": [
+                "toi",
+                "rien.",
+                "ne",
+                "Tu",
+                "être",
+                "je",
+                "Sans",
+                "suis"
+              ],
+              "id": "french_t38_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Sans toi, je ne suis pas bien.",
+              "audio": "Sans toi, je ne suis pas bien.",
+              "id": "french_t38_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I can't be without you.",
+                  "Je ne peux pas être sans toi."
+                ],
+                [
+                  "Without you, I'm nothing.",
+                  "Sans vous je ne suis rien."
+                ],
+                [
+                  "I can do this with you or without you.",
+                  "Je peux le faire avec ou sans toi."
+                ],
+                [
+                  "I can't do this without you.",
+                  "Je ne peux pas faire ça sans toi."
+                ]
+              ],
+              "id": "french_t38_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "I want them.",
+          "Je les veux."
+        ],
+        [
+          "Do you want more?",
+          "Tu en veux plus ?"
+        ],
+        [
+          "Do you want to go or not?",
+          "Tu veux y aller ou pas ?"
+        ]
+      ]
+    },
+    {
+      "id": "t39",
+      "title": "General Practice 29",
+      "lessons": [
+        {
+          "id": "t39l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I can't do this without her.",
+              "answer": "Je ne peux pas faire ça sans elle.",
+              "choices": [
+                "Je ne veux pas faire ça sans toi.",
+                "Je ne peux pas faire ça sans elle.",
+                "Je ne sais pas vraiment.",
+                "Je ne sais vraiment pas quoi dire."
+              ],
+              "id": "french_t39_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je suis ____ merci.",
+              "answer": "sans",
+              "choices": [
+                "elle",
+                "pas",
+                "ne",
+                "sans"
+              ],
+              "id": "french_t39_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I don't want to do that without you.",
+              "answer": "Je ne veux pas faire ça sans toi.",
+              "words": [
+                "Comment",
+                "pas",
+                "sans",
+                "ça",
+                "toi.",
+                "faire",
+                "veux",
+                "Je",
+                "ne",
+                "Où"
+              ],
+              "id": "french_t39_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Non, pas vraiment.",
+              "audio": "Non, pas vraiment.",
+              "id": "french_t39_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I really don't know.",
+                  "Je ne sais vraiment pas."
+                ],
+                [
+                  "I don't quite know what to say.",
+                  "Je ne sais pas vraiment quoi dire."
+                ],
+                [
+                  "I really don't know what to say.",
+                  "Je ne sais vraiment pas quoi dire."
+                ],
+                [
+                  "I don't really know why.",
+                  "Je ne sais pas vraiment pourquoi."
+                ]
+              ],
+              "id": "french_t39_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t39l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I'm really good.",
+              "answer": "Je suis vraiment bon.",
+              "choices": [
+                "Je ne sais pas vraiment.",
+                "Tout le monde fait ça.",
+                "Je suis vraiment bon.",
+                "Elle le dit à tout le monde."
+              ],
+              "id": "french_t39_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je ne ____ pas vraiment.",
+              "answer": "sais",
+              "choices": [
+                "pas",
+                "sais",
+                "Comment",
+                "faut"
+              ],
+              "id": "french_t39_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I don't really know what to do.",
+              "answer": "Je ne sais vraiment pas quoi faire.",
+              "words": [
+                "sais",
+                "vraiment",
+                "quoi",
+                "ne",
+                "faire.",
+                "pas",
+                "ne",
+                "Je",
+                "pourquoi."
+              ],
+              "id": "french_t39_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Vraiment, vraiment je veux ça.",
+              "audio": "Vraiment, vraiment je veux ça.",
+              "id": "french_t39_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I really want to do that.",
+                  "Je veux vraiment faire ça."
+                ],
+                [
+                  "I do want it.",
+                  "Je le veux vraiment."
+                ],
+                [
+                  "Anyone can do it.",
+                  "Tout le monde peut le faire."
+                ],
+                [
+                  "In our society we find men of integrity along with crooks.",
+                  "Il faut de tout pour faire un monde."
+                ]
+              ],
+              "id": "french_t39_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t39l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "How's everybody doing?",
+              "answer": "Comment va tout le monde ?",
+              "choices": [
+                "Je ne veux pas faire ça sans toi.",
+                "Je ne sais pas vraiment.",
+                "Je suis sans merci.",
+                "Comment va tout le monde ?"
+              ],
+              "id": "french_t39_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Tout le ____ le dit.",
+              "answer": "monde",
+              "choices": [
+                "peut",
+                "monde",
+                "est",
+                "un"
+              ],
+              "id": "french_t39_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Everyone is doing it.",
+              "answer": "Tout le monde le fait.",
+              "words": [
+                "le",
+                "pourquoi.",
+                "monde",
+                "Il",
+                "le",
+                "Tout",
+                "fait."
+              ],
+              "id": "french_t39_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Tout le monde fait ça.",
+              "audio": "Tout le monde fait ça.",
+              "id": "french_t39_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "Everyone is going to be there.",
+                  "Tout le monde va être là."
+                ],
+                [
+                  "Where is everybody?",
+                  "Où est tout le monde ?"
+                ],
+                [
+                  "He told everyone.",
+                  "Il le dit à tout le monde."
+                ],
+                [
+                  "She told everyone.",
+                  "Elle le dit à tout le monde."
+                ]
+              ],
+              "id": "french_t39_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "I can't do this without her.",
+          "Je ne peux pas faire ça sans elle."
+        ],
+        [
+          "I am merciless.",
+          "Je suis sans merci."
+        ],
+        [
+          "I don't want to do that without you.",
+          "Je ne veux pas faire ça sans toi."
+        ]
+      ]
+    },
+    {
+      "id": "t40",
+      "title": "General Practice 30",
+      "lessons": [
+        {
+          "id": "t40l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Everybody's here.",
+              "answer": "Tout le monde est là.",
+              "choices": [
+                "Tout le monde ne peut pas faire ça.",
+                "Je le veux plus que tout au monde.",
+                "Tout le monde est là.",
+                "Tout le monde est encore là."
+              ],
+              "id": "french_t40_1_0"
+            },
+            {
+              "type": "translation",
+              "question": "I'm going to tell everybody.",
+              "answer": "Je vais le dire à tout le monde.",
+              "choices": [
+                "Tu étais à moi.",
+                "Tout le monde a besoin de faire ça.",
+                "Tout le monde est là, maintenant.",
+                "Je vais le dire à tout le monde."
+              ],
+              "id": "french_t40_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Everyone needs to do this.",
+              "answer": "Tout le monde a besoin de faire ça.",
+              "words": [
+                "besoin",
+                "que",
+                "est",
+                "ça.",
+                "le",
+                "monde",
+                "de",
+                "Tout",
+                "a",
+                "faire"
+              ],
+              "id": "french_t40_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Tout le monde est encore là.",
+              "audio": "Tout le monde est encore là.",
+              "id": "french_t40_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "Everyone's fine.",
+                  "Tout le monde va bien."
+                ],
+                [
+                  "Are you guys OK?",
+                  "Ça va, tout le monde ?"
+                ],
+                [
+                  "Is everybody all right?",
+                  "Est-ce que tout le monde va bien ?"
+                ],
+                [
+                  "Everyone is here now.",
+                  "Tout le monde est là, maintenant."
+                ]
+              ],
+              "id": "french_t40_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t40l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Everyone is going.",
+              "answer": "Tout le monde y va.",
+              "choices": [
+                "Tout le monde le fait, donc ça va.",
+                "Tout le monde y va.",
+                "Je vais le dire à tout le monde.",
+                "Je ne suis pas comme tout le monde."
+              ],
+              "id": "french_t40_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Tout le monde ne ____ pas tout faire.",
+              "answer": "peut",
+              "choices": [
+                "Est-ce",
+                "peut",
+                "de",
+                "monde"
+              ],
+              "id": "french_t40_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Why does everybody say that?",
+              "answer": "Pourquoi est-ce que tout le monde dit ça ?",
+              "words": [
+                "va",
+                "tout",
+                "dit",
+                "monde",
+                "que",
+                "ça",
+                "Bien.",
+                "Pourquoi",
+                "le",
+                "?",
+                "est-ce"
+              ],
+              "id": "french_t40_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Tout le monde a besoin de le faire.",
+              "audio": "Tout le monde a besoin de le faire.",
+              "id": "french_t40_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I'm not like everybody else.",
+                  "Je ne suis pas comme tout le monde."
+                ],
+                [
+                  "Everyone said no.",
+                  "Tout le monde a dit non."
+                ],
+                [
+                  "Not everyone can do that.",
+                  "Tout le monde ne peut pas faire ça."
+                ],
+                [
+                  "Does everybody do that?",
+                  "Est-ce que tout le monde fait ça ?"
+                ]
+              ],
+              "id": "french_t40_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t40l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Good. Everyone's here.",
+              "answer": "Bien. Tout le monde est là.",
+              "choices": [
+                "Tu étais à moi.",
+                "Je vais le dire à tout le monde.",
+                "Est-ce que tout le monde va bien ?",
+                "Bien. Tout le monde est là."
+              ],
+              "id": "french_t40_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Tout le monde le ____ donc ça va.",
+              "answer": "fait",
+              "choices": [
+                "voir",
+                "tu",
+                "fait",
+                "suis"
+              ],
+              "id": "french_t40_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Everybody did that.",
+              "answer": "Tout le monde a fait ça.",
+              "words": [
+                "monde",
+                "ça",
+                "le",
+                "Tout",
+                "a",
+                "au",
+                "ça.",
+                "fait"
+              ],
+              "id": "french_t40_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je le veux plus que tout au monde.",
+              "audio": "Je le veux plus que tout au monde.",
+              "id": "french_t40_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "You were mine.",
+                  "Tu étais à moi."
+                ],
+                [
+                  "I know who you were with.",
+                  "Je sais avec qui tu étais."
+                ],
+                [
+                  "I cannot see it.",
+                  "Je ne peux pas la voir."
+                ],
+                [
+                  "I'm going to see what I can do.",
+                  "Je vais voir ce que je peux faire."
+                ]
+              ],
+              "id": "french_t40_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "Everybody's here.",
+          "Tout le monde est là."
+        ],
+        [
+          "I'm going to tell everybody.",
+          "Je vais le dire à tout le monde."
+        ],
+        [
+          "Everyone needs to do this.",
+          "Tout le monde a besoin de faire ça."
+        ]
+      ]
+    },
+    {
+      "id": "t41",
+      "title": "General Practice 31",
+      "lessons": [
+        {
+          "id": "t41l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "You were always like that.",
+              "answer": "Tu étais toujours comme ça.",
+              "choices": [
+                "Même pas moi !",
+                "Je ne veux pas te voir.",
+                "Tu étais toujours comme ça.",
+                "Je ne veux pas même être ici."
+              ],
+              "id": "french_t41_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je ne peux ____ te voir.",
+              "answer": "pas",
+              "choices": [
+                "ne",
+                "comme",
+                "pour",
+                "pas"
+              ],
+              "id": "french_t41_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I can't see this any more.",
+              "answer": "Je ne peux plus voir ça.",
+              "words": [
+                "!",
+                "que",
+                "ne",
+                "Je",
+                "ça.",
+                "voir",
+                "plus",
+                "peux"
+              ],
+              "id": "french_t41_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Tu ne peux pas la voir.",
+              "audio": "Tu ne peux pas la voir.",
+              "id": "french_t41_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I want to see it.",
+                  "Je veux le voir."
+                ],
+                [
+                  "I really want to see you.",
+                  "Je veux vraiment vous voir."
+                ],
+                [
+                  "I don't want to see you.",
+                  "Je ne veux pas te voir."
+                ],
+                [
+                  "I don't want to see her.",
+                  "Je ne veux pas la voir."
+                ]
+              ],
+              "id": "french_t41_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t41l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I want to see, too!",
+              "answer": "Je veux voir aussi !",
+              "choices": [
+                "Je ne sais même pas quoi dire, là.",
+                "Tu ne peux pas la voir.",
+                "Je veux voir aussi !",
+                "Je ne peux pas te voir."
+              ],
+              "id": "french_t41_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je veux ____ voir.",
+              "answer": "tout",
+              "choices": [
+                "faire",
+                "tout",
+                "étais",
+                "te"
+              ],
+              "id": "french_t41_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I want to see that.",
+              "answer": "Je veux voir ça.",
+              "words": [
+                "ça.",
+                "voir",
+                "ça.",
+                "quoi",
+                "Je",
+                "veux"
+              ],
+              "id": "french_t41_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je ne veux plus le voir.",
+              "audio": "Je ne veux plus le voir.",
+              "id": "french_t41_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "Do you want to see it?",
+                  "Est-ce que tu veux le voir ?"
+                ],
+                [
+                  "I do it because I have to.",
+                  "Je le fais parce que je le dois."
+                ],
+                [
+                  "I do not even know what to say to that.",
+                  "Je ne sais même pas quoi dire, là."
+                ],
+                [
+                  "Not even me!",
+                  "Même pas moi !"
+                ]
+              ],
+              "id": "french_t41_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t41l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I don't even know where.",
+              "answer": "Je ne sais même pas où.",
+              "choices": [
+                "Je ne peux plus voir ça.",
+                "Est-ce que tu veux le voir ?",
+                "Je ne peux même pas.",
+                "Je ne sais même pas où."
+              ],
+              "id": "french_t41_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je ne sais ____ pas pourquoi.",
+              "answer": "même",
+              "choices": [
+                "quoi",
+                "même",
+                "sont",
+                "Je"
+              ],
+              "id": "french_t41_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "You don't even know who they are.",
+              "answer": "Tu ne sais même pas qui ils sont.",
+              "words": [
+                "ne",
+                "qui",
+                "aussi",
+                "sont.",
+                "sais",
+                "pas",
+                "même",
+                "Tu",
+                "la",
+                "ils"
+              ],
+              "id": "french_t41_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je ne peux même pas.",
+              "audio": "Je ne peux même pas.",
+              "id": "french_t41_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I don't even know what to do.",
+                  "Je ne sais même pas quoi faire."
+                ],
+                [
+                  "I don't even want to be here.",
+                  "Je ne veux pas même être ici."
+                ],
+                [
+                  "Whose is this?",
+                  "À qui est-ce ?"
+                ],
+                [
+                  "Is that for me?",
+                  "Est-ce pour moi ?"
+                ]
+              ],
+              "id": "french_t41_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "You were always like that.",
+          "Tu étais toujours comme ça."
+        ],
+        [
+          "I can't see you.",
+          "Je ne peux pas te voir."
+        ],
+        [
+          "I can't see this any more.",
+          "Je ne peux plus voir ça."
+        ]
+      ]
+    },
+    {
+      "id": "t42",
+      "title": "General Practice 32",
+      "lessons": [
+        {
+          "id": "t42l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "What's it made from?",
+              "answer": "De quoi est-ce fait ?",
+              "choices": [
+                "Est-ce ce que tu veux faire ?",
+                "Je ne suis pas tout à fait sûr.",
+                "De quoi est-ce fait ?",
+                "Bien sûr que non !"
+              ],
+              "id": "french_t42_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Est-ce que ____ sais ?",
+              "answer": "tu",
+              "choices": [
+                "fait",
+                "que",
+                "ne",
+                "tu"
+              ],
+              "id": "french_t42_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Is that what you want to do?",
+              "answer": "Est-ce ce que tu veux faire ?",
+              "words": [
+                "ce",
+                "?",
+                "tu",
+                "faire",
+                "ça.",
+                "Est-ce",
+                "Tu",
+                "veux",
+                "que"
+              ],
+              "id": "french_t42_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Oui, bien sûr.",
+              "audio": "Oui, bien sûr.",
+              "id": "french_t42_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I am sure.",
+                  "Je suis sûr."
+                ],
+                [
+                  "Oh, no, of course!",
+                  "Oh, non, bien sûr !"
+                ],
+                [
+                  "I'm not sure about this.",
+                  "Je ne suis pas sûr de ça."
+                ],
+                [
+                  "I'm not quite sure.",
+                  "Je ne suis pas tout à fait sûr."
+                ]
+              ],
+              "id": "french_t42_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t42l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "He's insecure.",
+              "answer": "Il est peu sûr de lui.",
+              "choices": [
+                "Je suis sûr de ça.",
+                "Oui, bien sûr.",
+                "Il est peu sûr de lui.",
+                "Est-ce que tu sais ?"
+              ],
+              "id": "french_t42_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Bien sûr que ____ peux !",
+              "answer": "tu",
+              "choices": [
+                "Je",
+                "tu",
+                "Est-ce",
+                "quoi"
+              ],
+              "id": "french_t42_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Of course not!",
+              "answer": "Bien sûr que non !",
+              "words": [
+                "sûr",
+                "non",
+                "!",
+                "veux",
+                "est",
+                "Bien",
+                "que"
+              ],
+              "id": "french_t42_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Bien sûr que oui !",
+              "audio": "Bien sûr que oui !",
+              "id": "french_t42_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "Whaat? No, of course not.",
+                  "Comment ? Non, bien sûr que non."
+                ],
+                [
+                  "I'm still not sure.",
+                  "Je ne suis toujours pas sûr."
+                ],
+                [
+                  "I'm sure everything's OK.",
+                  "Je suis sûr que tout va bien."
+                ],
+                [
+                  "I'm sure that I can do that.",
+                  "Je suis sûr que je peux le faire."
+                ]
+              ],
+              "id": "french_t42_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t42l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Of course, I'm going to do that.",
+              "answer": "Bien sûr que je vais le faire.",
+              "choices": [
+                "Oui, oui, bien sûr.",
+                "Je ne suis sûr de rien.",
+                "Bien sûr que tu peux !",
+                "Bien sûr que je vais le faire."
+              ],
+              "id": "french_t42_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Mais bien ____ !",
+              "answer": "sûr",
+              "choices": [
+                "je",
+                "sûr",
+                "Non",
+                "Oui"
+              ],
+              "id": "french_t42_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I'm sure of this.",
+              "answer": "Je suis sûr de ça.",
+              "words": [
+                "ça.",
+                "de",
+                "sûr",
+                "quoi",
+                "suis",
+                "bien",
+                "Je"
+              ],
+              "id": "french_t42_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Oh, bien sûr.",
+              "audio": "Oh, bien sûr.",
+              "id": "french_t42_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "Yes, yes, of course.",
+                  "Oui, oui, bien sûr."
+                ],
+                [
+                  "Of course, I told her.",
+                  "Bien sûr, je lui ai dit."
+                ],
+                [
+                  "Are you sure you're okay?",
+                  "Tu es sûr que ça va ?"
+                ],
+                [
+                  "I don't know anything for sure.",
+                  "Je ne suis sûr de rien."
+                ]
+              ],
+              "id": "french_t42_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "What's it made from?",
+          "De quoi est-ce fait ?"
+        ],
+        [
+          "Do you know?",
+          "Est-ce que tu sais ?"
+        ],
+        [
+          "Is that what you want to do?",
+          "Est-ce ce que tu veux faire ?"
+        ]
+      ]
+    },
+    {
+      "id": "t43",
+      "title": "General Practice 33",
+      "lessons": [
+        {
+          "id": "t43l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I'm not sure yet.",
+              "answer": "Je ne suis pas encore sûr.",
+              "choices": [
+                "Tu es sûr que tout va bien ?",
+                "Je ne suis pas encore sûr.",
+                "Je suis là pour parler avec toi.",
+                "Je ne peux vraiment pas en parler maintenant."
+              ],
+              "id": "french_t43_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Tu ne peux ____ en être sûr.",
+              "answer": "pas",
+              "choices": [
+                "ne",
+                "me",
+                "encore",
+                "pas"
+              ],
+              "id": "french_t43_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I don't know that for sure.",
+              "answer": "Je ne suis pas sûr.",
+              "words": [
+                "ne",
+                "pas",
+                "sûr.",
+                "va",
+                "suis",
+                "Je",
+                "Pourquoi"
+              ],
+              "id": "french_t43_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Tu es bien sûr de toi.",
+              "audio": "Tu es bien sûr de toi.",
+              "id": "french_t43_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "Are you sure everything is okay?",
+                  "Tu es sûr que tout va bien ?"
+                ],
+                [
+                  "Oh no, really?",
+                  "Oh, non ! vraiment ?"
+                ],
+                [
+                  "Oh, you know what?",
+                  "Oh, tu sais quoi ?"
+                ],
+                [
+                  "Who says that?",
+                  "Qui dit ça ?"
+                ]
+              ],
+              "id": "french_t43_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t43l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "You're too good to me.",
+              "answer": "Tu es trop bon avec moi.",
+              "choices": [
+                "Je ne peux vraiment pas en parler maintenant.",
+                "Tu es trop bon avec moi.",
+                "Oh, tu sais quoi ?",
+                "Tu es bien sûr de toi."
+              ],
+              "id": "french_t43_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je ne sais pas ____ où je suis.",
+              "answer": "trop",
+              "choices": [
+                "pas",
+                "quand",
+                "trop",
+                "toi"
+              ],
+              "id": "french_t43_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Not now, then when?",
+              "answer": "Pas maintenant, alors quand ?",
+              "words": [
+                "maintenant,",
+                "es",
+                "alors",
+                "toi.",
+                "Pas",
+                "?",
+                "quand"
+              ],
+              "id": "french_t43_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Ici et maintenant.",
+              "audio": "Ici et maintenant.",
+              "id": "french_t43_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "If not now, then when?",
+                  "Si pas maintenant, alors quand ?"
+                ],
+                [
+                  "Now I know why.",
+                  "Maintenant, je sais pourquoi."
+                ],
+                [
+                  "If not now, when?",
+                  "Si pas maintenant, quand ?"
+                ],
+                [
+                  "Can I see her now?",
+                  "Je peux la voir maintenant ?"
+                ]
+              ],
+              "id": "french_t43_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t43l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Now you know.",
+              "answer": "Maintenant tu sais.",
+              "choices": [
+                "Maintenant, je sais pourquoi.",
+                "Oh, tu sais quoi ?",
+                "Tu es bien sûr de toi.",
+                "Maintenant tu sais."
+              ],
+              "id": "french_t43_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Pourquoi le ____ maintenant ?",
+              "answer": "faire",
+              "choices": [
+                "tu",
+                "ne",
+                "faire",
+                "alors"
+              ],
+              "id": "french_t43_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I told him what to do.",
+              "answer": "Je lui ai dit quoi faire.",
+              "words": [
+                "ai",
+                "faire.",
+                "lui",
+                "ne",
+                "dit",
+                "es",
+                "Je",
+                "quoi"
+              ],
+              "id": "french_t43_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Il me faut vous parler.",
+              "audio": "Il me faut vous parler.",
+              "id": "french_t43_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I really can't talk about it now.",
+                  "Je ne peux vraiment pas en parler maintenant."
+                ],
+                [
+                  "I must talk with you.",
+                  "Je dois parler avec toi."
+                ],
+                [
+                  "What are we going to say to him?",
+                  "On lui dit quoi ?"
+                ],
+                [
+                  "I'm here to talk with you.",
+                  "Je suis là pour parler avec toi."
+                ]
+              ],
+              "id": "french_t43_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "I'm not sure yet.",
+          "Je ne suis pas encore sûr."
+        ],
+        [
+          "You can't be certain of that.",
+          "Tu ne peux pas en être sûr."
+        ],
+        [
+          "I don't know that for sure.",
+          "Je ne suis pas sûr."
+        ]
+      ]
+    },
+    {
+      "id": "t44",
+      "title": "General Practice 34",
+      "lessons": [
+        {
+          "id": "t44l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I can't talk with you right now.",
+              "answer": "Je ne peux pas te parler maintenant.",
+              "choices": [
+                "Je lui en veux.",
+                "Je veux pas parler de ça.",
+                "Je ne peux pas te parler maintenant.",
+                "Je ne veux pas vous parler."
+              ],
+              "id": "french_t44_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Tu sais que ____ peux me parler.",
+              "answer": "tu",
+              "choices": [
+                "vais",
+                "en",
+                "avec",
+                "tu"
+              ],
+              "id": "french_t44_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I hold it against her.",
+              "answer": "Je lui en veux.",
+              "words": [
+                "lui",
+                "veux.",
+                "en",
+                "un.",
+                "est",
+                "Je"
+              ],
+              "id": "french_t44_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je vais lui parler de toi.",
+              "audio": "Je vais lui parler de toi.",
+              "id": "french_t44_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I don't want to talk about the weather.",
+                  "Je ne veux pas parler du temps."
+                ],
+                [
+                  "I want to talk to her.",
+                  "Je veux parler avec elle."
+                ],
+                [
+                  "Do you really want to talk about that now?",
+                  "Tu veux vraiment parler de ça maintenant ?"
+                ],
+                [
+                  "I know who you want to talk to.",
+                  "Je sais à qui tu veux parler."
+                ]
+              ],
+              "id": "french_t44_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t44l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "We need to speak to you.",
+              "answer": "On a besoin de te parler.",
+              "choices": [
+                "Il ne le dit jamais à personne.",
+                "On a besoin de te parler.",
+                "Je vais lui parler de toi.",
+                "Je ne veux pas vous parler."
+              ],
+              "id": "french_t44_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je ne veux pas ____ parler avec toi.",
+              "answer": "en",
+              "choices": [
+                "parler",
+                "avec",
+                "en",
+                "tous"
+              ],
+              "id": "french_t44_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I want to talk to both of you.",
+              "answer": "Je veux vous parler à tous les deux.",
+              "words": [
+                "veux",
+                "ça.",
+                "vous",
+                "tous",
+                "veux",
+                "deux.",
+                "à",
+                "Je",
+                "les",
+                "parler"
+              ],
+              "id": "french_t44_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je veux pas parler de ça.",
+              "audio": "Je veux pas parler de ça.",
+              "id": "french_t44_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I don't want to talk about that any more.",
+                  "Je ne veux plus parler de ça."
+                ],
+                [
+                  "I don't want to talk about this.",
+                  "Je ne veux pas parler de ça."
+                ],
+                [
+                  "I don't want to speak with you.",
+                  "Je ne veux pas vous parler."
+                ],
+                [
+                  "I want to be like him.",
+                  "Je veux être comme lui."
+                ]
+              ],
+              "id": "french_t44_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t44l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I don't want to discuss this now.",
+              "answer": "Je ne veux pas en parler maintenant.",
+              "choices": [
+                "Je vais lui parler de toi.",
+                "Je veux parler avec elle.",
+                "Je ne veux pas parler de ça.",
+                "Je ne veux pas en parler maintenant."
+              ],
+              "id": "french_t44_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Un pour tous, ____ pour un.",
+              "answer": "tous",
+              "choices": [
+                "Il",
+                "tous",
+                "On",
+                "en"
+              ],
+              "id": "french_t44_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "They're all mine.",
+              "answer": "Ils sont tous à moi.",
+              "words": [
+                "sont",
+                "à",
+                "tous",
+                "pour",
+                "me",
+                "Ils",
+                "moi."
+              ],
+              "id": "french_t44_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Tous pour un, un pour tous !",
+              "audio": "Tous pour un, un pour tous !",
+              "id": "french_t44_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "He never told anyone.",
+                  "Il ne le dit jamais à personne."
+                ],
+                [
+                  "You must tell no one.",
+                  "Tu ne dois le dire à personne."
+                ],
+                [
+                  "I don't know who this person is.",
+                  "Je ne sais pas qui est cette personne."
+                ],
+                [
+                  "You needed me.",
+                  "Tu avais besoin de moi."
+                ]
+              ],
+              "id": "french_t44_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "I can't talk with you right now.",
+          "Je ne peux pas te parler maintenant."
+        ],
+        [
+          "You know that you can talk to me.",
+          "Tu sais que tu peux me parler."
+        ],
+        [
+          "I hold it against her.",
+          "Je lui en veux."
+        ]
+      ]
+    },
+    {
+      "id": "t45",
+      "title": "General Practice 35",
+      "lessons": [
+        {
+          "id": "t45l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "It can't be done.",
+              "answer": "Ça ne peut pas être fait.",
+              "choices": [
+                "Tu ne me crois pas ?",
+                "Il peut le faire.",
+                "Ça ne peut pas être fait.",
+                "On ne peut pas lui dire."
+              ],
+              "id": "french_t45_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "On peut ____ faire ?",
+              "answer": "le",
+              "choices": [
+                "aussi",
+                "pas",
+                "les",
+                "le"
+              ],
+              "id": "french_t45_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "He can do it.",
+              "answer": "Il peut le faire.",
+              "words": [
+                "peut",
+                "pas",
+                "faire.",
+                "Il",
+                "le",
+                "peut"
+              ],
+              "id": "french_t45_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Il ne peut pas.",
+              "audio": "Il ne peut pas.",
+              "id": "french_t45_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "We can't tell her.",
+                  "On ne peut pas lui dire."
+                ],
+                [
+                  "Who ever can it be?",
+                  "Qui ça peut bien être ?"
+                ],
+                [
+                  "She can't.",
+                  "Elle ne peut pas."
+                ],
+                [
+                  "He can see me.",
+                  "Il peut me voir."
+                ]
+              ],
+              "id": "french_t45_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t45l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "By the way, how's your dad?",
+              "answer": "Au fait, comment va ton père ?",
+              "choices": [
+                "Tu es comme lui.",
+                "Au fait, comment va ton père ?",
+                "Je ne le crois pas vraiment.",
+                "Je le crois aussi."
+              ],
+              "id": "french_t45_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "On ne peut ____ avoir les deux.",
+              "answer": "pas",
+              "choices": [
+                "être",
+                "pas",
+                "plus",
+                "avoir"
+              ],
+              "id": "french_t45_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "You can't have both.",
+              "answer": "Tu ne peux pas avoir les deux.",
+              "words": [
+                "ne",
+                "pas",
+                "pas",
+                "deux.",
+                "peux",
+                "avoir",
+                "bien",
+                "Tu",
+                "les"
+              ],
+              "id": "french_t45_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "On peut le faire tous les deux.",
+              "audio": "On peut le faire tous les deux.",
+              "id": "french_t45_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "You both did well.",
+                  "Vous avez tous deux bien fait."
+                ],
+                [
+                  "Both of these are mine.",
+                  "Les deux sont à moi."
+                ],
+                [
+                  "Are you here?",
+                  "Tu es ici ?"
+                ],
+                [
+                  "You're like him.",
+                  "Tu es comme lui."
+                ]
+              ],
+              "id": "french_t45_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t45l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Who are you rooting for?",
+              "answer": "Tu es pour qui ?",
+              "choices": [
+                "Oui, je le crois.",
+                "On ne peut pas avoir les deux.",
+                "On peut le faire ?",
+                "Tu es pour qui ?"
+              ],
+              "id": "french_t45_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je ne le ____ pas !",
+              "answer": "crois",
+              "choices": [
+                "qui",
+                "crois",
+                "ne",
+                "On"
+              ],
+              "id": "french_t45_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Don't you believe me?",
+              "answer": "Tu ne me crois pas ?",
+              "words": [
+                "ne",
+                "?",
+                "?",
+                "Tu",
+                "me",
+                "me",
+                "crois",
+                "pas"
+              ],
+              "id": "french_t45_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je ne le crois pas vraiment.",
+              "audio": "Je ne le crois pas vraiment.",
+              "id": "french_t45_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I don't believe that either.",
+                  "Je ne le crois pas non plus."
+                ],
+                [
+                  "Yes, I believe so.",
+                  "Oui, je le crois."
+                ],
+                [
+                  "I don't think I said that.",
+                  "Je ne crois pas avoir dit ça."
+                ],
+                [
+                  "I believe it too.",
+                  "Je le crois aussi."
+                ]
+              ],
+              "id": "french_t45_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "It can't be done.",
+          "Ça ne peut pas être fait."
+        ],
+        [
+          "Can we do it?",
+          "On peut le faire ?"
+        ],
+        [
+          "He can do it.",
+          "Il peut le faire."
+        ]
+      ]
+    },
+    {
+      "id": "t46",
+      "title": "General Practice 36",
+      "lessons": [
+        {
+          "id": "t46l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I know that you believe me.",
+              "answer": "Je sais que tu me crois.",
+              "choices": [
+                "Allez, on y va !",
+                "Je sais que tu me crois.",
+                "Vous vous êtes fait avoir.",
+                "Pourquoi tu ne me crois pas ?"
+              ],
+              "id": "french_t46_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Non, je ____ crois pas.",
+              "answer": "ne",
+              "choices": [
+                "sais",
+                "vous",
+                "tu",
+                "ne"
+              ],
+              "id": "french_t46_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Do you believe it now?",
+              "answer": "Est-ce que tu le crois maintenant ?",
+              "words": [
+                "que",
+                "?",
+                "crois.",
+                "moi.",
+                "crois",
+                "tu",
+                "le",
+                "Est-ce",
+                "maintenant"
+              ],
+              "id": "french_t46_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je ne crois pas ça.",
+              "audio": "Je ne crois pas ça.",
+              "id": "french_t46_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "How come you don't believe me?",
+                  "Pourquoi tu ne me crois pas ?"
+                ],
+                [
+                  "He has a grudge against you.",
+                  "Il en a après toi."
+                ],
+                [
+                  "She's after me.",
+                  "Elle est après moi."
+                ],
+                [
+                  "I'm after you.",
+                  "Je suis après toi."
+                ]
+              ],
+              "id": "french_t46_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t46l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I know why you're here.",
+              "answer": "Je sais pourquoi vous êtes ici.",
+              "choices": [
+                "Elle est après moi.",
+                "Est-ce que tu le crois maintenant ?",
+                "Je sais pourquoi vous êtes ici.",
+                "Je ne crois pas ça."
+              ],
+              "id": "french_t46_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je ____ pourquoi.",
+              "answer": "sais",
+              "choices": [
+                "faire",
+                "sais",
+                "Elle",
+                "pour"
+              ],
+              "id": "french_t46_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Do you know why?",
+              "answer": "Est-ce que tu sais pourquoi ?",
+              "words": [
+                "que",
+                "tu",
+                "moi.",
+                "Est-ce",
+                "sais",
+                "pourquoi",
+                "?",
+                "a"
+              ],
+              "id": "french_t46_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Vous êtes bon à rien.",
+              "audio": "Vous êtes bon à rien.",
+              "id": "french_t46_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "You're there for good.",
+                  "Vous y êtes pour de bon."
+                ],
+                [
+                  "You were tricked.",
+                  "Vous vous êtes fait avoir."
+                ],
+                [
+                  "I'm not God.",
+                  "Je ne suis pas Dieu."
+                ],
+                [
+                  "Come on, let's go!",
+                  "Allez, on y va !"
+                ]
+              ],
+              "id": "french_t46_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t46l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "You're all right.",
+              "answer": "Vous allez bien.",
+              "choices": [
+                "Elle ne le pense vraiment pas.",
+                "Il en a après toi.",
+                "Tout le monde le pense.",
+                "Vous allez bien."
+              ],
+              "id": "french_t46_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Allez, tu ____ le faire.",
+              "answer": "peux",
+              "choices": [
+                "où",
+                "peux",
+                "bon",
+                "moi"
+              ],
+              "id": "french_t46_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "You'll do it.",
+              "answer": "Vous allez le faire.",
+              "words": [
+                "allez",
+                "le",
+                "faire.",
+                "que",
+                "faire.",
+                "Vous"
+              ],
+              "id": "french_t46_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Qui va où ?",
+              "audio": "Qui va où ?",
+              "id": "french_t46_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I know where.",
+                  "Je sais où."
+                ],
+                [
+                  "I'm thinking about you.",
+                  "Je pense à toi."
+                ],
+                [
+                  "She clearly does not mean it.",
+                  "Elle ne le pense vraiment pas."
+                ],
+                [
+                  "Everyone thinks so.",
+                  "Tout le monde le pense."
+                ]
+              ],
+              "id": "french_t46_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "I know that you believe me.",
+          "Je sais que tu me crois."
+        ],
+        [
+          "No, I don't think so.",
+          "Non, je ne crois pas."
+        ],
+        [
+          "Do you believe it now?",
+          "Est-ce que tu le crois maintenant ?"
+        ]
+      ]
+    },
+    {
+      "id": "t47",
+      "title": "General Practice 37",
+      "lessons": [
+        {
+          "id": "t47l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Who's there?",
+              "answer": "Qui est là ?",
+              "choices": [
+                "Je pense que quelque chose ne va pas.",
+                "Il est autre chose.",
+                "Qui est là ?",
+                "Oui, je le pense aussi."
+              ],
+              "id": "french_t47_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Qui va ____ ?",
+              "answer": "là",
+              "choices": [
+                "est",
+                "aussi",
+                "lui",
+                "là"
+              ],
+              "id": "french_t47_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Is this all of them?",
+              "answer": "Est-ce là tout ?",
+              "words": [
+                "là",
+                "aussi.",
+                "?",
+                "Oui,",
+                "tout",
+                "Est-ce"
+              ],
+              "id": "french_t47_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Elle est autre chose.",
+              "audio": "Elle est autre chose.",
+              "id": "french_t47_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "He's something else.",
+                  "Il est autre chose."
+                ],
+                [
+                  "He doesn't mean that.",
+                  "Il ne le pense pas vraiment."
+                ],
+                [
+                  "I think of you all the time.",
+                  "Je pense à vous tout le temps."
+                ],
+                [
+                  "She thinks about him all the time.",
+                  "Elle pense tout le temps à lui."
+                ]
+              ],
+              "id": "french_t47_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t47l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I think about you all the time.",
+              "answer": "Je pense à toi tout le temps.",
+              "choices": [
+                "Je pense donc je suis.",
+                "Je pense à toi tout le temps.",
+                "Je ne pense pas à vous.",
+                "Elle est autre chose."
+              ],
+              "id": "french_t47_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je pense encore tout ____ temps à lui.",
+              "answer": "le",
+              "choices": [
+                "tu",
+                "le",
+                "suis",
+                "lui"
+              ],
+              "id": "french_t47_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I think about him all the time.",
+              "answer": "Je pense à lui tout le temps.",
+              "words": [
+                "pense",
+                "temps.",
+                "à",
+                "le",
+                "?",
+                "ce",
+                "tout",
+                "Je",
+                "lui"
+              ],
+              "id": "french_t47_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Il pense tout le temps à toi.",
+              "audio": "Il pense tout le temps à toi.",
+              "id": "french_t47_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "She thinks about you all the time.",
+                  "Elle pense tout le temps à toi."
+                ],
+                [
+                  "I think so, too.",
+                  "Je le pense aussi."
+                ],
+                [
+                  "I think, therefore I am.",
+                  "Je pense donc je suis."
+                ],
+                [
+                  "Yes, I think so, too.",
+                  "Oui, je le pense aussi."
+                ]
+              ],
+              "id": "french_t47_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t47l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I think it's OK.",
+              "answer": "Je pense que ça va.",
+              "choices": [
+                "Qui va là ?",
+                "Je ne le pense vraiment pas.",
+                "Il ne le pense pas vraiment.",
+                "Je pense que ça va."
+              ],
+              "id": "french_t47_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Est-ce là ce ____ tu veux ?",
+              "answer": "que",
+              "choices": [
+                "ce",
+                "est",
+                "que",
+                "ça"
+              ],
+              "id": "french_t47_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I think we're all right.",
+              "answer": "Je pense que tout va bien pour nous.",
+              "words": [
+                "pense",
+                "pense",
+                "pour",
+                "Est-ce",
+                "tout",
+                "bien",
+                "va",
+                "Je",
+                "nous.",
+                "que"
+              ],
+              "id": "french_t47_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je pense que quelque chose ne va pas.",
+              "audio": "Je pense que quelque chose ne va pas.",
+              "id": "french_t47_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I think it's going well.",
+                  "Je pense que ça va bien."
+                ],
+                [
+                  "I really don't think so.",
+                  "Je ne le pense vraiment pas."
+                ],
+                [
+                  "I don't think about you.",
+                  "Je ne pense pas à vous."
+                ],
+                [
+                  "Don't think about it now.",
+                  "Ne pense pas à ça, maintenant."
+                ]
+              ],
+              "id": "french_t47_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "Who's there?",
+          "Qui est là ?"
+        ],
+        [
+          "Who goes there?",
+          "Qui va là ?"
+        ],
+        [
+          "Is this all of them?",
+          "Est-ce là tout ?"
+        ]
+      ]
+    },
+    {
+      "id": "t48",
+      "title": "General Practice 38",
+      "lessons": [
+        {
+          "id": "t48l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Is there something else you want to tell me?",
+              "answer": "Tu veux me dire autre chose ?",
+              "choices": [
+                "Je ne sais rien.",
+                "Tu veux me dire autre chose ?",
+                "Je ne veux rien.",
+                "Je ne vous aime pas vraiment."
+              ],
+              "id": "french_t48_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Est-ce que tu veux ____ faire une autre ?",
+              "answer": "en",
+              "choices": [
+                "Est-ce",
+                "ai",
+                "une",
+                "en"
+              ],
+              "id": "french_t48_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I don't think I'm going to do that.",
+              "answer": "Je ne pense que je vais faire ça.",
+              "words": [
+                "ne",
+                "vais",
+                "je",
+                "tout.",
+                "que",
+                "pense",
+                "ça.",
+                "Je",
+                "faire",
+                "veux"
+              ],
+              "id": "french_t48_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Ne pense pas ça de lui.",
+              "audio": "Ne pense pas ça de lui.",
+              "id": "french_t48_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I do not think so.",
+                  "Je ne le pense pas."
+                ],
+                [
+                  "Yes, I think it's okay.",
+                  "Oui, je pense que ça va."
+                ],
+                [
+                  "I do not think of you.",
+                  "Je ne pense pas à toi."
+                ],
+                [
+                  "I don't think that I have one of those.",
+                  "Je ne pense pas en avoir un."
+                ]
+              ],
+              "id": "french_t48_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t48l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Yes, a little.",
+              "answer": "Oui, un peu.",
+              "choices": [
+                "Je ne vous aime pas vraiment.",
+                "Je ne lui ai rien dit.",
+                "Oui, un peu.",
+                "Rien de plus."
+              ],
+              "id": "french_t48_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je ne ____ rien.",
+              "answer": "sais",
+              "choices": [
+                "ça",
+                "sais",
+                "moi",
+                "veux"
+              ],
+              "id": "french_t48_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "He said nothing.",
+              "answer": "Il ne dit rien.",
+              "words": [
+                "chose",
+                "rien.",
+                "dit",
+                "Il",
+                "Ça",
+                "ne"
+              ],
+              "id": "french_t48_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je ne vous aime pas vraiment.",
+              "audio": "Je ne vous aime pas vraiment.",
+              "id": "french_t48_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "You don't know anything.",
+                  "Tu ne sais rien."
+                ],
+                [
+                  "She loves him and me.",
+                  "Elle aime lui et moi."
+                ],
+                [
+                  "That's unimportant.",
+                  "Ça ne fait rien."
+                ],
+                [
+                  "Everything's wrong.",
+                  "Rien ne va."
+                ]
+              ],
+              "id": "french_t48_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t48l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I dislike you.",
+              "answer": "Je ne vous aime pas.",
+              "choices": [
+                "Est-ce que tu veux en faire une autre ?",
+                "Je ne sais rien.",
+                "Je ne veux rien.",
+                "Je ne vous aime pas."
+              ],
+              "id": "french_t48_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Tout le ____ vous aime.",
+              "answer": "monde",
+              "choices": [
+                "me",
+                "tous",
+                "monde",
+                "dire"
+              ],
+              "id": "french_t48_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Nothing more.",
+              "answer": "Rien de plus.",
+              "words": [
+                "de",
+                "plus.",
+                "dit.",
+                "pas.",
+                "Rien"
+              ],
+              "id": "french_t48_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Elle ne fait rien.",
+              "audio": "Elle ne fait rien.",
+              "id": "french_t48_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I didn't say anything to her.",
+                  "Je ne lui ai rien dit."
+                ],
+                [
+                  "I like you all.",
+                  "Je vous aime bien tous."
+                ],
+                [
+                  "I love you more than anything.",
+                  "Je vous aime plus que tout."
+                ],
+                [
+                  "I don't want anything.",
+                  "Je ne veux rien."
+                ]
+              ],
+              "id": "french_t48_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "Is there something else you want to tell me?",
+          "Tu veux me dire autre chose ?"
+        ],
+        [
+          "Do you want to do another one?",
+          "Est-ce que tu veux en faire une autre ?"
+        ],
+        [
+          "I don't think I'm going to do that.",
+          "Je ne pense que je vais faire ça."
+        ]
+      ]
+    },
+    {
+      "id": "t49",
+      "title": "General Practice 39",
+      "lessons": [
+        {
+          "id": "t49l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I don't want to do anything.",
+              "answer": "Je ne veux rien faire.",
+              "choices": [
+                "Au temps pour moi.",
+                "Je ne veux rien faire.",
+                "Qui a le temps ?",
+                "Il est temps !"
+              ],
+              "id": "french_t49_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Tu ne ____ rien ?",
+              "answer": "veux",
+              "choices": [
+                "vous",
+                "chose",
+                "ne",
+                "veux"
+              ],
+              "id": "french_t49_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "That was my mistake.",
+              "answer": "Au temps pour moi.",
+              "words": [
+                "temps",
+                "du",
+                "ai",
+                "Au",
+                "moi.",
+                "pour"
+              ],
+              "id": "french_t49_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je veux du temps.",
+              "audio": "Je veux du temps.",
+              "id": "french_t49_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "It's time.",
+                  "Il est temps !"
+                ],
+                [
+                  "No time!",
+                  "Pas le temps !"
+                ],
+                [
+                  "Who has time?",
+                  "Qui a le temps ?"
+                ],
+                [
+                  "I want more time.",
+                  "Je veux plus de temps."
+                ]
+              ],
+              "id": "french_t49_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t49l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "We're making good time.",
+              "answer": "On est dans les temps.",
+              "choices": [
+                "Je peux faire quelque chose pour toi ?",
+                "On est dans les temps.",
+                "Elle me dit quelque chose.",
+                "Qui a le temps ?"
+              ],
+              "id": "french_t49_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Ça ne leur a ____ fait du bien.",
+              "answer": "pas",
+              "choices": [
+                "sais",
+                "pas",
+                "rien",
+                "ne"
+              ],
+              "id": "french_t49_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I told them all about you.",
+              "answer": "Je leur ai tout dit sur toi.",
+              "words": [
+                "sur",
+                "tout",
+                "dit",
+                "ai",
+                "leur",
+                "toi.",
+                "ai",
+                "Je",
+                "leur"
+              ],
+              "id": "french_t49_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je ne peux pas leur faire ça.",
+              "audio": "Je ne peux pas leur faire ça.",
+              "id": "french_t49_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I didn't tell them everything.",
+                  "Je ne leur ai pas tout dit."
+                ],
+                [
+                  "I don't know how to tell them.",
+                  "Je ne sais pas comment leur dire."
+                ],
+                [
+                  "We haven't told them yet.",
+                  "On ne leur a pas encore dit."
+                ],
+                [
+                  "Is something wrong?",
+                  "Quelque chose ne va pas ?"
+                ]
+              ],
+              "id": "french_t49_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t49l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Something wrong with that?",
+              "answer": "Quelque chose qui ne va pas ?",
+              "choices": [
+                "Elle me dit quelque chose.",
+                "Ça ne leur a pas fait du bien.",
+                "Je veux du temps.",
+                "Quelque chose qui ne va pas ?"
+              ],
+              "id": "french_t49_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Il y a ____ quelque chose.",
+              "answer": "là",
+              "choices": [
+                "le",
+                "rien",
+                "là",
+                "les"
+              ],
+              "id": "french_t49_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Something's wrong here.",
+              "answer": "Quelque chose ne va pas ici.",
+              "words": [
+                "chose",
+                "va",
+                "ne",
+                "ici.",
+                "Quelque",
+                "temps.",
+                "Elle",
+                "pas"
+              ],
+              "id": "french_t49_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Elle me dit quelque chose.",
+              "audio": "Elle me dit quelque chose.",
+              "id": "french_t49_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "It reminds me of something.",
+                  "Ça me dit quelque chose."
+                ],
+                [
+                  "I want something more.",
+                  "Je veux quelque chose de plus."
+                ],
+                [
+                  "Is there anything you want me to do?",
+                  "Je peux faire quelque chose pour toi ?"
+                ],
+                [
+                  "I want to say something to you.",
+                  "Je veux vous dire quelque chose."
+                ]
+              ],
+              "id": "french_t49_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "I don't want to do anything.",
+          "Je ne veux rien faire."
+        ],
+        [
+          "Don't you want anything?",
+          "Tu ne veux rien ?"
+        ],
+        [
+          "That was my mistake.",
+          "Au temps pour moi."
+        ]
+      ]
+    },
+    {
+      "id": "t50",
+      "title": "General Practice 40",
+      "lessons": [
+        {
+          "id": "t50l1",
+          "title": "Lesson 1",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "Do you want to say something to me?",
+              "answer": "Tu veux me dire quelque chose ?",
+              "choices": [
+                "Viens me voir de temps en temps.",
+                "Tu veux me dire quelque chose ?",
+                "Je sais que tu viens.",
+                "Est-ce que je viens de dire ça ?"
+              ],
+              "id": "french_t50_1_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Viens ici ! ____ veux dire toi.",
+              "answer": "Je",
+              "choices": [
+                "veux",
+                "avec",
+                "tu",
+                "Je"
+              ],
+              "id": "french_t50_1_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Are you coming with me?",
+              "answer": "Tu viens avec moi ?",
+              "words": [
+                "veux",
+                "avec",
+                "moi",
+                "faire",
+                "viens",
+                "?",
+                "Tu"
+              ],
+              "id": "french_t50_1_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Oui, je viens !",
+              "audio": "Oui, je viens !",
+              "id": "french_t50_1_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "Come and see me once in a while.",
+                  "Viens me voir de temps en temps."
+                ],
+                [
+                  "I saw him just now.",
+                  "Je viens juste de le voir."
+                ],
+                [
+                  "I just told him.",
+                  "Je viens de lui dire."
+                ],
+                [
+                  "Well, aren't you coming?",
+                  "Alors, tu ne viens pas ?"
+                ]
+              ],
+              "id": "french_t50_1_4"
+            }
+          ]
+        },
+        {
+          "id": "t50l2",
+          "title": "Lesson 2",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "I just did it.",
+              "answer": "Je viens de le faire.",
+              "choices": [
+                "Tu viens juste de la voir.",
+                "Je viens de le faire.",
+                "Oui, je viens !",
+                "Tu viens avec moi ?"
+              ],
+              "id": "french_t50_2_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Est-ce que je viens ____ faire ça ?",
+              "answer": "de",
+              "choices": [
+                "veux",
+                "le",
+                "de",
+                "temps"
+              ],
+              "id": "french_t50_2_1"
+            },
+            {
+              "type": "sentence",
+              "question": "Did I just say that?",
+              "answer": "Est-ce que je viens de dire ça ?",
+              "words": [
+                "Si",
+                "ça",
+                "viens",
+                "?",
+                "dire",
+                "je",
+                "de",
+                "Est-ce",
+                "que",
+                "dire"
+              ],
+              "id": "french_t50_2_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Je sais que tu viens.",
+              "audio": "Je sais que tu viens.",
+              "id": "french_t50_2_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "I'm coming with you.",
+                  "Je viens avec toi."
+                ],
+                [
+                  "I'm not coming with you.",
+                  "Je ne viens pas avec toi."
+                ],
+                [
+                  "I just said that.",
+                  "Je viens de le dire."
+                ],
+                [
+                  "Why don't you come with me?",
+                  "Pourquoi tu ne viens pas avec moi ?"
+                ]
+              ],
+              "id": "french_t50_2_4"
+            }
+          ]
+        },
+        {
+          "id": "t50l3",
+          "title": "Lesson 3",
+          "exercises": [
+            {
+              "type": "translation",
+              "question": "You've just seen him.",
+              "answer": "Tu viens juste de le voir.",
+              "choices": [
+                "Pourquoi tu ne viens pas avec moi ?",
+                "Est-ce que je viens de dire ça ?",
+                "Si tu viens, alors je viens aussi !",
+                "Tu viens juste de le voir."
+              ],
+              "id": "french_t50_3_0"
+            },
+            {
+              "type": "cloze",
+              "question": "Je viens ____ lui parler.",
+              "answer": "de",
+              "choices": [
+                "Est-ce",
+                "de",
+                "veux",
+                "dire"
+              ],
+              "id": "french_t50_3_1"
+            },
+            {
+              "type": "sentence",
+              "question": "I'm not coming along.",
+              "answer": "Je ne viens pas.",
+              "words": [
+                "veux",
+                "pas.",
+                "viens",
+                "Je",
+                "ne",
+                "Je"
+              ],
+              "id": "french_t50_3_2"
+            },
+            {
+              "type": "listening",
+              "question": "Type what you hear",
+              "answer": "Tu viens juste de la voir.",
+              "audio": "Tu viens juste de la voir.",
+              "id": "french_t50_3_3"
+            },
+            {
+              "type": "match",
+              "question": "Tap the matching pairs",
+              "answer": "matched",
+              "pairs": [
+                [
+                  "Aren't you coming?",
+                  "Tu ne viens pas ?"
+                ],
+                [
+                  "No, I'm not coming.",
+                  "Non, je ne viens pas."
+                ],
+                [
+                  "If you come, I'll also go!",
+                  "Si tu viens, alors je viens aussi !"
+                ],
+                [
+                  "Are you really not coming?",
+                  "Tu ne viens vraiment pas ?"
+                ]
+              ],
+              "id": "french_t50_3_4"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        [
+          "Do you want to say something to me?",
+          "Tu veux me dire quelque chose ?"
+        ],
+        [
+          "Come here! I mean you.",
+          "Viens ici ! Je veux dire toi."
+        ],
+        [
+          "Are you coming with me?",
+          "Tu viens avec moi ?"
         ]
       ]
     }

@@ -85,12 +85,13 @@ const LANGS = {
 const UNSPACED = new Set(['japanese', 'chinese', 'thai']);
 
 const UNITS = 10;
-// Courses that Cruise (the sibling repo) has played get more units, sized to
+// Courses that Surf (the sibling repo, ex-Cruise) has played get more units, sized to
 // how much it practised, and lean toward the words it practised. Only Tatoeba
-// text goes into the pack; the Cruise ledger is read for its vocabulary alone.
+// text goes into the pack; Surf's solved questions are read for their vocabulary alone.
 const MAX_UNITS = 120;  // ponytail: about 2,900 sentences, ~1MB; the app fetches the whole pack when a course opens
-const CRUISE_CODES = { greek: 'el', polish: 'pl', hindi: 'hi', japanese: 'ja', korean: 'ko', french: 'fr', turkish: 'tr', arabic: 'ar', swedish: 'sv', russian: 'ru', dutch: 'nl', chinese: 'zh' };
-const CRUISE_LEDGERS = ['lessons.archive.jsonl', 'lessons.jsonl'].map((f) => path.join(ROOT, '..', 'cruise', 'scripts', f));
+const CRUISE_CODES = { greek: 'el', romanian: 'ro', polish: 'pl', czech: 'cs', turkish: 'tr', indonesian: 'id', hindi: 'hi', hebrew: 'he', french: 'fr', korean: 'ko', japanese: 'ja', russian: 'ru', spanish: 'es', dutch: 'nl', swedish: 'sv', italian: 'it', german: 'de', portuguese: 'pt', arabic: 'ar', chinese: 'zh', esperanto: 'eo', vietnamese: 'vi', ukrainian: 'uk', hungarian: 'hu', danish: 'da', finnish: 'fi', tagalog: 'tl' };
+// One deduped file per course, committed in Surf: { type, prompt, answer } per line.
+const CRUISE_DIR = path.join(ROOT, '..', 'surf', 'courses');
 const MIN_UNITS = 3;
 const LESSONS_PER_UNIT = 3;
 // One lesson consumes: translation 1 + cloze 1 + sentence 1 + listening 1 + match 4.
@@ -255,16 +256,15 @@ async function loadFrequency({ freq, freqYear }) {
 const tokenize = (text) =>
     text.toLowerCase().replace(/[^\p{L}\p{N}\s'-]/gu, '').split(/\s+/).filter(Boolean);
 
-// Practised vocabulary for one course from the Cruise ledger: { words, items }.
+// Practised vocabulary for one course from Surf's solved questions: { words, items }.
 // items = distinct prompt/answer rows, which sets the unit count.
 async function cruiseVocab(id) {
     const code = CRUISE_CODES[id];
     const words = new Set(), items = new Set();
     if (!code) return { words, items: 0 };
-    for (const file of CRUISE_LEDGERS) {
-        let text; try { text = await readFile(file, 'utf8'); } catch { continue; }
+    {
+        let text; try { text = await readFile(path.join(CRUISE_DIR, `${code}.jsonl`), 'utf8'); } catch { return { words, items: 0 }; }
         for (const line of text.split('\n')) {
-            if (!line.includes(`"course":"${code}"`)) continue;
             let row; try { row = JSON.parse(line); } catch { continue; }
             items.add(`${row.prompt}\u0000${row.answer}`);
             for (const side of [row.prompt, row.answer]) if (typeof side === 'string') for (const w of tokenize(side)) words.add(w);
@@ -497,10 +497,14 @@ async function build(id) {
     }
     if (chosen.length < units) process.stderr.write(`  ${chosen.length} units (thin corpus)\n`);
 
-    // Drop any previously generated units, keep every hand-authored one.
-    pack.units = pack.units.filter((unit) => !unit.id.startsWith('t'));
+    // Shipped units never change: their exercise ids back SRS cards and lessons_completed keys.
+    // A rebuild only appends units past the ones already in the pack (it used to drop and
+    // regenerate them, which rewrote or deleted shipped lessons whenever the vocabulary moved).
+    const shipped = new Set(pack.units.map((unit) => unit.id));
+    const before = pack.units.length;
 
     chosen.forEach((unit, unitIndex) => {
+        if (shipped.has(`t${unitIndex + 1}`)) return;
         const lessons = [];
         for (let lessonIndex = 0; lessonIndex < LESSONS_PER_UNIT; lessonIndex += 1) {
             const chunk = unit.pool.slice(
@@ -519,6 +523,7 @@ async function build(id) {
         pack.units.push(built);
     });
 
+    if (pack.units.length === before) return null;
     pack.version = (pack.version || 1) + 1;
     await writeFile(packPath, `${JSON.stringify(pack, null, 2)}\n`);
     return pack.units.reduce((sum, unit) =>
