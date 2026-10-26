@@ -91,7 +91,7 @@ const UNITS = 10;
 const MAX_UNITS = 120;  // ponytail: about 2,900 sentences, ~1MB; the app fetches the whole pack when a course opens
 const CRUISE_CODES = { greek: 'el', romanian: 'ro', polish: 'pl', czech: 'cs', turkish: 'tr', indonesian: 'id', hindi: 'hi', hebrew: 'he', french: 'fr', korean: 'ko', japanese: 'ja', russian: 'ru', spanish: 'es', dutch: 'nl', swedish: 'sv', italian: 'it', german: 'de', portuguese: 'pt', arabic: 'ar', chinese: 'zh', esperanto: 'eo', vietnamese: 'vi', ukrainian: 'uk', hungarian: 'hu', danish: 'da', finnish: 'fi', tagalog: 'tl' };
 // One deduped file per course, committed in Surf: { type, prompt, answer } per line.
-const CRUISE_DIR = path.join(ROOT, '..', 'surf', 'courses');
+const CRUISE_DIR = path.join(ROOT, '..', 'duke', 'courses');
 const MIN_UNITS = 3;
 const LESSONS_PER_UNIT = 3;
 // One lesson consumes: translation 1 + cloze 1 + sentence 1 + listening 1 + match 4.
