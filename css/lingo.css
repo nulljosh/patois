@@ -1,5 +1,5 @@
 @import url("https://jaybulb.com/tokens.css");
-@import url("neutral.css?v=20261004b");
+@import url("neutral.css?v=20261027b");
 
 
 :root{--bg-primary:var(--bg);--bg-secondary:var(--bg2);--bg-tertiary:var(--color-code-bg);--text-primary:var(--text);--text-secondary:var(--text2);--text-muted:var(--text3);--accent-amber:var(--bulb-deep);--font:var(--font-body);--font-display:var(--font-body);--spring:var(--spring);--card-bg:var(--bg);--card-border:var(--border);--input-bg:var(--bg);--header-bg:var(--bg);--choice-selected-bg:var(--bg2);--subject-1:var(--bg2);--subject-2:var(--bg2);--subject-3:var(--bg2);--subject-4:var(--bg2);--subject-5:var(--bg2);--icon-bg:var(--bg2);--icon-border:var(--border2);
@@ -1136,8 +1136,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     border: 1px solid var(--border);
     background: transparent;
@@ -2141,7 +2141,7 @@ body.demo .header-inner::after {
 
 /* Teaching line under feedback: hear the answer, see what it means. */
 .feedback-teach { display: flex; align-items: center; gap: 0.6rem; margin-top: 0.6rem; color: var(--text-primary); font-weight: 400; }
-.feedback-hear { flex: none; width: 2rem; height: 2rem; border-radius: 50%; border: 1px solid var(--card-border); background: var(--bg-primary); color: var(--text-primary); cursor: pointer; }
+.feedback-hear { flex: none; width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 1px solid var(--card-border); background: var(--bg-primary); color: var(--text-primary); cursor: pointer; }
 .feedback-hear:hover { border-color: var(--text-secondary); }
 
 /* Phones: the stats pills need the room, the icon alone says Patois. */

@@ -10,13 +10,13 @@
   --color-code-bg: #f4f4f5;
   --text3: rgba(24,24,27,0.38);
   /* Brand blue replaces the house clay red. Error and wrong-answer red stay in lingo.css. */
-  --clay: #2e86de;
+  --clay: #2E6FC2;
   --clay-deep: #1f6fb2;
-  --accent: #2e86de;
-  --accent-dot: #2e86de;
-  --color-hairline-strong: #2e86de;
+  --accent: #2E6FC2;
+  --accent-dot: #2E6FC2;
+  --color-hairline-strong: #2E6FC2;
   --color-underline: rgba(46,134,222,0.45);
-  --color-underline-hover: #2e86de;
+  --color-underline-hover: #2E6FC2;
 }
 [data-theme="dark"] {
   --color-bg: #111111;

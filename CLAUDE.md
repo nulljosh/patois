@@ -8,7 +8,7 @@ Renamed from Lexly on 2026-10-04; the App Store listing name, the old host lexly
 ## Where things are
 
 - `index.html` landing, `app/index.html` the app (screens are toggled divs), `js/lingo-app.js` all app logic
-- `css/lingo.css` styles, `css/neutral.css` colours (white surfaces, brand blue `#2e86de`, no red accent)
+- `css/lingo.css` styles, `css/neutral.css` colours (white surfaces, brand blue `#2E6FC2`, no red accent)
 - `content/catalog.json` tabs and courses, `content/courses/*.json` one pack per course
 - `ios/Sources/Shared/` SwiftUI shared by iOS and macOS; `ios/Sources/Resources/content` is a symlink to `content/`
 - `supabase/functions/` Stripe checkout; Supabase project is the shared `spark` one

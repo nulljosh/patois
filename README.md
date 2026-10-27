@@ -15,7 +15,7 @@ Live at [patois.jaybulb.com](https://patois.jaybulb.com) · [App Store](https://
 
 ## What is in it
 
-- 125 courses in tabs: Languages, Programming, Computer Science, Engineering, Math, Science, School, Skills
+- 128 courses in tabs: Languages, Programming, Computer Science, Engineering, Math, Science, School, Skills
 - Chess puzzles on a real board: mate in one and two, forks, pins, skewers and more
 - Every lesson opens with a "Learn this first" card, then a quiz. Misses come back at the end and every answer says why
 - Multiple choice, word bank, fill in the blank, matching pairs, listening, speech
