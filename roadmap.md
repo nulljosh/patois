@@ -388,7 +388,7 @@ Already have: 40+ courses, spaced repetition, XP, streaks (+ freeze/repair), hea
       NB 2026-08-19: `completed_subjects` is still pushed unconditionally in `showResults()` and
       remains a "courses started" list, deliberately untouched by the completion-gating fix above,
       since the profile stat and the `firstLesson` achievement both read it that way. Decide here.
-- [ ] Skill-tree/unit gating: **lesson-level gating already exists**, `isLessonUnlocked` unlocks a lesson only when the previous one is complete. What is missing is UNIT-level gating (lock later units until the prior unit passes) and the path visualisation. (M)
+- [ ] Skill-tree/unit gating: **lesson-level gating already exists**, `isLessonUnlocked` unlocks a lesson only when the previous one is complete. `order` is the flattened lesson list across units, so unit-level gating already holds in effect: the first lesson of unit N stays locked until the last lesson of unit N-1 is complete (checked 2026-10-27). What is missing is only the path visualisation. (S)
 - [ ] Placement/diagnostic test per course so advanced users can skip ahead. (M)
 - [ ] Richer achievement/badge screen + course-completion certificate view. (S)
 - [ ] Leaderboard (friends/weekly XP), needs a friend-graph/leaderboard backend; no schema exists yet. (M–L)
