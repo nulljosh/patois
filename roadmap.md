@@ -632,3 +632,6 @@ The earlier gaps have been addressed:
 - [ ] App needs a redesign, more like Duolingo, with stale names removed. Just remove the header (home still shows the large Lexly title and a gear). Settings should be in the bottom nav, not top right. Screenshot: ~/Documents/Code/notes/attachments/2026-10-25/patois-1.png
 - [ ] App Store screenshots are horrible. Redo them.
 - [ ] App Store description is stale. Are the app update descriptions accurate (live 1.1.3 says "A clearer, more legible app icon and refreshed screenshots" and shows a v1.1.0 what's new)? Can we amend them later on? Screenshot: ~/Documents/Code/notes/attachments/2026-10-25/patois-2.png
+
+## Ingested 2026-10-30
+- [ ] Keeps getting rejected by App Review. Pull the latest Resolution Center reason (`asc web review show`) and answer it with the nine answers; send nothing without Joshua's yes.
