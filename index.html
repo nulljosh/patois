@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Patois: learn the way people really talk</title>
 <meta name="description" content="Short lessons in 18 languages and 110 other courses. Hear it, say it, keep your streak. Free on iPhone, Mac and the web.">
 <meta property="og:title" content="Patois">
@@ -11,110 +11,105 @@
 <link rel="icon" href="/assets/pat.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="/assets/tokens.css">
+<link rel="stylesheet" href="/assets/landing.css">
 <style>
-:root {
-  --accent: #2E6FC2; --accent-soft: #6FB0F0;
-  --bg: #fff; --surface: #f5f5f7; --text: #1d1d1f; --muted: rgba(29,29,31,.6); --line: rgba(0,0,0,.1);
-  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 96px;
-  --body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --display: var(--body);
-}
-@media (prefers-color-scheme: dark) { :root { --bg: #000; --surface: #1c1c1e; --text: #f5f5f7; --muted: rgba(245,245,247,.6); --line: rgba(255,255,255,.14); --accent: #6FB0F0; } }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--bg); color: var(--text); font: 17px/24px var(--body); -webkit-font-smoothing: antialiased; }
-a { color: var(--accent); text-decoration: none; }
-.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
-header { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: blur(20px) saturate(180%); border-bottom: 1px solid var(--line); }
-.bar { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-.logo { letter-spacing: -.04em; display: flex; align-items: center; gap: var(--s3); font: 22px/28px var(--display); color: var(--text); }
-.logo img { width: 32px; height: 32px; }
-nav a { color: var(--muted); margin-left: var(--s5); font-size: 15px; }
-.btn { display: inline-flex; align-items: center; justify-content: center; height: 48px; padding: 0 var(--s5); border-radius: 999px; font-weight: 600; transition: transform .2s ease, background .2s ease; }
-.btn:hover { transform: translateY(-1px); }
-.btn.primary { background: var(--accent); color: #fff; }
-.btn.ghost { background: var(--surface); color: var(--text); }
-.hero { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr); gap: var(--s7); align-items: center; padding: var(--s8) 0 var(--s7); }
-h1 { font: 56px/60px var(--display); letter-spacing: -.045em; margin: 0 0 var(--s4); }
-h2 { font: 34px/41px var(--display); letter-spacing: -.045em; margin: 0 0 var(--s4); }
-.lead { font-size: 21px; line-height: 28px; color: var(--muted); margin: 0 0 var(--s6); max-width: 30em; }
-.actions { display: flex; gap: var(--s3); flex-wrap: wrap; }
-.pat { width: 100%; max-width: 400px; justify-self: center; animation: bob 4s ease-in-out infinite; }
-@keyframes bob { 50% { transform: translateY(-12px) rotate(-2deg); } }
-section { padding: var(--s7) 0; }
-.app { width: 100%; background: var(--surface); border-radius: 28px; overflow: hidden; height: 680px; max-width: 460px; margin: var(--s6) auto 0; border: 1px solid var(--line); }
-.app iframe { width: 100%; height: 100%; border: 0; display: block; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--s4); margin-top: var(--s6); }
-.card { background: var(--surface); border-radius: 28px; padding: var(--s5); }
-.card h3 { font: 22px/28px var(--display); letter-spacing: -.04em; margin: 0 0 var(--s2); }
-.card p { margin: 0; color: var(--muted); font-size: 15px; line-height: 20px; }
-.tags { display: flex; flex-wrap: wrap; gap: var(--s2); margin-top: var(--s5); }
-.tags span { background: var(--surface); border-radius: 999px; padding: var(--s2) var(--s4); font-size: 15px; }
-details { border-bottom: 1px solid var(--line); padding: var(--s4) 0; }
-summary { cursor: pointer; font: 22px/28px var(--display); letter-spacing: -.04em; list-style: none; }
-details p { color: var(--muted); margin: var(--s2) 0 0; }
-footer { border-top: 1px solid var(--line); padding: var(--s6) 0; color: var(--muted); font-size: 13px; line-height: 18px; }
-footer a { color: var(--muted); margin-right: var(--s4); }
-@media (max-width: 760px) { .hero { grid-template-columns: minmax(0,1fr); padding-top: var(--s7); } h1 { font-size: 40px; line-height: 44px; } nav { display: none; } .pat { max-width: 200px; order: -1; margin: -16px auto -32px; } .hero { padding-top: var(--s5); gap: var(--s4); } }
-@media (prefers-reduced-motion: reduce) { .pat { animation: none; } .btn { transition: none; } }
-h1, h2 { font-weight: 700; letter-spacing: -.022em; }
-.logo, .card h3, summary { font-weight: 600; letter-spacing: -.01em; }
+.stage iframe{display:block;position:relative;width:100%;max-width:420px;margin:0 auto;height:min(78svh,760px);border:0;border-radius:28px;background:#fff}
+.tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:24px}
+.tags span{padding:8px 16px;border-radius:999px;border:1px solid var(--line);font-size:15px}
+.faq{max-width:640px;margin:24px auto 0;text-align:left}
+.faq details{border-top:1px solid var(--line);padding:16px 0}
+.faq summary{cursor:pointer;font-weight:600}
+.faq p{color:var(--sub);margin:8px 0 0}
 </style>
+<script src="/assets/landing.js" defer></script>
 </head>
 <body>
-<header><div class="wrap bar">
-  <a class="logo" href="/"><img src="/assets/pat.svg" alt="" width="32" height="32">Patois</a>
-  <nav><a href="#try">Try it</a><a href="#why">Why it works</a><a href="#courses">Courses</a><a href="#faq">FAQ</a></nav>
-  <a class="btn primary" href="https://apps.apple.com/app/id6783501611">Get the app</a>
-</div></header>
 
-<main class="wrap">
-  <div class="hero">
-    <div>
-      <h1>Learn the way people really talk.</h1>
-      <p class="lead">Short lessons in 18 languages and 110 other courses. Hear it, say it, keep your streak. Pat the parrot repeats after you.</p>
-      <div class="actions">
-        <a class="btn primary" href="https://apps.apple.com/app/id6783501611">Download on the App Store</a>
-        <a class="btn ghost" href="/app/">Open on the web</a>
-      </div>
+<header class="nav" aria-label="Site">
+  <nav class="nav-links" aria-label="Main">
+    <a href="#features">Why it works</a>
+    <a href="#courses">Courses</a>
+  </nav>
+  <a class="nav-brand" href="#top" aria-label="Patois home"><img src="/assets/pat.svg" alt="" width="28" height="28"><span>Patois</span></a>
+  <div class="nav-end">
+    <a class="nav-get" href="/app/">Web</a>
+    <a class="btn btn-solid" href="https://apps.apple.com/app/id6783501611">Get the app</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+  <div class="wrap center hero-copy">
+    <p class="label">Pat the parrot repeats after you</p>
+    <h1>Learn the way people really talk.</h1>
+    <p class="lead">Short lessons in 18 languages and 110 other courses. Hear it, say it, keep your streak.</p>
+    <div class="cta">
+      <a class="btn btn-solid" href="https://apps.apple.com/app/id6783501611">Download on the App Store</a>
+      <a class="btn btn-ghost" href="/app/">Open on the web</a>
     </div>
-    <img class="pat" src="/assets/pat.svg" alt="Pat, the Patois macaw" width="400" height="400">
+    <p class="fine">Free on iPhone, Mac and the web.</p>
   </div>
 
-  <section id="try">
-    <h2>Try a lesson right here.</h2>
-    <p class="lead">This is the real app, not a picture of it.</p>
-    <div class="app"><iframe src="/app/?demo" title="Patois app" loading="lazy"></iframe></div>
-  </section>
-
-  <section id="why">
-    <h2>Built to be finished.</h2>
-    <div class="grid">
-      <div class="card"><h3>Teach first</h3><p>Every lesson opens with the words, then quizzes you on them. A miss comes back once at the end.</p></div>
-      <div class="card"><h3>Hear it</h3><p>Tap to hear each phrase, slow or normal, and type what you hear.</p></div>
-      <div class="card"><h3>Keep going</h3><p>XP for every right answer, a daily streak, and hearts that make you slow down.</p></div>
-      <div class="card"><h3>Yours everywhere</h3><p>iPhone, Mac and the web. Sign in to sync, or just start. No account needed on the apps.</p></div>
+  <div class="demo-wrap reveal" id="demo">
+    <div class="stage">
+      <iframe src="/app/?demo" title="Patois app" loading="lazy"></iframe>
     </div>
-  </section>
+    <p class="demo-hint">That is the real app. Try a lesson right here.</p>
+  </div>
+</section>
 
-  <section id="courses">
-    <h2>128 courses.</h2>
-    <p class="lead">Spanish to Hindi, then code, computer science, engineering, math, science and BC Grade 12.</p>
-    <div class="tags"><span>Spanish</span><span>French</span><span>German</span><span>Italian</span><span>Portuguese</span><span>Japanese</span><span>Chinese</span><span>Korean</span><span>Russian</span><span>Arabic</span><span>Hindi</span><span>Dutch</span><span>Python</span><span>Swift</span><span>Calculus</span><span>Physics</span><span>Chess</span></div>
-  </section>
+<section class="band" id="features">
+  <div class="band-head">
+    <div class="band-copy reveal">
+      <p class="label">Why it works</p>
+      <h2>Built to be finished</h2>
+      <p>Patois is the way a place really talks at home, not the textbook version. That is how the lessons are written.</p>
+    </div>
+  </div>
+  <div class="cells">
+    <article class="cell reveal"><p class="label">Teach</p><h3>Teach first</h3><p>Every lesson opens with the words, then quizzes you on them. A miss comes back once at the end.</p></article>
+    <article class="cell reveal"><p class="label">Listen</p><h3>Hear it</h3><p>Tap to hear each phrase, slow or normal, and type what you hear.</p></article>
+    <article class="cell reveal"><p class="label">Streak</p><h3>Keep going</h3><p>XP for every right answer, a daily streak, and hearts that make you slow down.</p></article>
+  </div>
+</section>
 
-  <section id="faq">
-    <h2>Questions.</h2>
-    <details><summary>Is it free?</summary><p>Yes. An account keeps your streak, XP and review queue in sync across devices.</p></details>
-    <details><summary>Do I need an account?</summary><p>Not on iPhone or Mac. The web app asks you to sign in with email, Apple or Google.</p></details>
-    <details><summary>What is Patois?</summary><p>The way a place really talks at home, rather than the textbook version. That is how the lessons are written.</p></details>
-    <details><summary>Who is Pat?</summary><p>A scarlet macaw. Parrots learn by repeating what they hear, and so do you.</p></details>
-  </section>
+<section class="sec" id="courses">
+  <div class="wrap center">
+    <p class="label reveal">128 courses</p>
+    <h2 class="reveal">Spanish to Hindi, then code</h2>
+    <p class="body reveal">Then computer science, engineering, math, science and BC Grade 12.</p>
+    <div class="tags reveal"><span>Spanish</span><span>French</span><span>German</span><span>Italian</span><span>Portuguese</span><span>Japanese</span><span>Chinese</span><span>Korean</span><span>Russian</span><span>Arabic</span><span>Hindi</span><span>Dutch</span><span>Python</span><span>Swift</span><span>Calculus</span><span>Physics</span><span>Chess</span></div>
+  </div>
+</section>
+
+<section class="sec plats" id="get">
+  <div class="wrap center">
+    <p class="label reveal">Get it</p>
+    <h2 class="reveal">Yours everywhere</h2>
+    <p class="body reveal">Sign in to sync, or just start. No account needed on the apps.</p>
+    <div class="plat-row">
+      <div class="reveal"><small>iOS and macOS</small><b>iPhone and Mac</b><p>Free on the App Store.</p><a class="btn btn-solid" href="https://apps.apple.com/app/id6783501611">App Store</a></div>
+      <div class="reveal"><small>Any browser</small><b>Web</b><p>Sign in with email, Apple or Google.</p><a class="btn btn-ghost" href="/app/">Open</a></div>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Is it free?</summary><p>Yes. An account keeps your streak, XP and review queue in sync across devices.</p></details>
+      <details><summary>Who is Pat?</summary><p>A scarlet macaw. Parrots learn by repeating what they hear, and so do you.</p></details>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer><div class="wrap">
-  <a href="/privacy.html">Privacy</a><a href="/support.html">Support</a><a href="https://apps.apple.com/app/id6783501611">App Store</a>
-  <p>Patois, by Joshua Trommel. Sentences from Tatoeba (CC BY 2.0 FR). Chess puzzles from Lichess (CC0).</p>
-</div></footer>
+<footer class="foot" id="footer">
+  <div class="foot-top">
+    <div class="foot-brand"><img src="/assets/pat.svg" alt="" width="40" height="40"><b>Patois</b><p>Learn the way people really talk.</p></div>
+    <nav class="foot-cols" aria-label="Footer">
+      <div><p class="label">Patois</p><a href="https://apps.apple.com/app/id6783501611">App Store</a><a href="/app/">Web app</a><a href="#courses">Courses</a></div>
+      <div><p class="label">Help</p><a href="/support.html">Support</a><a href="/privacy.html">Privacy</a><a href="https://github.com/nulljosh/patois">GitHub</a></div>
+      <div><p class="label">More</p><a href="mailto:trommatic@icloud.com?subject=Patois">Feedback</a><a href="https://jaybulb.com">More apps</a><a href="#top">Back to top</a></div>
+    </nav>
+  </div>
+  <p class="legal">&copy; 2026 Joshua Trommel &middot; Sentences from Tatoeba (CC BY 2.0 FR) &middot; Chess puzzles from Lichess (CC0)</p>
+</footer>
 </body>
 </html>
