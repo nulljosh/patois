@@ -635,5 +635,4 @@ The earlier gaps have been addressed:
 
 ## Ingested 2026-10-30
 - [ ] Keeps getting rejected by App Review. Pull the latest Resolution Center reason (`asc web review show`) and answer it with the nine answers; send nothing without Joshua's yes.
-- [x] Needs Hermes' landing page
 - [ ] App Store super stale, they haven't accepted any app in months
