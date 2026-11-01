@@ -182,6 +182,9 @@ struct LessonView: View {
             guard queue.isEmpty else { return }
             queue = lesson.exercises
             learning = !store.progress.completedLessonIds.contains("\(subjectId):\(lesson.id)") && !learnRows.isEmpty
+            if let type = UserDefaults.standard.string(forKey: "shotExercise"), let i = queue.firstIndex(where: { $0.type == type }) {
+                index = i; learning = false
+            }
         }
         .animation(.spring(response: 0.35, dampingFraction: 0.8), value: feedback)
         // ponytail: driven off the existing feedback state, so the wrong-answer buzz is free.
@@ -379,7 +382,7 @@ private struct MatchGrid: View {
     }
 
     private func background(for cell: Cell) -> Color {
-        if matched.contains(cell.key) { return Color(hex: "f5f5e6") }
+        if matched.contains(cell.key) { return Color.green.opacity(0.18) }  // was a fixed cream: white text on it in dark mode
         if selection == cell { return Color(hex: "5B9BD5").opacity(0.15) }
         return Color.secondary.opacity(0.12)
     }

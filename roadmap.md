@@ -80,7 +80,7 @@ closes the "iOS never actually run" gap.
 
 ## Open, gaps left by the 2026-08-30 content/parity work
 
-- [ ] **iOS `match` and word-bank UI have never been run.** They compile and
+- [x] (11-01: run in the iPhone simulator, light and dark, via `-shotExercise match|sentence`; both lay out right, FlowRow wraps; a matched pair was cream with white text in dark mode, now green tint) **iOS `match` and word-bank UI have never been run.** They compile and
   `ContentStoreTests` proves the JSON decodes with `words`/`audio`/`pairs` intact, but no one has
   tapped through a lesson in the simulator. `FlowRow` (the custom wrapping `Layout`) and
   `MatchGrid` are the untested pieces.

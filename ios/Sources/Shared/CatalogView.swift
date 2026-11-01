@@ -1,6 +1,12 @@
 import SwiftUI
 
 struct CatalogView: View {
+    static func shotLesson(in course: CoursePack) -> Lesson? {
+        let lessons = course.units.flatMap(\.lessons)
+        guard let type = UserDefaults.standard.string(forKey: "shotExercise") else { return lessons.first }
+        return lessons.first { $0.exercises.contains { $0.type == type } }
+    }
+
     var store: ContentStore
     var auth: AuthStore
     #if os(macOS)
@@ -43,8 +49,9 @@ struct CatalogView: View {
                 if selectedSubject.notesPath != nil {
                     NotesView(store: store, subject: selectedSubject)
                 } else if UserDefaults.standard.bool(forKey: "shotLesson"), let course = store.loadCourse(selectedSubject),
-                          let first = course.units.first?.lessons.first {
-                    // Store screenshots: `-shotLesson YES` with `-shotSubject` opens that course's first lesson.
+                          let first = Self.shotLesson(in: course) {
+                    // Store screenshots: `-shotLesson YES` with `-shotSubject` opens that course's first lesson,
+                    // or with `-shotExercise match` the first lesson that has one, at that exercise.
                     LessonView(store: store, subjectId: selectedSubject.id, lesson: first, lang: course.lang)
                 } else {
                     UnitsView(store: store, subject: selectedSubject)
