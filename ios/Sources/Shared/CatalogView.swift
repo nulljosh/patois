@@ -33,6 +33,11 @@ struct CatalogView: View {
                 .navigationTitle("Patois")
                 // No big app title on Home (Joshua, 2026-10-25): the list starts at the top, Settings is a tab.
                 .toolbar(.hidden, for: .navigationBar)
+                // Store screenshots: `-shotSubject spanish` opens that course on launch.
+                .onChange(of: store.catalog != nil, initial: true) { _, ready in
+                    guard ready, selectedSubject == nil, let id = UserDefaults.standard.string(forKey: "shotSubject") else { return }
+                    selectedSubject = store.catalog?.categories.values.flatMap(\.subjects).first { $0.id == id }
+                }
         } detail: {
             if let selectedSubject {
                 if selectedSubject.notesPath != nil {

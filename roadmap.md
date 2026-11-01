@@ -630,7 +630,7 @@ The earlier gaps have been addressed:
 
 ## Ingested 2026-10-25
 - [x] (11-01: home has no title bar now, the list starts at the top; Settings was already a bottom tab on iPhone. Checked in the simulator, ships with the next iOS version) App needs a redesign, more like Duolingo, with stale names removed. Just remove the header (home still shows the large Lexly title and a gear). Settings should be in the bottom nav, not top right. Screenshot: ~/Documents/Code/notes/attachments/2026-10-25/patois-1.png
-- [ ] App Store screenshots are horrible. Redo them.
+- [ ] App Store screenshots are horrible. Redo them. (11-01: two new 6.9" shots in screenshots/appstore/6.9, the home without a title bar and the Spanish course, dark, from `-suppressWhatsNew YES -shotSubject spanish`. Still to do: a lesson screen (a navigationDestination flag would not push inside the split view; needs a UI test tap), then upload with the next version, 1.1.6 is in review)
 - [ ] App Store description is stale. Are the app update descriptions accurate (live 1.1.3 says "A clearer, more legible app icon and refreshed screenshots" and shows a v1.1.0 what's new)? Can we amend them later on? Screenshot: ~/Documents/Code/notes/attachments/2026-10-25/patois-2.png
 
 ## Ingested 2026-10-30
