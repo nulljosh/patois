@@ -31,6 +31,8 @@ struct CatalogView: View {
         NavigationSplitView {
             catalogList
                 .navigationTitle("Patois")
+                // No big app title on Home (Joshua, 2026-10-25): the list starts at the top, Settings is a tab.
+                .toolbar(.hidden, for: .navigationBar)
         } detail: {
             if let selectedSubject {
                 if selectedSubject.notesPath != nil {
