@@ -80,10 +80,6 @@ closes the "iOS never actually run" gap.
 
 ## Open, gaps left by the 2026-08-30 content/parity work
 
-- [x] (11-01: run in the iPhone simulator, light and dark, via `-shotExercise match|sentence`; both lay out right, FlowRow wraps; a matched pair was cream with white text in dark mode, now green tint) **iOS `match` and word-bank UI have never been run.** They compile and
-  `ContentStoreTests` proves the JSON decodes with `words`/`audio`/`pairs` intact, but no one has
-  tapped through a lesson in the simulator. `FlowRow` (the custom wrapping `Layout`) and
-  `MatchGrid` are the untested pieces.
 - [ ] **Generated content is ordered by word frequency, not by teaching order.** Unit 1 is
   "statistically most common words", not "greetings". This is the real remaining gap versus a
   designed curriculum, and no amount of extra sentences fixes it.
@@ -146,10 +142,7 @@ resubmitted. This work sits on main until the appeal resolves.
 
 ## App Review, Guideline 4.3(a), iOS 1.1.5 (2026-08-28)
 
-- [x] (11-01: superseded, iOS 1.1.6 is waiting for review) **iOS 1.1.5 REJECTED under Guideline 4.3(a) Design: Spam.** Submission `16ca1b81-3421-4fcd-af22-c321b5983c31`, thread `1d490667-6b7d-34fb-a662-42e561a595a0`, rejected 08:14 PT. Apple's letter is the byte-identical wave boilerplate and names no comparison app. Lexly is the seventh app hit; see `~/Documents/Code/notes/appeal-4-3-spam.md`.
 - **Do not rebuild, bump, or resubmit the build.** Nothing in the binary was cited, and resubmitting the same build has failed for every other app in the wave and deepens the pattern.
-- [x] (11-01: done, app info reads subtitle "Learn anything, 5 min a day" and privacy https://patois.jaybulb.com/privacy) **Subtitle + privacy URL still queued.** `subtitle` → "Languages and BC course notes" and `privacyPolicyUrl` → `lexly.heyitsmejosh.com/privacy` live on the app-info record, which is locked while macOS 1.1.5 is IN_REVIEW. **`asc metadata push` reports these as applied and they silently do not land**, always re-pull to verify. Push again once macOS review concludes.
-- [x] (11-01: macOS 1.1.6 is live) **Watch macOS 1.1.5** (submission `e3d14cbc-a175-4267-baaf-b693a33bc4a6`, IN_REVIEW on the same build). If it also comes back 4.3(a), file the same reply on the Mac thread.
 - **Repositioning reverted (2026-08-29, `a5df300`).** The "lead with BC Grade 12 everywhere" commit demoted languages off the default tab and out of the listing copy. Languages are core to the app, not filler, reverted in full. The 4.3(a) read is driven by the screenshots and the account's submission pattern, not by which tab opens first; fix it there instead.
 - Canonical metadata now lives in `metadata/` at the repo root. `ios/fastlane/metadata/` is dead legacy that still says "LingoAce"/"LingoPlay", never push from it.
 
@@ -629,9 +622,7 @@ The earlier gaps have been addressed:
 - [ ] Still super stale on the App Store (it's Patois now, store still says Lexly). Already tracked above as the stale name and screenshots item; ship the rename and fresh screenshots.
 
 ## Ingested 2026-10-25
-- [x] (11-01: home has no title bar now, the list starts at the top; Settings was already a bottom tab on iPhone. Checked in the simulator, ships with the next iOS version) App needs a redesign, more like Duolingo, with stale names removed. Just remove the header (home still shows the large Lexly title and a gear). Settings should be in the bottom nav, not top right. Screenshot: ~/Documents/Code/notes/attachments/2026-10-25/patois-1.png
 - [ ] App Store screenshots are horrible. Redo them. (11-01: two new 6.9" shots in screenshots/appstore/6.9, the home without a title bar and the Spanish course, dark, from `-suppressWhatsNew YES -shotSubject spanish`. plus 03-lesson (Spanish Greetings, `-shotLesson YES`). Upload these three with the next version; 1.1.6 is in review)
-- [x] (11-01: the 1.1.6 description and promo text now say eighteen languages, which the catalog has, not twelve, and lost their em dashes; edited while 1.1.6 waits for review, live when it is approved. Its What's New is the 1.1.6 one) App Store description is stale. Are the app update descriptions accurate (live 1.1.3 says "A clearer, more legible app icon and refreshed screenshots" and shows a v1.1.0 what's new)? Can we amend them later on? Screenshot: ~/Documents/Code/notes/attachments/2026-10-25/patois-2.png
 
 ## Ingested 2026-10-30
 - [ ] (blocked: Apple review, 2026-11-01. iOS 1.1.6 is WAITING_FOR_REVIEW, so nothing is open to answer; if it comes back rejected, run cyllene-resolve) Keeps getting rejected by App Review. Pull the latest Resolution Center reason (`asc web review show`) and answer it with the nine answers; send nothing without Joshua's yes.
