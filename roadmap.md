@@ -90,7 +90,6 @@ closes the "iOS never actually run" gap.
 - [ ] **~23 non-language courses are still 15-exercise stubs** (algebra, chess, geography,
   chemistry, biology, and the rest of the 1-unit packs). Tatoeba does not cover them, so they need
   a different generator or hand authoring.
-- [ ] Deliberately skipped, revisit when there are users: leagues/leaderboards (needs a new table +
   images display the course list that authenticated users now see, but a logged-out visitor cannot
   reach this screen (auth gate on renderSubjects). Screenshots need to show what a visitor actually
   encounters (sign-in screen or a sample lesson) or be honest about the login requirement.
@@ -356,10 +355,6 @@ Lexly's signup/login UI in `js/lingo-app.js` handles basic authentication but la
 - [ ] Landing page (`index.html`): user likes it, wants it "bumped more", no specific ask, needs a follow-up conversation on direction. (Separately: this landing page is the reference design to port to any other `~/Documents/Code` project still missing a matching one, needs a project-by-project survey, not started.)
 
 ## From Apple Notes (imported 2026-08-08)
-- [ ] Course list icons (`CatalogView.swift:64`, `sfSymbol(for: subject.icon)`) need "bump/less generic" per note, currently plain SF Symbols mapped per subject; needs actual icon-set decisions (custom glyphs? different SF Symbol picks?), not a mechanical fix.
-- [ ] Richen list/course icons (user wants them "bumped"/more visually rich).
-- [ ] A UI glitch/visual artifact reported via screenshot (2026-07-21 brain dump), needs the actual image reviewed to diagnose, never triaged.
-- [ ] "+" icon color complaint, **ruled out 2026-07-25**: no `+`/`fa-plus` exists anywhere except the Arithmetic course icon, styled identically to every other subject icon. Nothing uniquely wrong found; needs the actual screenshot to identify what the user meant before touching anything further.
 
 ## Open, content & courses
 - [ ] Add more compute-related skills/courses beyond Computer Basics.
@@ -394,7 +389,6 @@ Already have: 40+ courses, spaced repetition, XP, streaks (+ freeze/repair), hea
 - Explicitly skipped: Codecademy-style full code-execution sandbox (out of scope, high effort, low relevance to a language app); Duolingo mascot/illustrated skill-tree reskin (conflicts with no-gradients/no-mascot design taste, current minimal list-tree stays).
 
 ## From Notes.app (imported 2026-08-07)
-- [ ] Mac OS issues flagged (from a bare Apple Note titled "Lexly / Mac OS / Issues", no detail text, screenshot attachment lost on export), likely related to the unresolved Mac rejection from 2026-08-04. Ask Josh for specifics next time this comes up.
 
 ## Known-broken tooling
 - [ ] SwiftLint build-tool plugin wiring was removed from `project.yml` (`packages:`/`buildToolPlugins:`) after it broke the iOS 1.1.3 archive step (`Validate plug-in "SwiftLintBuildToolPlugin"` failure, headless archives can't grant the plugin's interactive trust prompt). If Lexly should keep SwiftLint, re-add and verify with `xcodebuild ... -skipPackagePluginValidation` before shipping.
@@ -412,8 +406,6 @@ Apple rejected "Lexly Mac" under 5.2.5, the name uses "Mac" inappropriately. Rat
 rename around it, collapse the two records. Voxprint (6782604262) already proved one app record
 serves iOS + macOS via Universal Purchase, so the second record is what created the naming
 problem in the first place.
-- [ ] Once macOS ships under the Lexly record, delete the orphaned **Lexly Mac** record (6783501927). That retires the 5.2.5 rejection permanently instead of renaming around it., attempted 2026-08-17, rejected 409 on two dashboard-only prerequisites, see below.
-- [ ] Record work done; freeze lifted 2026-08-18. Only the submit remains, held for the in-flight verdicts.
 
 ## 2026-08-10, the Universal Purchase merge is ALREADY DONE; only the duplicate deletion is left
 Verified via the API tonight. The main **Lexly** record (6783501611, `com.nulljosh.lingo`)
@@ -430,7 +422,6 @@ shared Supabase project (HTTP 200), so the 2.1 "we couldn't sign in" half of tha
 already resolved. The related Healstack demo account was genuinely broken and was fixed tonight , 
 see healstack/roadmap.md; same shared database, different user row.
 
-- [ ] Delete the duplicate `6783501927`, **RAN 2026-08-17, rejected by Apple with a 409. It is NOT a one-command delete; two dashboard-only prerequisites must be cleared first.**
 
   Command run (web session authenticated fine, 2FA accepted):
   `asc web apps delete --app 6783501927 --expected-bundle-id com.nulljosh.lingo.mac --confirm`
@@ -452,7 +443,6 @@ and the mock must cover every network refresh path, not just `init`, see talli 7
 
 ## From Apple Notes (imported 2026-08-11)
 - [ ] iOS: login works but no success message / no visual feedback on button tap
-- [ ] iOS: Settings is bare, login provides no actual information or data afterward
 - [ ] iOS: add padding to app icon (or scale the glyph down)
 
 > Resume note, RESOLVED 2026-08-13: the `wip: partial work from /work notes ingest` commit
@@ -535,7 +525,6 @@ cannot ship under that name regardless of the auth fix.
 ## Ingested 2026-08-18
 
 ## Found while working 2026-08-19
-- [ ] **Delete the stray "Lexly Mac" ASC record 6783501927** (its only version is macOS 1.1.1
   REJECTED). The canonical record is 6783501611, which now carries iOS 1.1.3 READY_FOR_SALE and
   macOS 1.1.3 WAITING_FOR_REVIEW. The dashboard rejection badge people keep noticing is this dead
   duplicate, not the real app. App-record deletion is dashboard-only, blocked on an Apple web
@@ -546,7 +535,6 @@ cannot ship under that name regardless of the auth fix.
   same failure wearing a new hat).
 
 ## From ASC session 2026-08-19
-- [ ] **Delete stray ASC record 6783501927 (Lexly Mac, com.nulljosh.lingo.mac).**
   Progress 2026-08-19: in-flight submission d4eda5d7 cancelled successfully via
   `asc review submissions-update --id <id> --canceled=true --confirm`, so that
   blocker is cleared. Deletion still returns
@@ -555,7 +543,6 @@ cannot ship under that name regardless of the auth fix.
   Then: `asc web apps delete --app 6783501927 --expected-bundle-id com.nulljosh.lingo.mac --expected-name "Lexly Mac" --confirm`
   Safe: canonical Lexly 6783501611 (com.nulljosh.lingo) carries MAC_OS 1.1.3
   WAITING_FOR_REVIEW; the stray's 1.1.1 was never live.
-- [ ] Do the 'remove from sale in all territories' step via Claude in Chrome rather than by hand, Joshua OK'd browser automation for this on 2026-08-19. It is the one genuinely dashboard-only step: `asc web apps availability` exposes only `create`, so there is no CLI path. Once availability is cleared the delete command above works.
 
 ## Braindump 2026-08-19
 - [ ] Add a Discrete Mathematics course (logic, sets, combinatorics, graphs, proofs), needs curriculum scoping first.
@@ -592,15 +579,12 @@ Neither is worth fixing on a record that should not exist.
 
 - [ ] Add animation to the splash screen. If the app takes even a second to load there should be a logo or mascot animation.
 - [ ] Make list item icons more rich and relevant to their content.
-- [ ] All list items (even nested within views) should have rich icons.
 - [ ] Build a bot / reviewer / test suite that goes through all the courses and bangs them out. Should run behind an account and max out XP.
 - [ ] Needs more lessons and better UI.
 - [ ] Settings: when signed in should show user details, and have a profile tab (social aspect) showing XP etc.
 - [ ] Add intermediate and expert to all courses. There should be like 5-10 levels, not 3.
 
 ## From screenshot pass (2026-08-27)
-- [ ] `content/notes/becoming-steve-jobs-masterclass.json` opens with an internal working note ("this batch picks up well past the previously-summarized material... pages 130-273 is still unphotographed"). That is author scaffolding, not reader content, strip it before that book is ever screenshotted or featured.
-- [ ] Content typo: Good Feng Shui summary lists a book as "If Itsdam for Modern Times", almost certainly a garbled OCR of a real Eva Wong title. Verify and correct.
 - [ ] The floating Learn/Settings tab bar overlaps the last line of scrolling summary text (visible in every summary screenshot). Needs bottom content inset equal to the bar height.
 
 ## From Notes (imported 2026-08-27)
