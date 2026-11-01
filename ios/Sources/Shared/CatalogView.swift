@@ -42,6 +42,10 @@ struct CatalogView: View {
             if let selectedSubject {
                 if selectedSubject.notesPath != nil {
                     NotesView(store: store, subject: selectedSubject)
+                } else if UserDefaults.standard.bool(forKey: "shotLesson"), let course = store.loadCourse(selectedSubject),
+                          let first = course.units.first?.lessons.first {
+                    // Store screenshots: `-shotLesson YES` with `-shotSubject` opens that course's first lesson.
+                    LessonView(store: store, subjectId: selectedSubject.id, lesson: first, lang: course.lang)
                 } else {
                     UnitsView(store: store, subject: selectedSubject)
                 }
