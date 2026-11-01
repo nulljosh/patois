@@ -174,7 +174,6 @@
 		6F3218447DEE9A342C07EAF9 /* precalc12_masterclass.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DEE9DE26C2FBEC0546F384 /* precalc12_masterclass.json */; };
 		715303AEF29D317103B4B14D /* hebrew.json in Resources */ = {isa = PBXBuildFile; fileRef = 91E389D943D2440C5E5C7EC6 /* hebrew.json */; };
 		71A7A25C244E0296B0DC3527 /* html_css.json in Resources */ = {isa = PBXBuildFile; fileRef = F3532385783609B1A4326811 /* html_css.json */; };
-		72E19D1FDDE16D54F3318F07 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 48B8AB9DC041EF61EF11842B /* Supabase */; };
 		730F6B4D3D5BBE6157DD439C /* dart.json in Resources */ = {isa = PBXBuildFile; fileRef = E3B877AC4BFB1A2C93F44D35 /* dart.json */; };
 		7418DC008D9A68325C002829 /* vietnamese.json in Resources */ = {isa = PBXBuildFile; fileRef = 340770AC5617610F1867033B /* vietnamese.json */; };
 		7627BE39E0FA0C9C5876A7A0 /* basque.json in Resources */ = {isa = PBXBuildFile; fileRef = 9122CCD569CA2492CE92D9CC /* basque.json */; };
@@ -303,7 +302,6 @@
 		DAAED67B144713AEF10BE165 /* geometry.json in Resources */ = {isa = PBXBuildFile; fileRef = 78329C083F6292E361208131 /* geometry.json */; };
 		DB141D5C6EA14049987CEEDD /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145F99C74BD922728A9B3871 /* AuthStore.swift */; };
 		DB5FC3E0DC78B59DD540A5FA /* bengali.json in Resources */ = {isa = PBXBuildFile; fileRef = 545424A7D1350E034DDF353E /* bengali.json */; };
-		DB7126F261D8C19189202E93 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 782342964314D86AB9DC7ECC /* Supabase */; };
 		DB7AA675DA00BF99FE1DDADE /* fpga_verilog.json in Resources */ = {isa = PBXBuildFile; fileRef = C7234021639CFEC592D10090 /* fpga_verilog.json */; };
 		DBF52E22BE2DCA6FBCD8C923 /* japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = 957B0D682A78332B3AF55252 /* japanese.json */; };
 		DC39534230732711541B4746 /* algebra.json in Resources */ = {isa = PBXBuildFile; fileRef = 698847033238209C4252DDE8 /* algebra.json */; };
@@ -600,22 +598,6 @@
 			files = (
 				8F3318D38EC726266500BE15 /* WidgetKit.framework in Frameworks */,
 				84A131E331C2CCFB4E50D916 /* SwiftUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7730263B3A3EFAAA58C22E2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				72E19D1FDDE16D54F3318F07 /* Supabase in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2428340598278C80AFE05BE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB7126F261D8C19189202E93 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -923,7 +905,6 @@
 			buildPhases = (
 				EA0849FD6CDA3298D4BBFD4E /* Sources */,
 				B8CBB4883B3FA8064BA0FDA1 /* Resources */,
-				E7730263B3A3EFAAA58C22E2 /* Frameworks */,
 				97FA1CFDD2B9F7E5FFC1ED06 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
@@ -933,7 +914,6 @@
 			);
 			name = "Lingo-iOS";
 			packageProductDependencies = (
-				48B8AB9DC041EF61EF11842B /* Supabase */,
 			);
 			productName = "Lingo-iOS";
 			productReference = 4FA73EEEDA6CB0678990FF20 /* Lingo-iOS.app */;
@@ -963,7 +943,6 @@
 			buildPhases = (
 				F6FA1117176A49680FE2384E /* Sources */,
 				5CADB1ECF485F445ABBBAD84 /* Resources */,
-				F2428340598278C80AFE05BE /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -971,7 +950,6 @@
 			);
 			name = "Lingo-macOS";
 			packageProductDependencies = (
-				782342964314D86AB9DC7ECC /* Supabase */,
 			);
 			productName = "Lingo-macOS";
 			productReference = EAC571CBB172A60AD70C334B /* Lingo-macOS.app */;
@@ -1027,9 +1005,6 @@
 			);
 			mainGroup = 1E3AB1BDA519C1598FFEB63D;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				99F3180C842AB825B82844A4 /* XCRemoteSwiftPackageReference "supabase-swift" */,
-			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D8622F3E3F551CE7430FDA09 /* Products */;
 			projectDirPath = "";
@@ -1510,7 +1485,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 202610210745;
+				CURRENT_PROJECT_VERSION = 202610312030;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = QMM486NPYC;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1568,7 +1543,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 202610210745;
+				CURRENT_PROJECT_VERSION = 202610312030;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = QMM486NPYC;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1771,30 +1746,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		99F3180C842AB825B82844A4 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/supabase/supabase-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		48B8AB9DC041EF61EF11842B /* Supabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 99F3180C842AB825B82844A4 /* XCRemoteSwiftPackageReference "supabase-swift" */;
-			productName = Supabase;
-		};
-		782342964314D86AB9DC7ECC /* Supabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 99F3180C842AB825B82844A4 /* XCRemoteSwiftPackageReference "supabase-swift" */;
-			productName = Supabase;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F2560A77660B5388073E78F /* Project object */;
 }
