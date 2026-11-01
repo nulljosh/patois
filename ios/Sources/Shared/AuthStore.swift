@@ -2,22 +2,13 @@ import AuthenticationServices
 import CryptoKit
 import Foundation
 import LocalAuthentication
-import Supabase
-
-let supabase = SupabaseClient(
-    supabaseURL: URL(string: "https://tjsxsqlxjmanwvmywwvw.supabase.co")!,
-    supabaseKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqc3hzcWx4am1hbnd2bXl3d3Z3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA0OTc0MDEsImV4cCI6MjA4NjA3MzQwMX0.LphLfho3wdQC20MhtcnBpzQUNuBoTOobrugQbNGxc68",
-    options: SupabaseClientOptions(
-        auth: SupabaseClientOptions.AuthOptions(storage: SessionKeychainStorage())
-    )
-)
 
 @Observable
 final class AuthStore {
     var session: Session?
     var isLoading = true
     // ponytail: App Store screenshot automation needs to skip the real auth
-    // gate (demo Supabase credentials expire/rotate independently of this repo)
+    // gate (demo credentials expire/rotate independently of this repo)
     private let mockSignedIn = CommandLine.arguments.contains("UITEST_SNAPSHOT")
 
     init() {
@@ -31,11 +22,29 @@ final class AuthStore {
     var isSignedIn: Bool { mockSignedIn || session != nil }
 
     func refresh() async {
-        session = try? await supabase.auth.session
+        session = await AuthStore.currentSession()
         isLoading = false
     }
 
-    /// Returns true when the sign-up left us with a live session. False means Supabase
+    /// The saved session, refreshed first when its access token is near expiry. Nil when signed out
+    /// or when the refresh token is no longer accepted.
+    static func currentSession() async -> Session? {
+        guard let saved = SessionKeychainStorage.load() else { return nil }
+        guard saved.expired else { return saved }
+        guard let data = try? await Backend.call("POST", "/auth/token?grant_type=refresh_token", body: ["refresh_token": saved.refresh_token]),
+              let fresh = try? Session.issued(data) else { return nil }
+        SessionKeychainStorage.save(fresh)
+        return fresh
+    }
+
+    /// Decodes and keeps a session the server just issued.
+    private func adopt(_ data: Data) throws {
+        let s = try Session.issued(data)
+        SessionKeychainStorage.save(s)
+        session = s
+    }
+
+    /// Returns true when the sign-up left us with a live session. False means the server
     /// requires email confirmation first — the caller should say so rather than looking
     /// like nothing happened.
     ///
@@ -49,13 +58,12 @@ final class AuthStore {
     /// move it to its own fetch if avatars ever grow.
     @discardableResult
     func signUp(email: String, password: String, displayName: String, avatarId: String) async throws -> Bool {
-        let result = try await supabase.auth.signUp(
-            email: email,
-            password: password,
-            data: ["display_name": .string(displayName), "avatar_id": .string(avatarId)]
-        )
-        session = result.session
-        return session != nil
+        // jaybulb-api always confirms by email first, so sign-up never returns a session.
+        _ = try await Backend.call("POST", "/auth/signup", body: [
+            "email": email, "password": password, "redirect_to": "https://lexly.jaybulb.com/app/",
+            "data": ["display_name": displayName, "avatar_id": avatarId],
+        ])
+        return false
     }
 
     /// Uses the session `signIn` already returns rather than re-reading it through
@@ -64,7 +72,7 @@ final class AuthStore {
     /// stayed signed out with nothing shown. That silent path is what App Review saw as
     /// "Sign In will load briefly and then stops" (Guideline 2.1, macOS 1.1.1).
     func signIn(email: String, password: String) async throws {
-        session = try await supabase.auth.signIn(email: email, password: password)
+        try adopt(try await Backend.call("POST", "/auth/token?grant_type=password", body: ["email": email, "password": password]))
         saveBiometricCredentials(email: email, password: password)
     }
 
@@ -109,36 +117,31 @@ final class AuthStore {
     /// collide and a later rename in Settings is never clobbered by stale signup metadata.
     func loadProfile() async -> LingoProfile? {
         guard let session else { return nil }
-        let uid = session.user.id.uuidString
-        if let existing = await fetchProfile(uid) { return existing }
-        let metadata = session.user.userMetadata
-        try? await supabase.from("lingo_profiles")
-            .upsert(["id": AnyJSON.string(uid),
-                     "display_name": AnyJSON.string(metadata["display_name"]?.stringValue ?? "Learner"),
-                     "avatar_id": AnyJSON.string(metadata["avatar_id"]?.stringValue ?? "falcon")],
-                    onConflict: "id", ignoreDuplicates: true)
-            .execute()
-        return await fetchProfile(uid)
+        if let existing = await fetchProfile(session) { return existing }
+        // A plain insert (no merge): if a row appeared meanwhile it fails and the read below returns that row.
+        _ = try? await Backend.call("POST", "/rest/lingo_profiles", body: [
+            "display_name": session.user.meta("display_name") ?? "Learner",
+            "avatar_id": session.user.meta("avatar_id") ?? "falcon",
+        ], token: session.accessToken)
+        return await fetchProfile(session)
     }
 
-    private func fetchProfile(_ uid: String) async -> LingoProfile? {
-        try? await supabase.from("lingo_profiles")
-            .select().eq("id", value: uid).single().execute().value as LingoProfile?
+    /// The server only ever returns the caller's own row.
+    private func fetchProfile(_ session: Session) async -> LingoProfile? {
+        guard let data = try? await Backend.call("GET", "/rest/lingo_profiles", token: session.accessToken) else { return nil }
+        return (try? JSONDecoder().decode([LingoProfile].self, from: data))?.first
     }
 
     func updateAvatar(_ avatarId: String) async throws {
-        guard let uid = session?.user.id.uuidString else { return }
-        try await supabase.from("lingo_profiles")
-            .update(["avatar_id": AnyJSON.string(avatarId)])
-            .eq("id", value: uid)
-            .execute()
+        guard let session else { return }
+        _ = try await Backend.call("PATCH", "/rest/lingo_profiles?id=eq.\(session.user.id)", body: ["avatar_id": avatarId], token: session.accessToken)
     }
 
     /// Every raw nonce handed to Apple since the last sign-in. The iPad sheet can fire the request
     /// twice, so the token that comes back may belong to an earlier one: match it by hash.
     private var issuedNonces: [String] = []
 
-    /// Apple hashes the nonce into the identity token; Supabase compares it against the
+    /// Apple hashes the nonce into the identity token; the server compares it against the
     /// raw value we send back.
     func prepareAppleRequest(_ request: ASAuthorizationAppleIDRequest) {
         let nonce = Self.randomNonce()
@@ -171,20 +174,11 @@ final class AuthStore {
               let nonce = Self.rawNonce(for: token, among: issuedNonces) else {
             throw URLError(.badServerResponse)
         }
-        session = try await supabase.auth.signInWithIdToken(
-            credentials: .init(provider: .apple, idToken: token, nonce: nonce)
-        )
+        var body = ["provider": "apple", "id_token": token, "nonce": nonce]
+        // Apple sends the name only on the first sign-in; keep it for the profile.
+        if let name = cred.fullName.flatMap({ PersonNameComponentsFormatter().string(from: $0) }), !name.isEmpty { body["full_name"] = name }
+        try adopt(try await Backend.call("POST", "/auth/token?grant_type=id_token", body: body))
         issuedNonces = []
-    }
-
-    /// Google has no native ID-token path, so this is the OAuth browser flow. `lexly://`
-    /// must stay in the Supabase uri_allow_list and in CFBundleURLTypes on both platforms.
-    func signInWithGoogle() async throws {
-        try await supabase.auth.signInWithOAuth(
-            provider: .google,
-            redirectTo: URL(string: "lexly://")
-        )
-        session = try await supabase.auth.session
     }
 
     static func randomNonce(length: Int = 32) -> String {
@@ -199,7 +193,8 @@ final class AuthStore {
     }
 
     func signOut() async throws {
-        try await supabase.auth.signOut()
+        if let token = session?.accessToken { _ = try? await Backend.call("POST", "/auth/logout", token: token) }
+        SessionKeychainStorage.save(nil)
         session = nil
         clearBiometricCredentials()
     }
@@ -207,21 +202,15 @@ final class AuthStore {
     /// Redirects to the web app (which already handles PASSWORD_RECOVERY) rather than
     /// building a second native new-password screen for a flow users complete over email anyway.
     func resetPassword(email: String) async throws {
-        try await supabase.auth.resetPasswordForEmail(email, redirectTo: URL(string: "https://lexly.jaybulb.com/app/"))
+        _ = try await Backend.call("POST", "/auth/recover", body: ["email": email, "redirect_to": "https://lexly.jaybulb.com/app/"])
     }
 
-    /// Calls the shared `delete-account` Edge Function on the spark Supabase project,
-    /// which uses the service-role key to delete the authenticated user server-side
-    /// (the anon-key client SDK has no permission to delete its own auth user).
+    /// Deletes the account and everything it owns on the server.
     func deleteAccount() async throws {
         guard let currentSession = session else { return }
-        var request = URLRequest(url: URL(string: "https://tjsxsqlxjmanwvmywwvw.supabase.co/functions/v1/delete-account")!)
-        request.httpMethod = "POST"
-        request.setValue("Bearer \(currentSession.accessToken)", forHTTPHeaderField: "Authorization")
-        let (_, response) = try await URLSession.shared.data(for: request)
-        guard let http = response as? HTTPURLResponse, http.statusCode == 200 else {
-            throw NSError(domain: "AuthStore", code: -1, userInfo: [NSLocalizedDescriptionKey: "Couldn't delete account. Try again."])
-        }
-        try await signOut()
+        _ = try await Backend.call("DELETE", "/auth/user", token: currentSession.accessToken)
+        SessionKeychainStorage.save(nil)
+        session = nil
+        clearBiometricCredentials()
     }
 }

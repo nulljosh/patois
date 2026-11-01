@@ -1,10 +1,5 @@
 name: lingo
 
-packages:
-  Supabase:
-    url: https://github.com/supabase/supabase-swift
-    from: "2.0.0"
-
 options:
   bundleIdPrefix: com.nulljosh
   deploymentTarget:
@@ -15,7 +10,7 @@ settings:
   base:
     SWIFT_VERSION: "5.9"
     MARKETING_VERSION: "1.1.6"
-    CURRENT_PROJECT_VERSION: "202610210745"
+    CURRENT_PROJECT_VERSION: "202610312030"
     DEVELOPMENT_TEAM: QMM486NPYC
 
 schemes:
@@ -43,8 +38,6 @@ targets:
         excludes:
           - "content/teach/**"  # web-only lessons; their file names clash with content/courses
     dependencies:
-      - package: Supabase
-        product: Supabase
       - target: LingoWidgetExtension
     entitlements:
       path: Sources/iOS/Lingo.entitlements
@@ -73,9 +66,6 @@ targets:
       - path: Sources/Resources
         excludes:
           - "content/teach/**"  # web-only lessons; their file names clash with content/courses
-    dependencies:
-      - package: Supabase
-        product: Supabase
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.lingo

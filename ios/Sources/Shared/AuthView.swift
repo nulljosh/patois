@@ -111,7 +111,7 @@ struct AuthView: View {
                     catch let error as ASAuthorizationError where error.code == .canceled { }
                     catch let error as ASAuthorizationError {
                         // The code (1000 unknown, 1001 canceled, 1002 invalid response, 1003 not handled, 1004 failed) says why.
-                        errorMessage = "Sign in with Apple isn't available on this device right now (code \((error as NSError).code)). Use email or Google instead."
+                        errorMessage = "Sign in with Apple isn't available on this device right now (code \((error as NSError).code)). Use email instead."
                     }
                     catch { errorMessage = error.localizedDescription }
 
@@ -122,33 +122,6 @@ struct AuthView: View {
             .signInWithAppleButtonStyle(.black)
 
             .frame(height: 44)
-
-
-            Button {
-
-                Task {
-
-                    do { try await auth.signInWithGoogle() }
-
-                    catch { errorMessage = error.localizedDescription }
-
-                }
-
-            } label: {
-
-                Text("Continue with Google")
-
-                    .fontWeight(.semibold)
-
-                    .frame(maxWidth: .infinity)
-
-                    .frame(height: 44)
-
-                    .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(.quaternary))
-
-            }
-
-            .buttonStyle(.plain)
 
 
             Button(action: submit) {

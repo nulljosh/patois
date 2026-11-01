@@ -15,9 +15,9 @@ final class ContentStore {
     }
 
     func syncFromCloud() async {
-        guard let uid = try? await supabase.auth.session.user.id.uuidString else { return }
-        guard let row = try? await supabase.from("lingo_progress")
-            .select().eq("id", value: uid).single().execute().value as DBProgress? else { return }
+        guard let session = await AuthStore.currentSession(),
+              let data = try? await Backend.call("GET", "/rest/lingo_progress", token: session.accessToken),
+              let row = (try? JSONDecoder().decode([DBProgress].self, from: data))?.first else { return }
         progress.xp = row.xp
         progress.streak = row.streak
         progress.hearts = row.hearts
@@ -147,7 +147,8 @@ final class ContentStore {
         WidgetCenter.shared.reloadAllTimelines()
 
         Task {
-            guard let uid = try? await supabase.auth.session.user.id.uuidString else { return }
+            guard let session = await AuthStore.currentSession() else { return }
+            let uid = session.user.id
             let row = DBProgress(
                 id: uid, xp: snap.xp, streak: snap.streak, hearts: snap.hearts,
                 completed_subjects: [], trophy_ids: [],
@@ -156,7 +157,8 @@ final class ContentStore {
                 srs: snap.srs,
                 updated_at: ISO8601DateFormatter().string(from: Date())
             )
-            try? await supabase.from("lingo_progress").upsert(row).execute()
+            guard let body = try? JSONSerialization.jsonObject(with: JSONEncoder().encode(row)) else { return }
+            _ = try? await Backend.call("POST", "/rest/lingo_progress", body: body, token: session.accessToken, prefer: "resolution=merge-duplicates")
         }
     }
 
