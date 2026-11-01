@@ -1,7 +1,5 @@
 <img src="assets/icon.svg" width="80" style="border-radius:18px">
 
-# Patois
-
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![App Store](https://img.shields.io/badge/App%20Store-Download-0D96F6?logo=appstore&logoColor=white)](https://apps.apple.com/app/id6783501611)
 
 Learn a language, or anything else, five minutes at a time. Streaks, hearts, XP. Web, iOS, macOS and Apple Watch.
