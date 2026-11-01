@@ -34,3 +34,46 @@
     items.forEach(function (e) { io.observe(e); });
   });
 })();
+
+// Hero wall: real exercises from content/courses, each card picks, gets marked right, and moves on. Decoration only.
+(function () {
+  var wall = document.getElementById('lwall'); if (!wall) return;
+  var Q = [["Spanish","Hello","Hola",["Por favor","Hola","Gracias","Adiós"]],["French","Thank you","Merci",["Bonne nuit","Merci","Bonjour","De rien"]],["Japanese","Hello","Konnichiwa",["Sayounara","Sumimasen","Konnichiwa","Arigatou"]],["Chemistry","pH of pure water?","7",["14","1","0","7"]],["Italian","Thank you","Grazie",["Buono","Ciao","Grazie","Prego"]],["Korean","Hello","Annyeonghaseyo",["Annyeonghaseyo","Kamsahamnida","Annyeong","Mianhamnida"]],["German","Hello","Hallo",["Danke","Bitte","Hallo","Tschuss"]],["Astronomy","Largest planet in the solar system?","Jupiter",["Uranus","Saturn","Jupiter","Neptune"]],["Portuguese","Thank you","Obrigado",["Tchau","Obrigado","Desculpa","Ola"]],["Spanish","Good morning","Buenos días",["Buenos días","Buenas noches","Hasta luego","De nada"]],["Chinese","Thank you","Xiexie",["Ni hao","Xiexie","Zaijian","Buke qi"]],["French","Hello","Bonjour",["Au revoir","Bonsoir","Merci","Bonjour"]],["Astronomy","Closest star to Earth?","The Sun",["Proxima Centauri","The Sun","Sirius","Alpha Centauri"]],["Chemistry","Noble gas group?","Group 18",["Group 7","Group 1","Group 14","Group 18"]],["German","Thank you","Danke",["Hallo","Bitte","Ja","Danke"]],["Japanese","Thank you","Arigatou",["Hai","Arigatou","Konnichiwa","Gomen"]]];
+  var mq = function (q) { return matchMedia(q).matches; };
+  var n = mq('(max-width: 560px)') ? 3 : mq('(max-width: 760px)') ? 6 : mq('(max-width: 1100px)') ? 9 : 12;
+  var still = mq('(prefers-reduced-motion: reduce)');
+  for (var i = 0; i < n; i++) (function (i) {
+    var el = document.createElement('div'); el.className = 'lc';
+    el.innerHTML = '<div class="lc-top"><span></span><div class="lc-bar"><i></i></div></div><p class="lc-q"></p><div class="lc-ch"></div>';
+    wall.appendChild(el);
+    var name = el.querySelector('.lc-top span'), bar = el.querySelector('.lc-bar i'), q = el.querySelector('.lc-q'), ch = el.querySelector('.lc-ch');
+    var k = i, step = (i * 37) % 5;
+    function show() {
+      var x = Q[k % Q.length]; k += n; step = (step % 5) + 1;
+      name.textContent = x[0]; bar.style.width = ((step - 1) * 20) + '%';
+      q.innerHTML = ''; var sm = document.createElement('small'); sm.textContent = x[1].length > 14 ? 'Pick one' : 'Translate'; q.append(sm, x[1]);
+      ch.innerHTML = ''; var right;
+      x[3].forEach(function (c) { var s = document.createElement('span'); s.textContent = c; ch.appendChild(s); if (c === x[2]) right = s; });
+      if (still) { right.className = 'ok'; return; }
+      setTimeout(function () { right.className = 'pick'; }, 1600 + Math.random() * 1400);
+      setTimeout(function () { right.className = 'ok'; bar.style.width = (step * 20) + '%'; }, 3300 + Math.random() * 600);
+      setTimeout(show, 5600 + Math.random() * 1500);
+    }
+    setTimeout(show, i * 450);
+  })(i);
+})();
+
+// Hero parallax: the wall drifts at 0.45, the copy lifts at 0.2 and fades. Off under reduced motion.
+(function () {
+  var bg = document.querySelector('.hero-bg'), copy = document.querySelector('.hero-copy');
+  if (!bg || !copy || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var t = 0;
+  addEventListener('scroll', function () {
+    if (t) return;
+    t = requestAnimationFrame(function () {
+      t = 0; var y = scrollY, h = innerHeight; if (y > h * 1.2) return;
+      bg.style.setProperty('--py', (y * .45) + 'px');
+      copy.style.transform = 'translate3d(0,' + (y * .2) + 'px,0)'; copy.style.opacity = Math.max(0, 1 - y / (h * .7));
+    });
+  }, { passive: true });
+})();
