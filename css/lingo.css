@@ -2,7 +2,7 @@
 @import url("neutral.css?v=20261027b");
 
 
-:root{--bg-primary:var(--bg);--bg-secondary:var(--bg2);--bg-tertiary:var(--color-code-bg);--text-primary:var(--text);--text-secondary:var(--text2);--text-muted:var(--text3);--accent-amber:var(--bulb-deep);--font:var(--font-body);--font-display:var(--font-body);--spring:var(--spring);--card-bg:var(--bg);--card-border:var(--border);--input-bg:var(--bg);--header-bg:var(--bg);--choice-selected-bg:var(--bg2);--subject-1:var(--bg2);--subject-2:var(--bg2);--subject-3:var(--bg2);--subject-4:var(--bg2);--subject-5:var(--bg2);--icon-bg:var(--bg2);--icon-border:var(--border2);
+:root{--bg-primary:var(--bg);--bg-secondary:var(--bg2);--bg-tertiary:var(--color-code-bg);--text-primary:var(--text);--text-secondary:var(--text2);--text-muted:var(--text2);--accent-amber:var(--bulb-deep);--font:var(--font-body);--font-display:var(--font-body);--spring:var(--spring);--card-bg:var(--bg);--card-border:var(--border);--input-bg:var(--bg);--header-bg:var(--bg);--choice-selected-bg:var(--bg2);--subject-1:var(--bg2);--subject-2:var(--bg2);--subject-3:var(--bg2);--subject-4:var(--bg2);--subject-5:var(--bg2);--icon-bg:var(--bg2);--icon-border:var(--border2);
     --success: #5c6f1f;
     --error: #c44040;
     --card-shadow: rgba(0, 0, 0, 0.04);
@@ -163,7 +163,7 @@ body {
 
 .category-tab {
     padding: 0.625rem 1rem;
-    color: var(--text-muted);
+    color: var(--text-secondary); /* --text-muted was 2.4:1 */
     font-size: 0.8125rem;
     font-weight: 500;
     cursor: pointer;
