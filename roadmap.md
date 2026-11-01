@@ -634,5 +634,5 @@ The earlier gaps have been addressed:
 - [ ] App Store description is stale. Are the app update descriptions accurate (live 1.1.3 says "A clearer, more legible app icon and refreshed screenshots" and shows a v1.1.0 what's new)? Can we amend them later on? Screenshot: ~/Documents/Code/notes/attachments/2026-10-25/patois-2.png
 
 ## Ingested 2026-10-30
-- [ ] Keeps getting rejected by App Review. Pull the latest Resolution Center reason (`asc web review show`) and answer it with the nine answers; send nothing without Joshua's yes.
+- [ ] (blocked: Apple review, 2026-11-01. iOS 1.1.6 is WAITING_FOR_REVIEW, so nothing is open to answer; if it comes back rejected, run cyllene-resolve) Keeps getting rejected by App Review. Pull the latest Resolution Center reason (`asc web review show`) and answer it with the nine answers; send nothing without Joshua's yes.
 - [ ] App Store super stale, they haven't accepted any app in months
