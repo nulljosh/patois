@@ -609,5 +609,3 @@ The earlier gaps have been addressed:
 - [ ] App Store screenshots are horrible. Redo them. (11-01: two new 6.9" shots in screenshots/appstore/6.9, the home without a title bar and the Spanish course, dark, from `-suppressWhatsNew YES -shotSubject spanish`. plus 03-lesson (Spanish Greetings, `-shotLesson YES`). Upload these three with the next version; 1.1.6 is in review)
 
 ## Ingested 2026-10-30
-- [ ] (blocked: Apple review, 2026-11-01. iOS 1.1.6 is WAITING_FOR_REVIEW, so nothing is open to answer; if it comes back rejected, run cyllene-resolve) Keeps getting rejected by App Review. Pull the latest Resolution Center reason (`asc web review show`) and answer it with the nine answers; send nothing without Joshua's yes.
-- [ ] App Store super stale, they haven't accepted any app in months
