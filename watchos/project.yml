@@ -14,12 +14,12 @@ targets:
     type: application
     platform: watchOS
     sources:
-      - path: .
-        excludes:
-          - "*.xcodeproj"
-          - "*.yml"
-          - "*.md"
-          - "*.svg"
+      - LexlyWatchApp.swift
+      - ContentView.swift
+      - Models
+      - Views
+      - Settings
+      - Assets.xcassets
     settings:
       INFOPLIST_FILE: ""
       GENERATE_INFOPLIST_FILE: YES

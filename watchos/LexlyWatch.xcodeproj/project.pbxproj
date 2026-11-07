@@ -9,22 +9,22 @@
 /* Begin PBXBuildFile section */
 		1C7C1EEF2CBCA125DEEA1299 /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01118EB431FBDDF2793535 /* StreakView.swift */; };
 		21A0361F4EAD044DEDE6CB93 /* WatchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C1968988B5E3731383AD06 /* WatchModels.swift */; };
-		7303A6767FDCC6FCA2BE97A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB5737DAA8C5596DDF10BD7 /* ContentView.swift */; };
+		21FF3398CCAF9F1E9E95C02D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6838FAB228CB81234088D7B2 /* Assets.xcassets */; };
 		94A10EF2CE0CBD1441A2AB7E /* WatchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B06D9FF7019E8CA36979 /* WatchAPI.swift */; };
 		9F01D11913B56777D92E7429 /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE832DBE14B89EB2485C56 /* PairingView.swift */; };
-		B451B3FBCDD00BA0F59BF407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0729CCCB9E39DB83B4B8B8E5 /* Assets.xcassets */; };
-		B9D20C5E5A3E2D9D515C4F3F /* LexlyWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280BA13ACFD0CFC3FF053EC0 /* LexlyWatchApp.swift */; };
+		A64B87DFBB7E0FA6FA95D4F2 /* LexlyWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586638F51F6BE426F2AEF944 /* LexlyWatchApp.swift */; };
+		CF196D51F8FD13D9CF7EA074 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16AC3D8A514AE3C19CDE668 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0729CCCB9E39DB83B4B8B8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A01118EB431FBDDF2793535 /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
-		280BA13ACFD0CFC3FF053EC0 /* LexlyWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexlyWatchApp.swift; sourceTree = "<group>"; };
 		56C1968988B5E3731383AD06 /* WatchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModels.swift; sourceTree = "<group>"; };
+		586638F51F6BE426F2AEF944 /* LexlyWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexlyWatchApp.swift; sourceTree = "<group>"; };
+		6838FAB228CB81234088D7B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B9E20AA7C962995B487CA75 /* LexlyWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LexlyWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCE832DBE14B89EB2485C56 /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
 		9F66B06D9FF7019E8CA36979 /* WatchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAPI.swift; sourceTree = "<group>"; };
-		FEB5737DAA8C5596DDF10BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A16AC3D8A514AE3C19CDE668 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -43,20 +43,6 @@
 				56C1968988B5E3731383AD06 /* WatchModels.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		5B2853F901B910F0285A1AD3 /* watchos */ = {
-			isa = PBXGroup;
-			children = (
-				0729CCCB9E39DB83B4B8B8E5 /* Assets.xcassets */,
-				FEB5737DAA8C5596DDF10BD7 /* ContentView.swift */,
-				280BA13ACFD0CFC3FF053EC0 /* LexlyWatchApp.swift */,
-				4F8D28FCF3020A1A62FBB28B /* Models */,
-				C47719C005E81D030F1E4286 /* Settings */,
-				803BEE3BD84C02A8B7293D66 /* Views */,
-			);
-			name = watchos;
-			path = .;
 			sourceTree = "<group>";
 		};
 		803BEE3BD84C02A8B7293D66 /* Views */ = {
@@ -78,10 +64,12 @@
 		F54F81BBDD7E73D66A7ACD94 = {
 			isa = PBXGroup;
 			children = (
+				6838FAB228CB81234088D7B2 /* Assets.xcassets */,
+				A16AC3D8A514AE3C19CDE668 /* ContentView.swift */,
+				586638F51F6BE426F2AEF944 /* LexlyWatchApp.swift */,
 				4F8D28FCF3020A1A62FBB28B /* Models */,
 				C47719C005E81D030F1E4286 /* Settings */,
 				803BEE3BD84C02A8B7293D66 /* Views */,
-				5B2853F901B910F0285A1AD3 /* watchos */,
 				1A78F867BC25D5AA914F712F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,7 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B451B3FBCDD00BA0F59BF407 /* Assets.xcassets in Resources */,
+				21FF3398CCAF9F1E9E95C02D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,8 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7303A6767FDCC6FCA2BE97A5 /* ContentView.swift in Sources */,
-				B9D20C5E5A3E2D9D515C4F3F /* LexlyWatchApp.swift in Sources */,
+				CF196D51F8FD13D9CF7EA074 /* ContentView.swift in Sources */,
+				A64B87DFBB7E0FA6FA95D4F2 /* LexlyWatchApp.swift in Sources */,
 				9F01D11913B56777D92E7429 /* PairingView.swift in Sources */,
 				1C7C1EEF2CBCA125DEEA1299 /* StreakView.swift in Sources */,
 				94A10EF2CE0CBD1441A2AB7E /* WatchAPI.swift in Sources */,
@@ -304,7 +292,7 @@
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nulljosh.lingo.watchos;
-				PRODUCT_NAME = Lexly;
+				PRODUCT_NAME = Patois;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -319,7 +307,7 @@
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nulljosh.lingo.watchos;
-				PRODUCT_NAME = Lexly;
+				PRODUCT_NAME = Patois;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
