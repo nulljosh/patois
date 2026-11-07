@@ -1848,6 +1848,7 @@ function loadQuestion() {
     feedback.textContent = '';
     gameState.currentAnswer = null;
     gameState.answerWords = [];
+    gameState.chessStep = 0;
     const button = document.getElementById('checkBtn');
     button.textContent = 'Check';
     button.onclick = checkAnswer;
@@ -1855,7 +1856,17 @@ function loadQuestion() {
     renderQuestion(question);
 }
 
+// A chess line plays out move by move: after a right move the board answers with the
+// opponent's reply and asks for the next one. Step 0 is the exercise itself.
+function chessView(question) {
+    const step = question.steps?.[(gameState.chessStep || 0) - 1];
+    if (!step) return question;
+    const side = step.fen.split(' ')[1] === 'w' ? 'White' : 'Black';
+    return { ...question, question: `${step.reply} is the reply. ${side} to move, find the next move.`, fen: step.fen, answer: step.answer, choices: step.choices };
+}
+
 function renderQuestion(question) {
+    const shown = chessView(question);
     const container = document.getElementById('questionContainer');
     container.textContent = '';
     const isLanguage = LANGUAGE_SUBJECTS.has(gameState.selectedSubject);
@@ -1870,9 +1881,9 @@ function renderQuestion(question) {
 
         const questionText = document.createElement('div');
         questionText.className = 'question-text';
-        questionText.textContent = question.question;
+        questionText.textContent = shown.question;
         container.appendChild(questionText);
-        if (question.fen) container.appendChild(renderChessBoard(question.fen));
+        if (shown.fen) container.appendChild(renderChessBoard(shown.fen));
 
         if (hasSpeech && question.type === 'translation') {
             const micBtn = document.createElement('button');
@@ -1886,7 +1897,7 @@ function renderQuestion(question) {
         const choicesDiv = document.createElement('div');
         choicesDiv.className = 'choices-container';
         choicesDiv.setAttribute('role', 'radiogroup');
-        question.choices.forEach((choice, index) => {
+        shown.choices.forEach((choice, index) => {
             const btn = document.createElement('button');
             btn.className = 'choice-btn';
             btn.dataset.choice = choice;
@@ -2267,18 +2278,25 @@ function checkAnswer() {
     gameState.answered = true;
 
     const question = gameState.currentQuestionData;
+    const shown = chessView(question);
     let isCorrect = false;
 
     if (question.type === 'match') {
         isCorrect = !gameState.matchState?.missed;
     } else if (question.type === 'translation' || question.type === 'mathChoice' || question.type === 'cloze' || question.type === 'chess' || question.type === 'sentence') {
-        isCorrect = gameState.currentAnswer === question.answer;
+        isCorrect = gameState.currentAnswer === shown.answer;
     } else if (question.type === 'listening') {
         const input = document.getElementById('listeningInput')?.value.trim();
         isCorrect = input?.toLowerCase() === question.answer.toLowerCase();
     } else if (question.type === 'math') {
         const input = document.getElementById('mathInput')?.value.trim();
         isCorrect = input?.replace(/\s/g, '').toLowerCase() === question.answer.replace(/\s/g, '').toLowerCase();
+    }
+
+    // A right move with more of the line to play is not graded yet: the board answers back.
+    if (isCorrect && (gameState.chessStep || 0) < (question.steps?.length || 0)) {
+        showChessReply(question, shown);
+        return;
     }
 
     if (question.id) updateSrs(question.id, isCorrect ? 5 : 1);
@@ -2314,7 +2332,7 @@ function checkAnswer() {
         feedback.className = 'feedback incorrect show';
         feedback.textContent = 'Incorrect. The answer is: ';
         const strong = document.createElement('strong');
-        strong.textContent = question.answer;
+        strong.textContent = shown.answer;
         feedback.appendChild(strong);
         appendExplain(feedback, question);
         appendTeach(feedback, question);
@@ -2339,7 +2357,7 @@ function checkAnswer() {
     if (question.type === 'translation' || question.type === 'mathChoice' || question.type === 'cloze' || question.type === 'chess') {
         document.querySelectorAll('.choice-btn').forEach((item) => {
             item.style.pointerEvents = 'none';
-            if (item.dataset.choice === question.answer) item.classList.add('correct');
+            if (item.dataset.choice === shown.answer) item.classList.add('correct');
             else if (item.classList.contains('selected')) item.classList.add('incorrect');
         });
     }
@@ -2347,6 +2365,30 @@ function checkAnswer() {
     if (gameState.hearts <= 0) {
         setTimeout(() => showResults(), 1500);
     }
+}
+
+function showChessReply(question, shown) {
+    document.querySelectorAll('.choice-btn').forEach((item) => {
+        item.style.pointerEvents = 'none';
+        if (item.dataset.choice === shown.answer) item.classList.add('correct');
+    });
+    const reply = question.steps[gameState.chessStep || 0].reply;
+    const feedback = document.getElementById('feedback');
+    feedback.className = 'feedback correct show';
+    feedback.textContent = `Good. The reply is ${reply}.`;
+    vibrate(30);
+    const button = document.getElementById('checkBtn');
+    button.textContent = 'Next move';
+    button.onclick = () => {
+        gameState.chessStep = (gameState.chessStep || 0) + 1;
+        gameState.answered = false;
+        gameState.currentAnswer = null;
+        feedback.classList.remove('show', 'correct', 'incorrect');
+        feedback.textContent = '';
+        button.textContent = 'Check';
+        button.onclick = checkAnswer;
+        renderQuestion(question);
+    };
 }
 
 function vibrate(pattern) {

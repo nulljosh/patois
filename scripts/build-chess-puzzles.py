@@ -8,6 +8,11 @@
 # Distractors are legal moves (checks and captures first, so they look
 # plausible) and never also mate, since Lichess accepts any mate in one.
 #
+# line=True puzzles also carry `steps`: after the first move the board answers
+# with the opponent's reply and asks for the next move, so the learner plays the
+# whole combination. Each step is {reply, fen, answer, choices}, built from the
+# line in `explain`, so shipped exercises gain steps without new ids.
+#
 # The 307MB database is streamed and never written to disk; reading stops as
 # soon as every theme bucket is full.
 #
@@ -93,9 +98,58 @@ def exercise(row, theme, rnd):
     }
 
 
+def distractors(board, best, rnd):
+    mates = lambda m: (board.push(m), board.is_checkmate(), board.pop())[1]
+    others = [m for m in board.legal_moves if m != best and not mates(m)]
+    loud = [m for m in others if board.is_capture(m) or board.gives_check(m)]
+    quiet = [m for m in others if m not in loud]
+    rnd.shuffle(loud); rnd.shuffle(quiet)
+    return [board.san(m) for m in (loud + quiet)[:3]]
+
+
+def steps_for(ex, rnd):
+    # The line is stored in SAN in the explanation: "Ne7+ starts it: Ne7+ Kf7 Nxf5."
+    if ' starts it: ' not in ex['explain']:
+        return []
+    line = ex['explain'].split(' starts it: ', 1)[1].split('.', 1)[0].split()
+    b = chess.Board(ex['fen'])
+    b.push_san(line[0])
+    steps = []
+    for i in range(1, len(line) - 1, 2):
+        reply = line[i]
+        b.push_san(reply)
+        best = b.parse_san(line[i + 1])
+        picks = distractors(b, best, rnd)
+        if len(picks) < 3:
+            break      # ponytail: a forced step with no real choice ends the exercise early
+        answer = b.san(best)
+        choices = picks[:]
+        choices.insert(rnd.randrange(4), answer)
+        steps.append({'reply': reply, 'fen': b.fen(), 'answer': answer, 'choices': choices})
+        b.push(best)
+    return steps
+
+
+def add_steps(pack):
+    rnd = random.Random(11)
+    n = 0
+    for u in pack['units']:
+        if not str(u['id']).startswith(PREFIX):
+            continue
+        for l in u['lessons']:
+            for ex in l['exercises']:
+                if 'steps' not in ex and (st := steps_for(ex, rnd)):
+                    ex['steps'] = st; n += 1
+    return n
+
+
 def build():
     rnd = random.Random(7)
     pack = json.loads(PACK.read_text())
+    if (n := add_steps(pack)):
+        pack['version'] = pack.get('version', 1) + 1
+        PACK.write_text(json.dumps(pack, indent=2, ensure_ascii=False) + '\n')
+        print(f'added steps to {n} line puzzles', file=sys.stderr)
     # Units already shipped stay exactly as they are (saved progress points at
     # their exercise ids); only themes without a unit yet get built.
     have = {u['title'] for u in pack['units'] if str(u['id']).startswith(PREFIX)}
@@ -143,6 +197,7 @@ def build():
             lessons.append({'id': f'{PREFIX}{n}l{l + 1}', 'title': f'Puzzles {l + 1}', 'exercises': exs})
         pack['units'].append({'id': f'{PREFIX}{n}', 'title': title, 'tip': tip, 'lessons': lessons})
         print(f'{title}: {PER_UNIT} puzzles, rated {chosen[0]["_rating"]}-{chosen[-1]["_rating"]}', file=sys.stderr)
+    add_steps(pack)
     pack['version'] = pack.get('version', 1) + 1
     PACK.write_text(json.dumps(pack, indent=2, ensure_ascii=False) + '\n')
 
@@ -164,6 +219,17 @@ def check():
                     assert not (mate and c != ex['answer']), f"{ex['id']}: distractor {c} also mates"
                     if u['title'] == 'Mate in One' and c == ex['answer']:
                         assert mate, f"{ex['id']}: answer does not mate"
+                b2 = b.copy(); b2.push_san(ex['answer'])
+                for st in ex.get('steps', []):
+                    b2.push_san(st['reply'])
+                    assert b2.fen() == st['fen'], f"{ex['id']}: step fen drift"
+                    legal2 = {b2.san(m): m for m in b2.legal_moves}
+                    assert st['answer'] in st['choices'] and len(set(st['choices'])) == 4, ex['id']
+                    assert all(c in legal2 for c in st['choices']), f"{ex['id']}: illegal step choice"
+                    for c in st['choices']:
+                        b2.push(legal2[c]); mate = b2.is_checkmate(); b2.pop()
+                        assert not (mate and c != st['answer']), f"{ex['id']}: step distractor {c} also mates"
+                    b2.push(legal2[st['answer']])
                 n += 1
     assert n, 'no puzzle exercises found'
     print(f'chess puzzles ok: {n} replayed')

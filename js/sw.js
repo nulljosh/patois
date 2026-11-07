@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'tonchi-v7';
+const CACHE_VERSION = 'tonchi-v8';
 
 const APP_SHELL = [
     './',

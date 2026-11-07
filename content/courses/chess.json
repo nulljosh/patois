@@ -4,7 +4,7 @@
   "category": "skills",
   "icon": "fa-solid fa-chess",
   "level": "Strategy & Tactics",
-  "version": 5,
+  "version": 6,
   "units": [
     {
       "id": "u1",
@@ -2331,7 +2331,20 @@
                 "Nb8"
               ],
               "explain": "Ne7+ starts it: Ne7+ Kf7 Nxf5. Lichess puzzle 009tE, rated 624.",
-              "id": "chess_lp9l1_0"
+              "id": "chess_lp9l1_0",
+              "steps": [
+                {
+                  "reply": "Kf7",
+                  "fen": "8/4Nkpp/p7/1pP2bp1/5P2/8/PPP5/3K4 w - - 2 30",
+                  "answer": "Nxf5",
+                  "choices": [
+                    "fxg5",
+                    "c3",
+                    "Nxf5",
+                    "Ke2"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2345,7 +2358,20 @@
                 "c6"
               ],
               "explain": "Nf4+ starts it: Nf4+ Kc6 Nxe2. Lichess puzzle 00K0G, rated 777.",
-              "id": "chess_lp9l1_1"
+              "id": "chess_lp9l1_1",
+              "steps": [
+                {
+                  "reply": "Kc6",
+                  "fen": "8/8/2k5/2P5/pK3Np1/8/4bP2/8 w - - 10 61",
+                  "answer": "Nxe2",
+                  "choices": [
+                    "Nxe2",
+                    "Kxa4",
+                    "Ng2",
+                    "Ka5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2359,7 +2385,20 @@
                 "Rxh6"
               ],
               "explain": "Ne7+ starts it: Ne7+ Kf7 Nxc8. Lichess puzzle 00IEW, rated 843.",
-              "id": "chess_lp9l1_2"
+              "id": "chess_lp9l1_2",
+              "steps": [
+                {
+                  "reply": "Kf7",
+                  "fen": "2r5/4Nkp1/R6p/3P4/8/3K4/5b2/8 w - - 8 59",
+                  "answer": "Nxc8",
+                  "choices": [
+                    "Rf6+",
+                    "Rxh6",
+                    "Rb6",
+                    "Nxc8"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2373,7 +2412,20 @@
                 "Nxf6+"
               ],
               "explain": "Nxf6+ starts it: Nxf6+ Qxf6 Qxf6. Lichess puzzle 004nd, rated 898.",
-              "id": "chess_lp9l1_3"
+              "id": "chess_lp9l1_3",
+              "steps": [
+                {
+                  "reply": "Qxf6",
+                  "fen": "6k1/3r4/pp3q1Q/2b1n3/P7/2P5/1P4PP/R6K w - - 0 26",
+                  "answer": "Qxf6",
+                  "choices": [
+                    "Qg7+",
+                    "Qxf6",
+                    "Qg5+",
+                    "Qf8+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2387,7 +2439,20 @@
                 "Nxg4"
               ],
               "explain": "Nxf3+ starts it: Nxf3+ Ke2 Nxd2. Lichess puzzle 00Kxt, rated 932.",
-              "id": "chess_lp9l1_4"
+              "id": "chess_lp9l1_4",
+              "steps": [
+                {
+                  "reply": "Ke2",
+                  "fen": "r2q1r2/p3ppkp/3p2P1/1N6/4P1P1/5n2/PPPQK3/R6R b - - 1 17",
+                  "answer": "Nxd2",
+                  "choices": [
+                    "Nxd2",
+                    "hxg6",
+                    "Nd4+",
+                    "Kxg6"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -2407,7 +2472,20 @@
                 "Nxd5"
               ],
               "explain": "Qc5+ starts it: Qc5+ Kh1 Qxc4. Lichess puzzle 001wr, rated 989.",
-              "id": "chess_lp9l2_0"
+              "id": "chess_lp9l2_0",
+              "steps": [
+                {
+                  "reply": "Kh1",
+                  "fen": "r4rk1/p3ppbp/Pp3np1/2qPpbB1/2B5/2N2P2/1PPQ2PP/3RR2K b - - 2 19",
+                  "answer": "Qxc4",
+                  "choices": [
+                    "Qxd5",
+                    "Qxc4",
+                    "Qg1+",
+                    "Nxd5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2421,7 +2499,31 @@
                 "Ba5"
               ],
               "explain": "Rd8+ starts it: Rd8+ Kh7 Qd3+ Qg6 Qxe2. Lichess puzzle 00Nej, rated 1008.",
-              "id": "chess_lp9l2_1"
+              "id": "chess_lp9l2_1",
+              "steps": [
+                {
+                  "reply": "Kh7",
+                  "fen": "3R4/1p3ppk/pB2q2p/2P1b3/1P6/6QP/4r1P1/7K w - - 7 35",
+                  "answer": "Qd3+",
+                  "choices": [
+                    "Qxe5",
+                    "Rh8+",
+                    "Qg6+",
+                    "Qd3+"
+                  ]
+                },
+                {
+                  "reply": "Qg6",
+                  "fen": "3R4/1p3ppk/pB4qp/2P1b3/1P6/3Q3P/4r1P1/7K w - - 9 36",
+                  "answer": "Qxe2",
+                  "choices": [
+                    "Qxa6",
+                    "Rh8+",
+                    "Qxg6+",
+                    "Qxe2"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2435,7 +2537,20 @@
                 "Nxe7+"
               ],
               "explain": "Nxe7+ starts it: Nxe7+ Kh8 Nxd5. Lichess puzzle 00BJm, rated 1088.",
-              "id": "chess_lp9l2_2"
+              "id": "chess_lp9l2_2",
+              "steps": [
+                {
+                  "reply": "Kh8",
+                  "fen": "r4r1k/1Q2Nppp/p3p3/1p1q4/2pP1n2/2P5/PP3PPP/R4RK1 w - - 1 20",
+                  "answer": "Nxd5",
+                  "choices": [
+                    "Qxa8",
+                    "Ng6+",
+                    "Qxd5",
+                    "Nxd5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2449,7 +2564,31 @@
                 "Nf3+"
               ],
               "explain": "Ne2+ starts it: Ne2+ Kh1 Nxg3+ fxg3 Rxd2. Lichess puzzle 00Aas, rated 1111.",
-              "id": "chess_lp9l2_3"
+              "id": "chess_lp9l2_3",
+              "steps": [
+                {
+                  "reply": "Kh1",
+                  "fen": "3r1rk1/1p2q1pp/5p2/8/1P6/6Q1/PPBBnPPP/R4R1K b - - 2 21",
+                  "answer": "Nxg3+",
+                  "choices": [
+                    "Rxd2",
+                    "Nxg3+",
+                    "Qxb4",
+                    "Qc5"
+                  ]
+                },
+                {
+                  "reply": "fxg3",
+                  "fen": "3r1rk1/1p2q1pp/5p2/8/1P6/6P1/PPBB2PP/R4R1K b - - 0 22",
+                  "answer": "Rxd2",
+                  "choices": [
+                    "Qxb4",
+                    "Qe4",
+                    "Rxd2",
+                    "Qe3"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2463,7 +2602,31 @@
                 "Rxh7"
               ],
               "explain": "Rxg3+ starts it: Rxg3+ Bxg3 Rg5+ Kf7 Rxg3. Lichess puzzle 0050w, rated 1131.",
-              "id": "chess_lp9l2_4"
+              "id": "chess_lp9l2_4",
+              "steps": [
+                {
+                  "reply": "Bxg3",
+                  "fen": "5rk1/1p2p2p/p2p4/2pP3R/2P1P3/1P1BKPb1/8/8 w - - 0 32",
+                  "answer": "Rg5+",
+                  "choices": [
+                    "Rxh7",
+                    "Rg5+",
+                    "Ke2",
+                    "f4"
+                  ]
+                },
+                {
+                  "reply": "Kf7",
+                  "fen": "5r2/1p2pk1p/p2p4/2pP2R1/2P1P3/1P1BKPb1/8/8 w - - 2 33",
+                  "answer": "Rxg3",
+                  "choices": [
+                    "Rxg3",
+                    "Rf5+",
+                    "Rg7+",
+                    "Rh5"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -2483,7 +2646,20 @@
                 "Qxh7+"
               ],
               "explain": "d5 starts it: d5 Qe5 dxc6. Lichess puzzle 00O8m, rated 1376.",
-              "id": "chess_lp9l3_0"
+              "id": "chess_lp9l3_0",
+              "steps": [
+                {
+                  "reply": "Qe5",
+                  "fen": "r3r1k1/ppp2ppp/2nn4/3Pq3/8/P1P1P1P1/2Q3BP/R1B1KR2 w Q - 1 18",
+                  "answer": "dxc6",
+                  "choices": [
+                    "Qxh7+",
+                    "Rxf7",
+                    "dxc6",
+                    "Rf5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2497,7 +2673,31 @@
                 "Bd5+"
               ],
               "explain": "Bd5+ starts it: Bd5+ Kf8 Rf7+ Ke8 Bxc4. Lichess puzzle 00HDS, rated 1462.",
-              "id": "chess_lp9l3_1"
+              "id": "chess_lp9l3_1",
+              "steps": [
+                {
+                  "reply": "Kf8",
+                  "fen": "5k2/pp2R3/6pp/3B4/2r5/P5bP/1P4P1/6K1 w - - 6 40",
+                  "answer": "Rf7+",
+                  "choices": [
+                    "Bxb7",
+                    "Rxb7",
+                    "Bxc4",
+                    "Rf7+"
+                  ]
+                },
+                {
+                  "reply": "Ke8",
+                  "fen": "4k3/pp3R2/6pp/3B4/2r5/P5bP/1P4P1/6K1 w - - 8 41",
+                  "answer": "Bxc4",
+                  "choices": [
+                    "Rxb7",
+                    "Bxc4",
+                    "Re7+",
+                    "Bxb7"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2511,7 +2711,20 @@
                 "Qxf7"
               ],
               "explain": "Qf6+ starts it: Qf6+ Rg7 Qxh6+. Lichess puzzle 00Myw, rated 1523.",
-              "id": "chess_lp9l3_2"
+              "id": "chess_lp9l3_2",
+              "steps": [
+                {
+                  "reply": "Rg7",
+                  "fen": "r1b4k/2q2pr1/1n2pQ1n/p2pP1NP/P1pP2P1/1pP5/1P3PB1/R3R1K1 w - - 7 28",
+                  "answer": "Qxh6+",
+                  "choices": [
+                    "Bxd5",
+                    "Qxg7+",
+                    "Qxh6+",
+                    "Qxf7"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2525,7 +2738,31 @@
                 "Bxg6"
               ],
               "explain": "Bxc4 starts it: Bxc4 Nxc4 Qa4+ Qd7 Qxc4. Lichess puzzle 0017R, rated 1655.",
-              "id": "chess_lp9l3_3"
+              "id": "chess_lp9l3_3",
+              "steps": [
+                {
+                  "reply": "Nxc4",
+                  "fen": "r2qk2r/pp2ppbp/3p2p1/3P4/2n5/2N1BP1P/PP3P2/R2QK2R w KQkq - 0 14",
+                  "answer": "Qa4+",
+                  "choices": [
+                    "Bxa7",
+                    "Qa4+",
+                    "Rh2",
+                    "Rc1"
+                  ]
+                },
+                {
+                  "reply": "Qd7",
+                  "fen": "r3k2r/pp1qppbp/3p2p1/3P4/Q1n5/2N1BP1P/PP3P2/R3K2R w KQkq - 2 15",
+                  "answer": "Qxc4",
+                  "choices": [
+                    "Qxa7",
+                    "Qxc4",
+                    "Qxd7+",
+                    "Bxa7"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2539,7 +2776,31 @@
                 "Qe8+"
               ],
               "explain": "Rxb8 starts it: Rxb8 Rxb8 Qc7 Rc8 Qxe5. Lichess puzzle 00Hpe, rated 1768.",
-              "id": "chess_lp9l3_4"
+              "id": "chess_lp9l3_4",
+              "steps": [
+                {
+                  "reply": "Rxb8",
+                  "fen": "1r4k1/4Qppp/q3p3/p2pn3/3N4/4P2P/5PP1/R5K1 w - - 0 31",
+                  "answer": "Qc7",
+                  "choices": [
+                    "Qe8+",
+                    "Qd8+",
+                    "Qxe6",
+                    "Qc7"
+                  ]
+                },
+                {
+                  "reply": "Rc8",
+                  "fen": "2r3k1/2Q2ppp/q3p3/p2pn3/3N4/4P2P/5PP1/R5K1 w - - 2 32",
+                  "answer": "Qxe5",
+                  "choices": [
+                    "Qxe5",
+                    "Rxa5",
+                    "Qd8+",
+                    "Qxc8+"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -2566,7 +2827,20 @@
                 "Rh1+"
               ],
               "explain": "Rh1+ starts it: Rh1+ Kg2 Rxa1. Lichess puzzle 01xzs, rated 736.",
-              "id": "chess_lp10l1_0"
+              "id": "chess_lp10l1_0",
+              "steps": [
+                {
+                  "reply": "Kg2",
+                  "fen": "r5k1/6pp/p1R5/4Pp2/1P3P2/4P3/1P3PK1/R6r b - - 4 29",
+                  "answer": "Rxa1",
+                  "choices": [
+                    "Rh2+",
+                    "Rg1+",
+                    "Rh3",
+                    "Rxa1"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2580,7 +2854,20 @@
                 "Rb8"
               ],
               "explain": "Rc8+ starts it: Rc8+ Kd7 Rxc3. Lichess puzzle 006yP, rated 819.",
-              "id": "chess_lp10l1_1"
+              "id": "chess_lp10l1_1",
+              "steps": [
+                {
+                  "reply": "Kd7",
+                  "fen": "2R5/3k4/Kp2p3/1p1pP3/6P1/PPr5/8/8 w - - 2 42",
+                  "answer": "Rxc3",
+                  "choices": [
+                    "Rc7+",
+                    "Kxb6",
+                    "Rxc3",
+                    "Kxb5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2594,7 +2881,20 @@
                 "Ke7"
               ],
               "explain": "Rh5+ starts it: Rh5+ Kd6 Rxa5. Lichess puzzle 0100g, rated 873.",
-              "id": "chess_lp10l1_2"
+              "id": "chess_lp10l1_2",
+              "steps": [
+                {
+                  "reply": "Kd6",
+                  "fen": "8/8/3K1k2/R6r/2P5/8/P7/8 b - - 4 44",
+                  "answer": "Rxa5",
+                  "choices": [
+                    "Rd5+",
+                    "Kg6",
+                    "Rc5",
+                    "Rxa5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2608,7 +2908,20 @@
                 "Bc2"
               ],
               "explain": "Bg4+ starts it: Bg4+ Ke5 Bxd7. Lichess puzzle 01iaw, rated 942.",
-              "id": "chess_lp10l1_3"
+              "id": "chess_lp10l1_3",
+              "steps": [
+                {
+                  "reply": "Ke5",
+                  "fen": "8/p2r3p/8/4k3/4P1B1/3p2P1/PP3K1P/8 w - - 6 34",
+                  "answer": "Bxd7",
+                  "choices": [
+                    "Be6",
+                    "h4",
+                    "Bxd7",
+                    "Kg2"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2622,7 +2935,20 @@
                 "Rd8+"
               ],
               "explain": "Rd8+ starts it: Rd8+ Kc6 Rxd2. Lichess puzzle 029B5, rated 957.",
-              "id": "chess_lp10l1_4"
+              "id": "chess_lp10l1_4",
+              "steps": [
+                {
+                  "reply": "Kc6",
+                  "fen": "3R4/6p1/2k3pp/Bp2n3/2p3PP/2P3K1/3r4/8 w - - 11 43",
+                  "answer": "Rxd2",
+                  "choices": [
+                    "Rd6+",
+                    "Rc8+",
+                    "Rg8",
+                    "Rxd2"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -2642,7 +2968,20 @@
                 "Qxb4+"
               ],
               "explain": "Qb5+ starts it: Qb5+ Kb3 Qxe2. Lichess puzzle 025y9, rated 995.",
-              "id": "chess_lp10l2_0"
+              "id": "chess_lp10l2_0",
+              "steps": [
+                {
+                  "reply": "Kb3",
+                  "fen": "5rk1/6pp/p1p1p3/1q2P3/1P6/1KP3P1/P3Q2P/3R4 b - - 2 29",
+                  "answer": "Qxe2",
+                  "choices": [
+                    "Qd5+",
+                    "Qa4+",
+                    "Qxe5",
+                    "Qxe2"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2656,7 +2995,42 @@
                 "Qf8+"
               ],
               "explain": "Qxh7+ starts it: Qxh7+ Kf8 Qh8+ Qxh8 Rxh8+ Kg7 Rxe8. Lichess puzzle 015jf, rated 1079.",
-              "id": "chess_lp10l2_1"
+              "id": "chess_lp10l2_1",
+              "steps": [
+                {
+                  "reply": "Kf8",
+                  "fen": "4rk2/1p3p1Q/p3p1p1/3b4/7R/1P1P1P2/2r3PP/q3NK1R w - - 1 26",
+                  "answer": "Qh8+",
+                  "choices": [
+                    "Qh8+",
+                    "Qxg6",
+                    "Qg8+",
+                    "Qh6+"
+                  ]
+                },
+                {
+                  "reply": "Qxh8",
+                  "fen": "4rk1q/1p3p2/p3p1p1/3b4/7R/1P1P1P2/2r3PP/4NK1R w - - 0 27",
+                  "answer": "Rxh8+",
+                  "choices": [
+                    "Nxc2",
+                    "Re4",
+                    "Kg1",
+                    "Rxh8+"
+                  ]
+                },
+                {
+                  "reply": "Kg7",
+                  "fen": "4r2R/1p3pk1/p3p1p1/3b4/8/1P1P1P2/2r3PP/4NK1R w - - 1 28",
+                  "answer": "Rxe8",
+                  "choices": [
+                    "Rg8+",
+                    "Nxc2",
+                    "Rh7+",
+                    "Rxe8"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2670,7 +3044,20 @@
                 "Qg7+"
               ],
               "explain": "Qh8+ starts it: Qh8+ Ke6 Qxc3. Lichess puzzle 00AB1, rated 1107.",
-              "id": "chess_lp10l2_2"
+              "id": "chess_lp10l2_2",
+              "steps": [
+                {
+                  "reply": "Ke6",
+                  "fen": "7Q/8/3pk1p1/1p6/2b5/2q4P/5PPK/8 w - - 2 38",
+                  "answer": "Qxc3",
+                  "choices": [
+                    "Qf6+",
+                    "Qe5+",
+                    "Qxc3",
+                    "Qg8+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2684,7 +3071,20 @@
                 "Rb7+"
               ],
               "explain": "Rb7+ starts it: Rb7+ Kxa4 Rxb1. Lichess puzzle 00sXv, rated 1121.",
-              "id": "chess_lp10l2_3"
+              "id": "chess_lp10l2_3",
+              "steps": [
+                {
+                  "reply": "Kxa4",
+                  "fen": "8/1r3pp1/2k1p2p/8/K2PP3/5PP1/6P1/1R6 b - - 0 36",
+                  "answer": "Rxb1",
+                  "choices": [
+                    "Rb4+",
+                    "Ra7+",
+                    "Rxb1",
+                    "e5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2698,7 +3098,31 @@
                 "Ra8"
               ],
               "explain": "Ra3+ starts it: Ra3+ Kc2 Rxa2+ Kb3 Rxf2. Lichess puzzle 02F4S, rated 1180.",
-              "id": "chess_lp10l2_4"
+              "id": "chess_lp10l2_4",
+              "steps": [
+                {
+                  "reply": "Kc2",
+                  "fen": "8/4n1k1/4P3/3p2PP/1p1P4/r7/P1K2R2/8 b - - 3 48",
+                  "answer": "Rxa2+",
+                  "choices": [
+                    "Rc3+",
+                    "b3+",
+                    "Nc8",
+                    "Rxa2+"
+                  ]
+                },
+                {
+                  "reply": "Kb3",
+                  "fen": "8/4n1k1/4P3/3p2PP/1p1P4/1K6/r4R2/8 b - - 1 49",
+                  "answer": "Rxf2",
+                  "choices": [
+                    "Rb2+",
+                    "Rxf2",
+                    "Ra3+",
+                    "Ng8"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -2718,7 +3142,20 @@
                 "Rxf3+"
               ],
               "explain": "Bh4+ starts it: Bh4+ Kh2 Bxe1. Lichess puzzle 00Q4v, rated 1228.",
-              "id": "chess_lp10l3_0"
+              "id": "chess_lp10l3_0",
+              "steps": [
+                {
+                  "reply": "Kh2",
+                  "fen": "8/2p5/q1Pp2k1/3Pp3/4Pr1b/1Q3P2/3N2PK/4R3 b - - 4 48",
+                  "answer": "Bxe1",
+                  "choices": [
+                    "Bxe1",
+                    "Rxf3",
+                    "Bg3+",
+                    "Qxc6"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2732,7 +3169,20 @@
                 "Qf1+"
               ],
               "explain": "Qa3+ starts it: Qa3+ Kd2 Qxg3. Lichess puzzle 00WJN, rated 1324.",
-              "id": "chess_lp10l3_1"
+              "id": "chess_lp10l3_1",
+              "steps": [
+                {
+                  "reply": "Kd2",
+                  "fen": "8/7K/8/8/4p2P/Q5q1/3k4/8 w - - 4 55",
+                  "answer": "Qxg3",
+                  "choices": [
+                    "Qd3+",
+                    "Qxg3",
+                    "Qe3+",
+                    "Qa5+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2746,7 +3196,20 @@
                 "Bxd1+"
               ],
               "explain": "Bxd1+ starts it: Bxd1+ Ke1 Bxh5. Lichess puzzle 023NL, rated 1383.",
-              "id": "chess_lp10l3_2"
+              "id": "chess_lp10l3_2",
+              "steps": [
+                {
+                  "reply": "Ke1",
+                  "fen": "3rk3/R4p2/p6p/1p4pB/8/4P3/1P3PPP/3bK3 b - - 1 27",
+                  "answer": "Bxh5",
+                  "choices": [
+                    "Rc8",
+                    "Bxh5",
+                    "Rd2",
+                    "Be2"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2760,7 +3223,20 @@
                 "Re5+"
               ],
               "explain": "Rf7+ starts it: Rf7+ Kd6 Rxa7. Lichess puzzle 00coU, rated 1526.",
-              "id": "chess_lp10l3_3"
+              "id": "chess_lp10l3_3",
+              "steps": [
+                {
+                  "reply": "Kd6",
+                  "fen": "6k1/R4r2/3K4/1r6/8/p4N2/8/5R2 b - - 6 51",
+                  "answer": "Rxa7",
+                  "choices": [
+                    "Rxf3",
+                    "Rf6+",
+                    "Rd5+",
+                    "Rxa7"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2774,7 +3250,42 @@
                 "Qc8+"
               ],
               "explain": "Qf1+ starts it: Qf1+ Kh4 Rh8+ Kg5 Rh5+ Kf4 Rxe5. Lichess puzzle 01Z1w, rated 1624.",
-              "id": "chess_lp10l3_4"
+              "id": "chess_lp10l3_4",
+              "steps": [
+                {
+                  "reply": "Kh4",
+                  "fen": "r7/2p2pk1/5np1/3PQ3/4P2K/5PP1/2R2N1P/5q2 b - - 2 35",
+                  "answer": "Rh8+",
+                  "choices": [
+                    "g5+",
+                    "Rh8+",
+                    "Qxf2",
+                    "Qh3+"
+                  ]
+                },
+                {
+                  "reply": "Kg5",
+                  "fen": "7r/2p2pk1/5np1/3PQ1K1/4P3/5PP1/2R2N1P/5q2 b - - 4 36",
+                  "answer": "Rh5+",
+                  "choices": [
+                    "Qxf2",
+                    "Rxh2",
+                    "Qc1+",
+                    "Rh5+"
+                  ]
+                },
+                {
+                  "reply": "Kf4",
+                  "fen": "8/2p2pk1/5np1/3PQ2r/4PK2/5PP1/2R2N1P/5q2 b - - 6 37",
+                  "answer": "Rxe5",
+                  "choices": [
+                    "Rf5+",
+                    "Rxh2",
+                    "g5+",
+                    "Rxe5"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -2801,7 +3312,20 @@
                 "a4"
               ],
               "explain": "Rd8+ starts it: Rd8+ Re8 Rxe8#. Lichess puzzle 00EXM, rated 621.",
-              "id": "chess_lp11l1_0"
+              "id": "chess_lp11l1_0",
+              "steps": [
+                {
+                  "reply": "Re8",
+                  "fen": "r1nRr1k1/5ppp/2p5/5P2/8/1P6/P7/5RK1 w - - 2 35",
+                  "answer": "Rxe8#",
+                  "choices": [
+                    "Rxc8",
+                    "Rc1",
+                    "Rf2",
+                    "Rxe8#"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2815,7 +3339,20 @@
                 "Qe8+"
               ],
               "explain": "Qe8+ starts it: Qe8+ Rd8 Rxd8#. Lichess puzzle 00Lvv, rated 670.",
-              "id": "chess_lp11l1_1"
+              "id": "chess_lp11l1_1",
+              "steps": [
+                {
+                  "reply": "Rd8",
+                  "fen": "2krQbr1/1pp1n3/p4p2/4p3/4P2P/2N1q3/PP4PK/3R4 w - - 2 24",
+                  "answer": "Rxd8#",
+                  "choices": [
+                    "Qxf8",
+                    "Rxd8#",
+                    "Qxe7",
+                    "Qd7+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2829,7 +3366,20 @@
                 "Qxg2"
               ],
               "explain": "Qb8+ starts it: Qb8+ Qe8 Qxe8#. Lichess puzzle 0061g, rated 801.",
-              "id": "chess_lp11l1_2"
+              "id": "chess_lp11l1_2",
+              "steps": [
+                {
+                  "reply": "Qe8",
+                  "fen": "1Q2q1k1/pp3pp1/2p3Pp/3b4/8/8/PB3Pp1/3r1NK1 w - - 2 29",
+                  "answer": "Qxe8#",
+                  "choices": [
+                    "Qxe8#",
+                    "Qxb7",
+                    "gxf7+",
+                    "Bxg7"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2843,7 +3393,20 @@
                 "Kd7"
               ],
               "explain": "g6+ starts it: g6+ Kf6 Rf8#. Lichess puzzle 00Keu, rated 882.",
-              "id": "chess_lp11l1_3"
+              "id": "chess_lp11l1_3",
+              "steps": [
+                {
+                  "reply": "Kf6",
+                  "fen": "R7/1p4p1/2pK1kPp/3p1P2/3r2nP/8/1P6/8 w - - 1 41",
+                  "answer": "Rf8#",
+                  "choices": [
+                    "Rd8",
+                    "Rf8#",
+                    "Rh8",
+                    "h5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2857,7 +3420,20 @@
                 "Qxg3+"
               ],
               "explain": "Qh2+ starts it: Qh2+ Kf1 Qxf2#. Lichess puzzle 00MGA, rated 915.",
-              "id": "chess_lp11l1_4"
+              "id": "chess_lp11l1_4",
+              "steps": [
+                {
+                  "reply": "Kf1",
+                  "fen": "r3r1k1/6b1/p2Nn2p/1P1Qp3/6n1/2P3P1/1PB2P1q/R1B1RK2 b - - 2 31",
+                  "answer": "Qxf2#",
+                  "choices": [
+                    "Qg2+",
+                    "Qxf2#",
+                    "Qh3+",
+                    "Qxg3"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -2877,7 +3453,20 @@
                 "Rc8+"
               ],
               "explain": "Rc8+ starts it: Rc8+ Re8 Rxe8#. Lichess puzzle 008oX, rated 976.",
-              "id": "chess_lp11l2_0"
+              "id": "chess_lp11l2_0",
+              "steps": [
+                {
+                  "reply": "Re8",
+                  "fen": "2R1r1k1/6pp/2p4q/1p1p4/3P4/P7/1PP2R2/1K1N4 w - - 6 34",
+                  "answer": "Rxe8#",
+                  "choices": [
+                    "Rxe8#",
+                    "Rxc6",
+                    "Rf8+",
+                    "Rg2"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2891,7 +3480,20 @@
                 "Qxh7+"
               ],
               "explain": "Qxf7+ starts it: Qxf7+ Kh8 Qxg7#. Lichess puzzle 0092z, rated 991.",
-              "id": "chess_lp11l2_1"
+              "id": "chess_lp11l2_1",
+              "steps": [
+                {
+                  "reply": "Kh8",
+                  "fen": "2r4k/3R1Qpp/p1q5/2p5/P7/7P/5PP1/6K1 w - - 1 28",
+                  "answer": "Qxg7#",
+                  "choices": [
+                    "Qe8+",
+                    "Rd8+",
+                    "Qxg7#",
+                    "Qg8+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2905,7 +3507,20 @@
                 "Rcc6"
               ],
               "explain": "Rxa6+ starts it: Rxa6+ bxa6 Ra7#. Lichess puzzle 00LNB, rated 1074.",
-              "id": "chess_lp11l2_2"
+              "id": "chess_lp11l2_2",
+              "steps": [
+                {
+                  "reply": "bxa6",
+                  "fen": "kr6/2R4p/p7/n7/P3p3/3rB3/6PP/6K1 w - - 0 40",
+                  "answer": "Ra7#",
+                  "choices": [
+                    "Rxh7",
+                    "Rg7",
+                    "Rc5",
+                    "Ra7#"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2919,7 +3534,20 @@
                 "b4"
               ],
               "explain": "Nh4+ starts it: Nh4+ Ke4 f3#. Lichess puzzle 009f8, rated 1149.",
-              "id": "chess_lp11l2_3"
+              "id": "chess_lp11l2_3",
+              "steps": [
+                {
+                  "reply": "Ke4",
+                  "fen": "8/1p4p1/pb2pp1p/3n4/3Pk2N/P3B2P/1P2KPP1/8 w - - 3 28",
+                  "answer": "f3#",
+                  "choices": [
+                    "Bxh6",
+                    "Bc1",
+                    "b3",
+                    "f3#"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2933,7 +3561,20 @@
                 "Qf4+"
               ],
               "explain": "Qf4+ starts it: Qf4+ g5 Qxg5#. Lichess puzzle 009oc, rated 1165.",
-              "id": "chess_lp11l2_4"
+              "id": "chess_lp11l2_4",
+              "steps": [
+                {
+                  "reply": "g5",
+                  "fen": "8/pbp3np/1p1pq2k/1P4p1/P4Q1P/6K1/8/8 w - - 0 34",
+                  "answer": "Qxg5#",
+                  "choices": [
+                    "Qxg5#",
+                    "Qxd6",
+                    "Qf6+",
+                    "hxg5+"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -2953,7 +3594,20 @@
                 "Rxd1"
               ],
               "explain": "Qe8+ starts it: Qe8+ Qf8 Qxf8#. Lichess puzzle 00MFe, rated 1294.",
-              "id": "chess_lp11l3_0"
+              "id": "chess_lp11l3_0",
+              "steps": [
+                {
+                  "reply": "Qf8",
+                  "fen": "4Qq1k/p5pp/2r5/2p5/8/8/P5PP/3r1R1K w - - 2 31",
+                  "answer": "Qxf8#",
+                  "choices": [
+                    "Qxc6",
+                    "Rxd1",
+                    "Qxf8#",
+                    "g3"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2967,7 +3621,20 @@
                 "Qxb5"
               ],
               "explain": "Qxd8+ starts it: Qxd8+ Rxd8 Rxd8#. Lichess puzzle 00Bg4, rated 1370.",
-              "id": "chess_lp11l3_1"
+              "id": "chess_lp11l3_1",
+              "steps": [
+                {
+                  "reply": "Rxd8",
+                  "fen": "3r2k1/1q3ppp/p3p3/1p6/7P/P4P2/1PP3P1/1K1R3R w - - 0 23",
+                  "answer": "Rxd8#",
+                  "choices": [
+                    "Rd3",
+                    "Rxd8#",
+                    "Rd4",
+                    "Rd2"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2981,7 +3648,20 @@
                 "Qg7+"
               ],
               "explain": "Ng6+ starts it: Ng6+ Kg8 Qh8#. Lichess puzzle 005Bm, rated 1434.",
-              "id": "chess_lp11l3_2"
+              "id": "chess_lp11l3_2",
+              "steps": [
+                {
+                  "reply": "Kg8",
+                  "fen": "4r1k1/p4q2/1p3QNb/8/1p6/2P1p3/P3P3/2K5 w - - 3 45",
+                  "answer": "Qh8#",
+                  "choices": [
+                    "Qh8#",
+                    "Qxb6",
+                    "Ne7+",
+                    "cxb4"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -2995,7 +3675,20 @@
                 "Qh6+"
               ],
               "explain": "Qh6+ starts it: Qh6+ Kg8 Qxg7#. Lichess puzzle 009BH, rated 1513.",
-              "id": "chess_lp11l3_3"
+              "id": "chess_lp11l3_3",
+              "steps": [
+                {
+                  "reply": "Kg8",
+                  "fen": "3r2k1/6p1/7Q/4B3/1p3P2/4PKP1/3q4/8 w - - 20 53",
+                  "answer": "Qxg7#",
+                  "choices": [
+                    "Qh8+",
+                    "Qh7+",
+                    "Qxg7#",
+                    "Bxg7"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3009,7 +3702,20 @@
                 "Rxa2"
               ],
               "explain": "Nf3+ starts it: Nf3+ Kh1 Qxg2#. Lichess puzzle 009zR, rated 1620.",
-              "id": "chess_lp11l3_4"
+              "id": "chess_lp11l3_4",
+              "steps": [
+                {
+                  "reply": "Kh1",
+                  "fen": "3Q4/p1p2ppp/4k3/8/5P2/4Pn2/Prq3PP/3R1R1K b - - 2 23",
+                  "answer": "Qxg2#",
+                  "choices": [
+                    "Nxh2",
+                    "Qxd1",
+                    "Rxa2",
+                    "Qxg2#"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -3036,7 +3742,20 @@
                 "Rd6"
               ],
               "explain": "g5+ starts it: g5+ Kh5 Rxh7#. Lichess puzzle 01Ie5, rated 868.",
-              "id": "chess_lp12l1_0"
+              "id": "chess_lp12l1_0",
+              "steps": [
+                {
+                  "reply": "Kh5",
+                  "fen": "8/3R3p/6p1/5pPk/5P2/7P/rr1B1K2/8 w - - 1 48",
+                  "answer": "Rxh7#",
+                  "choices": [
+                    "Rc7",
+                    "Ke1",
+                    "Rxh7#",
+                    "Rb7"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3050,7 +3769,20 @@
                 "Qf7+"
               ],
               "explain": "Be6+ starts it: Be6+ Kh8 Qxf8#. Lichess puzzle 01Qwv, rated 988.",
-              "id": "chess_lp12l1_1"
+              "id": "chess_lp12l1_1",
+              "steps": [
+                {
+                  "reply": "Kh8",
+                  "fen": "5r1k/p3Q1pp/2p1B3/8/4p3/6PP/4P1K1/3q4 w - - 6 33",
+                  "answer": "Qxf8#",
+                  "choices": [
+                    "Qxf8#",
+                    "Qxg7+",
+                    "Qxa7",
+                    "Qc5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3064,7 +3796,20 @@
                 "Rd7+"
               ],
               "explain": "Rd7+ starts it: Rd7+ Kxd7 Qxc5. Lichess puzzle 00AoZ, rated 1090.",
-              "id": "chess_lp12l1_2"
+              "id": "chess_lp12l1_2",
+              "steps": [
+                {
+                  "reply": "Kxd7",
+                  "fen": "8/3k4/p1p5/2q3bp/1QP5/P7/KP6/3r4 w - - 0 46",
+                  "answer": "Qxc5",
+                  "choices": [
+                    "Qxc5",
+                    "Qd2+",
+                    "Qb7+",
+                    "a4"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3078,7 +3823,20 @@
                 "Kc7"
               ],
               "explain": "Rxg3 starts it: Rxg3 Rxg3 Qxf4. Lichess puzzle 00n3G, rated 1120.",
-              "id": "chess_lp12l1_3"
+              "id": "chess_lp12l1_3",
+              "steps": [
+                {
+                  "reply": "Rxg3",
+                  "fen": "1k4r1/7p/1p6/pPp1qp2/P1Pp1R2/3Q2RP/2P4K/8 b - - 0 33",
+                  "answer": "Qxf4",
+                  "choices": [
+                    "Qe2+",
+                    "Qxf4",
+                    "Rxg3",
+                    "Ka8"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3092,7 +3850,20 @@
                 "Qc7+"
               ],
               "explain": "Qxg6+ starts it: Qxg6+ Kh8 Qxh6#. Lichess puzzle 00J1Y, rated 1139.",
-              "id": "chess_lp12l1_4"
+              "id": "chess_lp12l1_4",
+              "steps": [
+                {
+                  "reply": "Kh8",
+                  "fen": "1q3r1k/p7/1p2pbQp/2p5/2P1p3/2P2P1P/PP3P2/6RK w - - 1 31",
+                  "answer": "Qxh6#",
+                  "choices": [
+                    "Qg8+",
+                    "Qg7+",
+                    "Qxe4",
+                    "Qxh6#"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -3112,7 +3883,20 @@
                 "Kd1"
               ],
               "explain": "c2+ starts it: c2+ Ka2 c1=Q Rd7+ Ke2. Lichess puzzle 004LZ, rated 1195.",
-              "id": "chess_lp12l2_0"
+              "id": "chess_lp12l2_0",
+              "steps": [
+                {
+                  "reply": "Ka2",
+                  "fen": "8/7R/5p2/p7/7P/8/K1pk2N1/8 b - - 1 49",
+                  "answer": "c1=Q",
+                  "choices": [
+                    "c1=N+",
+                    "c1=Q",
+                    "c1=B",
+                    "c1=R"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3126,7 +3910,31 @@
                 "Qe1+"
               ],
               "explain": "Qe1+ starts it: Qe1+ Kh2 Bd6+ Ne5 Qxe3. Lichess puzzle 01FB6, rated 1287.",
-              "id": "chess_lp12l2_1"
+              "id": "chess_lp12l2_1",
+              "steps": [
+                {
+                  "reply": "Kh2",
+                  "fen": "4Qn1k/6p1/7p/8/1b1P2N1/4B2P/6PK/4q3 b - - 3 32",
+                  "answer": "Bd6+",
+                  "choices": [
+                    "Qxe3",
+                    "Qg3+",
+                    "Bd6+",
+                    "Qh1+"
+                  ]
+                },
+                {
+                  "reply": "Ne5",
+                  "fen": "4Qn1k/6p1/3b3p/4N3/3P4/4B2P/6PK/4q3 b - - 5 33",
+                  "answer": "Qxe3",
+                  "choices": [
+                    "Qg3+",
+                    "Bxe5+",
+                    "Qxe3",
+                    "Qh1+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3140,7 +3948,20 @@
                 "Qe8+"
               ],
               "explain": "Rd8+ starts it: Rd8+ Rxd8 Qxc4 Rd1+ Kf2. Lichess puzzle 00g5H, rated 1374.",
-              "id": "chess_lp12l2_2"
+              "id": "chess_lp12l2_2",
+              "steps": [
+                {
+                  "reply": "Rxd8",
+                  "fen": "3r2k1/p4pp1/1p5p/1Q6/2q5/5P2/1P4PP/6K1 w - - 0 32",
+                  "answer": "Qxc4",
+                  "choices": [
+                    "Qxc4",
+                    "Qe8+",
+                    "Qxb6",
+                    "Kh1"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3154,7 +3975,20 @@
                 "Bxg7"
               ],
               "explain": "Rxd7 starts it: Rxd7 Qxd7 Qxa8+. Lichess puzzle 0068B, rated 1459.",
-              "id": "chess_lp12l2_3"
+              "id": "chess_lp12l2_3",
+              "steps": [
+                {
+                  "reply": "Qxd7",
+                  "fen": "r5k1/3qbppp/pp2p3/4B3/8/2N2Q2/PPP2PPP/6K1 w - - 0 20",
+                  "answer": "Qxa8+",
+                  "choices": [
+                    "Qxa8+",
+                    "Qxf7+",
+                    "Bxg7",
+                    "Bb8"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3168,7 +4002,20 @@
                 "Re7+"
               ],
               "explain": "Rd5+ starts it: Rd5+ Kf4 Rxd4. Lichess puzzle 00UEs, rated 1513.",
-              "id": "chess_lp12l2_4"
+              "id": "chess_lp12l2_4",
+              "steps": [
+                {
+                  "reply": "Kf4",
+                  "fen": "8/7p/6p1/3R4/2Bnpk2/1P5P/P6r/4K3 w - - 4 42",
+                  "answer": "Rxd4",
+                  "choices": [
+                    "Rf5+",
+                    "a3",
+                    "Rxd4",
+                    "Kd1"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -3188,7 +4035,20 @@
                 "h4"
               ],
               "explain": "h4 starts it: h4 Qxh4 Qxe5+. Lichess puzzle 00uKb, rated 1545.",
-              "id": "chess_lp12l3_0"
+              "id": "chess_lp12l3_0",
+              "steps": [
+                {
+                  "reply": "Qxh4",
+                  "fen": "6k1/p4rp1/8/2p1Bq2/2P1b2Q/2P4P/P5PK/4R3 b - - 0 31",
+                  "answer": "Qxe5+",
+                  "choices": [
+                    "Qf4+",
+                    "Qxh3+",
+                    "Qxe5+",
+                    "Bxg2"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3202,7 +4062,31 @@
                 "Rg5"
               ],
               "explain": "g3+ starts it: g3+ Rxg3 Rxe4+ Kg5 Kxg3. Lichess puzzle 00nh0, rated 1583.",
-              "id": "chess_lp12l3_1"
+              "id": "chess_lp12l3_1",
+              "steps": [
+                {
+                  "reply": "Rxg3",
+                  "fen": "8/8/8/4R2p/4p2k/6rP/7K/8 w - - 0 52",
+                  "answer": "Rxe4+",
+                  "choices": [
+                    "Rxh5+",
+                    "Rxe4+",
+                    "Rc5",
+                    "Ra5"
+                  ]
+                },
+                {
+                  "reply": "Kg5",
+                  "fen": "8/8/8/6kp/4R3/6rP/7K/8 w - - 1 53",
+                  "answer": "Kxg3",
+                  "choices": [
+                    "Rg4+",
+                    "Re5+",
+                    "Kxg3",
+                    "h4+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3216,7 +4100,20 @@
                 "Raxe7+"
               ],
               "explain": "Rexe7+ starts it: Rexe7+ Rxe7 Rxa8. Lichess puzzle 01OSA, rated 1613.",
-              "id": "chess_lp12l3_2"
+              "id": "chess_lp12l3_2",
+              "steps": [
+                {
+                  "reply": "Rxe7",
+                  "fen": "r7/R3rkb1/5p2/3p4/3P2N1/2P3PP/5P2/5K2 w - - 0 36",
+                  "answer": "Rxa8",
+                  "choices": [
+                    "Nh6+",
+                    "Ne5+",
+                    "Rxa8",
+                    "Rxe7+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3230,7 +4127,20 @@
                 "Qxa1"
               ],
               "explain": "Rxd3 starts it: Rxd3 Rxd3 Qxa1+. Lichess puzzle 00rAM, rated 1743.",
-              "id": "chess_lp12l3_3"
+              "id": "chess_lp12l3_3",
+              "steps": [
+                {
+                  "reply": "Rxd3",
+                  "fen": "4r1k1/1p3pq1/p1n1b2p/2b3p1/QP6/P2RPNB1/5PPP/R5K1 b - - 0 21",
+                  "answer": "Qxa1+",
+                  "choices": [
+                    "Nxb4",
+                    "Bxe3",
+                    "Bxb4",
+                    "Qxa1+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3244,7 +4154,20 @@
                 "Bf8+"
               ],
               "explain": "Bf8+ starts it: Bf8+ Kh5 Rxh7#. Lichess puzzle 00CBU, rated 1836.",
-              "id": "chess_lp12l3_4"
+              "id": "chess_lp12l3_4",
+              "steps": [
+                {
+                  "reply": "Kh5",
+                  "fen": "5B2/2pR3p/pb4p1/7k/5p1P/7K/P1r5/6r1 w - - 6 41",
+                  "answer": "Rxh7#",
+                  "choices": [
+                    "Rxh7#",
+                    "Rxc7",
+                    "Rd5+",
+                    "Be7"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -3271,7 +4194,20 @@
                 "Kc1"
               ],
               "explain": "Qh7+ starts it: Qh7+ Kxh7 g8=Q#. Lichess puzzle 001w5, rated 1034.",
-              "id": "chess_lp13l1_0"
+              "id": "chess_lp13l1_0",
+              "steps": [
+                {
+                  "reply": "Kxh7",
+                  "fen": "1rb5/q4rPk/4p2p/3p3p/3P1P2/2P5/3K3P/3R2R1 w - - 0 31",
+                  "answer": "g8=Q#",
+                  "choices": [
+                    "g8=B+",
+                    "g8=Q#",
+                    "Rge1",
+                    "Ra1"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3285,7 +4221,20 @@
                 "Qxg6+"
               ],
               "explain": "Qxf8+ starts it: Qxf8+ Kxf8 d8=Q+. Lichess puzzle 01do1, rated 1121.",
-              "id": "chess_lp13l1_1"
+              "id": "chess_lp13l1_1",
+              "steps": [
+                {
+                  "reply": "Kxf8",
+                  "fen": "5k2/n2P3p/1p2p1p1/pP6/q3p1p1/8/5PPP/5RK1 w - - 0 36",
+                  "answer": "d8=Q+",
+                  "choices": [
+                    "d8=R+",
+                    "Rd1",
+                    "d8=N",
+                    "d8=Q+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3299,7 +4248,31 @@
                 "Qh6+"
               ],
               "explain": "Rxg7+ starts it: Rxg7+ Rxg7 Qh6+ Kg8 Qxg7#. Lichess puzzle 01tZ5, rated 1184.",
-              "id": "chess_lp13l1_2"
+              "id": "chess_lp13l1_2",
+              "steps": [
+                {
+                  "reply": "Rxg7",
+                  "fen": "1r6/2q2prk/2pb1n2/1p2pN1p/4P3/4Q2P/PP3PP1/R5K1 w - - 0 27",
+                  "answer": "Qh6+",
+                  "choices": [
+                    "Nxg7",
+                    "Nxd6",
+                    "g3",
+                    "Qh6+"
+                  ]
+                },
+                {
+                  "reply": "Kg8",
+                  "fen": "1r4k1/2q2pr1/2pb1n1Q/1p2pN1p/4P3/7P/PP3PP1/R5K1 w - - 2 28",
+                  "answer": "Qxg7#",
+                  "choices": [
+                    "Nxd6",
+                    "Qxg7#",
+                    "Qh7+",
+                    "Ne7+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3313,7 +4286,31 @@
                 "Qxe8+"
               ],
               "explain": "Qxe8+ starts it: Qxe8+ Kxe8 Nf6+ Ke7 Nxg4. Lichess puzzle 003mh, rated 1325.",
-              "id": "chess_lp13l1_3"
+              "id": "chess_lp13l1_3",
+              "steps": [
+                {
+                  "reply": "Kxe8",
+                  "fen": "4k2r/1pp2p2/p2p3p/3N4/3P2q1/8/PPP5/1K4NR w - - 0 25",
+                  "answer": "Nf6+",
+                  "choices": [
+                    "Nxc7+",
+                    "Rxh6",
+                    "Nf6+",
+                    "Rh3"
+                  ]
+                },
+                {
+                  "reply": "Ke7",
+                  "fen": "7r/1pp1kp2/p2p1N1p/8/3P2q1/8/PPP5/1K4NR w - - 2 26",
+                  "answer": "Nxg4",
+                  "choices": [
+                    "Ng8+",
+                    "Nxg4",
+                    "Nd5+",
+                    "Rxh6"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3327,7 +4324,31 @@
                 "Kd2"
               ],
               "explain": "Rxg7+ starts it: Rxg7+ Kxg7 Ne6+ Kg8 Nxd8. Lichess puzzle 00761, rated 1357.",
-              "id": "chess_lp13l1_4"
+              "id": "chess_lp13l1_4",
+              "steps": [
+                {
+                  "reply": "Kxg7",
+                  "fen": "3r4/1b4k1/p2P2p1/3p2N1/2p5/2P2N2/PP6/2K5 w - - 0 30",
+                  "answer": "Ne6+",
+                  "choices": [
+                    "Ne6+",
+                    "Ne4",
+                    "Ng1",
+                    "Nh3"
+                  ]
+                },
+                {
+                  "reply": "Kg8",
+                  "fen": "3r2k1/1b6/p2PN1p1/3p4/2p5/2P2N2/PP6/2K5 w - - 2 31",
+                  "answer": "Nxd8",
+                  "choices": [
+                    "Kd1",
+                    "Nd2",
+                    "Nc5",
+                    "Nxd8"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -3347,7 +4368,31 @@
                 "Nxa7"
               ],
               "explain": "Rxd8+ starts it: Rxd8+ Nc8 Ra8+ Kxa8 Rxc8#. Lichess puzzle 024sp, rated 1399.",
-              "id": "chess_lp13l2_0"
+              "id": "chess_lp13l2_0",
+              "steps": [
+                {
+                  "reply": "Nc8",
+                  "fen": "1knR1b1r/1pp2pp1/5n1p/1N6/8/1P3N2/1P2qPPP/R5K1 w - - 1 18",
+                  "answer": "Ra8+",
+                  "choices": [
+                    "Rxf8",
+                    "Ra8+",
+                    "Rxc8+",
+                    "Nxc7"
+                  ]
+                },
+                {
+                  "reply": "Kxa8",
+                  "fen": "k1nR1b1r/1pp2pp1/5n1p/1N6/8/1P3N2/1P2qPPP/6K1 w - - 0 19",
+                  "answer": "Rxc8#",
+                  "choices": [
+                    "Rxc8#",
+                    "Rxf8",
+                    "Nxc7+",
+                    "b4"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3361,7 +4406,31 @@
                 "Kh3"
               ],
               "explain": "Rc7+ starts it: Rc7+ Kxc7 Nxe6+ Kb6 Nxf8. Lichess puzzle 005do, rated 1433.",
-              "id": "chess_lp13l2_1"
+              "id": "chess_lp13l2_1",
+              "steps": [
+                {
+                  "reply": "Kxc7",
+                  "fen": "5r2/ppk5/4p1b1/3pP1Np/3P1P1K/8/P7/8 w - - 0 44",
+                  "answer": "Nxe6+",
+                  "choices": [
+                    "a4",
+                    "Nf3",
+                    "a3",
+                    "Nxe6+"
+                  ]
+                },
+                {
+                  "reply": "Kb6",
+                  "fen": "5r2/pp6/1k2N1b1/3pP2p/3P1P1K/8/P7/8 w - - 1 45",
+                  "answer": "Nxf8",
+                  "choices": [
+                    "Nxf8",
+                    "Nc7",
+                    "Kg5",
+                    "a4"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3375,7 +4444,31 @@
                 "Rxc2"
               ],
               "explain": "Rxc2 starts it: Rxc2 Kxc2 Ne3+ Kd3 Nxd1. Lichess puzzle 00Rmm, rated 1492.",
-              "id": "chess_lp13l2_2"
+              "id": "chess_lp13l2_2",
+              "steps": [
+                {
+                  "reply": "Kxc2",
+                  "fen": "3r2k1/5ppp/p7/1p1nP3/1B1P1PP1/P6P/2K5/3R4 b - - 0 31",
+                  "answer": "Ne3+",
+                  "choices": [
+                    "Nxb4+",
+                    "Rc8+",
+                    "Nxf4",
+                    "Ne3+"
+                  ]
+                },
+                {
+                  "reply": "Kd3",
+                  "fen": "3r2k1/5ppp/p7/1p2P3/1B1P1PP1/P2Kn2P/8/3R4 b - - 2 32",
+                  "answer": "Nxd1",
+                  "choices": [
+                    "Rxd4+",
+                    "Nxg4",
+                    "Nxd1",
+                    "h6"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3389,7 +4482,20 @@
                 "Nf2+"
               ],
               "explain": "Qxg1+ starts it: Qxg1+ Kxg1 Rd1#. Lichess puzzle 022ib, rated 1526.",
-              "id": "chess_lp13l2_3"
+              "id": "chess_lp13l2_3",
+              "steps": [
+                {
+                  "reply": "Kxg1",
+                  "fen": "2kr4/2p2pp1/8/1R2PP1p/6n1/8/1Q4PP/6K1 b - - 0 29",
+                  "answer": "Rd1#",
+                  "choices": [
+                    "Nxh2",
+                    "Nxe5",
+                    "Rd4",
+                    "Rd1#"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3403,7 +4509,31 @@
                 "h4"
               ],
               "explain": "Rxf8+ starts it: Rxf8+ Kxf8 Bc5+ Kf7 Bxb4. Lichess puzzle 01dsW, rated 1555.",
-              "id": "chess_lp13l2_4"
+              "id": "chess_lp13l2_4",
+              "steps": [
+                {
+                  "reply": "Kxf8",
+                  "fen": "5k2/7p/6p1/3p1p2/1r1Bp3/4P1P1/5PKP/8 w - - 0 38",
+                  "answer": "Bc5+",
+                  "choices": [
+                    "Bg7+",
+                    "Kg1",
+                    "Bh8",
+                    "Bc5+"
+                  ]
+                },
+                {
+                  "reply": "Kf7",
+                  "fen": "8/5k1p/6p1/2Bp1p2/1r2p3/4P1P1/5PKP/8 w - - 2 39",
+                  "answer": "Bxb4",
+                  "choices": [
+                    "h3",
+                    "Bd6",
+                    "Bxb4",
+                    "Kg1"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -3423,7 +4553,31 @@
                 "Rf7"
               ],
               "explain": "Qxf1+ starts it: Qxf1+ Kxf1 Ng3+ Ke1 Nxe4. Lichess puzzle 00sKo, rated 1637.",
-              "id": "chess_lp13l3_0"
+              "id": "chess_lp13l3_0",
+              "steps": [
+                {
+                  "reply": "Kxf1",
+                  "fen": "5rk1/R5bp/3p4/3Ppn1p/4Q3/4B2P/5PP1/5K2 b - - 0 25",
+                  "answer": "Ng3+",
+                  "choices": [
+                    "Ng3+",
+                    "Nxe3+",
+                    "Nh4",
+                    "Ne7"
+                  ]
+                },
+                {
+                  "reply": "Ke1",
+                  "fen": "5rk1/R5bp/3p4/3Pp2p/4Q3/4B1nP/5PP1/4K3 b - - 2 26",
+                  "answer": "Nxe4",
+                  "choices": [
+                    "Nxe4",
+                    "Rxf2",
+                    "Rf7",
+                    "Bh6"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3437,7 +4591,31 @@
                 "Rxh7+"
               ],
               "explain": "Rxh7+ starts it: Rxh7+ Kxh7 Rh1+ Bh4 Rxh4#. Lichess puzzle 01h56, rated 1712.",
-              "id": "chess_lp13l3_1"
+              "id": "chess_lp13l3_1",
+              "steps": [
+                {
+                  "reply": "Kxh7",
+                  "fen": "r3n3/2q1b2k/3p2p1/2n2N2/2B1P3/8/1Pp2B2/1NKR4 w - - 0 31",
+                  "answer": "Rh1+",
+                  "choices": [
+                    "Nxd6",
+                    "Rh1+",
+                    "Kxc2",
+                    "Bg8+"
+                  ]
+                },
+                {
+                  "reply": "Bh4",
+                  "fen": "r3n3/2q4k/3p2p1/2n2N2/2B1P2b/8/1Pp2B2/1NK4R w - - 2 32",
+                  "answer": "Rxh4#",
+                  "choices": [
+                    "Bxh4",
+                    "Bxc5",
+                    "Nxh4",
+                    "Rxh4#"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3451,7 +4629,20 @@
                 "Qxg3"
               ],
               "explain": "Qxh2+ starts it: Qxh2+ Kxh2 Rh4#. Lichess puzzle 01Qdr, rated 1730.",
-              "id": "chess_lp13l3_2"
+              "id": "chess_lp13l3_2",
+              "steps": [
+                {
+                  "reply": "Kxh2",
+                  "fen": "6k1/pp4p1/7p/1PPp4/P2b2r1/5QN1/6PK/4R3 b - - 0 31",
+                  "answer": "Rh4#",
+                  "choices": [
+                    "Bg1+",
+                    "Bxc5",
+                    "Rxg3",
+                    "Rh4#"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3465,7 +4656,42 @@
                 "Bxg3"
               ],
               "explain": "Rh2+ starts it: Rh2+ Kf1 Rh1+ Ng1 Rxg1+ Kxg1 Rh1#. Lichess puzzle 00XGg, rated 1804.",
-              "id": "chess_lp13l3_3"
+              "id": "chess_lp13l3_3",
+              "steps": [
+                {
+                  "reply": "Kf1",
+                  "fen": "2k4r/ppp2pp1/2n5/3b1N2/3p1bP1/5NP1/PPP1QP1r/R3RK2 b - - 4 21",
+                  "answer": "Rh1+",
+                  "choices": [
+                    "Bxf3",
+                    "Rh1+",
+                    "Rxf2+",
+                    "Bxa2"
+                  ]
+                },
+                {
+                  "reply": "Ng1",
+                  "fen": "2k4r/ppp2pp1/2n5/3b1N2/3p1bP1/6P1/PPP1QP2/R3RKNr b - - 6 22",
+                  "answer": "Rxg1+",
+                  "choices": [
+                    "Rxg1+",
+                    "Bg2+",
+                    "Bxg3",
+                    "Bxa2"
+                  ]
+                },
+                {
+                  "reply": "Kxg1",
+                  "fen": "2k4r/ppp2pp1/2n5/3b1N2/3p1bP1/6P1/PPP1QP2/R3R1K1 b - - 0 23",
+                  "answer": "Rh1#",
+                  "choices": [
+                    "Bxg3",
+                    "Bxa2",
+                    "Rh2",
+                    "Rh1#"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3479,7 +4705,31 @@
                 "Qxa4"
               ],
               "explain": "Bxf6 starts it: Bxf6 Bxc6 Bxg7+ Kxg7 Qc3+. Lichess puzzle 015Vc, rated 1835.",
-              "id": "chess_lp13l3_4"
+              "id": "chess_lp13l3_4",
+              "steps": [
+                {
+                  "reply": "Bxc6",
+                  "fen": "q4r1k/5pbp/2bp1Bp1/8/pQ6/5B2/P4PPP/4R1K1 w - - 0 25",
+                  "answer": "Bxg7+",
+                  "choices": [
+                    "Bxc6",
+                    "Qxd6",
+                    "Bxg7+",
+                    "Qxa4"
+                  ]
+                },
+                {
+                  "reply": "Kxg7",
+                  "fen": "q4r2/5pkp/2bp2p1/8/pQ6/5B2/P4PPP/4R1K1 w - - 0 26",
+                  "answer": "Qc3+",
+                  "choices": [
+                    "Bxc6",
+                    "Qc3+",
+                    "Qxd6",
+                    "Qxa4"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -3506,7 +4756,20 @@
                 "Rxe6"
               ],
               "explain": "Rxe6 starts it: Rxe6 fxe6 Qxg6+. Lichess puzzle 05GU4, rated 891.",
-              "id": "chess_lp14l1_0"
+              "id": "chess_lp14l1_0",
+              "steps": [
+                {
+                  "reply": "fxe6",
+                  "fen": "6k1/rb6/pq2p1pp/1p1n4/2pN4/2P4P/1PQ3P1/1B1R2K1 w - - 0 29",
+                  "answer": "Qxg6+",
+                  "choices": [
+                    "Rd2",
+                    "Kf1",
+                    "Qxg6+",
+                    "Rd3"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3520,7 +4783,20 @@
                 "Qxa7"
               ],
               "explain": "Bxc6 starts it: Bxc6 Bxc6 Qxb4. Lichess puzzle 01lh4, rated 1165.",
-              "id": "chess_lp14l1_1"
+              "id": "chess_lp14l1_1",
+              "steps": [
+                {
+                  "reply": "Bxc6",
+                  "fen": "r4rk1/pp3ppp/2b1pq2/3p1n2/Qb1P4/2N1B3/PP2NPPP/R4RK1 w - - 0 14",
+                  "answer": "Qxb4",
+                  "choices": [
+                    "Nxd5",
+                    "Qxb4",
+                    "Qxc6",
+                    "Qxa7"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3534,7 +4810,20 @@
                 "Bxf4"
               ],
               "explain": "Qxd4 starts it: Qxd4 exd4 Bxf4. Lichess puzzle 05Pkx, rated 1202.",
-              "id": "chess_lp14l1_2"
+              "id": "chess_lp14l1_2",
+              "steps": [
+                {
+                  "reply": "exd4",
+                  "fen": "r2k3r/pp1n2p1/3bpnBp/3p4/3P1BPP/P1N5/1PP2P2/R4RK1 b - - 0 16",
+                  "answer": "Bxf4",
+                  "choices": [
+                    "Bxa3",
+                    "Nxg4",
+                    "Bc7",
+                    "Bxf4"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3548,7 +4837,20 @@
                 "a4"
               ],
               "explain": "Qxc5 starts it: Qxc5 Bxc5 Bxc6. Lichess puzzle 00SyL, rated 1252.",
-              "id": "chess_lp14l1_3"
+              "id": "chess_lp14l1_3",
+              "steps": [
+                {
+                  "reply": "Bxc5",
+                  "fen": "1rb2rk1/5ppp/p1n1p3/1pb1P3/7N/P5P1/1P3PBP/R1B2RK1 w - - 0 17",
+                  "answer": "Bxc6",
+                  "choices": [
+                    "b3",
+                    "Be3",
+                    "Bg5",
+                    "Bxc6"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3562,7 +4864,31 @@
                 "Rxe5"
               ],
               "explain": "Rxe5 starts it: Rxe5 Rxe5 Nxf3+ Kf1 Nxe5. Lichess puzzle 033ej, rated 1301.",
-              "id": "chess_lp14l1_4"
+              "id": "chess_lp14l1_4",
+              "steps": [
+                {
+                  "reply": "Rxe5",
+                  "fen": "5k2/6pp/p5p1/4R3/1P5n/P1P2P2/5P1P/6K1 b - - 0 36",
+                  "answer": "Nxf3+",
+                  "choices": [
+                    "Kf7",
+                    "Nxf3+",
+                    "g5",
+                    "h5"
+                  ]
+                },
+                {
+                  "reply": "Kf1",
+                  "fen": "5k2/6pp/p5p1/4R3/1P6/P1P2n2/5P1P/5K2 b - - 1 37",
+                  "answer": "Nxe5",
+                  "choices": [
+                    "Nxe5",
+                    "Nd2+",
+                    "Nxh2+",
+                    "Ng1"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -3582,7 +4908,20 @@
                 "Qxf7+"
               ],
               "explain": "Bxf6 starts it: Bxf6 Qxf6 Rxd7. Lichess puzzle 031pC, rated 1340.",
-              "id": "chess_lp14l2_0"
+              "id": "chess_lp14l2_0",
+              "steps": [
+                {
+                  "reply": "Qxf6",
+                  "fen": "r4rk1/pppb1ppp/1b3q2/8/2Q5/2N5/PPP3PP/2KR1B1R w - - 0 14",
+                  "answer": "Rxd7",
+                  "choices": [
+                    "Rxd7",
+                    "Qxf7+",
+                    "Qxc7",
+                    "Re1"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3596,7 +4935,20 @@
                 "Nxf7"
               ],
               "explain": "Qxe4 starts it: Qxe4 Nxe4 Nxg4. Lichess puzzle 06QTl, rated 1391.",
-              "id": "chess_lp14l2_1"
+              "id": "chess_lp14l2_1",
+              "steps": [
+                {
+                  "reply": "Nxe4",
+                  "fen": "r4rk1/1p3pp1/p2b3p/2p1N3/P3n1b1/2P2N2/1P4PP/R1B2RK1 w - - 0 20",
+                  "answer": "Nxg4",
+                  "choices": [
+                    "Bxh6",
+                    "Nxf7",
+                    "Nxg4",
+                    "g3"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3610,7 +4962,20 @@
                 "Rxc4"
               ],
               "explain": "Rxe6 starts it: Rxe6 dxe6 Qxc7. Lichess puzzle 09968, rated 1473.",
-              "id": "chess_lp14l2_2"
+              "id": "chess_lp14l2_2",
+              "steps": [
+                {
+                  "reply": "dxe6",
+                  "fen": "4r1k1/ppB1q1pp/4Ppb1/2b5/2P3P1/1P5P/P4P2/R2Q1RK1 b - - 0 24",
+                  "answer": "Qxc7",
+                  "choices": [
+                    "Bxf2+",
+                    "Qxc7",
+                    "Qxe6",
+                    "Qd8"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3624,7 +4989,20 @@
                 "Qxd2"
               ],
               "explain": "Qxd2 starts it: Qxd2 Rxd2 Bxe3+. Lichess puzzle 06qRA, rated 1516.",
-              "id": "chess_lp14l2_3"
+              "id": "chess_lp14l2_3",
+              "steps": [
+                {
+                  "reply": "Rxd2",
+                  "fen": "6k1/7p/p5pb/1p2Pp2/2r5/2N1P2P/PP1R2P1/6K1 b - - 0 29",
+                  "answer": "Bxe3+",
+                  "choices": [
+                    "Rxc3",
+                    "Rd4",
+                    "Bxe3+",
+                    "Bg5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3638,7 +5016,20 @@
                 "gxh3"
               ],
               "explain": "Bxf4 starts it: Bxf4 exf4 Qxh3. Lichess puzzle 08BaP, rated 1568.",
-              "id": "chess_lp14l2_4"
+              "id": "chess_lp14l2_4",
+              "steps": [
+                {
+                  "reply": "exf4",
+                  "fen": "r2q1rnk/2p3bp/1p1p2p1/1N1P4/2P1Np2/2Q4b/P1B2PP1/R4RK1 w - - 0 20",
+                  "answer": "Qxh3",
+                  "choices": [
+                    "Nbxd6",
+                    "Qxh3",
+                    "Qxg7+",
+                    "Nexd6"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -3658,7 +5049,42 @@
                 "Qh4+"
               ],
               "explain": "Nxf3+ starts it: Nxf3+ Qxf3 Qxf3 gxf3 Bxe3 Nd5 Bb6. Lichess puzzle 07hR4, rated 1617.",
-              "id": "chess_lp14l3_0"
+              "id": "chess_lp14l3_0",
+              "steps": [
+                {
+                  "reply": "Qxf3",
+                  "fen": "r3k1nr/ppp2ppp/5q2/2b5/4P3/2NPBQ2/PPP3PP/R3K2R b KQkq - 0 11",
+                  "answer": "Qxf3",
+                  "choices": [
+                    "Qxf3",
+                    "Bxe3",
+                    "Qh4+",
+                    "Qxc3+"
+                  ]
+                },
+                {
+                  "reply": "gxf3",
+                  "fen": "r3k1nr/ppp2ppp/8/2b5/4P3/2NPBP2/PPP4P/R3K2R b KQkq - 0 12",
+                  "answer": "Bxe3",
+                  "choices": [
+                    "Bxe3",
+                    "b6",
+                    "Kd8",
+                    "Nf6"
+                  ]
+                },
+                {
+                  "reply": "Nd5",
+                  "fen": "r3k1nr/ppp2ppp/8/3N4/4P3/3PbP2/PPP4P/R3K2R b KQkq - 1 13",
+                  "answer": "Bb6",
+                  "choices": [
+                    "Bf2+",
+                    "Bd2+",
+                    "Bg5",
+                    "Bb6"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3672,7 +5098,20 @@
                 "Rd7"
               ],
               "explain": "Rxc4 starts it: Rxc4 dxc4 Nxd2. Lichess puzzle 07NOA, rated 1651.",
-              "id": "chess_lp14l3_1"
+              "id": "chess_lp14l3_1",
+              "steps": [
+                {
+                  "reply": "dxc4",
+                  "fen": "3r1k2/1p2b1pp/p4n2/4R3/P1Pp4/1n4P1/1P1B1PBP/5RK1 b - - 0 24",
+                  "answer": "Nxd2",
+                  "choices": [
+                    "Bc5",
+                    "Nxd2",
+                    "Rc8",
+                    "a5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3686,7 +5125,31 @@
                 "Rxb6"
               ],
               "explain": "Rxb6 starts it: Rxb6 axb6 Qxa6 Qa8 Qxa8. Lichess puzzle 02yVL, rated 1709.",
-              "id": "chess_lp14l3_2"
+              "id": "chess_lp14l3_2",
+              "steps": [
+                {
+                  "reply": "axb6",
+                  "fen": "1q3rk1/2p2pp1/bppp1b1p/4p3/Q1P1P3/3P1N1P/P2N1PP1/4R1K1 w - - 0 16",
+                  "answer": "Qxa6",
+                  "choices": [
+                    "Qxc6",
+                    "Nxe5",
+                    "d4",
+                    "Qxa6"
+                  ]
+                },
+                {
+                  "reply": "Qa8",
+                  "fen": "q4rk1/2p2pp1/Qppp1b1p/4p3/2P1P3/3P1N1P/P2N1PP1/4R1K1 w - - 1 17",
+                  "answer": "Qxa8",
+                  "choices": [
+                    "Qxb6",
+                    "Nxe5",
+                    "Qxa8",
+                    "Qa7"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3700,7 +5163,31 @@
                 "Qxf7+"
               ],
               "explain": "Nxe7+ starts it: Nxe7+ Qxe7 Qxe7 Rxe7 Nxc5. Lichess puzzle 01j9y, rated 1802.",
-              "id": "chess_lp14l3_3"
+              "id": "chess_lp14l3_3",
+              "steps": [
+                {
+                  "reply": "Qxe7",
+                  "fen": "r1b3k1/pp2qrp1/4Qn1p/2n5/8/1NP5/PP3PPP/R1BR2K1 w - - 0 19",
+                  "answer": "Qxe7",
+                  "choices": [
+                    "Qxe7",
+                    "Nxc5",
+                    "Bxh6",
+                    "Qxc8+"
+                  ]
+                },
+                {
+                  "reply": "Rxe7",
+                  "fen": "r1b3k1/pp2r1p1/5n1p/2n5/8/1NP5/PP3PPP/R1BR2K1 w - - 0 20",
+                  "answer": "Nxc5",
+                  "choices": [
+                    "Rd8+",
+                    "Nxc5",
+                    "Bxh6",
+                    "Kf1"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3714,7 +5201,20 @@
                 "Qc8+"
               ],
               "explain": "Nxg5 starts it: Nxg5 hxg5 Rxe3. Lichess puzzle 01Tr9, rated 1829.",
-              "id": "chess_lp14l3_4"
+              "id": "chess_lp14l3_4",
+              "steps": [
+                {
+                  "reply": "hxg5",
+                  "fen": "6k1/1p3pp1/2q5/p3PQp1/2p5/2P1r2P/PP2R1PK/8 w - - 0 38",
+                  "answer": "Rxe3",
+                  "choices": [
+                    "Qxf7+",
+                    "Qxg5",
+                    "Rxe3",
+                    "Qc8+"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -3741,7 +5241,20 @@
                 "Rg1"
               ],
               "explain": "Rf5 starts it: Rf5 e2 Rxg5+. Lichess puzzle 06Eew, rated 964.",
-              "id": "chess_lp15l1_0"
+              "id": "chess_lp15l1_0",
+              "steps": [
+                {
+                  "reply": "e2",
+                  "fen": "6k1/1p3r2/p1p2P1p/3prRqP/1P4P1/P6Q/4p3/5R1K w - - 0 39",
+                  "answer": "Rxg5+",
+                  "choices": [
+                    "Rxe5",
+                    "Rxg5+",
+                    "R1f2",
+                    "R1f4"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3755,7 +5268,20 @@
                 "b4"
               ],
               "explain": "b4 starts it: b4 Qb5 Bxb5. Lichess puzzle 01V4g, rated 1170.",
-              "id": "chess_lp15l1_1"
+              "id": "chess_lp15l1_1",
+              "steps": [
+                {
+                  "reply": "Qb5",
+                  "fen": "3r1rk1/p2nppbp/2p2np1/1qPp4/pP1P1B2/P2BP2P/5PP1/R2Q1RK1 w - - 1 17",
+                  "answer": "Bxb5",
+                  "choices": [
+                    "Bxb5",
+                    "Bxg6",
+                    "Qxa4",
+                    "Qc1"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3769,7 +5295,31 @@
                 "Be5"
               ],
               "explain": "Bb7 starts it: Bb7 Qa7 Ra8 Qxa8+ Bxa8. Lichess puzzle 00AhO, rated 1229.",
-              "id": "chess_lp15l1_2"
+              "id": "chess_lp15l1_2",
+              "steps": [
+                {
+                  "reply": "Qa7",
+                  "fen": "5rk1/Qbq2p1p/1p2pbp1/pP6/2P5/P2B1N2/5PPP/3R1RK1 b - - 2 21",
+                  "answer": "Ra8",
+                  "choices": [
+                    "Qxc4",
+                    "Qxh2+",
+                    "Bxf3",
+                    "Ra8"
+                  ]
+                },
+                {
+                  "reply": "Qxa8+",
+                  "fen": "Q5k1/1bq2p1p/1p2pbp1/pP6/2P5/P2B1N2/5PPP/3R1RK1 b - - 0 22",
+                  "answer": "Bxa8",
+                  "choices": [
+                    "Bxa8",
+                    "Bd8",
+                    "Qb8",
+                    "Qd8"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3783,7 +5333,20 @@
                 "Nh5"
               ],
               "explain": "Ra8 starts it: Ra8 Qxa8+ Bxa8. Lichess puzzle 04DEQ, rated 1318.",
-              "id": "chess_lp15l1_3"
+              "id": "chess_lp15l1_3",
+              "steps": [
+                {
+                  "reply": "Qxa8+",
+                  "fen": "Q5k1/1bq1bppp/2p1pn2/4N3/3P4/3B3P/1BP2PP1/1R4K1 b - - 0 22",
+                  "answer": "Bxa8",
+                  "choices": [
+                    "Bc8",
+                    "Bxa8",
+                    "Qc8",
+                    "Qb8"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3797,7 +5360,20 @@
                 "Bb4+"
               ],
               "explain": "Rh8 starts it: Rh8 Qxh8 Qxh8. Lichess puzzle 05BVq, rated 1357.",
-              "id": "chess_lp15l1_4"
+              "id": "chess_lp15l1_4",
+              "steps": [
+                {
+                  "reply": "Qxh8",
+                  "fen": "r1b1kb1Q/pppp4/5qp1/8/2P1Pp2/8/PPP2PPP/RNB1K2R b KQq - 0 11",
+                  "answer": "Qxh8",
+                  "choices": [
+                    "Qc3+",
+                    "Qxb2",
+                    "b5",
+                    "Qxh8"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -3817,7 +5393,20 @@
                 "Kd5"
               ],
               "explain": "Kd5 starts it: Kd5 Rxg4 hxg4. Lichess puzzle 038q1, rated 1386.",
-              "id": "chess_lp15l2_0"
+              "id": "chess_lp15l2_0",
+              "steps": [
+                {
+                  "reply": "Rxg4",
+                  "fen": "8/8/8/p1bkp2p/P5RP/2P3K1/8/8 b - - 0 46",
+                  "answer": "hxg4",
+                  "choices": [
+                    "Bf2+",
+                    "Bb6",
+                    "Be3",
+                    "hxg4"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3831,7 +5420,20 @@
                 "Bxh3"
               ],
               "explain": "c4 starts it: c4 Bxc4 bxc4. Lichess puzzle 05nKb, rated 1426.",
-              "id": "chess_lp15l2_1"
+              "id": "chess_lp15l2_1",
+              "steps": [
+                {
+                  "reply": "Bxc4",
+                  "fen": "r3r2k/6pp/p1n2p2/1p3b2/2B2P2/2P2N1P/PP3PP1/3R1K1R b - - 0 19",
+                  "answer": "bxc4",
+                  "choices": [
+                    "bxc4",
+                    "Re1+",
+                    "Bxh3",
+                    "Bd3+"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3845,7 +5447,20 @@
                 "Nxb4"
               ],
               "explain": "Bg4 starts it: Bg4 Bh3 Bxh5 Bxd7+ Kxd7. Lichess puzzle 01HgH, rated 1504.",
-              "id": "chess_lp15l2_2"
+              "id": "chess_lp15l2_2",
+              "steps": [
+                {
+                  "reply": "Bh3",
+                  "fen": "r3k2r/pppqbppp/2n5/3p2PQ/PP1Pp1bP/2P1P2B/5P2/RNB1K1NR b KQkq - 2 12",
+                  "answer": "Bxh5",
+                  "choices": [
+                    "Nxb4",
+                    "Bxb4",
+                    "Bxh3",
+                    "Bxh5"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3859,7 +5474,31 @@
                 "Bxf6"
               ],
               "explain": "Be3 starts it: Be3 Bc4 Bxf2 Bxd3 cxd3. Lichess puzzle 01iqw, rated 1533.",
-              "id": "chess_lp15l2_3"
+              "id": "chess_lp15l2_3",
+              "steps": [
+                {
+                  "reply": "Bc4",
+                  "fen": "r3kb1r/1p4p1/p1p2p2/4p2p/2b1P3/2NQBPP1/PPP2qBP/R6K w kq - 2 18",
+                  "answer": "Bxf2",
+                  "choices": [
+                    "Qxc4",
+                    "Qd8+",
+                    "Qd7+",
+                    "Bxf2"
+                  ]
+                },
+                {
+                  "reply": "Bxd3",
+                  "fen": "r3kb1r/1p4p1/p1p2p2/4p2p/4P3/2Nb1PP1/PPP2BBP/R6K w kq - 0 19",
+                  "answer": "cxd3",
+                  "choices": [
+                    "cxd3",
+                    "Bg1",
+                    "Re1",
+                    "a4"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3873,7 +5512,31 @@
                 "Ba3+"
               ],
               "explain": "Ba3+ starts it: Ba3+ Kd7 Nf7 Qe7 Bxe7. Lichess puzzle 01rBE, rated 1601.",
-              "id": "chess_lp15l2_4"
+              "id": "chess_lp15l2_4",
+              "steps": [
+                {
+                  "reply": "Kd7",
+                  "fen": "r1bqr3/pppk2pp/1b3n2/nP1pp1NP/4P3/B1PP4/P4PP1/RN1QK2R w KQ - 2 13",
+                  "answer": "Nf7",
+                  "choices": [
+                    "exd5",
+                    "Nf7",
+                    "Qg4+",
+                    "Nxh7"
+                  ]
+                },
+                {
+                  "reply": "Qe7",
+                  "fen": "r1b1r3/pppkqNpp/1b3n2/nP1pp2P/4P3/B1PP4/P4PP1/RN1QK2R w KQ - 4 14",
+                  "answer": "Bxe7",
+                  "choices": [
+                    "exd5",
+                    "Bxe7",
+                    "Nxe5+",
+                    "Qg4+"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -3907,7 +5570,20 @@
                 "Qxb3"
               ],
               "explain": "h5 starts it: h5 Qxe4+ Nxe4. Lichess puzzle 04Izo, rated 1658.",
-              "id": "chess_lp15l3_1"
+              "id": "chess_lp15l3_1",
+              "steps": [
+                {
+                  "reply": "Qxe4+",
+                  "fen": "r1bb1rk1/5ppp/3p4/2pP2PP/p1P1qP2/1p4Q1/PP1N4/1K1R3R w - - 0 26",
+                  "answer": "Nxe4",
+                  "choices": [
+                    "Nxe4",
+                    "Qd3",
+                    "Kc1",
+                    "Ka1"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3921,7 +5597,20 @@
                 "Qxe7"
               ],
               "explain": "Qc6 starts it: Qc6 f3 Rce8 Qxf8+ Rxf8. Lichess puzzle 03NcI, rated 1732.",
-              "id": "chess_lp15l3_2"
+              "id": "chess_lp15l3_2",
+              "steps": [
+                {
+                  "reply": "f3",
+                  "fen": "2r2r1k/pb2Q1pp/1pqp1n2/8/3P4/2P2P2/PP1B2PP/1BR1R1K1 b - - 0 19",
+                  "answer": "Rce8",
+                  "choices": [
+                    "Qxc3",
+                    "Qxf3",
+                    "Qb5",
+                    "Rce8"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3935,7 +5624,20 @@
                 "Kb2"
               ],
               "explain": "Kb2 starts it: Kb2 Ra2+ Kxa2. Lichess puzzle 06llD, rated 1761.",
-              "id": "chess_lp15l3_3"
+              "id": "chess_lp15l3_3",
+              "steps": [
+                {
+                  "reply": "Ra2+",
+                  "fen": "8/5k2/4Rp2/p3pPp1/2P4p/1P5P/rK4P1/8 w - - 2 54",
+                  "answer": "Kxa2",
+                  "choices": [
+                    "Kc1",
+                    "Kxa2",
+                    "Kb1",
+                    "Kc3"
+                  ]
+                }
+              ]
             },
             {
               "type": "chess",
@@ -3949,7 +5651,20 @@
                 "Nxb3"
               ],
               "explain": "Rb7 starts it: Rb7 Qxb7 Nxb7. Lichess puzzle 05XHa, rated 1817.",
-              "id": "chess_lp15l3_4"
+              "id": "chess_lp15l3_4",
+              "steps": [
+                {
+                  "reply": "Qxb7",
+                  "fen": "3q1rk1/1Q2ppbp/1p1pb1p1/1Nn5/P1P1P3/1P2BPP1/6BP/1R1R2K1 b - - 0 19",
+                  "answer": "Nxb7",
+                  "choices": [
+                    "Nxa4",
+                    "Nxb7",
+                    "Nxb3",
+                    "Nxe4"
+                  ]
+                }
+              ]
             }
           ]
         }
