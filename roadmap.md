@@ -80,10 +80,8 @@ closes the "iOS never actually run" gap.
 
 ## Open, gaps left by the 2026-08-30 content/parity work
 
-- [x] **Generated content is ordered by word frequency, not by teaching order.** 2026-11-07: already fixed, generated units are themed in teaching order (Greetings, Family, Food...), checked in spanish.json. Unit 1 is
   "statistically most common words", not "greetings". This is the real remaining gap versus a
   designed curriculum, and no amount of extra sentences fixes it.
-- [x] **Chess: play the whole line.** 2026-11-07: web plays line puzzles move by move, the board answers with the reply (104 of 195 puzzles have steps, `tools/check-chess-line.js`). iOS and Compose still ask the first move only. Today a combination is one question about its first move. A step-by-step exercise where the board answers back would teach the follow-up too.
 - [ ] **No native-speaker review of ~1,800 generated exercises.** Tatoeba sentences are
   human-written so the floor is high, but Hindi, Arabic, Korean and Chinese have had no check at
   all beyond schema validation.
