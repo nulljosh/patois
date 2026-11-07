@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Publish lexly to Cloudflare Pages (project `lexly-heyitsmejosh`).
+# Publish Patois to Cloudflare Pages (project `lexly-heyitsmejosh`).
 #
 # The Pages project is NOT git-connected, so `git push` deploys nothing —
 # the site silently went 2 weeks stale that way. Run this instead.
@@ -44,7 +44,7 @@ for asset in content/catalog.json css/lingo.css js/lingo-app.js assets/marketing
     # Cache-bust: /assets/* carries a 300s edge TTL (see _headers), far longer
     # than this retry window, so an uncached URL would compare against the edge's
     # stale copy — a false failure now, and a false pass before images were checked.
-    if curl -fsS "https://lexly.jaybulb.com/$asset?deployverify=$$-$attempt" -o "$VERIFY_TMP"; then
+    if curl -fsS "https://patois.jaybulb.com/$asset?deployverify=$$-$attempt" -o "$VERIFY_TMP"; then
       LIVE="$(md5file "$VERIFY_TMP")"
     else
       LIVE=""
