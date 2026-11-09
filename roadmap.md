@@ -598,10 +598,8 @@ The earlier gaps have been addressed:
 - No social proof: unavailable to honestly show (0 App Store reviews, 0 GitHub stars), but the demo lets visitors experience the product themselves rather than seeing fake testimonials
 
 ## Ingested 2026-10-16
-- [ ] Very neglected app. Stale name and screenshots on the App Store: live listing is still Lexly 1.1.3 with old screenshots. (screenshots: notes/attachments/2026-10-16/lexly-1.png, notes/attachments/2026-10-16/tonchi-2.png)
 
 ## Ingested 2026-10-21
-- [ ] Still super stale on the App Store (it's Patois now, store still says Lexly). Already tracked above as the stale name and screenshots item; ship the rename and fresh screenshots.
 
 ## Ingested 2026-10-25
 - [ ] App Store screenshots are horrible. Redo them. (11-01: two new 6.9" shots in screenshots/appstore/6.9, the home without a title bar and the Spanish course, dark, from `-suppressWhatsNew YES -shotSubject spanish`. plus 03-lesson (Spanish Greetings, `-shotLesson YES`). Upload these three with the next version; 1.1.6 is in review)
