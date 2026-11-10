@@ -105,7 +105,9 @@ struct AuthView: View {
 
                 Task {
 
-                    do { try await auth.signInWithApple(result: result) }
+                    // Close the sheet on success like the email and Face ID paths do; leaving it up read as
+                    // "does not sign in" to App Review (2.1(a), iOS 1.1.6, 2026-11-10).
+                    do { try await auth.signInWithApple(result: result); dismiss() }
                     // A dismissed sheet is not an error. A device with no Apple ID signed in (typical of a
                     // review device) used to surface Apple's raw error text; point at the other options.
                     catch let error as ASAuthorizationError where error.code == .canceled { }
