@@ -6,9 +6,9 @@
 
 Real reason for the rejections: "the app does not sign in when we use Sign in with Apple." The sign-in sheet closed after email and Face ID sign-in but stayed open after Apple sign-in, so it looked like nothing happened. Fixed in `AuthView.swift` (commit 877aab9). Built and uploaded iOS 1.1.6 build 202611101543 (commit 505c5ce), attached it and resubmitted. Submission c1900e43 is WAITING_FOR_REVIEW. If Apple rejects again, read Resolution Center before touching anything.
 
-- [ ] Full screenshot QA, /mobbin pass and the A+ loop, owed from this session.
-- [ ] Math audit. Pre-Calc 12 (11 units, 180 questions) and Calculus (6 units, 55) are solid. Arithmetic, Algebra, Geometry, Trig, Statistics, Linear Algebra and Logic are one unit of about 15 questions each. Pre-Calc 11 has 10 questions and is labelled "BC Grade 12" by mistake; fix the label and fill the unit.
-- [ ] Typed math answers must match exactly: "(x-3)(x-2)" is marked wrong against "(x-2)(x-3)". Accept equivalent forms (expand or compare normalised expressions).
+- [ ] /mobbin pass and the A+ loop, held until weekly usage resets Saturday.
+- [ ] Thin single-unit math courses: Arithmetic, Algebra, Geometry, Trig, Statistics, Linear Algebra and Logic are one unit of about 15 questions each.
+- [ ] Ship the iOS math changes (equivalence grading, real notation, Pre-Calc 11 and 12 rebuild) in the next version. They are held out of the 1.1.6 sign-in review so that review is not reset.
 - [ ] Xcode Cloud for Patois. GitHub is linked and Talli and Epiphany already use it. Joshua needs to do a one-time Product > Xcode Cloud > Create Workflow in Xcode; after that, workflows can be driven with `asc xcode-cloud`.
 - [ ] Two empty iOS review submission drafts are left over (edffd094..., b0c3b4a5...). Cancelling them was blocked by permissions. Do not try to cancel them again; Joshua clears them in App Store Connect.
 
