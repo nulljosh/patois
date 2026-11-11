@@ -14,7 +14,7 @@ const grab = (name) => {
 const el = () => ({ classList: { add() {}, remove() {}, contains: () => false }, style: {}, appendChild() {}, textContent: '', className: '' });
 const els = {};
 const ctx = {
-    gameState: {}, srs: [], document: {
+    gameState: {}, srs: [], PACK_CACHE: {}, document: {
         getElementById: (id) => (els[id] ||= el()),
         querySelector: () => el(), querySelectorAll: () => [], createElement: () => el(),
     },
@@ -22,7 +22,7 @@ const ctx = {
     updateStats() {}, vibrate() {}, renderQuestion() {}, setTimeout() {}, showResults() {}, nextQuestion() {},
 };
 vm.createContext(ctx);
-vm.runInContext(['chessView', 'checkAnswer', 'showChessReply'].map(grab).join('\n'), ctx);
+vm.runInContext(['chessView', 'checkAnswer', 'showChessReply', 'mt'].map(grab).join('\n'), ctx);
 
 const pack = JSON.parse(fs.readFileSync(__dirname + '/../content/courses/chess.json', 'utf8'));
 const lines = pack.units.flatMap((u) => u.lessons.flatMap((l) => l.exercises)).filter((e) => e.steps?.length);
