@@ -30,7 +30,7 @@ final class ContentStore {
     func loadCourse(_ subject: Subject) -> CoursePack? {
         guard let packPath = subject.packPath else { return nil }
         let name = (packPath as NSString).lastPathComponent.replacingOccurrences(of: ".json", with: "")
-        return ContentStore.loadJSON(name, subdir: "courses", as: CoursePack.self)
+        return ContentStore.loadJSON(name, subdir: "courses", as: CoursePack.self)?.prettified()
     }
 
     func loadNotes(_ subject: Subject) -> Notes? {

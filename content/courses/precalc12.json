@@ -4,7 +4,7 @@
   "category": "math",
   "icon": "fa-solid fa-book-open",
   "level": "BC Grade 12",
-  "version": 5,
+  "version": 6,
   "units": [
     {
       "id": "u1",
@@ -24,7 +24,8 @@
                 "120",
                 "20"
               ],
-              "id": "precalc12_u7_l1_0"
+              "id": "precalc12_u7_l1_0",
+              "explain": "There are 5 choices for the first spot, then 4, then 3, and order matters: 5 * 4 * 3 = 60."
             },
             {
               "type": "mathChoice",
@@ -36,13 +37,15 @@
                 "5",
                 "25"
               ],
-              "id": "precalc12_u7_l1_1"
+              "id": "precalc12_u7_l1_1",
+              "explain": "C(5,2) = 5!/(2! * 3!) = 120/12 = 10, because the order of the two picks does not count."
             },
             {
               "type": "math",
               "question": "5! =",
               "answer": "120",
-              "id": "precalc12_u7_l1_2"
+              "id": "precalc12_u7_l1_2",
+              "explain": "5! = 5 * 4 * 3 * 2 * 1 = 120."
             },
             {
               "type": "mathChoice",
@@ -54,7 +57,8 @@
                 "does not matter",
                 "is squared"
               ],
-              "id": "precalc12_u7_l1_3"
+              "id": "precalc12_u7_l1_3",
+              "explain": "Combinations ignore order, so AB and BA count as one choice. Permutations care about order."
             }
           ]
         },
@@ -66,7 +70,8 @@
               "type": "math",
               "question": "Sum of first 4 terms of geometric series 2,4,8,16: S4 =",
               "answer": "30",
-              "id": "precalc12_u7_l2_0"
+              "id": "precalc12_u7_l2_0",
+              "explain": "Add the terms: 2 + 4 + 8 + 16 = 30."
             },
             {
               "type": "mathChoice",
@@ -78,7 +83,8 @@
                 "less than 1",
                 "greater than 1"
               ],
-              "id": "precalc12_u7_l2_1"
+              "id": "precalc12_u7_l2_1",
+              "explain": "A geometric series only converges when |r| < 1, so each term gets smaller and the sum settles down."
             }
           ]
         },
@@ -90,7 +96,8 @@
               "type": "math",
               "question": "In an arithmetic sequence, a1=5 and d=3. What is a10?",
               "answer": "32",
-              "id": "precalc12_u1_l3_0"
+              "id": "precalc12_u1_l3_0",
+              "explain": "The nth term is a1 + (n - 1)d, so a10 = 5 + 9(3) = 32."
             },
             {
               "type": "mathChoice",
@@ -102,7 +109,8 @@
                 "an = a1·r^(n-1)",
                 "an = a1 + nd",
                 "an = a1 + (n-1)d"
-              ]
+              ],
+              "explain": "Each term adds d to the one before, so the formula starts at a1 and adds d a total of (n - 1) times."
             },
             {
               "type": "mathChoice",
@@ -114,7 +122,8 @@
                 "Sn = a1(1-r^n)/(1-r)",
                 "Sn = a1/(1-r)",
                 "Sn = n/2 (a1 + an)"
-              ]
+              ],
+              "explain": "Average the first and last terms and multiply by the number of terms: Sn = n/2 (a1 + an)."
             },
             {
               "type": "mathChoice",
@@ -126,7 +135,8 @@
                 "r is an integer",
                 "r > 0",
                 "|r| < 1"
-              ]
+              ],
+              "explain": "An infinite geometric series converges only when |r| < 1, so the terms shrink toward zero."
             },
             {
               "type": "mathChoice",
@@ -138,17 +148,20 @@
                 "diverge",
                 "neither",
                 "converge"
-              ]
+              ],
+              "explain": "Convergence depends on |r|, and |-0.99| = 0.99 is less than 1, so the series converges."
             },
             {
               "type": "math",
               "question": "Sum of an infinite geometric series with a1=8, r=1/2:",
               "answer": "16",
-              "id": "precalc12_u1_l3_5"
+              "id": "precalc12_u1_l3_5",
+              "explain": "S = a1/(1 - r) = 8/(1 - 1/2) = 8/(1/2) = 16."
             }
           ]
         }
-      ]
+      ],
+      "tip": "A geometric series only converges when |r| < 1, so use the size of r, not its sign: r = -0.99 converges. Example: the sum of 8 + 4 + 2 + ... is 8/(1 - 1/2) = 16."
     },
     {
       "id": "u2",
@@ -168,7 +181,8 @@
                 "Down 3 units",
                 "Right 3 units"
               ],
-              "id": "precalc12_u1_l1_0"
+              "id": "precalc12_u1_l1_0",
+              "explain": "Subtracting 3 inside the bracket moves the graph right 3, because the input has to be 3 bigger to get the same output."
             },
             {
               "type": "mathChoice",
@@ -180,7 +194,8 @@
                 "line y=x",
                 "y-axis"
               ],
-              "id": "precalc12_u1_l1_1"
+              "id": "precalc12_u1_l1_1",
+              "explain": "The minus sign flips every y-value, so the graph flips over the x-axis."
             },
             {
               "type": "mathChoice",
@@ -192,13 +207,15 @@
                 "y-axis",
                 "x-axis"
               ],
-              "id": "precalc12_u1_l1_2"
+              "id": "precalc12_u1_l1_2",
+              "explain": "Replacing x with -x flips the graph left and right, which is a reflection over the y-axis."
             },
             {
               "type": "math",
               "question": "If f(x)=x^2 and g(x)=f(x)+4, what is g(2)?",
               "answer": "8",
-              "id": "precalc12_u1_l1_3"
+              "id": "precalc12_u1_l1_3",
+              "explain": "g(2) = f(2) + 4 = 2^2 + 4 = 8."
             },
             {
               "type": "mathChoice",
@@ -210,7 +227,8 @@
                 "stretch by factor 2",
                 "shift up 2"
               ],
-              "id": "precalc12_u1_l1_4"
+              "id": "precalc12_u1_l1_4",
+              "explain": "Multiplying every y-value by 2 stretches the graph vertically by a factor of 2."
             }
           ]
         },
@@ -222,7 +240,8 @@
               "type": "math",
               "question": "Find the inverse of f(x) = x + 5: f^-1(x) =",
               "answer": "x-5",
-              "id": "precalc12_u1_l2_0"
+              "id": "precalc12_u1_l2_0",
+              "explain": "Undo the +5 by subtracting: y = x + 5 gives x = y - 5, so f^-1(x) = x - 5."
             },
             {
               "type": "mathChoice",
@@ -234,13 +253,15 @@
                 "x-axis",
                 "y-axis"
               ],
-              "id": "precalc12_u1_l2_1"
+              "id": "precalc12_u1_l2_1",
+              "explain": "Swapping x and y reflects a graph over the line y = x."
             },
             {
               "type": "math",
               "question": "Find the inverse of f(x) = 2x: f^-1(x) =",
               "answer": "x/2",
-              "id": "precalc12_u1_l2_2"
+              "id": "precalc12_u1_l2_2",
+              "explain": "Swap x and y: y = 2x becomes x = 2y, so y = x/2."
             },
             {
               "type": "mathChoice",
@@ -252,7 +273,8 @@
                 "odd",
                 "continuous"
               ],
-              "id": "precalc12_u1_l2_3"
+              "id": "precalc12_u1_l2_3",
+              "explain": "Only a one-to-one function has an inverse that is also a function, because each output must come from exactly one input."
             }
           ]
         },
@@ -270,7 +292,8 @@
                 "y = x^4",
                 "y = x^2"
               ],
-              "id": "precalc12_u2_l3_0"
+              "id": "precalc12_u2_l3_0",
+              "explain": "y = x^3 passes the horizontal line test, since every horizontal line hits it only once. |x|, x^2 and x^4 all repeat y-values."
             },
             {
               "type": "mathChoice",
@@ -282,7 +305,8 @@
                 "even",
                 "one-to-one"
               ],
-              "id": "precalc12_u2_l3_1"
+              "id": "precalc12_u2_l3_1",
+              "explain": "If no horizontal line cuts the graph twice, the function is one-to-one."
             },
             {
               "type": "mathChoice",
@@ -294,7 +318,8 @@
                 "(x+2)/3",
                 "3x-2",
                 "3/(x-2)"
-              ]
+              ],
+              "explain": "Swap x and y: x = 3y + 2, so 3y = x - 2 and y = (x - 2)/3."
             },
             {
               "type": "mathChoice",
@@ -306,13 +331,15 @@
                 "1/(x^3+5)",
                 "(x-5)^(1/3)"
               ],
-              "id": "precalc12_u2_l3_3"
+              "id": "precalc12_u2_l3_3",
+              "explain": "Swap x and y: x = y^3 + 5, so y^3 = x - 5 and y = (x - 5)^(1/3)."
             },
             {
               "type": "math",
               "question": "If (2, 8) is on f(x), the point on f^-1 has x-coordinate:",
               "answer": "8",
-              "id": "precalc12_u2_l3_4"
+              "id": "precalc12_u2_l3_4",
+              "explain": "Inverses swap coordinates: (2, 8) on f becomes (8, 2) on f^-1, so the x-coordinate is 8."
             },
             {
               "type": "mathChoice",
@@ -324,11 +351,13 @@
                 "all real x",
                 "x != 0"
               ],
-              "id": "precalc12_u2_l3_5"
+              "id": "precalc12_u2_l3_5",
+              "explain": "On x >= 0, x^2 gives each output only once. The other domains still contain a pair like x = 1 and x = -1 that give the same output."
             }
           ]
         }
-      ]
+      ],
+      "tip": "In y = f(x - 3) the minus inside the bracket moves the graph right 3, which is the opposite of what it looks like. To find an inverse, swap x and y and solve: y = 3x + 2 becomes x = 3y + 2, so y = (x - 2)/3."
     },
     {
       "id": "u3",
@@ -342,7 +371,8 @@
               "type": "math",
               "question": "Divide: (x^2 - 1) / (x - 1) =",
               "answer": "x+1",
-              "id": "precalc12_u2_l1_0"
+              "id": "precalc12_u2_l1_0",
+              "explain": "Factor the top: x^2 - 1 = (x - 1)(x + 1). Cancel the (x - 1) to get x + 1."
             },
             {
               "type": "mathChoice",
@@ -354,7 +384,8 @@
                 "a",
                 "P(1)"
               ],
-              "id": "precalc12_u2_l1_1"
+              "id": "precalc12_u2_l1_1",
+              "explain": "The Remainder Theorem says the remainder when P(x) is divided by (x - a) is P(a)."
             },
             {
               "type": "mathChoice",
@@ -366,19 +397,22 @@
                 "P(0) = a",
                 "P(a) = 0"
               ],
-              "id": "precalc12_u2_l1_2"
+              "id": "precalc12_u2_l1_2",
+              "explain": "If P(a) = 0 the remainder is zero, so (x - a) divides evenly and is a factor."
             },
             {
               "type": "math",
               "question": "Factor: x^2 - 9 =",
               "answer": "(x-3)(x+3)",
-              "id": "precalc12_u2_l1_3"
+              "id": "precalc12_u2_l1_3",
+              "explain": "Difference of squares: x^2 - 9 = (x - 3)(x + 3)."
             },
             {
               "type": "math",
               "question": "Find the remainder when x^2+3x+2 is divided by (x-1)",
               "answer": "6",
-              "id": "precalc12_u2_l1_4"
+              "id": "precalc12_u2_l1_4",
+              "explain": "The remainder is P(1) = 1^2 + 3(1) + 2 = 6."
             }
           ]
         },
@@ -396,13 +430,15 @@
                 "1",
                 "negative infinity"
               ],
-              "id": "precalc12_u2_l2_0"
+              "id": "precalc12_u2_l2_0",
+              "explain": "An odd-degree polynomial with a positive leading coefficient rises to the right, so y goes to infinity as x goes to infinity."
             },
             {
               "type": "math",
               "question": "How many x-intercepts (max) can a degree-4 polynomial have?",
               "answer": "4",
-              "id": "precalc12_u2_l2_1"
+              "id": "precalc12_u2_l2_1",
+              "explain": "A polynomial of degree n has at most n real roots, so degree 4 gives at most 4 x-intercepts."
             },
             {
               "type": "mathChoice",
@@ -414,7 +450,8 @@
                 "crosses through",
                 "disappears"
               ],
-              "id": "precalc12_u2_l2_2"
+              "id": "precalc12_u2_l2_2",
+              "explain": "An even multiplicity means the graph touches the x-axis and turns back, so it bounces off."
             }
           ]
         },
@@ -432,7 +469,8 @@
                 "a",
                 "P(a)",
                 "P(0)"
-              ]
+              ],
+              "explain": "Remainder Theorem: dividing P(x) by (x - a) leaves the remainder P(a)."
             },
             {
               "type": "mathChoice",
@@ -444,13 +482,15 @@
                 "P(0) = a",
                 "P(a) = 1",
                 "P(a) = 0"
-              ]
+              ],
+              "explain": "(x - a) is a factor exactly when P(a) = 0, because then the remainder is zero."
             },
             {
               "type": "math",
               "question": "If P(x)=x^3-2x^2+x-6, what is the remainder when divided by (x-3)?",
               "answer": "6",
-              "id": "precalc12_u3_l3_2"
+              "id": "precalc12_u3_l3_2",
+              "explain": "P(3) = 3^3 - 2(3)^2 + 3 - 6 = 27 - 18 + 3 - 6 = 6, and that is the remainder."
             },
             {
               "type": "mathChoice",
@@ -462,7 +502,8 @@
                 "has a vertical asymptote",
                 "is undefined there",
                 "crosses the x-axis"
-              ]
+              ],
+              "explain": "An even multiplicity means the graph touches the x-axis and bounces back without crossing."
             },
             {
               "type": "mathChoice",
@@ -474,17 +515,20 @@
                 "up on both ends",
                 "up on the left, down on the right",
                 "down on both ends"
-              ]
+              ],
+              "explain": "Odd degree with a negative leading coefficient: the left end goes up and the right end goes down."
             },
             {
               "type": "math",
               "question": "Solve 64a^3 - 16a = 0 for the positive root:",
               "answer": "1/2",
-              "id": "precalc12_u3_l3_5"
+              "id": "precalc12_u3_l3_5",
+              "explain": "Factor out 16a: 16a(4a^2 - 1) = 0, so 4a^2 = 1 and the positive root is a = 1/2."
             }
           ]
         }
-      ]
+      ],
+      "tip": "Remainder Theorem: the remainder when P(x) is divided by (x - a) is P(a). Example: x^2 + 3x + 2 divided by (x - 1) leaves P(1) = 1 + 3 + 2 = 6. Watch the sign: (x - 3) uses a = 3, and (x + 3) uses a = -3."
     },
     {
       "id": "u4",
@@ -504,7 +548,8 @@
                 "y = mx + b",
                 "y = a * b^x"
               ],
-              "id": "precalc12_exp_l1_0"
+              "id": "precalc12_exp_l1_0",
+              "explain": "Exponential growth and decay have the variable in the exponent: y = a * b^x."
             },
             {
               "type": "mathChoice",
@@ -516,19 +561,22 @@
                 "a parabola",
                 "growth"
               ],
-              "id": "precalc12_exp_l1_1"
+              "id": "precalc12_exp_l1_1",
+              "explain": "When 0 < b < 1, each step multiplies by a fraction, so the value shrinks. That is decay."
             },
             {
               "type": "math",
               "question": "Simplify: 2^3 * 2^2 =",
               "answer": "32",
-              "id": "precalc12_exp_l1_2"
+              "id": "precalc12_exp_l1_2",
+              "explain": "Same base, so add the exponents: 2^3 * 2^2 = 2^5 = 32."
             },
             {
               "type": "math",
               "question": "Simplify: (x^2)^3 =",
               "answer": "x^6",
-              "id": "precalc12_exp_l1_3"
+              "id": "precalc12_exp_l1_3",
+              "explain": "Multiply the exponents: (x^2)^3 = x^(2 * 3) = x^6."
             }
           ]
         },
@@ -540,13 +588,15 @@
               "type": "math",
               "question": "Evaluate: log3(27)",
               "answer": "3",
-              "id": "precalc12_u6_l1_0"
+              "id": "precalc12_u6_l1_0",
+              "explain": "3 to what power gives 27? Since 3^3 = 27, log3(27) = 3."
             },
             {
               "type": "math",
               "question": "Evaluate: log2(8)",
               "answer": "3",
-              "id": "precalc12_u6_l1_1"
+              "id": "precalc12_u6_l1_1",
+              "explain": "2^3 = 8, so log2(8) = 3."
             },
             {
               "type": "mathChoice",
@@ -558,7 +608,8 @@
                 "log(M) * log(N)",
                 "log(M) - log(N)"
               ],
-              "id": "precalc12_u6_l1_2"
+              "id": "precalc12_u6_l1_2",
+              "explain": "The product law turns multiplication inside the log into addition outside: log(MN) = log M + log N."
             },
             {
               "type": "mathChoice",
@@ -570,13 +621,15 @@
                 "log(M)/k",
                 "log(k*M)"
               ],
-              "id": "precalc12_u6_l1_3"
+              "id": "precalc12_u6_l1_3",
+              "explain": "The power law moves the exponent out front as a multiplier: log(M^k) = k log M."
             },
             {
               "type": "math",
               "question": "Solve: log2(x) = 4, x =",
               "answer": "16",
-              "id": "precalc12_u6_l1_4"
+              "id": "precalc12_u6_l1_4",
+              "explain": "Rewrite in exponent form: 2^4 = x, so x = 16."
             }
           ]
         },
@@ -594,7 +647,8 @@
                 "log a - log b",
                 "log a · log b",
                 "(log a)/(log b)"
-              ]
+              ],
+              "explain": "The product law: the log of a product is the sum of the logs."
             },
             {
               "type": "mathChoice",
@@ -606,7 +660,8 @@
                 "n·log a",
                 "(log a)^n",
                 "n + log a"
-              ]
+              ],
+              "explain": "The power law: the exponent n moves out front as a multiplier, so log(a^n) = n log a."
             },
             {
               "type": "mathChoice",
@@ -618,13 +673,15 @@
                 "log(x)·log(b)",
                 "log(x) - log(b)",
                 "log(x)/log(b)"
-              ]
+              ],
+              "explain": "Change of base: log_b(x) = log(x)/log(b), using the same log base on top and bottom."
             },
             {
               "type": "math",
               "question": "Solve 3^x = 11. Round to 4 decimals.",
               "answer": "2.1827",
-              "id": "precalc12_u4_l3_3"
+              "id": "precalc12_u4_l3_3",
+              "explain": "Take the log of both sides: x = log(11)/log(3) = 2.3979/1.0986, which rounds to 2.1827."
             },
             {
               "type": "mathChoice",
@@ -636,7 +693,8 @@
                 "the nth root of x",
                 "n times x",
                 "x to the power n"
-              ]
+              ],
+              "explain": "The exponent 1/n means the nth root, so x^(1/n) is the nth root of x."
             },
             {
               "type": "mathChoice",
@@ -648,11 +706,13 @@
                 "multiplicity",
                 "complex roots",
                 "extraneous solutions"
-              ]
+              ],
+              "explain": "Squaring or multiplying through can create fake answers, so check each one in the original equation."
             }
           ]
         }
-      ]
+      ],
+      "tip": "Log laws work on products, quotients and powers, but not on sums: log(a + b) does not simplify. Example: log2(8) + log2(4) = log2(32) = 5."
     },
     {
       "id": "u5",
@@ -672,13 +732,15 @@
                 "leading coefficient",
                 "non-permissible values",
                 "amplitude"
-              ]
+              ],
+              "explain": "Find and state the values that make a denominator zero before you simplify."
             },
             {
               "type": "math",
               "question": "Non-permissible values are the values that make the denominator equal to...",
               "answer": "0",
-              "id": "precalc12_u5_l1_1"
+              "id": "precalc12_u5_l1_1",
+              "explain": "A denominator cannot be zero, so the values that make it zero are the non-permissible values."
             },
             {
               "type": "mathChoice",
@@ -690,7 +752,8 @@
                 "x = -2",
                 "x = 3 and x = -3",
                 "x = 0"
-              ]
+              ],
+              "explain": "Set x^2 - 9 = 0, so (x - 3)(x + 3) = 0. Both x = 3 and x = -3 are not allowed."
             },
             {
               "type": "mathChoice",
@@ -702,7 +765,8 @@
                 "GCF",
                 "reciprocal",
                 "conjugate"
-              ]
+              ],
+              "explain": "You need a common denominator before you add rational expressions, so you use the LCD."
             },
             {
               "type": "mathChoice",
@@ -714,13 +778,15 @@
                 "take the log of both sides",
                 "square both sides",
                 "check for extraneous solutions"
-              ]
+              ],
+              "explain": "Multiplying by the LCD can create false answers, so every answer must be checked in the original equation."
             },
             {
               "type": "math",
               "question": "Simplify (x^2-4)/(x-2) for x not equal to 2:",
               "answer": "x+2",
-              "id": "precalc12_u5_l1_5"
+              "id": "precalc12_u5_l1_5",
+              "explain": "Factor the top: (x - 2)(x + 2)/(x - 2). Cancel the (x - 2) to get x + 2 when x is not 2."
             }
           ]
         },
@@ -738,7 +804,8 @@
                 "ellipse",
                 "parabola",
                 "hyperbola"
-              ]
+              ],
+              "explain": "A plane cutting straight across the cone, perpendicular to the axis, makes a circle."
             },
             {
               "type": "mathChoice",
@@ -750,7 +817,8 @@
                 "circle",
                 "ellipse",
                 "hyperbola"
-              ]
+              ],
+              "explain": "A plane parallel to one slanted side touches only one nappe once, which gives a parabola."
             },
             {
               "type": "mathChoice",
@@ -762,7 +830,8 @@
                 "hyperbola",
                 "parabola",
                 "circle"
-              ]
+              ],
+              "explain": "A plane cutting through both nappes gives two separate curves, which is a hyperbola."
             },
             {
               "type": "mathChoice",
@@ -774,7 +843,8 @@
                 "(x-h)^2 + (y-k)^2 = r^2",
                 "y = ax^2",
                 "x^2/a^2 - y^2/b^2 = 1"
-              ]
+              ],
+              "explain": "The standard form of a circle is (x - h)^2 + (y - k)^2 = r^2, with centre (h, k) and radius r."
             },
             {
               "type": "mathChoice",
@@ -786,7 +856,8 @@
                 "parabola",
                 "hyperbola",
                 "ellipse"
-              ]
+              ],
+              "explain": "Two squared terms added and set equal to 1, with different denominators, give an ellipse."
             }
           ]
         },
@@ -798,13 +869,15 @@
               "type": "math",
               "question": "Vertical asymptote of y = 1/(x - 3): x =",
               "answer": "3",
-              "id": "precalc12_u5_l3_0"
+              "id": "precalc12_u5_l3_0",
+              "explain": "A vertical asymptote is where the denominator is zero: x - 3 = 0, so x = 3."
             },
             {
               "type": "math",
               "question": "Horizontal asymptote of y = 1/(x + 4) - 1: y =",
               "answer": "-1",
-              "id": "precalc12_u5_l3_1"
+              "id": "precalc12_u5_l3_1",
+              "explain": "The horizontal asymptote is the constant at the end of the equation: y = -1."
             },
             {
               "type": "mathChoice",
@@ -816,13 +889,15 @@
                 "hole",
                 "x-intercept"
               ],
-              "id": "precalc12_u5_l3_2"
+              "id": "precalc12_u5_l3_2",
+              "explain": "The (x + 3) factor cancels from top and bottom, which leaves a hole at x = -3, not an asymptote."
             },
             {
               "type": "math",
               "question": "y-coordinate of the hole in y = (x+3)(x-5)/(x+3):",
               "answer": "-8",
-              "id": "precalc12_u5_l3_3"
+              "id": "precalc12_u5_l3_3",
+              "explain": "Cancel to get y = x - 5, then at x = -3: y = -3 - 5 = -8."
             },
             {
               "type": "mathChoice",
@@ -834,17 +909,20 @@
                 "y-intercept",
                 "x-intercept"
               ],
-              "id": "precalc12_u5_l3_4"
+              "id": "precalc12_u5_l3_4",
+              "explain": "The (x - 1) cancels, but (x - 4) stays in the denominator, so x = 4 is a vertical asymptote."
             },
             {
               "type": "math",
               "question": "y-coordinate of the hole in y = (x-1)(x+2)/((x-1)(x-4)):",
               "answer": "-1",
-              "id": "precalc12_u5_l3_5"
+              "id": "precalc12_u5_l3_5",
+              "explain": "Cancel (x - 1) to get y = (x + 2)/(x - 4). At x = 1 that is 3/(-3) = -1."
             }
           ]
         }
-      ]
+      ],
+      "tip": "Before you simplify a rational expression, list the x-values that make the denominator zero, and keep them excluded. Example: in (x^2 - 4)/(x - 2) the x = 2 value is a hole, so the simplified answer is x + 2 with x not equal to 2."
     },
     {
       "id": "u6",
@@ -858,19 +936,22 @@
               "type": "math",
               "question": "Convert to radians: 180 deg",
               "answer": "pi",
-              "id": "precalc12_u3_l1_0"
+              "id": "precalc12_u3_l1_0",
+              "explain": "180 degrees is a half turn, which is pi radians."
             },
             {
               "type": "math",
               "question": "Convert to radians: 90 deg",
               "answer": "pi/2",
-              "id": "precalc12_u3_l1_1"
+              "id": "precalc12_u3_l1_1",
+              "explain": "90 degrees is a quarter turn, which is pi/2 radians."
             },
             {
               "type": "math",
               "question": "Exact value: sin(pi/6)",
               "answer": "1/2",
-              "id": "precalc12_u3_l1_2"
+              "id": "precalc12_u3_l1_2",
+              "explain": "On the unit circle, the point at pi/6 has y-coordinate 1/2, so sin(pi/6) = 1/2."
             },
             {
               "type": "mathChoice",
@@ -882,19 +963,22 @@
                 "0",
                 "sqrt(2)/2"
               ],
-              "id": "precalc12_u3_l1_3"
+              "id": "precalc12_u3_l1_3",
+              "explain": "At pi/2 the point on the unit circle is (0, 1), so cos(pi/2) = 0."
             },
             {
               "type": "math",
               "question": "Exact value: tan(pi/4)",
               "answer": "1",
-              "id": "precalc12_u3_l1_4"
+              "id": "precalc12_u3_l1_4",
+              "explain": "At pi/4 sin and cos are both sqrt(2)/2, so tan = sin/cos = 1."
             },
             {
               "type": "math",
               "question": "Exact value: cos(pi/3)",
               "answer": "1/2",
-              "id": "precalc12_u3_l1_5"
+              "id": "precalc12_u3_l1_5",
+              "explain": "At pi/3 the point on the unit circle is (1/2, sqrt(3)/2), so cos(pi/3) = 1/2."
             }
           ]
         },
@@ -906,7 +990,8 @@
               "type": "math",
               "question": "Solve: sin(x) = 1/2, 0 <= x <= 2pi",
               "answer": "pi/6, 5pi/6",
-              "id": "precalc12_u3_l2_0"
+              "id": "precalc12_u3_l2_0",
+              "explain": "Sine equals 1/2 at pi/6 in Quadrant I and at pi - pi/6 = 5pi/6 in Quadrant II."
             },
             {
               "type": "mathChoice",
@@ -918,7 +1003,8 @@
                 "1",
                 "3"
               ],
-              "id": "precalc12_u3_l2_1"
+              "id": "precalc12_u3_l2_1",
+              "explain": "The amplitude is the number in front, which is 3. The 2 inside only changes the period."
             },
             {
               "type": "mathChoice",
@@ -930,19 +1016,21 @@
                 "pi/2",
                 "4pi"
               ],
-              "id": "precalc12_u3_l2_2"
+              "id": "precalc12_u3_l2_2",
+              "explain": "Period = 2pi/b = 2pi/2 = pi."
             },
             {
               "type": "mathChoice",
               "question": "Law of Sines?",
               "answer": "a/sin(A) = b/sin(B) = c/sin(C)",
               "choices": [
-                "a/sin(A) = b/sin(B)",
+                "a sin(A) = b sin(B) = c sin(C)",
                 "a/sin(A) = b/sin(B) = c/sin(C)",
-                "sin(A)/a = sin(B)/b",
-                "a^2=b^2+c^2"
+                "a/sin(A) = b/cos(B) = c/tan(C)",
+                "a^2 = b^2 + c^2 - 2bc cos(A)"
               ],
-              "id": "precalc12_u3_l2_3"
+              "id": "precalc12_u3_l2_3",
+              "explain": "Each side divided by the sine of its opposite angle gives the same ratio. The a^2 = b^2 + c^2 - 2bc cos(A) choice is the cosine law."
             },
             {
               "type": "mathChoice",
@@ -954,7 +1042,8 @@
                 "c^2 = a^2 + b^2",
                 "c^2 = a^2 - b^2"
               ],
-              "id": "precalc12_u3_l2_4"
+              "id": "precalc12_u3_l2_4",
+              "explain": "The Law of Cosines: c^2 = a^2 + b^2 - 2ab cos(C), where C is the angle opposite side c."
             }
           ]
         },
@@ -972,7 +1061,8 @@
                 "|a|",
                 "b",
                 "2π/b"
-              ]
+              ],
+              "explain": "The amplitude is |a|, the distance from the midline up to the max. It is always positive."
             },
             {
               "type": "mathChoice",
@@ -984,7 +1074,8 @@
                 "c",
                 "b/2π",
                 "2π/b"
-              ]
+              ],
+              "explain": "The period is 2pi/b, the length of one full cycle."
             },
             {
               "type": "mathChoice",
@@ -996,7 +1087,8 @@
                 "(max + min)/2",
                 "max/min",
                 "(max - min)/2"
-              ]
+              ],
+              "explain": "Half the distance from min to max is the amplitude: (8 - (-8))/2 = 8."
             },
             {
               "type": "mathChoice",
@@ -1008,7 +1100,8 @@
                 "0",
                 "(max + min)/2",
                 "(max - min)/2"
-              ]
+              ],
+              "explain": "The midline is the average of the max and min: (max + min)/2."
             },
             {
               "type": "mathChoice",
@@ -1020,17 +1113,20 @@
                 "y = 2cos(8x)",
                 "y = 8sin(2x)",
                 "y = 8cos(2x)"
-              ]
+              ],
+              "explain": "Amplitude 8 gives a = 8, period pi gives b = 2, and a cosine starts at a peak at x = 0, so y = 8cos(2x)."
             },
             {
               "type": "math",
               "question": "Convert 60 degrees to radians (as a multiple of π, e.g. pi/6):",
               "answer": "pi/3",
-              "id": "precalc12_u6_l3_5"
+              "id": "precalc12_u6_l3_5",
+              "explain": "Multiply by pi/180: 60 * pi/180 = pi/3."
             }
           ]
         }
-      ]
+      ],
+      "tip": "Degrees to radians: multiply by pi/180, so 60 degrees is 60pi/180 = pi/3. In y = a sin(b(x - c)) + d the amplitude is |a|, the midline is y = d and the period is 2pi/b."
     },
     {
       "id": "u7",
@@ -1044,7 +1140,8 @@
               "type": "math",
               "question": "sin^2(x) + cos^2(x) =",
               "answer": "1",
-              "id": "precalc12_u4_l1_0"
+              "id": "precalc12_u4_l1_0",
+              "explain": "This is the Pythagorean identity. On the unit circle x^2 + y^2 = 1, so sin^2 + cos^2 = 1."
             },
             {
               "type": "mathChoice",
@@ -1056,7 +1153,8 @@
                 "sin(x)",
                 "tan(x)"
               ],
-              "id": "precalc12_u4_l1_1"
+              "id": "precalc12_u4_l1_1",
+              "explain": "csc is 1 over sin, so csc is the reciprocal of sin."
             },
             {
               "type": "mathChoice",
@@ -1068,7 +1166,8 @@
                 "cot^2(x)",
                 "sec^2(x)"
               ],
-              "id": "precalc12_u4_l1_2"
+              "id": "precalc12_u4_l1_2",
+              "explain": "Divide sin^2 + cos^2 = 1 by cos^2 to get 1 + tan^2 = sec^2."
             },
             {
               "type": "mathChoice",
@@ -1080,7 +1179,8 @@
                 "cos(x)",
                 "sin(x)"
               ],
-              "id": "precalc12_u4_l1_3"
+              "id": "precalc12_u4_l1_3",
+              "explain": "sec is 1 over cos, so sec is the reciprocal of cos."
             }
           ]
         },
@@ -1092,19 +1192,22 @@
               "type": "math",
               "question": "sin(A+B) = sin(A)cos(B) + ?",
               "answer": "cos(A)sin(B)",
-              "id": "precalc12_u4_l2_0"
+              "id": "precalc12_u4_l2_0",
+              "explain": "The sine sum formula is sin(A + B) = sin A cos B + cos A sin B."
             },
             {
               "type": "math",
               "question": "cos(2x) = cos^2(x) - ?",
               "answer": "sin^2(x)",
-              "id": "precalc12_u4_l2_1"
+              "id": "precalc12_u4_l2_1",
+              "explain": "cos(2x) = cos^2 x - sin^2 x, so the missing term is sin^2 x."
             },
             {
               "type": "math",
               "question": "sin(2x) =",
               "answer": "2sin(x)cos(x)",
-              "id": "precalc12_u4_l2_2"
+              "id": "precalc12_u4_l2_2",
+              "explain": "The double angle formula for sine: sin(2x) = 2 sin x cos x."
             }
           ]
         },
@@ -1122,7 +1225,8 @@
                 "2 sinθ cosθ",
                 "2 sinθ",
                 "cos²θ + sin²θ"
-              ]
+              ],
+              "explain": "The double angle formula for sine is sin(2 theta) = 2 sin(theta) cos(theta)."
             },
             {
               "type": "mathChoice",
@@ -1134,7 +1238,8 @@
                 "2cos²θ - 1",
                 "cos²θ - sin²θ",
                 "1 - 2sin²θ"
-              ]
+              ],
+              "explain": "cos(2 theta) has three forms. The one with sine only is 1 - 2sin^2(theta)."
             },
             {
               "type": "mathChoice",
@@ -1146,25 +1251,28 @@
                 "csc²θ",
                 "sec²θ",
                 "cot²θ"
-              ]
+              ],
+              "explain": "Divide sin^2 + cos^2 = 1 by cos^2 to get 1 + tan^2 = sec^2."
             },
             {
               "type": "math",
               "question": "Solve 2cos²x - sinx = -1 on [0, 2π). x =",
               "answer": "pi/2",
-              "id": "precalc12_u7_l3_3"
+              "id": "precalc12_u7_l3_3",
+              "explain": "Replace cos^2 x with 1 - sin^2 x: 2 - 2sin^2 x - sin x = -1, so 2sin^2 x + sin x - 3 = 0, which factors as (2 sin x + 3)(sin x - 1) = 0. Only sin x = 1 works, so x = pi/2."
             },
             {
               "type": "mathChoice",
-              "question": "When proving an identity you should work on...",
-              "answer": "one side only",
+              "question": "When proving an identity, you may NOT...",
+              "answer": "move terms across the equals sign",
               "id": "precalc12_u7_l3_4",
               "choices": [
-                "neither side",
-                "both sides at once",
-                "the equation as a whole",
-                "one side only"
-              ]
+                "rewrite in terms of sine and cosine",
+                "move terms across the equals sign",
+                "use a Pythagorean identity",
+                "find a common denominator"
+              ],
+              "explain": "You cannot assume the identity is true yet, so never move terms across the equals sign. Simplify each side on its own until they match."
             },
             {
               "type": "mathChoice",
@@ -1176,7 +1284,8 @@
                 "periodic",
                 "undefined",
                 "increasing"
-              ]
+              ],
+              "explain": "CAST says which trig ratios are positive: All in Q1, Sine in Q2, Tangent in Q3, Cosine in Q4."
             }
           ]
         },
@@ -1194,7 +1303,8 @@
                 "1 + sin^2(x)",
                 "cos(x)",
                 "sin^2(x)"
-              ]
+              ],
+              "explain": "Rearranging sin^2 + cos^2 = 1 gives cos^2 x = 1 - sin^2 x."
             },
             {
               "type": "mathChoice",
@@ -1206,7 +1316,8 @@
                 "tan(x)",
                 "1",
                 "cos^2(x)"
-              ]
+              ],
+              "explain": "cot x = cos x/sin x, so sin x * cos x * (cos x/sin x) = cos^2 x after the sin x cancels."
             },
             {
               "type": "mathChoice",
@@ -1218,19 +1329,22 @@
                 "add the same term to both sides",
                 "divide both sides by the same thing"
               ],
-              "id": "precalc12_u7_l4_2"
+              "id": "precalc12_u7_l4_2",
+              "explain": "Work on each side as its own expression until both reach the same form. Cross-multiplying and adding or dividing the same thing to both sides are equation moves, not identity moves. See the problems list, because this conflicts with the answer to precalc12_u7_l3_4."
             },
             {
               "type": "math",
               "question": "If sin(t) = 3/5 and t is in Q1, cos(t) =",
               "answer": "4/5",
-              "id": "precalc12_u7_l4_3"
+              "id": "precalc12_u7_l4_3",
+              "explain": "sin t = 3/5 means a 3-4-5 triangle with hypotenuse 5 and adjacent side 4. Cosine is positive in Q1, so cos t = 4/5."
             },
             {
               "type": "math",
               "question": "If sin(t) = 3/4 and t is in Q2, cos(t) = -sqrt(n)/4. n =",
               "answer": "7",
-              "id": "precalc12_u7_l4_4"
+              "id": "precalc12_u7_l4_4",
+              "explain": "cos^2 t = 1 - (3/4)^2 = 7/16, so cos t = -sqrt(7)/4 in Q2 where cosine is negative. So n = 7."
             }
           ]
         },
@@ -1242,13 +1356,15 @@
               "type": "math",
               "question": "cos(2x) = 2cos^2(x) - ?",
               "answer": "1",
-              "id": "precalc12_u7_l5_0"
+              "id": "precalc12_u7_l5_0",
+              "explain": "cos(2x) = 2cos^2 x - 1, so the missing constant is 1."
             },
             {
               "type": "math",
               "question": "cos(2x) = 1 - ?sin^2(x). ? =",
               "answer": "2",
-              "id": "precalc12_u7_l5_1"
+              "id": "precalc12_u7_l5_1",
+              "explain": "cos(2x) = 1 - 2sin^2 x, so the missing number is 2."
             },
             {
               "type": "mathChoice",
@@ -1260,19 +1376,22 @@
                 "2tan(x)",
                 "tan^2(x)",
                 "sec^2(x)"
-              ]
+              ],
+              "explain": "The tangent double angle formula is tan(2x) = 2tan(x)/(1 - tan^2(x))."
             },
             {
               "type": "math",
               "question": "If cos(x) = 1/3, cos(2x) =",
               "answer": "-7/9",
-              "id": "precalc12_u7_l5_3"
+              "id": "precalc12_u7_l5_3",
+              "explain": "cos(2x) = 2(1/3)^2 - 1 = 2/9 - 1 = -7/9."
             },
             {
               "type": "math",
               "question": "If sin(t) = 3/5, cos(2t) =",
               "answer": "7/25",
-              "id": "precalc12_u7_l5_4"
+              "id": "precalc12_u7_l5_4",
+              "explain": "cos(2t) = 1 - 2sin^2 t = 1 - 2(9/25) = 1 - 18/25 = 7/25."
             },
             {
               "type": "mathChoice",
@@ -1284,7 +1403,8 @@
                 "-3sqrt(7)/8",
                 "3sqrt(7)/8"
               ],
-              "id": "precalc12_u7_l5_5"
+              "id": "precalc12_u7_l5_5",
+              "explain": "sin(2t) = 2 sin t cos t = 2(3/4)(-sqrt(7)/4) = -3sqrt(7)/8, since cosine is negative in Q2."
             },
             {
               "type": "mathChoice",
@@ -1296,7 +1416,8 @@
                 "2cos^2(x) - 1",
                 "cos^2(x) - sin^2(x)"
               ],
-              "id": "precalc12_u7_l5_6"
+              "id": "precalc12_u7_l5_6",
+              "explain": "Using 2cos^2 x - 1 turns the equation into 2cos^2 x = cos x, which has only cos x in it."
             },
             {
               "type": "mathChoice",
@@ -1308,11 +1429,13 @@
                 "sec^2(x)",
                 "cot^2(x)",
                 "csc^2(x)"
-              ]
+              ],
+              "explain": "Divide sin^2 + cos^2 = 1 by sin^2 to get 1 + cot^2 = csc^2."
             }
           ]
         }
-      ]
+      ],
+      "tip": "Simplify one side of an identity into sines and cosines until it matches the other side. Example: sin x cos x cot x = sin x cos x (cos x / sin x) = cos^2 x."
     },
     {
       "id": "u8",
@@ -1326,19 +1449,22 @@
               "type": "math",
               "question": "If f(x) = -x^2 + 5, f(2) =",
               "answer": "1",
-              "id": "precalc12_u8_l1_0"
+              "id": "precalc12_u8_l1_0",
+              "explain": "f(2) = -(2)^2 + 5 = -4 + 5 = 1."
             },
             {
               "type": "math",
               "question": "f(x) = x - 4 and g(x) = x^2 + 4. f(g(2)) =",
               "answer": "4",
-              "id": "precalc12_u8_l1_1"
+              "id": "precalc12_u8_l1_1",
+              "explain": "First g(2) = 4 + 4 = 8, then f(8) = 8 - 4 = 4."
             },
             {
               "type": "math",
               "question": "Same f and g: g(f(3)) =",
               "answer": "5",
-              "id": "precalc12_u8_l1_2"
+              "id": "precalc12_u8_l1_2",
+              "explain": "First f(3) = 3 - 4 = -1, then g(-1) = 1 + 4 = 5."
             },
             {
               "type": "mathChoice",
@@ -1350,7 +1476,8 @@
                 "x^2",
                 "(x-4)^2",
                 "x^2 + 8"
-              ]
+              ],
+              "explain": "f(g(x)) = (x^2 + 4) - 4 = x^2."
             },
             {
               "type": "mathChoice",
@@ -1362,7 +1489,8 @@
                 "(x+4)^2+4",
                 "x^2",
                 "x^2 - 4"
-              ]
+              ],
+              "explain": "g(f(x)) = (x - 4)^2 + 4, because g squares its input after f has subtracted 4."
             },
             {
               "type": "mathChoice",
@@ -1374,7 +1502,8 @@
                 "always zero",
                 "usually different (order matters)"
               ],
-              "id": "precalc12_u8_l1_5"
+              "id": "precalc12_u8_l1_5",
+              "explain": "Test with x = 2: f(g(2)) = 4, but g(f(2)) = g(-2) = 8. The answers differ, so order matters."
             }
           ]
         },
@@ -1386,19 +1515,22 @@
               "type": "math",
               "question": "Domain of y = sqrt(x - 3) + 1: x >=",
               "answer": "3",
-              "id": "precalc12_u8_l2_0"
+              "id": "precalc12_u8_l2_0",
+              "explain": "The square root needs x - 3 >= 0, so the domain is x >= 3."
             },
             {
               "type": "math",
               "question": "x-coordinate of the start point of y = 2sqrt(x - 3) + 1:",
               "answer": "3",
-              "id": "precalc12_u8_l2_1"
+              "id": "precalc12_u8_l2_1",
+              "explain": "The start point is where the inside is zero: x - 3 = 0, so x = 3."
             },
             {
               "type": "math",
               "question": "y-coordinate of the start point of y = 2sqrt(x - 3) + 1:",
               "answer": "1",
-              "id": "precalc12_u8_l2_2"
+              "id": "precalc12_u8_l2_2",
+              "explain": "At x = 3 the y-value is 2 sqrt(0) + 1 = 1."
             },
             {
               "type": "mathChoice",
@@ -1410,7 +1542,8 @@
                 "up and left",
                 "down and left"
               ],
-              "id": "precalc12_u8_l2_3"
+              "id": "precalc12_u8_l2_3",
+              "explain": "The +2 inside shifts the start left to x = -2, and the minus sign flips the curve downward, so it heads down and right."
             },
             {
               "type": "mathChoice",
@@ -1422,13 +1555,15 @@
                 "up and left",
                 "up and right"
               ],
-              "id": "precalc12_u8_l2_4"
+              "id": "precalc12_u8_l2_4",
+              "explain": "sqrt(-x) only works for x <= 0, so the graph heads up and to the left."
             },
             {
               "type": "math",
               "question": "Range of y = -sqrt(x + 2) - 4: y <=",
               "answer": "-4",
-              "id": "precalc12_u8_l2_5"
+              "id": "precalc12_u8_l2_5",
+              "explain": "A square root never goes below its start, and the -4 puts the top at y = -4, so the range is y <= -4."
             },
             {
               "type": "mathChoice",
@@ -1440,7 +1575,8 @@
                 "(16, 9)",
                 "(2, 9)"
               ],
-              "id": "precalc12_u8_l2_6"
+              "id": "precalc12_u8_l2_6",
+              "explain": "At x = 4, sqrt(f(4)) = sqrt(9) = 3, so the point is (4, 3)."
             },
             {
               "type": "mathChoice",
@@ -1452,7 +1588,8 @@
                 "f(x) = 0",
                 "f(x) < 0"
               ],
-              "id": "precalc12_u8_l2_7"
+              "id": "precalc12_u8_l2_7",
+              "explain": "The square root of a negative number is not a real number, so there is no graph where f(x) < 0."
             },
             {
               "type": "mathChoice",
@@ -1464,11 +1601,13 @@
                 "0 or 2",
                 "0 or 1"
               ],
-              "id": "precalc12_u8_l2_8"
+              "id": "precalc12_u8_l2_8",
+              "explain": "sqrt(0) = 0 and sqrt(1) = 1, so those points do not move."
             }
           ]
         }
-      ]
+      ],
+      "tip": "Compose inside out: f(g(2)) means find g(2) first, then put that into f. Example: with f(x) = x - 4 and g(x) = x^2 + 4, f(g(2)) = f(8) = 4 but g(f(3)) = g(-1) = 5, so order matters."
     },
     {
       "id": "u9",
@@ -1482,43 +1621,50 @@
               "type": "math",
               "question": "Period of y = sin(2x):",
               "answer": "pi",
-              "id": "precalc12_u9_l1_0"
+              "id": "precalc12_u9_l1_0",
+              "explain": "Period = 2pi/b = 2pi/2 = pi."
             },
             {
               "type": "math",
               "question": "Amplitude of y = 3sin(2(x - pi/4)) + 1:",
               "answer": "3",
-              "id": "precalc12_u9_l1_1"
+              "id": "precalc12_u9_l1_1",
+              "explain": "The amplitude is |3| = 3. The +1 and the shift do not change it."
             },
             {
               "type": "math",
               "question": "Midline of y = 3sin(2(x - pi/4)) + 1: y =",
               "answer": "1",
-              "id": "precalc12_u9_l1_2"
+              "id": "precalc12_u9_l1_2",
+              "explain": "The midline is the +1 at the end, so y = 1."
             },
             {
               "type": "math",
               "question": "Maximum value of y = 3sin(2(x - pi/4)) + 1:",
               "answer": "4",
-              "id": "precalc12_u9_l1_3"
+              "id": "precalc12_u9_l1_3",
+              "explain": "Max = midline + amplitude = 1 + 3 = 4."
             },
             {
               "type": "math",
               "question": "A wave has max 5 and min -1. Its amplitude:",
               "answer": "3",
-              "id": "precalc12_u9_l1_4"
+              "id": "precalc12_u9_l1_4",
+              "explain": "Amplitude = (max - min)/2 = (5 - (-1))/2 = 3."
             },
             {
               "type": "math",
               "question": "Same wave: midline y =",
               "answer": "2",
-              "id": "precalc12_u9_l1_5"
+              "id": "precalc12_u9_l1_5",
+              "explain": "Midline = (max + min)/2 = (5 + (-1))/2 = 2."
             },
             {
               "type": "math",
               "question": "A wave has period pi. Its b value (2pi/period):",
               "answer": "2",
-              "id": "precalc12_u9_l1_6"
+              "id": "precalc12_u9_l1_6",
+              "explain": "b = 2pi/period = 2pi/pi = 2."
             },
             {
               "type": "mathChoice",
@@ -1530,7 +1676,8 @@
                 "stretch horizontally",
                 "stretch vertically"
               ],
-              "id": "precalc12_u9_l1_7"
+              "id": "precalc12_u9_l1_7",
+              "explain": "Multiplying x by b squeezes the graph horizontally, so each cycle is shorter."
             }
           ]
         },
@@ -1548,7 +1695,8 @@
                 "sin(x)cos(x)",
                 "1/sin(x)"
               ],
-              "id": "precalc12_u9_l2_0"
+              "id": "precalc12_u9_l2_0",
+              "explain": "tan(x) = sin(x)/cos(x) by definition."
             },
             {
               "type": "mathChoice",
@@ -1560,19 +1708,22 @@
                 "sin(x) = 0",
                 "nowhere"
               ],
-              "id": "precalc12_u9_l2_1"
+              "id": "precalc12_u9_l2_1",
+              "explain": "Tangent is undefined where cos(x) = 0, and those places are its vertical asymptotes."
             },
             {
               "type": "math",
               "question": "Period of y = tan(x):",
               "answer": "pi",
-              "id": "precalc12_u9_l2_2"
+              "id": "precalc12_u9_l2_2",
+              "explain": "Tangent repeats every pi, so its period is pi."
             },
             {
               "type": "math",
               "question": "tan(pi/4) =",
               "answer": "1",
-              "id": "precalc12_u9_l2_3"
+              "id": "precalc12_u9_l2_3",
+              "explain": "At pi/4, sin and cos are both sqrt(2)/2, so tan(pi/4) = 1."
             },
             {
               "type": "mathChoice",
@@ -1584,13 +1735,15 @@
                 "sqrt(3)/2",
                 "1",
                 "1/sqrt(3)"
-              ]
+              ],
+              "explain": "At pi/3, sin = sqrt(3)/2 and cos = 1/2, so tan(pi/3) = sqrt(3)."
             },
             {
               "type": "math",
               "question": "tan(0) =",
               "answer": "0",
-              "id": "precalc12_u9_l2_5"
+              "id": "precalc12_u9_l2_5",
+              "explain": "sin(0) = 0 and cos(0) = 1, so tan(0) = 0."
             }
           ]
         },
@@ -1602,31 +1755,36 @@
               "type": "math",
               "question": "Solve tan^2(x) - 5tan(x) + 4 = 0: smallest positive x (exact):",
               "answer": "pi/4",
-              "id": "precalc12_u9_l3_0"
+              "id": "precalc12_u9_l3_0",
+              "explain": "Factor (tan x - 1)(tan x - 4) = 0, so tan x = 1 or tan x = 4. The smallest positive x with tan x = 1 is pi/4."
             },
             {
               "type": "math",
               "question": "Solve 2cos^2(x) - cos(x) = 0 on [0, 2pi): smallest x:",
               "answer": "pi/3",
-              "id": "precalc12_u9_l3_1"
+              "id": "precalc12_u9_l3_1",
+              "explain": "Factor cos x (2cos x - 1) = 0, so cos x = 0 or cos x = 1/2. The smallest x in [0, 2pi) is pi/3."
             },
             {
               "type": "math",
               "question": "Replace cos(2x) with 2cos^2(x) - 1 in cos(2x) + 1 = cos(x) to get 2cos^2(x) =",
               "answer": "cos(x)",
-              "id": "precalc12_u9_l3_2"
+              "id": "precalc12_u9_l3_2",
+              "explain": "Replace cos(2x): 2cos^2 x - 1 + 1 = cos x, so 2cos^2 x = cos x."
             },
             {
               "type": "math",
               "question": "Solve 2sin(2x) = -1: sin(2x) =",
               "answer": "-1/2",
-              "id": "precalc12_u9_l3_3"
+              "id": "precalc12_u9_l3_3",
+              "explain": "Divide both sides by 2: sin(2x) = -1/2."
             },
             {
               "type": "math",
               "question": "Solve sin(2x) = -1/2 on [0, 2pi): smallest x (exact):",
               "answer": "7pi/12",
-              "id": "precalc12_u9_l3_4"
+              "id": "precalc12_u9_l3_4",
+              "explain": "Let t = 2x, which runs over [0, 4pi). sin t = -1/2 first happens at t = 7pi/6, so x = 7pi/12."
             },
             {
               "type": "mathChoice",
@@ -1638,11 +1796,13 @@
                 "4",
                 "8"
               ],
-              "id": "precalc12_u9_l3_5"
+              "id": "precalc12_u9_l3_5",
+              "explain": "For t in [0, 4pi), sin t = -1/2 at 7pi/6, 11pi/6, 19pi/6 and 23pi/6, which is 4 solutions for x."
             }
           ]
         }
-      ]
+      ],
+      "tip": "For a trig equation with an angle like 2x, solve for the whole angle over the doubled interval, then divide by 2. Example: sin(2x) = -1/2 on [0, 2pi) means 2x runs over [0, 4pi), giving 4 solutions and the smallest is x = 7pi/12."
     },
     {
       "id": "u10",
@@ -1656,7 +1816,8 @@
               "type": "math",
               "question": "Horizontal asymptote of y = -2^(x+3) + 1: y =",
               "answer": "1",
-              "id": "precalc12_u10_l1_0"
+              "id": "precalc12_u10_l1_0",
+              "explain": "The constant +1 at the end is the horizontal asymptote, so y = 1."
             },
             {
               "type": "mathChoice",
@@ -1668,19 +1829,22 @@
                 "reflected over the x-axis, left 3, up 1",
                 "reflected over the x-axis, right 3, down 1"
               ],
-              "id": "precalc12_u10_l1_1"
+              "id": "precalc12_u10_l1_1",
+              "explain": "The minus sign reflects over the x-axis, the (x + 3) shifts left 3, and the +1 shifts up 1."
             },
             {
               "type": "math",
               "question": "Solve 8^(3x-2) = 16^(x+1): x =",
               "answer": "2",
-              "id": "precalc12_u10_l1_2"
+              "id": "precalc12_u10_l1_2",
+              "explain": "Write both as powers of 2: 8^(3x - 2) = 2^(9x - 6) and 16^(x + 1) = 2^(4x + 4). So 9x - 6 = 4x + 4, 5x = 10, and x = 2."
             },
             {
               "type": "math",
               "question": "Write 27 as a power of 3: 27 = 3^",
               "answer": "3",
-              "id": "precalc12_u10_l1_3"
+              "id": "precalc12_u10_l1_3",
+              "explain": "3^3 = 27, so 27 = 3^3."
             },
             {
               "type": "mathChoice",
@@ -1692,7 +1856,8 @@
                 "decay",
                 "a log"
               ],
-              "id": "precalc12_u10_l1_4"
+              "id": "precalc12_u10_l1_4",
+              "explain": "A base between 0 and 1 gives an exponential decay curve."
             }
           ]
         },
@@ -1704,19 +1869,22 @@
               "type": "math",
               "question": "log_2(8) =",
               "answer": "3",
-              "id": "precalc12_u10_l2_0"
+              "id": "precalc12_u10_l2_0",
+              "explain": "2^3 = 8, so log2(8) = 3."
             },
             {
               "type": "math",
               "question": "Vertical asymptote of y = log_2(x): x =",
               "answer": "0",
-              "id": "precalc12_u10_l2_1"
+              "id": "precalc12_u10_l2_1",
+              "explain": "A log is only defined for x > 0, so the vertical asymptote of log2(x) is x = 0."
             },
             {
               "type": "math",
               "question": "log_2(8) + log_2(4) =",
               "answer": "5",
-              "id": "precalc12_u10_l2_2"
+              "id": "precalc12_u10_l2_2",
+              "explain": "log2(8) + log2(4) = log2(32) = 5, since 2^5 = 32."
             },
             {
               "type": "mathChoice",
@@ -1728,19 +1896,22 @@
                 "log a * log b",
                 "it does not simplify"
               ],
-              "id": "precalc12_u10_l2_3"
+              "id": "precalc12_u10_l2_3",
+              "explain": "There is no log rule for a sum, so log(a + b) stays as it is."
             },
             {
               "type": "math",
               "question": "Vertical asymptote of y = -log_2(2(x + 3)): x =",
               "answer": "-3",
-              "id": "precalc12_u10_l2_4"
+              "id": "precalc12_u10_l2_4",
+              "explain": "The log needs 2(x + 3) > 0, so the boundary is x + 3 = 0, which gives x = -3."
             },
             {
               "type": "math",
               "question": "Solve 5^(x/2) = 200 (nearest hundredth): x =",
               "answer": "6.58",
-              "id": "precalc12_u10_l2_5"
+              "id": "precalc12_u10_l2_5",
+              "explain": "Take log base 5 of both sides: x/2 = log5(200) = 3.2920, so x = 6.58."
             }
           ]
         },
@@ -1758,19 +1929,22 @@
                 "e (about 2.718)",
                 "10"
               ],
-              "id": "precalc12_u10_l3_0"
+              "id": "precalc12_u10_l3_0",
+              "explain": "As x gets large, (1 + 1/x)^x gets close to e, about 2.718."
             },
             {
               "type": "math",
               "question": "e rounded to 3 decimals:",
               "answer": "2.718",
-              "id": "precalc12_u10_l3_1"
+              "id": "precalc12_u10_l3_1",
+              "explain": "e = 2.71828..., and rounded to 3 decimals that is 2.718."
             },
             {
               "type": "math",
               "question": "$1000 at 5% growing continuously for 10 years, nearest dollar: 1000e^(0.5) =",
               "answer": "1649",
-              "id": "precalc12_u10_l3_2"
+              "id": "precalc12_u10_l3_2",
+              "explain": "Continuous growth: 1000 * e^(0.05 * 10) = 1000e^0.5 = 1648.72, which rounds to 1649."
             },
             {
               "type": "mathChoice",
@@ -1782,7 +1956,8 @@
                 "A = A0 e^(rt)",
                 "A = A0 + rt"
               ],
-              "id": "precalc12_u10_l3_3"
+              "id": "precalc12_u10_l3_3",
+              "explain": "Continuous growth uses base e with the rate and time in the exponent: A = A0 e^(rt)."
             }
           ]
         },
@@ -1794,25 +1969,29 @@
               "type": "math",
               "question": "Half-life is 5 days. Starting at 80 g, how many grams after 15 days?",
               "answer": "10",
-              "id": "precalc12_u10_l4_0"
+              "id": "precalc12_u10_l4_0",
+              "explain": "15 days is 3 half-lives: 80 / 2 / 2 / 2 = 10 g."
             },
             {
               "type": "math",
               "question": "Same sample (80 g, half-life 5 days) after 10 days, grams:",
               "answer": "20",
-              "id": "precalc12_u10_l4_1"
+              "id": "precalc12_u10_l4_1",
+              "explain": "10 days is 2 half-lives: 80 / 2 / 2 = 20 g."
             },
             {
               "type": "math",
               "question": "A population doubles every 3 years. Starting at 500, after 9 years:",
               "answer": "4000",
-              "id": "precalc12_u10_l4_2"
+              "id": "precalc12_u10_l4_2",
+              "explain": "9 years is 3 doubling periods: 500 * 2^3 = 4000."
             },
             {
               "type": "math",
               "question": "A population of 200 grows 10% per year: P = 200(b)^t. b =",
               "answer": "1.1",
-              "id": "precalc12_u10_l4_3"
+              "id": "precalc12_u10_l4_3",
+              "explain": "10% growth means each year multiplies by 1 + 0.10 = 1.1, so b = 1.1."
             },
             {
               "type": "mathChoice",
@@ -1824,25 +2003,29 @@
                 "$1100",
                 "$1102.50"
               ],
-              "id": "precalc12_u10_l4_4"
+              "id": "precalc12_u10_l4_4",
+              "explain": "1000 * 1.05^2 = 1000 * 1.1025 = 1102.50."
             },
             {
               "type": "math",
               "question": "Solve 1000(1.05)^t = 2000 (nearest hundredth): t =",
               "answer": "14.21",
-              "id": "precalc12_u10_l4_5"
+              "id": "precalc12_u10_l4_5",
+              "explain": "Divide by 1000 and take logs: t = log(2)/log(1.05), which is 14.21."
             },
             {
               "type": "math",
               "question": "A = 500e^(-0.1t). A at t = 0 is",
               "answer": "500",
-              "id": "precalc12_u10_l4_6"
+              "id": "precalc12_u10_l4_6",
+              "explain": "Plug in t = 0: A = 500e^0 = 500."
             },
             {
               "type": "math",
               "question": "$2000 at 3% growing continuously for 5 years, nearest dollar: 2000e^(0.15) =",
               "answer": "2324",
-              "id": "precalc12_u10_l4_7"
+              "id": "precalc12_u10_l4_7",
+              "explain": "The rate times time is 0.03 * 5 = 0.15, so 2000e^0.15 = 2323.67, which rounds to 2324."
             },
             {
               "type": "mathChoice",
@@ -1854,11 +2037,13 @@
                 "square both sides",
                 "take the log of both sides"
               ],
-              "id": "precalc12_u10_l4_8"
+              "id": "precalc12_u10_l4_8",
+              "explain": "Taking the log of both sides brings the exponent t down as a multiplier, so t = log(c)/log(a)."
             }
           ]
         }
-      ]
+      ],
+      "tip": "To solve an exponential equation with a different base, take the log of both sides and bring the exponent down. Example: 5^(x/2) = 200 gives x/2 = log5(200), so x = 2 log5(200) = 6.58."
     },
     {
       "id": "fin",
@@ -1872,13 +2057,15 @@
               "type": "math",
               "question": "Convert to radians: 270 deg",
               "answer": "3pi/2",
-              "id": "precalc12_fin_l1_0"
+              "id": "precalc12_fin_l1_0",
+              "explain": "270 * pi/180 = 3pi/2."
             },
             {
               "type": "math",
               "question": "Evaluate: log5(125)",
               "answer": "3",
-              "id": "precalc12_fin_l1_1"
+              "id": "precalc12_fin_l1_1",
+              "explain": "5^3 = 125, so log5(125) = 3."
             },
             {
               "type": "mathChoice",
@@ -1890,23 +2077,27 @@
                 "15",
                 "18"
               ],
-              "id": "precalc12_fin_l1_2"
+              "id": "precalc12_fin_l1_2",
+              "explain": "C(6,3) = 6!/(3! 3!) = 720/36 = 20."
             },
             {
               "type": "math",
               "question": "sin^2(x) + cos^2(x) =",
               "answer": "1",
-              "id": "precalc12_fin_l1_3"
+              "id": "precalc12_fin_l1_3",
+              "explain": "This is the Pythagorean identity, true for every angle: sin^2 + cos^2 = 1."
             },
             {
               "type": "math",
               "question": "Factor: x^2 - 16 =",
               "answer": "(x-4)(x+4)",
-              "id": "precalc12_fin_l1_4"
+              "id": "precalc12_fin_l1_4",
+              "explain": "Difference of squares: x^2 - 16 = (x - 4)(x + 4)."
             }
           ]
         }
-      ]
+      ],
+      "tip": "Check what the question is asking before choosing a formula. Example: 270 degrees = 270pi/180 = 3pi/2, and C(6,3) = 6!/(3! 3!) = 20, which is a count, not a sum."
     }
   ]
 }

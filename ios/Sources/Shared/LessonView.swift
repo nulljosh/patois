@@ -220,7 +220,10 @@ struct LessonView: View {
             // "// comment" and "String" equal "string", so wrong choices graded as right.
             : exercise.choices != nil && exercise.type != "sentence"
                 ? given(for: exercise) == exercise.answer
-                : normalize(given(for: exercise)) == normalize(exercise.answer)
+                : exercise.type == "math"
+                    ? MathGrader.equivalent(given(for: exercise), exercise.answer)
+                        ?? (normalize(given(for: exercise)) == normalize(exercise.answer))
+                    : normalize(given(for: exercise)) == normalize(exercise.answer)
         // A recovered miss counts, but never past the lesson's real length.
         if correct { correctCount = min(correctCount + 1, lesson.exercises.count) }
         if correct {

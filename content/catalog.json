@@ -722,6 +722,20 @@
           "packPath": "/content/courses/trigonometry.json"
         },
         {
+          "id": "precalc11",
+          "name": "Pre-Calculus 11",
+          "icon": "fa-solid fa-book",
+          "level": "Radicals to Quadratics",
+          "packPath": "/content/courses/precalc11.json"
+        },
+        {
+          "id": "precalc12",
+          "name": "Pre-Calculus 12",
+          "icon": "fa-solid fa-book-open",
+          "level": "Functions, Logs and Trig",
+          "packPath": "/content/courses/precalc12.json"
+        },
+        {
           "id": "calculus",
           "name": "Calculus",
           "icon": "fa-solid fa-infinity",
@@ -833,7 +847,7 @@
           "id": "precalc11",
           "name": "Pre-Calculus 11",
           "icon": "fa-solid fa-book",
-          "level": "BC Grade 12",
+          "level": "BC Grade 11",
           "packPath": "/content/courses/precalc11.json"
         },
         {

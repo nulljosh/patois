@@ -48,8 +48,11 @@
 		144ECDE6B0B3E01B6511E4BB /* circuits.json in Resources */ = {isa = PBXBuildFile; fileRef = 303BD909290616E716B1BB81 /* circuits.json */; };
 		16B74492B79E3EADE9A6B7A2 /* danish.json in Resources */ = {isa = PBXBuildFile; fileRef = 13DBD9CA00FD67F2ACC5067D /* danish.json */; };
 		18215C2815635F63BB532AE6 /* compilers.json in Resources */ = {isa = PBXBuildFile; fileRef = 53E050E9BA329512D8FBA196 /* compilers.json */; };
+		187B0E7F16D72A7E9BDA4D98 /* MathGrader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94A789464EA1CAB8C0D4F4 /* MathGrader.swift */; };
 		1891E219C6A89705EE258AB2 /* python.json in Resources */ = {isa = PBXBuildFile; fileRef = 2558463843F88D615C200354 /* python.json */; };
 		191CFBEFB079D0A42FF5980B /* clojure.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C019662A8E8712CDD3465A6 /* clojure.json */; };
+		19580A9F263BBFAFE03F880E /* MathGraderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7533BFEB53BD26EB032E6 /* MathGraderTests.swift */; };
+		19C20602442A0BD78119316D /* math-equiv.js in Resources */ = {isa = PBXBuildFile; fileRef = 6EB7B7E3260E4E601F88F0E1 /* math-equiv.js */; };
 		1A1CDA93B9DB5E88A822D412 /* klingon.json in Resources */ = {isa = PBXBuildFile; fileRef = E00D65A9F7727B717D951D1C /* klingon.json */; };
 		1B859FC3C9D2D1BF2BCC78E1 /* haskell.json in Resources */ = {isa = PBXBuildFile; fileRef = 96EAA7DCEA8FE42D2FD92FDF /* haskell.json */; };
 		1B920F75CDA9BA04DDF37642 /* c_lang.json in Resources */ = {isa = PBXBuildFile; fileRef = 284EDC62FAC1D49FA5CB20FF /* c_lang.json */; };
@@ -344,8 +347,10 @@
 		F5D1E7553DBED3F75422BB0A /* bengali.json in Resources */ = {isa = PBXBuildFile; fileRef = 545424A7D1350E034DDF353E /* bengali.json */; };
 		F5EF8B5DBF9526D8AE5D1405 /* icelandic.json in Resources */ = {isa = PBXBuildFile; fileRef = F28FAFFF719B67C4205F4E8D /* icelandic.json */; };
 		F5FC81701CCC6F903F53C059 /* concurrency.json in Resources */ = {isa = PBXBuildFile; fileRef = D9B6D14C324FDB91FB6197C9 /* concurrency.json */; };
+		F67573A26DB124063F49C403 /* math-equiv.js in Resources */ = {isa = PBXBuildFile; fileRef = 6EB7B7E3260E4E601F88F0E1 /* math-equiv.js */; };
 		F6803A4399BDABE00E1E590A /* economics.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E458A815E3354EE73662BDF /* economics.json */; };
 		F6897E8DA0302CF2FEF002D3 /* german.json in Resources */ = {isa = PBXBuildFile; fileRef = 3701094CFDB3AAD051661459 /* german.json */; };
+		F6FFC8861724542204146241 /* MathGrader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94A789464EA1CAB8C0D4F4 /* MathGrader.swift */; };
 		F760457EFB5523B12867ECCF /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99103E67EEEBFAD239C1DFB7 /* CatalogView.swift */; };
 		F7A80F5704AFA68AC334E903 /* electronics.json in Resources */ = {isa = PBXBuildFile; fileRef = A88A7244EF444C5EE279FD24 /* electronics.json */; };
 		F8D0B809D0D3B9954DB3BF74 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D994478AA66BD3E1A014902 /* SplashView.swift */; };
@@ -473,6 +478,7 @@
 		6D04D79CB55B936DBED23841 /* LingoWidgetExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = LingoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC5E8D574577465E5EC8F51 /* dutch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dutch.json; sourceTree = "<group>"; };
 		6E953B6B90C849ECB1D806FF /* UnitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsView.swift; sourceTree = "<group>"; };
+		6EB7B7E3260E4E601F88F0E1 /* math-equiv.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "math-equiv.js"; sourceTree = "<group>"; };
 		6EC3FCAE1113684B4C73B302 /* personal_finance.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = personal_finance.json; sourceTree = "<group>"; };
 		6F61B1297D4B4683A6A42DB9 /* Lingo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lingo.entitlements; sourceTree = "<group>"; };
 		721FEFF6757512300B8F10FB /* spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = spanish.json; sourceTree = "<group>"; };
@@ -555,6 +561,7 @@
 		C6595D636766706C5DBBB1A8 /* computer_graphics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = computer_graphics.json; sourceTree = "<group>"; };
 		C7234021639CFEC592D10090 /* fpga_verilog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fpga_verilog.json; sourceTree = "<group>"; };
 		C9E8CE6B73271792D6355AAD /* electromagnetism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = electromagnetism.json; sourceTree = "<group>"; };
+		CA94A789464EA1CAB8C0D4F4 /* MathGrader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGrader.swift; sourceTree = "<group>"; };
 		CAA16B709D68772840BF2887 /* DailyReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReminderTests.swift; sourceTree = "<group>"; };
 		CBC3AF06A855689B1A2B0129 /* WhatsNewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewSheet.swift; sourceTree = "<group>"; };
 		CDF4299044528991AD4A452A /* php.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = php.json; sourceTree = "<group>"; };
@@ -583,6 +590,7 @@
 		EB2FC2183371B5A9D6669E9E /* galician.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = galician.json; sourceTree = "<group>"; };
 		ECE2200B9A4385F8C0628B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EDDC45AA716BBD04CF700F92 /* go.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = go.json; sourceTree = "<group>"; };
+		F0A7533BFEB53BD26EB032E6 /* MathGraderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGraderTests.swift; sourceTree = "<group>"; };
 		F28FAFFF719B67C4205F4E8D /* icelandic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = icelandic.json; sourceTree = "<group>"; };
 		F3532385783609B1A4326811 /* html_css.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = html_css.json; sourceTree = "<group>"; };
 		F53F3BB2EF274144F209BC78 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
@@ -618,6 +626,7 @@
 			children = (
 				844651E960161655EE200363 /* ContentStoreTests.swift */,
 				CAA16B709D68772840BF2887 /* DailyReminderTests.swift */,
+				F0A7533BFEB53BD26EB032E6 /* MathGraderTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -661,6 +670,7 @@
 			isa = PBXGroup;
 			children = (
 				8E13461BDB5DDAFF671A5AC4 /* catalog.json */,
+				6EB7B7E3260E4E601F88F0E1 /* math-equiv.js */,
 				E3BE56DB18B123B89E3681D2 /* courses */,
 				14BCF1AB9E1F67C5AB53BBDF /* notes */,
 			);
@@ -691,6 +701,7 @@
 				85747ECA85D0763928C12F4E /* DailyReminder.swift */,
 				25822866A9082B6D52D10D2B /* KeychainHelper.swift */,
 				38ED52EC4C599FB4C93990AF /* LessonView.swift */,
+				CA94A789464EA1CAB8C0D4F4 /* MathGrader.swift */,
 				3F214D0F0810B9E696D99BDC /* Models.swift */,
 				F53F3BB2EF274144F209BC78 /* NotesView.swift */,
 				57D63DD534912A773D403690 /* SessionKeychainStorage.swift */,
@@ -1121,6 +1132,7 @@
 				F29F009B1F246ECF8F7ED832 /* macedonian.json in Resources */,
 				13A59BCAF283CE28AF37D8EE /* machine_learning.json in Resources */,
 				8160497FEB93F6027D1C673E /* malay.json in Resources */,
+				F67573A26DB124063F49C403 /* math-equiv.js in Resources */,
 				A384DD6A6F1D7AA04A4D8252 /* microcontrollers.json in Resources */,
 				9C4AF6466486E97B74736BBE /* mobile_hardware.json in Resources */,
 				4AAD0B539B93E7C562774D34 /* music_history.json in Resources */,
@@ -1286,6 +1298,7 @@
 				7CE38E65A3447FEE9F7091C3 /* macedonian.json in Resources */,
 				68BC4C06F0B51578D234FD88 /* machine_learning.json in Resources */,
 				EB72D604405A4148B4227135 /* malay.json in Resources */,
+				19C20602442A0BD78119316D /* math-equiv.js in Resources */,
 				8AF5F655AE7E55472B98C499 /* microcontrollers.json in Resources */,
 				08A1E43C93E95145AF1CD5EF /* mobile_hardware.json in Resources */,
 				7A007768E4B740AA524405D3 /* music_history.json in Resources */,
@@ -1366,6 +1379,7 @@
 			files = (
 				ABE438B456D4BB02E4C851E2 /* ContentStoreTests.swift in Sources */,
 				343C6A1222A64C3C1222C193 /* DailyReminderTests.swift in Sources */,
+				19580A9F263BBFAFE03F880E /* MathGraderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1383,6 +1397,7 @@
 				C698CEAD1740F0E1B60BAF1D /* KeychainHelper.swift in Sources */,
 				25D90218F50C49242402AF5E /* LessonView.swift in Sources */,
 				28972A2E39E0A81A6848D546 /* LingoApp.swift in Sources */,
+				187B0E7F16D72A7E9BDA4D98 /* MathGrader.swift in Sources */,
 				597CA4E3D0C3A5A35B6726C4 /* Models.swift in Sources */,
 				2A6BF7D993648F90F7AD9079 /* NotesView.swift in Sources */,
 				8C091EA94AA06C815E76ABD4 /* SessionKeychainStorage.swift in Sources */,
@@ -1407,6 +1422,7 @@
 				4620BC563D704BE3940FB89F /* KeychainHelper.swift in Sources */,
 				E723A76D805E8D23CF4E958A /* LessonView.swift in Sources */,
 				D6090057FCD71A991D157BBD /* LingoApp.swift in Sources */,
+				F6FFC8861724542204146241 /* MathGrader.swift in Sources */,
 				01789627621AF263B1E6C6B2 /* Models.swift in Sources */,
 				32436A999EF81FAE739E12E4 /* NotesView.swift in Sources */,
 				8ECA11B8D1BBFB4144DE6AA2 /* SessionKeychainStorage.swift in Sources */,

@@ -1450,7 +1450,7 @@ function buildUnitIntro(unit) {
     if (unit.tip) {
         const tip = document.createElement('p');
         tip.className = 'unit-intro-tip';
-        tip.textContent = unit.tip;
+        tip.textContent = mt(unit.tip);
         card.appendChild(tip);
     }
 
@@ -1576,7 +1576,7 @@ function showLearnCard(lessonId) {
     if (unit?.tip && !teach) {
         const tip = document.createElement('p');
         tip.className = 'unit-intro-tip';
-        tip.textContent = unit.tip;
+        tip.textContent = mt(unit.tip);
         card.appendChild(tip);
     }
     const list = document.createElement('dl');
@@ -1881,7 +1881,7 @@ function renderQuestion(question) {
 
         const questionText = document.createElement('div');
         questionText.className = 'question-text';
-        questionText.textContent = shown.question;
+        questionText.textContent = mt(shown.question);
         container.appendChild(questionText);
         if (shown.fen) container.appendChild(renderChessBoard(shown.fen));
 
@@ -1904,7 +1904,7 @@ function renderQuestion(question) {
             btn.setAttribute('role', 'radio');
             btn.setAttribute('aria-checked', 'false');
             btn.setAttribute('tabindex', index === 0 ? '0' : '-1');
-            btn.textContent = choice;
+            btn.textContent = mt(choice);
             btn.addEventListener('click', () => selectChoice(btn));
             choicesDiv.appendChild(btn);
         });
@@ -2073,7 +2073,7 @@ function renderQuestion(question) {
 
         const eq = document.createElement('div');
         eq.className = 'math-equation';
-        eq.textContent = question.question;
+        eq.textContent = mt(question.question);
         container.appendChild(eq);
 
         const input = document.createElement('input');
@@ -2146,6 +2146,12 @@ function renderChessBoard(fen) {
         }
     }
     return board;
+}
+
+// Math courses show x^2 as x² and sqrt(2) as √2. Display only: stored answers and choices stay ASCII.
+function mt(text) {
+    const pack = PACK_CACHE[gameState.selectedSubject];
+    return pack && pack.category === 'math' && typeof prettyMath === 'function' ? prettyMath(text) : text;
 }
 
 function shuffle(items) {
@@ -2265,7 +2271,7 @@ function appendExplain(feedback, question) {
     if (!question.explain) return;
     const p = document.createElement('p');
     p.className = 'feedback-explain';
-    p.textContent = question.explain;
+    p.textContent = mt(question.explain);
     feedback.appendChild(p);
 }
 
@@ -2290,7 +2296,7 @@ function checkAnswer() {
         isCorrect = input?.toLowerCase() === question.answer.toLowerCase();
     } else if (question.type === 'math') {
         const input = document.getElementById('mathInput')?.value.trim();
-        isCorrect = input?.replace(/\s/g, '').toLowerCase() === question.answer.replace(/\s/g, '').toLowerCase();
+        isCorrect = mathEquivalent(input || '', question.answer);
     }
 
     // A right move with more of the line to play is not graded yet: the board answers back.
@@ -2332,7 +2338,7 @@ function checkAnswer() {
         feedback.className = 'feedback incorrect show';
         feedback.textContent = 'Incorrect. The answer is: ';
         const strong = document.createElement('strong');
-        strong.textContent = shown.answer;
+        strong.textContent = mt(shown.answer);
         feedback.appendChild(strong);
         appendExplain(feedback, question);
         appendTeach(feedback, question);

@@ -3,106 +3,778 @@
   "name": "Pre-Calculus 11",
   "category": "math",
   "icon": "fa-solid fa-book",
-  "level": "BC Grade 12",
-  "version": 1,
+  "level": "BC Grade 11",
+  "version": 2,
   "units": [
     {
       "id": "u1",
-      "title": "All",
+      "title": "Real Numbers & Radicals",
+      "tip": "Simplify a radical by pulling out the largest perfect square: sqrt(72) = sqrt(36 x 2) = 6sqrt(2).",
       "lessons": [
         {
           "id": "u1l1",
-          "title": "Lesson 1",
+          "title": "Radicals",
           "exercises": [
             {
-              "type": "math",
-              "question": "Factor: x^2 - 5x + 6",
-              "answer": "(x-2)(x-3)",
-              "id": "precalc11_0"
-            },
-            {
-              "type": "math",
-              "question": "Solve: 2^(x+1) = 32",
-              "answer": "4",
-              "id": "precalc11_1"
+              "type": "mathChoice",
+              "question": "Simplify sqrt(72)",
+              "answer": "6sqrt(2)",
+              "choices": [
+                "4sqrt(2)",
+                "2sqrt(6)",
+                "9sqrt(2)",
+                "6sqrt(2)"
+              ],
+              "explain": "72 = 36 x 2, and sqrt(36) = 6, so sqrt(72) = 6sqrt(2).",
+              "id": "precalc11_u1_l1_0"
             },
             {
               "type": "mathChoice",
-              "question": "Arithmetic sequence: 3, 7, 11, ... Find a10",
-              "answer": "39",
+              "question": "Which number is irrational?",
+              "answer": "sqrt(7)",
               "choices": [
-                "39",
-                "41",
-                "35",
-                "37"
+                "0.25",
+                "sqrt(16)",
+                "3/8",
+                "sqrt(7)"
               ],
-              "id": "precalc11_2"
+              "explain": "7 is not a perfect square, so sqrt(7) never ends or repeats. sqrt(16) is 4.",
+              "id": "precalc11_u1_l1_1"
             },
             {
               "type": "math",
-              "question": "Sum of geometric series: 2 + 6 + 18 + ... (4 terms)",
-              "answer": "80",
-              "id": "precalc11_3"
-            },
-            {
-              "type": "mathChoice",
-              "question": "Quadratic formula?",
-              "answer": "x = (-b +/- sqrt(b^2-4ac))/2a",
-              "choices": [
-                "x = (-b +/- sqrt(b^2-4ac))/2a",
-                "x = -b/2a",
-                "x = -b +/- sqrt(b^2+4ac)/2a",
-                "x = +/- sqrt(b^2-4ac)"
-              ],
-              "id": "precalc11_4"
+              "question": "Simplify 2sqrt(3) + 5sqrt(3)",
+              "answer": "7sqrt(3)",
+              "explain": "Like radicals add like terms: 2 + 5 = 7 copies of sqrt(3).",
+              "id": "precalc11_u1_l1_2"
             },
             {
               "type": "math",
-              "question": "Complete the square: x^2 + 6x",
-              "answer": "(x+3)^2 - 9",
-              "id": "precalc11_5"
+              "question": "sqrt(5) x sqrt(20) = ?",
+              "answer": "10",
+              "explain": "sqrt(5) x sqrt(20) = sqrt(100) = 10.",
+              "id": "precalc11_u1_l1_3"
             },
             {
               "type": "mathChoice",
-              "question": "Domain of f(x) = 1/(x-3)?",
-              "answer": "All reals except x=3",
+              "question": "Rationalize 6/sqrt(3)",
+              "answer": "2sqrt(3)",
               "choices": [
-                "x>3",
-                "x<3",
-                "All reals except x=3",
-                "All reals"
+                "6sqrt(3)",
+                "2sqrt(3)",
+                "sqrt(3)/2",
+                "3sqrt(2)"
               ],
-              "id": "precalc11_6"
+              "explain": "Multiply top and bottom by sqrt(3): 6sqrt(3)/3 = 2sqrt(3).",
+              "id": "precalc11_u1_l1_4"
             }
           ]
         },
         {
           "id": "u1l2",
-          "title": "Lesson 2",
+          "title": "Radical equations",
           "exercises": [
             {
               "type": "math",
-              "question": "Solve: |2x - 5| = 7",
-              "answer": "x = 6 or x = -1",
-              "id": "precalc11_7"
-            },
-            {
-              "type": "mathChoice",
-              "question": "Compound interest formula?",
-              "answer": "A = P(1 + r/n)^(nt)",
-              "choices": [
-                "A = P + rt",
-                "A = Prt",
-                "A = P(1 + r/n)^(nt)",
-                "A = Pe^(rt)"
-              ],
-              "id": "precalc11_8"
+              "question": "Solve sqrt(x) = 7",
+              "answer": "49",
+              "explain": "Square both sides: x = 49.",
+              "id": "precalc11_u1_l2_0"
             },
             {
               "type": "math",
-              "question": "Rationalize: 1/sqrt(3)",
-              "answer": "sqrt(3)/3",
-              "id": "precalc11_9"
+              "question": "Solve sqrt(x + 3) = 5",
+              "answer": "22",
+              "explain": "Square both sides: x + 3 = 25, so x = 22.",
+              "id": "precalc11_u1_l2_1"
+            },
+            {
+              "type": "mathChoice",
+              "question": "|-8| + |3| = ?",
+              "answer": "11",
+              "choices": [
+                "-11",
+                "11",
+                "5",
+                "-5"
+              ],
+              "explain": "Absolute value is distance from zero: 8 + 3 = 11.",
+              "id": "precalc11_u1_l2_2"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Solve sqrt(2x - 1) = x - 2",
+              "answer": "x = 5 only",
+              "choices": [
+                "x = 1 or x = 5",
+                "x = 5 only",
+                "x = 1 only",
+                "No solution"
+              ],
+              "explain": "Squaring gives x^2 - 6x + 5 = 0, so x = 1 or 5. At x = 1 the right side is -1, but a square root is never negative, so 1 is extraneous.",
+              "id": "precalc11_u1_l2_3"
+            },
+            {
+              "type": "mathChoice",
+              "question": "For which x is sqrt(x - 4) a real number?",
+              "answer": "x ≥ 4",
+              "choices": [
+                "x ≥ 4",
+                "x ≤ 4",
+                "x ≥ -4",
+                "x > 4"
+              ],
+              "explain": "The radicand must not be negative: x - 4 ≥ 0, so x ≥ 4.",
+              "id": "precalc11_u1_l2_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Powers & Factoring",
+      "tip": "A rational exponent is a root and a power: x^(m/n) is the nth root of x, raised to the m.",
+      "lessons": [
+        {
+          "id": "u2l1",
+          "title": "Rational exponents",
+          "exercises": [
+            {
+              "type": "math",
+              "question": "8^(2/3) = ?",
+              "answer": "4",
+              "explain": "The cube root of 8 is 2, and 2^2 = 4.",
+              "id": "precalc11_u2_l1_0"
+            },
+            {
+              "type": "math",
+              "question": "16^(-1/2) = ?",
+              "answer": "1/4",
+              "explain": "A negative exponent is a reciprocal: 1/sqrt(16) = 1/4.",
+              "id": "precalc11_u2_l1_1"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Write x^(3/4) as a radical",
+              "answer": "4th root of x^3",
+              "choices": [
+                "x^3 / 4",
+                "3rd root of x^4",
+                "(x^4)^3",
+                "4th root of x^3"
+              ],
+              "explain": "The denominator is the root and the numerator is the power.",
+              "id": "precalc11_u2_l1_2"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Simplify (x^5)(x^-2)",
+              "answer": "x^3",
+              "choices": [
+                "x^-10",
+                "x^3",
+                "x^(5/2)",
+                "x^7"
+              ],
+              "explain": "Multiplying powers with the same base adds the exponents: 5 + (-2) = 3.",
+              "id": "precalc11_u2_l1_3"
+            },
+            {
+              "type": "math",
+              "question": "27^(1/3) + 4^(1/2) = ?",
+              "answer": "5",
+              "explain": "The cube root of 27 is 3 and the square root of 4 is 2, so 3 + 2 = 5.",
+              "id": "precalc11_u2_l1_4"
+            }
+          ]
+        },
+        {
+          "id": "u2l2",
+          "title": "Factoring polynomials",
+          "exercises": [
+            {
+              "type": "math",
+              "question": "Factor x^2 + 7x + 12",
+              "answer": "(x+3)(x+4)",
+              "explain": "Find two numbers that multiply to 12 and add to 7: 3 and 4.",
+              "id": "precalc11_u2_l2_0"
+            },
+            {
+              "type": "math",
+              "question": "Factor x^2 - 49",
+              "answer": "(x-7)(x+7)",
+              "explain": "A difference of squares: a^2 - b^2 = (a - b)(a + b).",
+              "id": "precalc11_u2_l2_1"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Factor 2x^2 + 5x + 3",
+              "answer": "(2x + 3)(x + 1)",
+              "choices": [
+                "(2x - 3)(x - 1)",
+                "(x + 3)(x + 1)",
+                "(2x + 3)(x + 1)",
+                "(2x + 1)(x + 3)"
+              ],
+              "explain": "Check by expanding: 2x^2 + 2x + 3x + 3 = 2x^2 + 5x + 3.",
+              "id": "precalc11_u2_l2_2"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Factor 3x^2 - 12 completely",
+              "answer": "3(x - 2)(x + 2)",
+              "choices": [
+                "3(x - 2)(x + 2)",
+                "3(x - 4)(x + 4)",
+                "3(x^2 + 4)",
+                "(3x - 6)(x - 2)"
+              ],
+              "explain": "Take out the common factor 3 first, then x^2 - 4 is a difference of squares.",
+              "id": "precalc11_u2_l2_3"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Factor x^2 - 10x + 25",
+              "answer": "(x - 5)^2",
+              "choices": [
+                "(x + 5)^2",
+                "(x - 25)(x + 1)",
+                "(x - 5)(x + 5)",
+                "(x - 5)^2"
+              ],
+              "explain": "A perfect square trinomial: -5 x -5 = 25 and -5 + -5 = -10.",
+              "id": "precalc11_u2_l2_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Rational Expressions",
+      "tip": "Before you simplify, write down every x that makes a denominator zero. Those values stay excluded even after factors cancel.",
+      "lessons": [
+        {
+          "id": "u3l1",
+          "title": "Simplifying",
+          "exercises": [
+            {
+              "type": "mathChoice",
+              "question": "Simplify (x^2 - 9)/(x - 3)",
+              "answer": "x + 3, x ≠ 3",
+              "choices": [
+                "x + 3, x ≠ 3",
+                "x - 3, x ≠ 3",
+                "x^2 - 3",
+                "x + 3, x ≠ -3"
+              ],
+              "explain": "Factor the top as (x - 3)(x + 3) and cancel. x = 3 made the original denominator zero, so it stays excluded.",
+              "id": "precalc11_u3_l1_0"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Non-permissible values of 5/(x^2 - 4)",
+              "answer": "x ≠ 2 and x ≠ -2",
+              "choices": [
+                "x ≠ 2 and x ≠ -2",
+                "x ≠ 4",
+                "x ≠ 2 only",
+                "There are none"
+              ],
+              "explain": "x^2 - 4 = (x - 2)(x + 2) is zero at x = 2 and at x = -2.",
+              "id": "precalc11_u3_l1_1"
+            },
+            {
+              "type": "math",
+              "question": "Simplify (6x^2)/(3x)",
+              "answer": "2x",
+              "explain": "6/3 = 2 and x^2/x = x, so 2x, with x ≠ 0.",
+              "id": "precalc11_u3_l1_2"
+            },
+            {
+              "type": "mathChoice",
+              "question": "2/x + 3/x = ?",
+              "answer": "5/x",
+              "choices": [
+                "5/x",
+                "5/x^2",
+                "6/x^2",
+                "5/(2x)"
+              ],
+              "explain": "Same denominator, so add the numerators: (2 + 3)/x.",
+              "id": "precalc11_u3_l1_3"
+            },
+            {
+              "type": "mathChoice",
+              "question": "(x/2) x (4/x^2) = ?",
+              "answer": "2/x",
+              "choices": [
+                "x/2",
+                "2x",
+                "4/x",
+                "2/x"
+              ],
+              "explain": "Multiply across: 4x/(2x^2), then cancel to 2/x.",
+              "id": "precalc11_u3_l1_4"
+            }
+          ]
+        },
+        {
+          "id": "u3l2",
+          "title": "Rational equations",
+          "exercises": [
+            {
+              "type": "math",
+              "question": "Solve 3/x = 6",
+              "answer": "1/2",
+              "explain": "Multiply both sides by x: 3 = 6x, so x = 1/2.",
+              "id": "precalc11_u3_l2_0"
+            },
+            {
+              "type": "math",
+              "question": "Solve x/4 + x/2 = 9",
+              "answer": "12",
+              "explain": "The common denominator is 4: x/4 + 2x/4 = 3x/4 = 9, so x = 12.",
+              "id": "precalc11_u3_l2_1"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Solve 2/(x - 1) = 4/(x + 1)",
+              "answer": "3",
+              "choices": [
+                "3",
+                "-3",
+                "1",
+                "2"
+              ],
+              "explain": "Cross multiply: 2(x + 1) = 4(x - 1), so 2x + 2 = 4x - 4 and x = 3.",
+              "id": "precalc11_u3_l2_2"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Solve x/(x - 2) = 2/(x - 2)",
+              "answer": "No solution",
+              "choices": [
+                "x = 0",
+                "No solution",
+                "x = 2",
+                "x = -2"
+              ],
+              "explain": "The numerators give x = 2, but x = 2 makes the denominator zero, so it is not allowed.",
+              "id": "precalc11_u3_l2_3"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Lowest common denominator of 1/(2x) and 1/(3x^2)",
+              "answer": "6x^2",
+              "choices": [
+                "x^2",
+                "6x^2",
+                "6x^3",
+                "5x^2"
+              ],
+              "explain": "The LCD of 2 and 3 is 6, and the highest power of x is x^2.",
+              "id": "precalc11_u3_l2_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "Quadratics",
+      "tip": "In vertex form y = a(x - p)^2 + q the vertex is (p, q). Watch the sign: y = (x - 3)^2 has its vertex at x = 3, not -3.",
+      "lessons": [
+        {
+          "id": "u4l1",
+          "title": "Quadratic functions",
+          "exercises": [
+            {
+              "type": "mathChoice",
+              "question": "Vertex of y = (x - 3)^2 + 2",
+              "answer": "(3, 2)",
+              "choices": [
+                "(3, 2)",
+                "(-3, 2)",
+                "(2, 3)",
+                "(3, -2)"
+              ],
+              "explain": "In y = a(x - p)^2 + q the vertex is (p, q), here (3, 2).",
+              "id": "precalc11_u4_l1_0"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Describe y = -2(x + 1)^2 + 5",
+              "answer": "Opens down, maximum value 5",
+              "choices": [
+                "Opens down, maximum value -1",
+                "Opens down, maximum value 5",
+                "Opens up, minimum value -1",
+                "Opens up, minimum value 5"
+              ],
+              "explain": "a = -2 is negative, so it opens down and the vertex (-1, 5) is a maximum of 5.",
+              "id": "precalc11_u4_l1_1"
+            },
+            {
+              "type": "math",
+              "question": "Axis of symmetry of y = x^2 - 6x + 1",
+              "answer": "x = 3",
+              "explain": "x = -b/(2a) = 6/2 = 3.",
+              "id": "precalc11_u4_l1_2"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Complete the square: x^2 + 8x + 3",
+              "answer": "(x + 4)^2 - 13",
+              "choices": [
+                "(x + 4)^2 - 13",
+                "(x - 4)^2 - 13",
+                "(x + 4)^2 + 3",
+                "(x + 8)^2 - 61"
+              ],
+              "explain": "Half of 8 is 4 and 4^2 = 16: x^2 + 8x + 16 - 16 + 3 = (x + 4)^2 - 13.",
+              "id": "precalc11_u4_l1_3"
+            },
+            {
+              "type": "math",
+              "question": "y-intercept of y = 2x^2 - 3x + 7",
+              "answer": "7",
+              "explain": "Set x = 0: y = 7.",
+              "id": "precalc11_u4_l1_4"
+            }
+          ]
+        },
+        {
+          "id": "u4l2",
+          "title": "Quadratic equations",
+          "exercises": [
+            {
+              "type": "math",
+              "question": "Solve x^2 - 5x + 6 = 0",
+              "answer": "x = 2 or x = 3",
+              "explain": "Factor: (x - 2)(x - 3) = 0, so x = 2 or x = 3.",
+              "id": "precalc11_u4_l2_0"
+            },
+            {
+              "type": "math",
+              "question": "Discriminant of x^2 + 4x + 5",
+              "answer": "-4",
+              "explain": "b^2 - 4ac = 16 - 20 = -4.",
+              "id": "precalc11_u4_l2_1"
+            },
+            {
+              "type": "mathChoice",
+              "question": "How many real roots does x^2 + 4x + 5 = 0 have?",
+              "answer": "None",
+              "choices": [
+                "One",
+                "Three",
+                "Two",
+                "None"
+              ],
+              "explain": "The discriminant is -4. A negative discriminant means no real roots.",
+              "id": "precalc11_u4_l2_2"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Solve 2x^2 - 3x - 2 = 0",
+              "answer": "x = 2 or x = -1/2",
+              "choices": [
+                "x = 2 or x = 1/2",
+                "x = 1 or x = -2",
+                "x = -2 or x = 1/2",
+                "x = 2 or x = -1/2"
+              ],
+              "explain": "The quadratic formula gives (3 ± sqrt(9 + 16))/4 = (3 ± 5)/4, so 2 or -1/2.",
+              "id": "precalc11_u4_l2_3"
+            },
+            {
+              "type": "mathChoice",
+              "question": "A ball's height is h = -5t^2 + 20t metres. What is its maximum height?",
+              "answer": "20 m",
+              "choices": [
+                "20 m",
+                "40 m",
+                "2 m",
+                "15 m"
+              ],
+              "explain": "The vertex is at t = -20/(2 x -5) = 2 s, and h(2) = -20 + 40 = 20 m.",
+              "id": "precalc11_u4_l2_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": "Inequalities & Systems",
+      "tip": "Multiplying or dividing an inequality by a negative number flips its sign: -2x < 6 becomes x > -3.",
+      "lessons": [
+        {
+          "id": "u5l1",
+          "title": "Inequalities",
+          "exercises": [
+            {
+              "type": "mathChoice",
+              "question": "Solve -2x < 6",
+              "answer": "x > -3",
+              "choices": [
+                "x > -3",
+                "x < -3",
+                "x > 3",
+                "x < 3"
+              ],
+              "explain": "Divide by -2 and flip the sign: x > -3.",
+              "id": "precalc11_u5_l1_0"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Solve 3x + 4 ≤ 19",
+              "answer": "x ≤ 5",
+              "choices": [
+                "x ≤ 23/3",
+                "x < 5",
+                "x ≥ 5",
+                "x ≤ 5"
+              ],
+              "explain": "Subtract 4: 3x ≤ 15, then divide by 3: x ≤ 5.",
+              "id": "precalc11_u5_l1_1"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Solve x^2 - x - 6 < 0",
+              "answer": "-2 < x < 3",
+              "choices": [
+                "-2 < x < 3",
+                "x < -2 or x > 3",
+                "x < 3",
+                "-3 < x < 2"
+              ],
+              "explain": "Factor as (x - 3)(x + 2). The product is negative between the roots -2 and 3.",
+              "id": "precalc11_u5_l1_2"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Which point satisfies y > 2x + 1?",
+              "answer": "(0, 3)",
+              "choices": [
+                "(-1, -2)",
+                "(2, 4)",
+                "(0, 3)",
+                "(1, 2)"
+              ],
+              "explain": "At (0, 3): 3 > 1 is true. The other points fail, for example (1, 2) gives 2 > 3.",
+              "id": "precalc11_u5_l1_3"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Solve x^2 ≥ 9",
+              "answer": "x ≤ -3 or x ≥ 3",
+              "choices": [
+                "x ≥ 3",
+                "x ≥ 9",
+                "-3 ≤ x ≤ 3",
+                "x ≤ -3 or x ≥ 3"
+              ],
+              "explain": "x^2 - 9 = (x - 3)(x + 3) ≥ 0 outside the roots, so x ≤ -3 or x ≥ 3.",
+              "id": "precalc11_u5_l1_4"
+            }
+          ]
+        },
+        {
+          "id": "u5l2",
+          "title": "Systems of equations",
+          "exercises": [
+            {
+              "type": "math",
+              "question": "x + y = 10 and x - y = 4. Find x.",
+              "answer": "7",
+              "explain": "Add the equations: 2x = 14, so x = 7.",
+              "id": "precalc11_u5_l2_0"
+            },
+            {
+              "type": "math",
+              "question": "y = 2x and x + y = 12. Find x.",
+              "answer": "4",
+              "explain": "Substitute: x + 2x = 12, so x = 4.",
+              "id": "precalc11_u5_l2_1"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Where do y = x^2 and y = x + 2 meet?",
+              "answer": "(2, 4) and (-1, 1)",
+              "choices": [
+                "(2, 4) only",
+                "(-2, 4) and (1, 1)",
+                "(1, 1) and (4, 2)",
+                "(2, 4) and (-1, 1)"
+              ],
+              "explain": "Set x^2 = x + 2: x^2 - x - 2 = (x - 2)(x + 1) = 0, so x = 2 or x = -1.",
+              "id": "precalc11_u5_l2_2"
+            },
+            {
+              "type": "mathChoice",
+              "question": "How many points can a line and a parabola share?",
+              "answer": "0, 1 or 2",
+              "choices": [
+                "Exactly 2",
+                "Any number",
+                "0, 1 or 2",
+                "0 or 2"
+              ],
+              "explain": "Substituting gives a quadratic, which has zero, one or two real roots.",
+              "id": "precalc11_u5_l2_3"
+            },
+            {
+              "type": "math",
+              "question": "2x + 3y = 13 and x - y = -1. Find x.",
+              "answer": "2",
+              "explain": "From the second, x = y - 1. Then 2(y - 1) + 3y = 13, so y = 3 and x = 2.",
+              "id": "precalc11_u5_l2_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": "Trigonometry & Money",
+      "tip": "Use the sine law when you know a side and its opposite angle. Use the cosine law for two sides and the angle between them, or for all three sides.",
+      "lessons": [
+        {
+          "id": "u6l1",
+          "title": "Angles and triangles",
+          "exercises": [
+            {
+              "type": "mathChoice",
+              "question": "Reference angle of 150°",
+              "answer": "30°",
+              "choices": [
+                "30°",
+                "210°",
+                "150°",
+                "60°"
+              ],
+              "explain": "150° is in quadrant II, so its reference angle is 180° - 150° = 30°.",
+              "id": "precalc11_u6_l1_0"
+            },
+            {
+              "type": "mathChoice",
+              "question": "sin 210° = ?",
+              "answer": "-1/2",
+              "choices": [
+                "sqrt(3)/2",
+                "-1/2",
+                "1/2",
+                "-sqrt(3)/2"
+              ],
+              "explain": "210° is in quadrant III where sine is negative, with reference angle 30°.",
+              "id": "precalc11_u6_l1_1"
+            },
+            {
+              "type": "mathChoice",
+              "question": "The point (-3, 4) is on the terminal arm of θ. cos θ = ?",
+              "answer": "-3/5",
+              "choices": [
+                "4/5",
+                "-3/5",
+                "3/5",
+                "-4/3"
+              ],
+              "explain": "r = sqrt(9 + 16) = 5, and cos θ = x/r = -3/5.",
+              "id": "precalc11_u6_l1_2"
+            },
+            {
+              "type": "mathChoice",
+              "question": "In triangle ABC, A = 30°, B = 90° and a = 5. Find b.",
+              "answer": "10",
+              "choices": [
+                "5",
+                "2.5",
+                "10",
+                "5sqrt(3)"
+              ],
+              "explain": "Sine law: b = a sin B / sin A = 5 x 1 / 0.5 = 10.",
+              "id": "precalc11_u6_l1_3"
+            },
+            {
+              "type": "math",
+              "question": "Cosine law: a = 3, b = 5 and C = 60°. Find c^2.",
+              "answer": "19",
+              "explain": "c^2 = 9 + 25 - 2(3)(5)cos 60° = 34 - 15 = 19.",
+              "id": "precalc11_u6_l1_4"
+            }
+          ]
+        },
+        {
+          "id": "u6l2",
+          "title": "Interest and loans",
+          "exercises": [
+            {
+              "type": "mathChoice",
+              "question": "$1000 at 5% compounded yearly for 2 years grows to?",
+              "answer": "$1102.50",
+              "choices": [
+                "$1050.00",
+                "$1105.00",
+                "$1102.50",
+                "$1100.00"
+              ],
+              "explain": "A = 1000(1.05)^2 = 1102.50. The interest earns interest in year two.",
+              "id": "precalc11_u6_l2_0"
+            },
+            {
+              "type": "mathChoice",
+              "question": "6% a year compounded monthly. What is i in A = P(1 + i)^n?",
+              "answer": "0.005",
+              "choices": [
+                "0.0005",
+                "0.06",
+                "0.5",
+                "0.005"
+              ],
+              "explain": "Divide the yearly rate by 12 periods: 0.06 / 12 = 0.005.",
+              "id": "precalc11_u6_l2_1"
+            },
+            {
+              "type": "mathChoice",
+              "question": "$500 at 4% simple interest for 3 years earns?",
+              "answer": "$60",
+              "choices": [
+                "$62.43",
+                "$60",
+                "$12",
+                "$20"
+              ],
+              "explain": "Simple interest is P x r x t = 500 x 0.04 x 3 = 60. ($62.43 would be compound interest.)",
+              "id": "precalc11_u6_l2_2"
+            },
+            {
+              "type": "mathChoice",
+              "question": "By the rule of 72, money at 8% a year doubles in about?",
+              "answer": "9 years",
+              "choices": [
+                "12 years",
+                "72 years",
+                "9 years",
+                "8 years"
+              ],
+              "explain": "72 / 8 = 9.",
+              "id": "precalc11_u6_l2_3"
+            },
+            {
+              "type": "mathChoice",
+              "question": "Two loans have the same amount and rate. Which costs less interest in total?",
+              "answer": "The shorter term",
+              "choices": [
+                "The shorter term",
+                "The longer term",
+                "The one with lower payments",
+                "They cost the same"
+              ],
+              "explain": "Interest accrues every period the balance is owed, so paying it off sooner costs less in total.",
+              "id": "precalc11_u6_l2_4"
             }
           ]
         }
