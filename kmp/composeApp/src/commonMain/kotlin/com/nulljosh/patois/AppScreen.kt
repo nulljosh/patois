@@ -1,4 +1,4 @@
-package com.nulljosh.lexly
+package com.nulljosh.patois
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -35,7 +35,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun LexlyTheme(content: @Composable () -> Unit) =
+fun PatoisTheme(content: @Composable () -> Unit) =
     MaterialTheme(colorScheme = lightColorScheme(), content = content)
 
 private val PLAYABLE_TYPES = setOf("translation", "mathChoice", "cloze", "chess")
@@ -46,7 +46,7 @@ private val PLAYABLE_TYPES = setOf("translation", "mathChoice", "cloze", "chess"
 // screen -- see Content.kt for why that's a deliberate match to iOS/macOS,
 // not an oversight.
 @Composable
-fun AppScreen(client: LexlyClient = LexlyClient()) {
+fun AppScreen(client: PatoisClient = PatoisClient()) {
     var catalog by remember { mutableStateOf<Catalog?>(null) }
     var selected by remember { mutableStateOf<Subject?>(null) }
     var course by remember { mutableStateOf<Course?>(null) }

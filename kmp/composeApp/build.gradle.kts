@@ -30,7 +30,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.nulljosh.lexly"
+    namespace = "com.nulljosh.patois"
     compileSdk = 36
 
     defaultConfig {
@@ -44,7 +44,7 @@ android {
 
 compose.desktop {
     application {
-        mainClass = "com.nulljosh.lexly.MainKt"
+        mainClass = "com.nulljosh.patois.MainKt"
         nativeDistributions {
             targetFormats(
                 org.jetbrains.compose.desktop.application.dsl.TargetFormat.Msi,

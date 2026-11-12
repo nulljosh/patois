@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct LexlyMark: View {
+struct PatoisMark: View {
     var size: CGFloat = 64
 
     var body: some View {
@@ -17,7 +17,7 @@ struct SplashView: View {
 
     var body: some View {
         VStack(spacing: 16) {
-            LexlyMark()
+            PatoisMark()
                 .scaleEffect(animateIn ? 1 : 0.7)
                 .opacity(animateIn ? 1 : 0)
             Text("Patois").font(.title2.bold())

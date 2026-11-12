@@ -20,7 +20,7 @@
                 properties: { category: { type: 'string', description: 'Only subjects in this category' } }
             },
             execute: async ({ category } = {}) => {
-                const cats = await window.lexlyCatalog();
+                const cats = await window.patoisCatalog();
                 const entries = Object.entries(cats).filter(([id]) => !category || id === category);
                 return {
                     categories: entries.map(([id, c]) => ({
@@ -35,19 +35,19 @@
             name: 'get_progress',
             description: "Get the learner's overall progress: XP, streak, hearts, weekly goal and unlocked trophies.",
             inputSchema: { type: 'object', properties: {} },
-            execute: async () => window.lexlyProgress()
+            execute: async () => window.patoisProgress()
         },
         {
             name: 'get_course_progress',
             description: 'Get lessons completed and cards due for review in one subject. `total` is null until that course pack has been loaded.',
             inputSchema: { type: 'object', properties: { subjectId: SUBJECT }, required: ['subjectId'] },
-            execute: async ({ subjectId }) => window.lexlyCourseProgress(subjectId)
+            execute: async ({ subjectId }) => window.patoisCourseProgress(subjectId)
         },
         {
             name: 'get_due_reviews',
             description: 'Count spaced-repetition cards due now, per subject or across every subject already loaded.',
             inputSchema: { type: 'object', properties: { subjectId: { ...SUBJECT, description: 'Omit for every loaded subject' } } },
-            execute: async ({ subjectId } = {}) => window.lexlyDueReviews(subjectId)
+            execute: async ({ subjectId } = {}) => window.patoisDueReviews(subjectId)
         },
 
         // ---- reversible state changes ------------------------------------
@@ -55,7 +55,7 @@
             name: 'open_course',
             description: 'Open a subject\'s skill tree so the learner is looking at it.',
             inputSchema: { type: 'object', properties: { subjectId: SUBJECT }, required: ['subjectId'] },
-            execute: async ({ subjectId }) => window.lexlyOpenCourse(subjectId)
+            execute: async ({ subjectId }) => window.patoisOpenCourse(subjectId)
         },
         {
             name: 'start_lesson',
@@ -68,7 +68,7 @@
                 },
                 required: ['subjectId']
             },
-            execute: async ({ subjectId, lessonId }) => window.lexlyStartLesson(subjectId, lessonId)
+            execute: async ({ subjectId, lessonId }) => window.patoisStartLesson(subjectId, lessonId)
         },
         {
             name: 'go_home',

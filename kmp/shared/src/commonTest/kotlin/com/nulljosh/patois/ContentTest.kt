@@ -1,4 +1,4 @@
-package com.nulljosh.lexly
+package com.nulljosh.patois
 
 import kotlinx.serialization.json.Json
 import kotlin.test.Test

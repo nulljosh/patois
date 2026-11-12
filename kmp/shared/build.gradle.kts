@@ -24,7 +24,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.nulljosh.lexly.shared"
+    namespace = "com.nulljosh.patois.shared"
     compileSdk = 36
     defaultConfig { minSdk = 26 }
 }

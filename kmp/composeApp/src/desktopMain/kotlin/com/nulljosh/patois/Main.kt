@@ -1,4 +1,4 @@
-package com.nulljosh.lexly
+package com.nulljosh.patois
 
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
@@ -11,6 +11,6 @@ fun main() = application {
         title = "Patois",
         state = rememberWindowState(width = 1040.dp, height = 720.dp),
     ) {
-        LexlyTheme { AppScreen() }
+        PatoisTheme { AppScreen() }
     }
 }

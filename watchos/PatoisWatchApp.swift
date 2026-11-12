@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct LexlyWatchApp: App {
+struct PatoisWatchApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

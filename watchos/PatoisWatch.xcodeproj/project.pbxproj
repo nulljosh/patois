@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22CA8A34AE5A81D4770BEFC0 /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658257EA7983B4C5F742E32 /* StreakView.swift */; };
+		5145AB6A34E1D8BD56F3D549 /* WatchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D019D2545DBEB5B74F6A6BD7 /* WatchModels.swift */; };
+		560EE863F07A98545854190B /* PatoisWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48CF7AFAB246BE8125BB88E /* PatoisWatchApp.swift */; };
+		584F6D55ACD6521195F88939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FA97215716D7316A1CF56 /* ContentView.swift */; };
+		74F73A99FE6A7DAA7150E18D /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629856E29940FB58403B8B4F /* PairingView.swift */; };
+		E797958623CF8B360659F37E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB50884173C76A77660C96F /* Assets.xcassets */; };
+		FC5527ADEB1E363730BE7A06 /* WatchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB1672AB14AD997FF42C4B /* WatchAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16FB1672AB14AD997FF42C4B /* WatchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAPI.swift; sourceTree = "<group>"; };
+		4658257EA7983B4C5F742E32 /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
+		4FB50884173C76A77660C96F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629856E29940FB58403B8B4F /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
+		66DDA2FFD8A6D6BE7ABF1E75 /* PatoisWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatoisWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4FA97215716D7316A1CF56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D019D2545DBEB5B74F6A6BD7 /* WatchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModels.swift; sourceTree = "<group>"; };
+		E48CF7AFAB246BE8125BB88E /* PatoisWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatoisWatchApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		22313AD3444AE8D1B760229D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4658257EA7983B4C5F742E32 /* StreakView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2299C1EA53C10CB6908057D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16FB1672AB14AD997FF42C4B /* WatchAPI.swift */,
+				D019D2545DBEB5B74F6A6BD7 /* WatchModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4741135682981CC7DDF38816 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66DDA2FFD8A6D6BE7ABF1E75 /* PatoisWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56E49B7687A915F21A8652BF = {
+			isa = PBXGroup;
+			children = (
+				4FB50884173C76A77660C96F /* Assets.xcassets */,
+				8B4FA97215716D7316A1CF56 /* ContentView.swift */,
+				E48CF7AFAB246BE8125BB88E /* PatoisWatchApp.swift */,
+				2299C1EA53C10CB6908057D0 /* Models */,
+				D9616A9261F497980F9B80E0 /* Settings */,
+				22313AD3444AE8D1B760229D /* Views */,
+				4741135682981CC7DDF38816 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9616A9261F497980F9B80E0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				629856E29940FB58403B8B4F /* PairingView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78D9B96FA932BF7E9F7AA568 /* PatoisWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BB6EDDDA2265EAEA80D86FA /* Build configuration list for PBXNativeTarget "PatoisWatch" */;
+			buildPhases = (
+				2F141DFF32CA8FD25952D4DC /* Sources */,
+				12FBDB660FFDD33769803C30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PatoisWatch;
+			packageProductDependencies = (
+			);
+			productName = PatoisWatch;
+			productReference = 66DDA2FFD8A6D6BE7ABF1E75 /* PatoisWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9AAF8345CFA74612031DBCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					78D9B96FA932BF7E9F7AA568 = {
+						DevelopmentTeam = QMM486NPYC;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8B0107F865482E5889002AA1 /* Build configuration list for PBXProject "PatoisWatch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 56E49B7687A915F21A8652BF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4741135682981CC7DDF38816 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78D9B96FA932BF7E9F7AA568 /* PatoisWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12FBDB660FFDD33769803C30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E797958623CF8B360659F37E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F141DFF32CA8FD25952D4DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584F6D55ACD6521195F88939 /* ContentView.swift in Sources */,
+				74F73A99FE6A7DAA7150E18D /* PairingView.swift in Sources */,
+				560EE863F07A98545854190B /* PatoisWatchApp.swift in Sources */,
+				22CA8A34AE5A81D4770BEFC0 /* StreakView.swift in Sources */,
+				FC5527ADEB1E363730BE7A06 /* WatchAPI.swift in Sources */,
+				5145AB6A34E1D8BD56F3D549 /* WatchModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3A93FEC22445C1CD3C0214F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QMM486NPYC;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		55888FB4B096FB8891C8247E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nulljosh.lingo.watchos;
+				PRODUCT_NAME = Patois;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		9123851AE8D47AA2CAE66EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nulljosh.lingo.watchos;
+				PRODUCT_NAME = Patois;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		F31416D3A522B2E799D8B516 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QMM486NPYC;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BB6EDDDA2265EAEA80D86FA /* Build configuration list for PBXNativeTarget "PatoisWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9123851AE8D47AA2CAE66EC8 /* Debug */,
+				55888FB4B096FB8891C8247E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8B0107F865482E5889002AA1 /* Build configuration list for PBXProject "PatoisWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A93FEC22445C1CD3C0214F3 /* Debug */,
+				F31416D3A522B2E799D8B516 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9AAF8345CFA74612031DBCB /* Project object */;
+}

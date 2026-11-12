@@ -60,7 +60,7 @@ final class AuthStore {
     func signUp(email: String, password: String, displayName: String, avatarId: String) async throws -> Bool {
         // jaybulb-api always confirms by email first, so sign-up never returns a session.
         _ = try await Backend.call("POST", "/auth/signup", body: [
-            "email": email, "password": password, "redirect_to": "https://lexly.jaybulb.com/app/",
+            "email": email, "password": password, "redirect_to": "https://patois.jaybulb.com/app/",
             "data": ["display_name": displayName, "avatar_id": avatarId],
         ])
         return false
@@ -202,7 +202,7 @@ final class AuthStore {
     /// Redirects to the web app (which already handles PASSWORD_RECOVERY) rather than
     /// building a second native new-password screen for a flow users complete over email anyway.
     func resetPassword(email: String) async throws {
-        _ = try await Backend.call("POST", "/auth/recover", body: ["email": email, "redirect_to": "https://lexly.jaybulb.com/app/"])
+        _ = try await Backend.call("POST", "/auth/recover", body: ["email": email, "redirect_to": "https://patois.jaybulb.com/app/"])
     }
 
     /// Deletes the account and everything it owns on the server.

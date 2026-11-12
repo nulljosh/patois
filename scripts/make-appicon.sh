@@ -5,7 +5,7 @@
 set -e
 cd "$(dirname "$0")/.."
 BG="#2e86de"
-MASTER="/tmp/lexly-icon-1024.png"
+MASTER="/tmp/patois-icon-1024.png"
 rsvg-convert -w 1024 -h 1024 assets/icon.svg | magick - -background "$BG" -alpha remove -alpha off "$MASTER"
 sips -g pixelWidth -g pixelHeight -g hasAlpha "$MASTER" | grep -q 'hasAlpha: no'
 sips -g pixelWidth "$MASTER" | grep -q 'pixelWidth: 1024'

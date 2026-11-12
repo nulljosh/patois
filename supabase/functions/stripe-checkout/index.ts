@@ -4,7 +4,7 @@
 import Stripe from 'https://esm.sh/stripe@17?target=deno';
 
 const stripe = new Stripe(Deno.env.get('STRIPE_SECRET_KEY')!, { apiVersion: '2024-06-20' });
-const SITE_URL = Deno.env.get('SITE_URL') ?? 'https://lexly.jaybulb.com';
+const SITE_URL = Deno.env.get('SITE_URL') ?? 'https://patois.jaybulb.com';
 
 Deno.serve(async (req) => {
   if (req.method !== 'POST') return new Response('Method not allowed', { status: 405 });

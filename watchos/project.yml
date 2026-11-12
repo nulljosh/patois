@@ -1,4 +1,4 @@
-name: LexlyWatch
+name: PatoisWatch
 options:
   bundleIdPrefix: com.nulljosh
   deploymentTarget:
@@ -10,11 +10,11 @@ settings:
   CURRENT_PROJECT_VERSION: "1"
   CODE_SIGN_STYLE: Automatic
 targets:
-  LexlyWatch:
+  PatoisWatch:
     type: application
     platform: watchOS
     sources:
-      - LexlyWatchApp.swift
+      - PatoisWatchApp.swift
       - ContentView.swift
       - Models
       - Views

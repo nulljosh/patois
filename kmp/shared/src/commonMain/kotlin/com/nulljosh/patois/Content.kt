@@ -1,4 +1,4 @@
-package com.nulljosh.lexly
+package com.nulljosh.patois
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
@@ -58,7 +58,7 @@ data class Course(
 // exactly what iOS/macOS already do: no login wall in front of lesson
 // content. Sign-in (not built here) buys cross-device progress sync only --
 // see CLAUDE.md's "Auth differs by platform, on purpose".
-class LexlyClient(private val baseUrl: String = "https://lexly.jaybulb.com") {
+class PatoisClient(private val baseUrl: String = "https://patois.jaybulb.com") {
     private val http = HttpClient {
         install(ContentNegotiation) { json(Json { ignoreUnknownKeys = true }) }
     }

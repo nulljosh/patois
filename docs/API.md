@@ -15,7 +15,7 @@ Plain static files, no auth:
 ## WebMCP
 
 With the app open, Patois registers tools on `document.modelContext`.
-Source: `js/webmcp.js`, backed by the `window.lexly*` accessors at the bottom of
+Source: `js/webmcp.js`, backed by the `window.patois*` accessors at the bottom of
 `js/lingo-app.js`.
 
 ### Read-only

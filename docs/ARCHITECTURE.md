@@ -10,7 +10,7 @@ A gamified language and skills learning app featuring 12 languages plus math, sc
 
 **macOS**: `ios/Sources/macOS/LingoApp.swift` is the entry point (separate from iOS), renders `CatalogView`. Same auth and progress syncing as iOS.
 
-**Android/Desktop (KMP)**: `kmp/composeApp/src/commonMain/kotlin/com/nulljosh/tonchi/AppScreen.kt` is the shared entry point, fetches catalog from the live web API.
+**Android/Desktop (KMP)**: `kmp/composeApp/src/commonMain/kotlin/com/nulljosh/patois/AppScreen.kt` is the shared entry point, fetches catalog from the live web API.
 
 ## Web
 
@@ -133,11 +133,11 @@ A gamified language and skills learning app featuring 12 languages plus math, sc
 
 | File | What it owns |
 |---|---|
-| `kmp/shared/src/commonMain/kotlin/com/nulljosh/tonchi/Content.kt` | LexlyClient HTTP fetcher for catalog from web API |
-| `kmp/shared/src/commonTest/kotlin/com/nulljosh/tonchi/ContentTest.kt` | Tests for catalog shape decoding |
-| `kmp/composeApp/src/commonMain/kotlin/com/nulljosh/tonchi/AppScreen.kt` | Shared Compose UI |
-| `kmp/composeApp/src/androidMain/kotlin/com/nulljosh/tonchi/MainActivity.kt` | Android entry |
-| `kmp/composeApp/src/desktopMain/kotlin/com/nulljosh/tonchi/Main.kt` | Desktop window setup |
+| `kmp/shared/src/commonMain/kotlin/com/nulljosh/patois/Content.kt` | PatoisClient HTTP fetcher for catalog from web API |
+| `kmp/shared/src/commonTest/kotlin/com/nulljosh/patois/ContentTest.kt` | Tests for catalog shape decoding |
+| `kmp/composeApp/src/commonMain/kotlin/com/nulljosh/patois/AppScreen.kt` | Shared Compose UI |
+| `kmp/composeApp/src/androidMain/kotlin/com/nulljosh/patois/MainActivity.kt` | Android entry |
+| `kmp/composeApp/src/desktopMain/kotlin/com/nulljosh/patois/Main.kt` | Desktop window setup |
 
 ## watchOS
 

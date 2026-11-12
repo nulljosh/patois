@@ -1,4 +1,4 @@
-rootProject.name = "lexly"
+rootProject.name = "patois"
 
 pluginManagement {
     repositories {

@@ -2,8 +2,9 @@
 
 Patois (ex-Lexly): a gamified learning app. Vanilla JS/HTML/CSS on the web (no framework, no bundler),
 and a SwiftUI iOS/macOS app reading the same content JSON. Live at patois.jaybulb.com, App Store id6783501611.
-Renamed from Lexly on 2026-10-04; the App Store listing name, the old host lexly.jaybulb.com (kept as an alias; deploy.sh verifies patois.jaybulb.com), bundle IDs
-(`com.nulljosh.lingo`), the Pages project `lexly-heyitsmejosh` and the Kotlin package still use the old name on purpose.
+Renamed Lingo > Lexly > Tonchi > Patois (last on 2026-10-04). Still on old names on purpose, never rename: bundle IDs
+(`com.nulljosh.lingo*`), Android applicationId `com.nulljosh.lexly.android`, the Pages project `lexly-heyitsmejosh`, the hosts
+lexly/tonchi.jaybulb.com (aliases), the `lexly` URL scheme, and storage keys (`lexly.biometric.email`, `lexly.daily`, onboarding `lexly`).
 
 ## Where things are
 

@@ -1,4 +1,4 @@
-package com.nulljosh.lexly
+package com.nulljosh.patois
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

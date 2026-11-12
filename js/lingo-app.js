@@ -2595,11 +2595,11 @@ window.resetToHome = resetToHome;
 // ===== WebMCP accessors =====
 // Read-only views plus the two navigations. Progress is only ever written by
 // answering questions, so no accessor here can award XP or complete a lesson.
-window.lexlyCatalog = async () => {
+window.patoisCatalog = async () => {
     if (!Object.keys(categories).length) await loadCatalog();
     return categories;
 };
-window.lexlyProgress = () => {
+window.patoisProgress = () => {
     const p = loadProgress();
     const profile = loadProfile();
     return {
@@ -2610,26 +2610,26 @@ window.lexlyProgress = () => {
         lessonsCompleted: p.lessons_completed,
     };
 };
-window.lexlyCourseProgress = async (subjectId) => {
+window.patoisCourseProgress = async (subjectId) => {
     if (!findSubjectMeta(subjectId)) { await loadCatalog(); }
     if (!findSubjectMeta(subjectId)) return { error: `Unknown subject "${subjectId}"` };
     await loadCourse(subjectId);
     return { subjectId, ...getCourseProgress(subjectId), due: getDueCount(subjectId) };
 };
-window.lexlyDueReviews = (subjectId) => {
+window.patoisDueReviews = (subjectId) => {
     if (subjectId) return { subjectId, due: getDueCount(subjectId) };
     // Only subjects whose pack has been fetched have questions to count.
     return { bySubject: Object.fromEntries(Object.keys(questions).map(id => [id, getDueCount(id)])) };
 };
-window.lexlyOpenCourse = async (subjectId) => {
+window.patoisOpenCourse = async (subjectId) => {
     if (!findSubjectMeta(subjectId)) { await loadCatalog(); }
     if (!findSubjectMeta(subjectId)) return { error: `Unknown subject "${subjectId}"` };
     gameState.selectedSubject = subjectId;
     await showSkillTree(subjectId);
     return { opened: subjectId };
 };
-window.lexlyStartLesson = async (subjectId, lessonId) => {
-    const opened = await window.lexlyOpenCourse(subjectId);
+window.patoisStartLesson = async (subjectId, lessonId) => {
+    const opened = await window.patoisOpenCourse(subjectId);
     if (opened.error) return opened;
     await startLesson(lessonId);
     return { subjectId, lessonId: lessonId || null, questions: gameState.totalQuestions };

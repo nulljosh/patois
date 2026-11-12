@@ -20,7 +20,7 @@ No paid AI or API in the app code. Hosting is Cloudflare. The Stripe checkout co
 
 ## Where we are
 
-- 2026-10-04: renamed from Lexly to Patois. The store listing still says Lexly, and the old host still serves.
+- 2026-10-04: renamed from Lexly to Patois. The old host still serves.
 - 2026-09-20: the iOS build was held in the 4.3(a) wave when this file was last written.
 - Revenue: no verified number (the App Store Connect key cannot read sales yet).
 
