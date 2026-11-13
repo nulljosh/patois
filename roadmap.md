@@ -615,3 +615,6 @@ The earlier gaps have been addressed:
 - [ ] App Store screenshots are horrible. Redo them. (11-01: two new 6.9" shots in screenshots/appstore/6.9, the home without a title bar and the Spanish course, dark, from `-suppressWhatsNew YES -shotSubject spanish`. plus 03-lesson (Spanish Greetings, `-shotLesson YES`). Upload these three with the next version; 1.1.6 is in review)
 
 ## Ingested 2026-10-30
+
+## Ingested 2026-11-13
+- [ ] Note: "Patois. What's the deal". Report its review status. Last known (root roadmap, 2026-11-08): waiting on Apple. Could not re-pull today: the asc API is blocked by an unaccepted Apple agreement (see vault blocked-on-joshua.md).
