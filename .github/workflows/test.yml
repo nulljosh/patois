@@ -2,6 +2,7 @@ name: Tests
 on:
   push:
     branches: [main]
+    paths-ignore: ['**.md']   # roadmap and docs pushes don't need a Mac runner or a deploy
   pull_request:
     branches: [main]
 concurrency:
