@@ -618,3 +618,6 @@ The earlier gaps have been addressed:
 
 ## Ingested 2026-11-13
 - [ ] Note: "Patois. What's the deal". Report its review status. Last known (root roadmap, 2026-11-08): waiting on Apple. Could not re-pull today: the asc API is blocked by an unaccepted Apple agreement (see vault blocked-on-joshua.md).
+
+## Ingested 2026-11-14
+- [ ] (Note "Patois") App hasn't been updated in months. Store shows 1.1.3 from 3 months ago ("A clearer, more legible app icon and refreshed screenshots"); store preview still says Lexly. Answer as of 2026-11-08 queue: Patois iOS is waiting on Apple review. Once it clears, refresh the listing screenshots off the Lexly name. Screenshot: ~/Documents/Code/notes/attachments/2026-11-14/patois-1.png
