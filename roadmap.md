@@ -621,3 +621,8 @@ The earlier gaps have been addressed:
 
 ## Ingested 2026-11-14
 - [ ] (Note "Patois") App hasn't been updated in months. Store shows 1.1.3 from 3 months ago ("A clearer, more legible app icon and refreshed screenshots"); store preview still says Lexly. Answer as of 2026-11-08 queue: Patois iOS is waiting on Apple review. Once it clears, refresh the listing screenshots off the Lexly name. Screenshot: ~/Documents/Code/notes/attachments/2026-11-14/patois-1.png
+
+## Ingested 2026-11-16
+- [ ] (Note "Patois") Why is Apple rejecting the iOS counterpart?
+- [ ] (Patois) UI sucks: needs a bottom nav, not a settings cog in the top right ("I thought we fixed this").
+- [ ] (Patois) The macOS version shows "patios-macos" as its title.
