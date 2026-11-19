@@ -69,6 +69,7 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.lingo
+        PRODUCT_NAME: Patois # the app was built as Lingo-macOS.app, the name the Mac showed (issue 112)
         INFOPLIST_FILE: Sources/macOS/Info.plist
         GENERATE_INFOPLIST_FILE: NO
         MACOSX_DEPLOYMENT_TARGET: "14.0"
