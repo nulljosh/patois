@@ -626,3 +626,6 @@ The earlier gaps have been addressed:
 - [ ] (Note "Patois") Why is Apple rejecting the iOS counterpart?
 - [ ] (Patois) UI sucks: needs a bottom nav, not a settings cog in the top right ("I thought we fixed this").
 - [ ] (Patois) The macOS version shows "patios-macos" as its title.
+
+## Ingested 2026-11-18
+- [ ] ? (Note was title only; question: what's needed here?)
