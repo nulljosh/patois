@@ -629,3 +629,27 @@ The earlier gaps have been addressed:
 
 ## Ingested 2026-11-18
 - [ ] ? (Note was title only; question: what's needed here?)
+
+## Ingested 2026-11-23
+
+- [ ] **Patois**: App is coming along nicely
+  - Main bug is we can click into a subject and deeper into it, then clicking back goes all the way back to the main menu. Then it makes the list inactive so we can’t click anything without killing the app.
+  - Settings has user (sign in and register).
+  - Daily reminder (I guess, sure. Duolingo does it and it’s annoying but passive aggressiveness works.)
+  - What else can we cram in settings?
+  - Make sentence credits a footer note, not a main button.
+- [ ] **Patois**: What’s the deal here
+  - It’s just a list of shit to learn
+  - We need to spruce up the hi
+  - Like Duolingo etc
+  - And add lessons not just tests
+  - And improve over all UI etcetera
+  - Lots of work to do here but big pay off.
+  - Readme has stale icon etcetera
+  - Check readme for lesson screenshot
+  - You can see it’s just too nested lol
+- [ ] **Patois**: Enormous list.
+  - Should be more interactive.
+- [ ] **Patois**: Patois
+  - Inspo
+  - Screenshots (not yet read): `notes/attachments/2026-11-23/22928-1.png`
