@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'patois-v9';
+const CACHE_VERSION = 'patois-v10';
 
 const APP_SHELL = [
     './',
