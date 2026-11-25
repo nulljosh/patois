@@ -156,7 +156,7 @@ private struct SubjectRow: View {
     private static let iconSize: CGFloat = 26
     private static let iconTextGap: CGFloat = 10
     private static let rowPadding: CGFloat = 7
-    private static let titleFont: Font = .system(size: 13, weight: .medium)
+    private static let titleFont: Font = .system(.footnote, weight: .medium)
     private static let subtitleFont: Font = .system(size: 11)
     #else
     private static let iconSize: CGFloat = 32

@@ -699,7 +699,7 @@ struct ChessBoard: View {
                         ZStack {
                             Rectangle().fill((rank + file) % 2 == 1 ? Color(hex: "9fb6cd") : Color(hex: "eef2f7"))
                             if let glyph = Self.glyphs[Character(piece.lowercased())] {
-                                let text = Text(glyph + "\u{FE0E}").font(.system(size: 30))
+                                let text = Text(glyph + "\u{FE0E}").font(.largeTitle)
                                 if piece.isUppercase {
                                     // Outline: the glyph in near-black under a slightly smaller white one.
                                     ZStack {
